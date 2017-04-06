@@ -1,0 +1,13 @@
+# IDE Specific
+*.csproj
+*.pidb
+*.sln
+*.userprefs
+*.unityproj
+*.suo
+PixelChallenge2017/Library/
+PixelChallenge2017/Temp/
+
+# SourceTree Patch against .gitignore_global on Windows
+!*.exe
+!*.dll
