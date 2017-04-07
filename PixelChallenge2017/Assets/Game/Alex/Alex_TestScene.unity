@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5844a96d5b4508429d09eec70591786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myQuest: {fileID: 0}
 --- !u!114 &314129205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,7 +162,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 314129201}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a635d1fa5fa46044280b6a4f845cbe0d, type: 3}
+  m_Script: {fileID: 11500000, guid: fac0651d132b13c4a86307617a72a393, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startCash: 100
@@ -181,6 +182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   container: {fileID: 1519790447}
   textObject: {fileID: 1932279048123060, guid: 094996440292b7f45a3c819e7bddab42, type: 2}
+  quesList: []
   nbMax: 5
   currentNbQuest: 0
 --- !u!1 &369158471

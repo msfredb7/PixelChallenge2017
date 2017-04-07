@@ -4,19 +4,22 @@ using UnityEngine;
 using UnityEngine.Events;
 
 // Structure de donnees pour les arrets (ville, snack, depaneur)
-public class Stop : MonoBehaviour {
+public class Stop {
 
     public float distance;
+
+    public GameObject prefabStop;
 
     public UnityEvent onEventComplete;
 
     public List<ItemAVendre> listItems = new List<ItemAVendre>();
 
-    public Stop(float distance, List<ItemAVendre> listItems = null)
+    public Stop(float distance, GameObject prefabStop, List<ItemAVendre> listItems = null)
     {
         this.distance = distance;
         if (listItems != null)
             this.listItems = listItems;
+        this.prefabStop = prefabStop;
     }
 
     public void AddItemAVendre(Item item, float cost, int quantity)
@@ -26,7 +29,7 @@ public class Stop : MonoBehaviour {
 
     public void StartEvent()
     {
-        // evennement d'un stop
+        GameManager.instance.CreateStop(prefabStop);
         onEventComplete.Invoke();
     }
 }
