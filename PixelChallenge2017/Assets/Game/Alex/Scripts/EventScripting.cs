@@ -5,7 +5,7 @@ using UnityEngine;
 public class EventScripting {
 
     List<Item> randomItemBank1 = new List<Item>();
-    // randomItemBank1.Add(...);
+    // randomItemBank1.Add(...)
 
     List<Item> randomItemBank2 = new List<Item>();
     // randomItemBank2.Add(...);

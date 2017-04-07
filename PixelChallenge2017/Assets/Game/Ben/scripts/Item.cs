@@ -27,6 +27,32 @@ public class Item : MonoBehaviour {
     List<Case> tempoHovered;
 
     Case beforePlacement;
+    private Vector3 posBeforePlacement;
+
+    SpriteRenderer rend;
+    ItemState _placementState;
+
+    ItemState placementState
+    {
+        get
+        {
+            return _placementState;
+        }
+        set
+        {
+            _placementState = value;
+            if(_placementState == ItemState.placed || _placementState == ItemState.onDragPlacable)
+            {
+                if(rend != null)
+                     rend.color = Color.white;
+            }else if (_placementState == ItemState.notPlaced || _placementState == ItemState.onDragUnplacable)
+            {
+                if (rend != null)
+                    rend.color = Color.red;
+            }
+        }
+    }
+
 
     public void occupeCase()
     {
@@ -155,6 +181,16 @@ public class Item : MonoBehaviour {
         collidedCase = new List<Case>();
         occupedCase = new List<Case>();
         tempoHovered = new List<Case>();
+        rend = GetComponent<SpriteRenderer>();
+
+        if(centralCase != null)
+        {
+            placementState = ItemState.placed;
+        }
+        else
+        {
+            placementState = ItemState.notPlaced;
+        }
         
 	}
 	
@@ -169,10 +205,13 @@ public class Item : MonoBehaviour {
         if (collidedCase.Count > 0)
         {
             Case tempCentralCase = calculCentralCase();
-            transform.position = tempCentralCase.transform.position + new Vector3(0, 0.1f, 0);
-            collidedCase.Clear();
-            fillCollidedCase();
-            centralCase = tempCentralCase;
+            if(occupedByCentral(tempCentralCase) !=null)
+            {
+                transform.position = tempCentralCase.transform.position + new Vector3(0, 0.1f, 0);
+                collidedCase.Clear();
+                fillCollidedCase();
+                centralCase = tempCentralCase;
+            }
         }
     }
 
@@ -247,7 +286,18 @@ public class Item : MonoBehaviour {
     //Drag and drop methodes
     public void StartDrag()
     {
-        beforePlacement = centralCase;
+        beforePlacement = null;
+        //posBeforePlacement = null;
+
+        if (placementState == ItemState.placed)
+        {
+            beforePlacement = centralCase;
+        }
+        if(placementState == ItemState.notPlaced)
+        {
+            posBeforePlacement = transform.position;
+        }
+        
         clearCase();
         collidedCase.Clear();
     }
@@ -255,16 +305,38 @@ public class Item : MonoBehaviour {
     public void EndDrag()
     {
         CalculCollidedCase();
-        ajustPos();
-        occupeCase();
-        if(centralCase == null && beforePlacement != null)
+        if(collidedCase.Count != 0)
         {
-            transform.position = beforePlacement.transform.position;
-            CalculCollidedCase();
-            collidedCase.Add(beforePlacement);
             ajustPos();
             occupeCase();
+            if (centralCase == null && beforePlacement != null)
+            {
+                transform.position = beforePlacement.transform.position;
+                CalculCollidedCase();
+                collidedCase.Add(beforePlacement);
+                ajustPos();
+                occupeCase();
+            }
+            if (centralCase != null)
+            {
+                placementState = ItemState.placed;
+            }
+            else
+            {
+                placementState = ItemState.notPlaced;
+                transform.position = posBeforePlacement;
+            }
         }
+        else
+        {
+            placementState = ItemState.notPlaced;
+        }
+
+        if(placementState==ItemState.notPlaced)
+        {
+            centralCase = null;
+        }
+        
     }
 
     public void OnDrag()
@@ -282,7 +354,12 @@ public class Item : MonoBehaviour {
             {
                 tempoHovered.Add(c);
                 c.caseHovered = true;
+                placementState = ItemState.onDragPlacable;
             }
+        }
+        else
+        {
+            placementState = ItemState.onDragUnplacable;
         }
     }
 }
