@@ -989,7 +989,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1710774906220490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.1, y: 0, z: 0}
+  m_LocalPosition: {x: -86.82, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4235458421661500}
@@ -1166,7 +1166,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1726611727643752}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -120, y: 0, z: 0}
+  m_LocalPosition: {x: -123.2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4709018290279368}
@@ -1560,8 +1560,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1127883566498880}
   m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 79.5, y: 1, z: -43.6}
-  m_LocalScale: {x: -45, y: 45, z: 1}
+  m_LocalPosition: {x: 79, y: 1, z: -43.6}
+  m_LocalScale: {x: -42, y: 42, z: 1}
   m_Children: []
   m_Father: {fileID: 4334897427205900}
   m_RootOrder: 3
@@ -1750,7 +1750,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stationEssenceSprite: {fileID: 21300000, guid: bb347ed302a7fdc44a17ed7087206bf4,
     type: 3}
+  depaneurSprite: {fileID: 21300000, guid: 586211961bb11e7479e1cc07e953c4cf, type: 3}
+  epicerieSprite: {fileID: 21300000, guid: fde2567da0ee179488258b643447a082, type: 3}
+  garageSprite: {fileID: 21300000, guid: b0c9c17377944174d984bf4f44061f79, type: 3}
+  costcoSprite: {fileID: 21300000, guid: 87b299ec61c05b247adc9fe284f85623, type: 3}
   montrealSprite: {fileID: 21300000, guid: 2078967a8e7da184bad30e29531946ec, type: 3}
+  quebecSprite: {fileID: 21300000, guid: 32a02d9bfdd98ec46b63061495e18926, type: 3}
+  troisRiviereSprite: {fileID: 21300000, guid: 5985e058a7326e54087bb9cc691b6b4e, type: 3}
+  septIlesSprite: {fileID: 21300000, guid: 09566f4440a8d3f4a8ce84364950e1af, type: 3}
   lignes: {fileID: 114586599129253556}
   gazon: {fileID: 114903468470454528}
   gazonGauche: {fileID: 114431455681289860}
@@ -2968,7 +2975,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b58e4d7cf6f271f40b49d8cfb4ab11c0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b0c9c17377944174d984bf4f44061f79, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

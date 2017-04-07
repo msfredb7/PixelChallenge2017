@@ -10,7 +10,7 @@ public class TestScript_Fred : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.T))
         {
-            GlobalAnimator.StopAt(LieuType.stationEssence);
+            GlobalAnimator.StopAt(LieuType.Quebec);
         }
         if (Input.GetKeyDown(KeyCode.P))
         {
