@@ -81,7 +81,8 @@ public class GameManager : PublicSingleton<GameManager> {
         {
             if (i > (waypoints.Count - 1))
                 return; // Fuck off
-            Instantiate(items[i].item, waypoints[nbItems].transform);
+            GameObject obj = Instantiate(items[i].item.gameObject);
+            obj.transform.position = waypoints[nbItems].transform.position;
             nbItems++;
         }
     }
@@ -89,6 +90,7 @@ public class GameManager : PublicSingleton<GameManager> {
     // Spawn un personnage
     public void SpawnPersonne(Personne personne)
     {
-        //Instantiate(personne, waypoints[0].transform);
+        GameObject obj = Instantiate(personne.gameObject);
+        obj.transform.position = waypoints[0].transform.position;
     }
 }

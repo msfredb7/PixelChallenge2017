@@ -18,7 +18,7 @@ public class dragNDrop : MonoBehaviour {
     {
         if (dragging)
         {
-            GameManager.instance.grille.SetActive(true);
+            //GameManager.instance.grille.SetActive(true);
             Vector2 mousePos = Input.mousePosition;
             Vector3 objPos = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, depth));
             objPos.y = 0.1f;
@@ -27,7 +27,7 @@ public class dragNDrop : MonoBehaviour {
 
         } else
         {
-            GameManager.instance.grille.SetActive(false);
+            //GameManager.instance.grille.SetActive(false);
         }       
     }
 
