@@ -31,18 +31,18 @@ public class GameManager : PublicSingleton<GameManager> {
     void Update()
     {
         // Condition de defaite ?
-        if (car.gas <= 0)
-        {
-            if (car.cash < TowingCost)
-            {
-                // End of the game
-                print("GAME OVER");
-                car.IsRunning = false;
-            }
-            // Towing
-            car.ChangeCash(-TowingCost);
-            car.ChangeGas(TowingGas);
-        }
+        //if (car.gas <= 0)
+        //{
+        //    if (car.cash < TowingCost)
+        //    {
+        //        // End of the game
+        //        print("GAME OVER");
+        //        car.IsRunning = false;
+        //    }
+        //    // Towing
+        //    car.ChangeCash(-TowingCost);
+        //    car.ChangeGas(TowingGas);
+        //}
         gasText.text = car.gas + "L";
         cashText.text = car.cash + "$";
     }
