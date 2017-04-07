@@ -10,9 +10,4 @@ public class Depanneur : Stop
 
 
     }
-
-    public void AddItem(float cout)
-    {
-
-    }
 }

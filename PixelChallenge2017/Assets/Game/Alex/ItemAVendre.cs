@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class ItemAVendre : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public Item item;
+    public float cost;
+    public int quantity;
+
+    public ItemAVendre(Item item, float cost, int quantity)
+    {
+        this.item = item;
+        this.cost = cost;
+        this.quantity = quantity;
+    }
+
+
 }

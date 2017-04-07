@@ -6,13 +6,16 @@ public class ItemEvent {
 
     public float distance;
 
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public Item item;
+
+    public ItemEvent(float distance, Item item)
+    {
+        this.distance = distance;
+        this.item = item;
+    }
+
+    public void StartEvent()
+    {
+
+    }
 }
