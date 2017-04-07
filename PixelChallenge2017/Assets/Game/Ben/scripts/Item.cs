@@ -445,12 +445,3 @@ public class Item : MonoBehaviour {
     }
 }
 
-        
-        if(placementState == ItemState.notPlaced)
-        {
-            foreach(SpriteRenderer r in rend)
-            {
-                r.color = Color.white;
-            }
-            
-        }
