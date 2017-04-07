@@ -23,6 +23,6 @@ public class Stop : MonoBehaviour {
 
     public void StartEvent()
     {
-
+        // evennement d'un stop
     }
 }

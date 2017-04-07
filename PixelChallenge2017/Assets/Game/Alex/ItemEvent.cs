@@ -16,6 +16,6 @@ public class ItemEvent {
 
     public void StartEvent()
     {
-
+        // evennement d'un item
     }
 }

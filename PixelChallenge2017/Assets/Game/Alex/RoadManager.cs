@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class RoadManager : PublicSingleton<RoadManager> {
 
     public Road currentRoad;
+
+    public UnityEvent onDestinationReached = new UnityEvent();
 
     [HideInInspector]
     public float startTime;
@@ -43,6 +46,7 @@ public class RoadManager : PublicSingleton<RoadManager> {
         if(currentRoad.distance <= currentDistance)
         {
             print("Welcome to the amazing city of " + currentRoad.currentDestination.nom);
+            onDestinationReached.Invoke();
         }
     }
 

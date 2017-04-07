@@ -17,6 +17,7 @@ public class ItemAVendre : MonoBehaviour {
 
     public void BuyItem()
     {
-
+        quantity--;
+        GameManager.instance.car.ChangeCash(-cost);
     }
 }
