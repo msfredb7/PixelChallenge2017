@@ -95,10 +95,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fac0651d132b13c4a86307617a72a393, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startCash: 1
-  startGas: 20
+  startCash: 50
+  startGas: 5
   startFood: 10
-  TowingCost: 0
+  TowingCost: 1
   TowingGas: 10
   gasText: {fileID: 0}
   cashText: {fileID: 0}

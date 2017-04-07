@@ -56,9 +56,24 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
         DOTween.To(() => ville.speed, x => ville.speed = x, speed, duration).SetEase(Ease.InOutSine).OnComplete(onComplete);
     }
 
-    static public void StopAt(LieuType type, TweenCallback onContinueTrip = null)
+    static private TweenCallback onContinueTrip;
+
+    static public void Restart()
     {
-        float duration = 0;
+        instance.Run(delegate()
+        {
+            GameManager.instance.car.IsRunning = true;
+            if (onContinueTrip != null)
+                onContinueTrip.Invoke();
+            onContinueTrip = null;
+        });
+    }
+
+    static public void StopAt(LieuType type, TweenCallback onContinueTrip = null, TweenCallback onStopComplete = null)
+    {
+        GameManager.instance.car.IsRunning = false;
+        GlobalAnimator.onContinueTrip = onContinueTrip;
+        float duration = -1;
         float delayBeforeStop = 0;
         float decelerateDuration = 3;
         switch (type)
@@ -68,53 +83,42 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
                 instance.building.Run(instance.stationEssenceSprite);
                 delayBeforeStop = 0.75f;
                 break;
-            case LieuType.laveAuto:
-                duration = 2.5f;
-                instance.building.Run(instance.stationEssenceSprite);
-                delayBeforeStop = 0.75f;
+            case LieuType.nullePart:
+                duration = -1;
                 break;
             case LieuType.depaneur:
-                duration = 2.5f;
                 instance.building.Run(instance.depaneurSprite);
                 delayBeforeStop = 0.75f;
                 break;
             case LieuType.costco:
-                duration = 2.5f;
                 instance.building.Run(instance.costcoSprite);
                 delayBeforeStop = 0.75f;
                 break;
             case LieuType.restaurant:
-                duration = 2.5f;
                 instance.building.Run(instance.epicerieSprite);
                 delayBeforeStop = 0.75f;
                 break;
             case LieuType.garage:
-                duration = 2.5f;
                 instance.building.Run(instance.garageSprite);
                 delayBeforeStop = 0.75f;
                 break;
             case LieuType.Montreal:
-                duration = 2.5f;
                 instance.ville.Run(instance.montrealSprite);
                 delayBeforeStop = 1.75f;
                 break;
             case LieuType.Quebec:
-                duration = 2.5f;
                 instance.ville.Run(instance.quebecSprite);
                 delayBeforeStop = 1.75f;
                 break;
             case LieuType.SeptIles:
-                duration = 2.5f;
                 instance.ville.Run(instance.septIlesSprite);
                 delayBeforeStop = 1.75f;
                 break;
             case LieuType.TroisRiviere:
-                duration = 2.5f;
                 instance.ville.Run(instance.troisRiviereSprite);
                 delayBeforeStop = 1.75f;
                 break;
             case LieuType.arretBus:
-                duration = 2.5f;
                 instance.arretBus.Run(null);
                 delayBeforeStop = 0;
                 decelerateDuration = 2.5f;
@@ -124,10 +128,14 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
         }
         instance.Stop(delegate ()
         {
-            CCC.Manager.DelayManager.CallTo(delegate ()
-            {
-                instance.Run(onContinueTrip);
-            }, duration);
+            if (onStopComplete != null)
+                onStopComplete.Invoke();
+
+            if(duration >= 0)
+                CCC.Manager.DelayManager.CallTo(delegate ()
+                {
+                    Restart();
+                }, duration);
         }, decelerateDuration, delayBeforeStop);
     }
 
