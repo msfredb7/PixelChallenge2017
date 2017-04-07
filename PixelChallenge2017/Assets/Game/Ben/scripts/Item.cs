@@ -5,6 +5,9 @@ using UnityEngine;
 
 
 public class Item : MonoBehaviour {
+
+    public static List<Item> allItem;
+
     // Use this for initialization
     [System.Serializable]
     public class shape
@@ -176,6 +179,11 @@ public class Item : MonoBehaviour {
     //public classCaseItem myCaseItem; 
 
     void Start () {
+        if(allItem == null)
+        {
+            allItem = new List<Item>();
+        }
+        allItem.Add(this);
         checkOffset();
         colIn = new List<Collider>();
         collidedCase = new List<Case>();
