@@ -39,4 +39,8 @@ public class QuestManager : PublicSingleton<QuestManager> {
         }
     }
 
+    public void ClearQuest()
+    {
+        questList.Clear();
+    }
 }

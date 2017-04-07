@@ -9,27 +9,16 @@ public class Quest {
 
     public string questDescription;
 
-    public List<Condition> listCondition = new List<Condition>();
+    public Ville destination;
+    public List<Item> itemNecessaire = new List<Item>();
 
-    public Quest(string questDescription, float distance, List<Condition> listCondition = null)
+    public Quest(string questDescription, float distance, Ville destination, List<Item> itemNecessaire = null)
     {
         this.questDescription = questDescription;
-    }
-
-    public void AddCondition(Condition condition)
-    {
-        listCondition.Add(condition);
-    }
-
-    public bool CheckQuestState()
-    {
-        bool result = true;
-        for(int i = 0; i < listCondition.Count; i++)
-        {
-            if (!listCondition[i].ConditionDone())
-                result = false;
-        }
-        return result;
+        this.distance = distance;
+        this.destination = destination;
+        if(itemNecessaire != null)
+            this.itemNecessaire = itemNecessaire;
     }
 
     public void OnBegin()

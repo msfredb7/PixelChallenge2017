@@ -17,13 +17,14 @@ public class Road {
 
     public List<Quest> questList = new List<Quest>();
 
-    public Road(Ville depart, Ville destination, List<Stop> stopList, List<SpecialEvent> specialEventList, List<ItemEvent> itemEventList, float distance)
+    public Road(Ville depart, Ville destination, List<Stop> stopList, List<SpecialEvent> specialEventList, List<ItemEvent> itemEventList, List<Quest> questList , float distance)
     {
         currentDepart = depart;
         currentDestination = destination;
         this.stopList = stopList;
         this.specialEventList = specialEventList;
         this.itemEventList = itemEventList;
+        this.questList = questList;
         this.distance = distance;
     }
 
