@@ -173,6 +173,7 @@ public class EventScripting
                 itemCostco135km.Add(new ItemAVendre(ItemBank.GetItemByIndex(8), 10, 3));
                 itemGarage91km.Add(new ItemAVendre(ItemBank.GetItemByIndex(9), 22, 1));
 
+
                 // Magasins
                 List<Stop> stopRoad2 = new List<Stop>();
                 Stop costco5km = new Stop(5, LieuType.costco, itemCostco5km);
@@ -196,12 +197,33 @@ public class EventScripting
                 stopRoad2.Add(costco135km);
 
 
+                // Quetes
+                Stop gary10km = new Stop(10, LieuType.arretBus);
+                Stop mariepier30km = new Stop(30, LieuType.arretBus);
+                Stop bob49km = new Stop(49, LieuType.arretBus);
+                Stop maxime62km = new Stop(62, LieuType.arretBus);
+                Stop jeremy100km = new Stop(100, LieuType.arretBus);
 
+                stopRoad2.Add(gary10km);
+                stopRoad2.Add(mariepier30km);
+                stopRoad2.Add(bob49km);
+                stopRoad2.Add(maxime62km);
+                stopRoad2.Add(jeremy100km);
+
+                List<Quest> questRoad1 = new List<Quest>();
+                questRoad1.Add(new Quest("Déposer le mystérieux monsieur et ses nombreux chapeaux à Trois-Rivière", 0, 0, new Quest.Destination(destination, null)));
+                questRoad1.Add(new Quest("Déposer Gary et son matériel informatique à Trois-Rivière", 10, 0, new Quest.Destination(destination, null)));
+                questRoad1.Add(new Quest("Déposer Marie-Pier et ses bagages jusqu'à la prochaine épicerie", 30, 0, new Quest.Destination(null, restaurant70km)));
+                questRoad1.Add(new Quest("Déposer Bob au prochain garage", 49, 0, new Quest.Destination(null, garage91km)));
+                questRoad1.Add(new Quest("Déposer Maxime et ses meubles à Trois-Rivière", 62, 0, new Quest.Destination(destination,null)));
+                questRoad1.Add(new Quest("Déposer Jeremy à la prochaine épicerie", 100, 0, new Quest.Destination(null, restaurant112km)));
 
 
                 Road newRoad = new Road(depart, destination, null, null, null, null, 5);
                 RoadManager.instance.SetRoad(newRoad);
                 currentEvent++;
+
+
                 break;
             case 1:
                 Ville depart1 = new Ville("Trois-Riviere");
