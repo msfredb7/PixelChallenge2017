@@ -6,6 +6,7 @@ using System.Collections.Generic;
 // Stock tous les items disponible dans le jeu
 public class Bank<T> : PublicSingleton<Bank<T>>
 {
+    [SerializeField]
     private List<T> bank = new List<T>(); // Liste des items disponible
 
     static public T GetItem(T item)
