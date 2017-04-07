@@ -5,6 +5,9 @@ using UnityEngine;
 
 
 public class Item : MonoBehaviour {
+
+    public static List<Item> allItem;
+
     // Use this for initialization
     [System.Serializable]
     public class shape
@@ -21,7 +24,7 @@ public class Item : MonoBehaviour {
     bool colInChange = true;
     List<Case> collidedCase;
 
-    Case centralCase;
+    public Case centralCase;
     List<Case> occupedCase;
 
     List<Case> tempoHovered;
@@ -29,7 +32,7 @@ public class Item : MonoBehaviour {
     Case beforePlacement;
     private Vector3 posBeforePlacement;
 
-    SpriteRenderer rend;
+    List<SpriteRenderer> rend;
     ItemState _placementState;
 
     ItemState placementState
@@ -43,12 +46,23 @@ public class Item : MonoBehaviour {
             _placementState = value;
             if(_placementState == ItemState.placed || _placementState == ItemState.onDragPlacable)
             {
-                if(rend != null)
-                     rend.color = Color.white;
+                if(rend.Count > 0)
+                {
+                    foreach(SpriteRenderer r in rend)
+                    {
+                        r.color = Color.white;
+                    }
+                }
+                    
             }else if (_placementState == ItemState.notPlaced || _placementState == ItemState.onDragUnplacable)
             {
-                if (rend != null)
-                    rend.color = Color.red;
+                if (rend.Count > 0)
+                {
+                    foreach (SpriteRenderer r in rend)
+                    {
+                        r.color = Color.red;
+                    }
+                }
             }
         }
     }
@@ -176,16 +190,38 @@ public class Item : MonoBehaviour {
     //public classCaseItem myCaseItem; 
 
     void Start () {
+        if(allItem == null)
+        {
+            allItem = new List<Item>();
+        }
+        allItem.Add(this);
         checkOffset();
         colIn = new List<Collider>();
         collidedCase = new List<Case>();
         occupedCase = new List<Case>();
         tempoHovered = new List<Case>();
-        rend = GetComponent<SpriteRenderer>();
+        rend = new List<SpriteRenderer>();
+        rend.AddRange(GetComponents<SpriteRenderer>());
+        rend.AddRange(GetComponentsInChildren<SpriteRenderer>());
+
+
+        
 
         if(centralCase != null)
         {
-            placementState = ItemState.placed;
+            transform.position = centralCase.transform.position + new Vector3(0, 0.1f, 0);
+            CalculCollidedCase();
+            collidedCase.Add(centralCase);
+            occupeCase();
+            if(centralCase !=null)
+            {
+                placementState = ItemState.placed;
+            }
+            else
+            {
+                placementState = ItemState.notPlaced;
+            }
+
         }
         else
         {

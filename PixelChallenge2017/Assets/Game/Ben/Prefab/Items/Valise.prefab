@@ -653,6 +653,7 @@ MonoBehaviour:
   Gauche: {fileID: 0}
   Bas: {fileID: 114489099088872520}
   _caseOccupe: 0
+  _caseHovered: 0
   caseType: 0
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
   standardMat: {fileID: 0}
@@ -679,6 +680,7 @@ MonoBehaviour:
   itemShape: []
   offsetX: 1
   offsetY: 1
+  centralCase: {fileID: 0}
 --- !u!114 &114355575795358604
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -697,6 +699,7 @@ MonoBehaviour:
   Gauche: {fileID: 0}
   Bas: {fileID: 114675093348414294}
   _caseOccupe: 0
+  _caseHovered: 0
   caseType: 0
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
   standardMat: {fileID: 0}
@@ -718,6 +721,7 @@ MonoBehaviour:
   Gauche: {fileID: 114625925850635074}
   Bas: {fileID: 0}
   _caseOccupe: 0
+  _caseHovered: 0
   caseType: 0
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
   standardMat: {fileID: 0}
@@ -739,6 +743,7 @@ MonoBehaviour:
   Gauche: {fileID: 114675093348414294}
   Bas: {fileID: 114457650235302552}
   _caseOccupe: 0
+  _caseHovered: 0
   caseType: 0
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
   standardMat: {fileID: 0}
@@ -760,6 +765,7 @@ MonoBehaviour:
   Gauche: {fileID: 0}
   Bas: {fileID: 0}
   _caseOccupe: 0
+  _caseHovered: 0
   caseType: 0
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
   standardMat: {fileID: 0}
@@ -781,6 +787,7 @@ MonoBehaviour:
   Gauche: {fileID: 114489099088872520}
   Bas: {fileID: 0}
   _caseOccupe: 0
+  _caseHovered: 0
   caseType: 0
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
   standardMat: {fileID: 0}
@@ -802,6 +809,7 @@ MonoBehaviour:
   Gauche: {fileID: 114036925888662488}
   Bas: {fileID: 114625925850635074}
   _caseOccupe: 0
+  _caseHovered: 0
   caseType: 0
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
   standardMat: {fileID: 0}
