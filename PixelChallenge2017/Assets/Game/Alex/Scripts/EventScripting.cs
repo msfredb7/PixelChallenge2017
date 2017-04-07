@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class EventScripting {
 
-    List<Item> randomItemBank1 = new List<Item>();
-    // randomItemBank1.Add(...)
-
     List<Item> randomItemBank2 = new List<Item>();
     // randomItemBank2.Add(...);
+
+    List<Item> randomItemBank3 = new List<Item>();
+    // randomItemBank3.Add(...);
 
     public static int currentEvent = 0;
 	public static void Init(Voiture car)
@@ -19,9 +19,23 @@ public class EventScripting {
         // Evenement a faire...
 
         List<ItemAVendre> itemDepanneur22km = new List<ItemAVendre>();
+        itemDepanneur22km.Add(new ItemAVendre(ItemBank.GetItemByIndex(2), 5, 3));
+        itemDepanneur22km.Add(new ItemAVendre(ItemBank.GetItemByIndex(3), 3, 3));
+        itemDepanneur22km.Add(new ItemAVendre(ItemBank.GetItemByIndex(4), 2, 3));
+
         List<ItemAVendre> itemStation40km = new List<ItemAVendre>();
+        itemStation40km.Add(new ItemAVendre(ItemBank.GetItemByIndex(5), 7, 6));
+        itemStation40km.Add(new ItemAVendre(ItemBank.GetItemByIndex(6), 4, 6));
+        itemStation40km.Add(new ItemAVendre(ItemBank.GetItemByIndex(7), 3, 6));
+
         List<ItemAVendre> itemRestaurant47km = new List<ItemAVendre>();
+        itemRestaurant47km.Add(new ItemAVendre(ItemBank.GetItemByIndex(0), 7, 3));
+        itemRestaurant47km.Add(new ItemAVendre(ItemBank.GetItemByIndex(1), 6, 3));
+
         List<ItemAVendre> itemGarage62km = new List<ItemAVendre>();
+        itemGarage62km.Add(new ItemAVendre(ItemBank.GetItemByIndex(8), 25, 1));
+        itemGarage62km.Add(new ItemAVendre(ItemBank.GetItemByIndex(9), 20, 1));
+        itemGarage62km.Add(new ItemAVendre(ItemBank.GetItemByIndex(10), 5, 5));
 
         List<Stop> stopRoad1 = new List<Stop>();
         Stop depanneur22km = new Stop(22, LieuType.depaneur, itemDepanneur22km);
