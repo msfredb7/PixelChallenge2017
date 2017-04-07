@@ -2,4 +2,4 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum LieuType { stationEssence, laveAuto, depaneur, Montreal, Quebec, TroisRiviere, SeptIles, restaurant, garage, costco };
+public enum LieuType { stationEssence, laveAuto, depaneur, Montreal, Quebec, TroisRiviere, SeptIles, restaurant, garage, costco, arretBus };
