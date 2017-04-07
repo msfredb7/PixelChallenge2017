@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using CCC.Manager;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,7 +20,10 @@ public class QuestManager : PublicSingleton<QuestManager> {
             return;
 
         // Debut de l'event
-        quest.OnBegin();
+        DelayManager.CallTo(delegate ()
+        {
+            quest.OnBegin();
+        },3);
         questList.Add(quest);
 
         // UI Quete

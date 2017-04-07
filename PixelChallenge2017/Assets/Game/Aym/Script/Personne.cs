@@ -12,6 +12,7 @@ public class Personne : Item {
 
     public float _food;
     public float consomation;
+    public float maxFood;
 
     public SpriteRenderer hummeur;
 
@@ -28,13 +29,18 @@ public class Personne : Item {
             if(_food < 0)
             {
                 OnNoFodd();
+                food = 0;
+            }
+            if(food>maxFood)
+            {
+                food = maxFood;
             }
         }
     }
 
     private void UpdateRepresentation()
     {
-        float green = (food * 0.01f);
+        float green = (food/maxFood);
         float red = 1-green;
         hummeur.color = new Color(red, green, 0);
     }
@@ -48,6 +54,10 @@ public class Personne : Item {
 	protected override void Start () {
         base.Start();
         rend.Remove(hummeur);
+        if(maxFood <=_food)
+        {
+            maxFood = _food;
+        }
 	}
 	
 	// Update is called once per frame

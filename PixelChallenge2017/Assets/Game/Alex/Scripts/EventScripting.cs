@@ -128,11 +128,102 @@ public class EventScripting
                 Ville depart = new Ville("Montreal");
                 Ville destination = new Ville("Trois-Riviere");
 
-                // Evenement a faire...
+                // Objets des magasins
+                List<ItemAVendre> itemCostco5km = new List<ItemAVendre>();
+                itemCostco5km.Add(new ItemAVendre(ItemBank.GetItemByIndex(0), 5, 3));
+                itemCostco5km.Add(new ItemAVendre(ItemBank.GetItemByIndex(5), 5, 3));
+                itemCostco5km.Add(new ItemAVendre(ItemBank.GetItemByIndex(8), 10, 3));
+
+                List<ItemAVendre> itemGarage21km = new List<ItemAVendre>();
+                itemGarage21km.Add(new ItemAVendre(ItemBank.GetItemByIndex(8), 27, 1));
+                itemGarage21km.Add(new ItemAVendre(ItemBank.GetItemByIndex(9), 21, 1));
+                itemGarage21km.Add(new ItemAVendre(ItemBank.GetItemByIndex(10), 6, 5));
+
+                List<ItemAVendre> itemStation37km = new List<ItemAVendre>();
+                itemStation37km.Add(new ItemAVendre(ItemBank.GetItemByIndex(5), 8, 6));
+                itemStation37km.Add(new ItemAVendre(ItemBank.GetItemByIndex(6), 5, 6));
+                itemStation37km.Add(new ItemAVendre(ItemBank.GetItemByIndex(7), 4, 6));
+
+                List<ItemAVendre> itemDepanneur56km = new List<ItemAVendre>();
+                itemDepanneur56km.Add(new ItemAVendre(ItemBank.GetItemByIndex(2), 6, 3));
+                itemDepanneur56km.Add(new ItemAVendre(ItemBank.GetItemByIndex(3), 4, 3));
+                itemDepanneur56km.Add(new ItemAVendre(ItemBank.GetItemByIndex(4), 3, 3));
+
+                List<ItemAVendre> itemRestaurant70km = new List<ItemAVendre>();
+                itemRestaurant70km.Add(new ItemAVendre(ItemBank.GetItemByIndex(0), 7, 3));
+                itemRestaurant70km.Add(new ItemAVendre(ItemBank.GetItemByIndex(1), 6, 3));
+
+                List<ItemAVendre> itemGarage91km = new List<ItemAVendre>();
+                itemGarage91km.Add(new ItemAVendre(ItemBank.GetItemByIndex(8), 28, 1));
+                itemGarage91km.Add(new ItemAVendre(ItemBank.GetItemByIndex(9), 22, 1));
+                itemGarage91km.Add(new ItemAVendre(ItemBank.GetItemByIndex(10), 7, 5));
+
+                List<ItemAVendre> itemStation100km = new List<ItemAVendre>();
+                itemStation100km.Add(new ItemAVendre(ItemBank.GetItemByIndex(5), 9, 6));
+                itemStation100km.Add(new ItemAVendre(ItemBank.GetItemByIndex(6), 6, 6));
+                itemStation100km.Add(new ItemAVendre(ItemBank.GetItemByIndex(7), 5, 6));
+
+                List<ItemAVendre> itemRestaurant112km = new List<ItemAVendre>();
+                itemRestaurant112km.Add(new ItemAVendre(ItemBank.GetItemByIndex(0), 7, 3));
+                itemRestaurant112km.Add(new ItemAVendre(ItemBank.GetItemByIndex(1), 6, 3));
+
+                List<ItemAVendre> itemCostco135km = new List<ItemAVendre>();
+                itemCostco135km.Add(new ItemAVendre(ItemBank.GetItemByIndex(0), 5, 3));
+                itemCostco135km.Add(new ItemAVendre(ItemBank.GetItemByIndex(5), 5, 3));
+                itemCostco135km.Add(new ItemAVendre(ItemBank.GetItemByIndex(8), 10, 3));
+                itemGarage91km.Add(new ItemAVendre(ItemBank.GetItemByIndex(9), 22, 1));
+
+
+                // Magasins
+                List<Stop> stopRoad2 = new List<Stop>();
+                Stop costco5km = new Stop(5, LieuType.costco, itemCostco5km);
+                Stop garage21km = new Stop(21, LieuType.garage, itemGarage21km);
+                Stop station37km = new Stop(21, LieuType.stationEssence, itemStation37km);
+                Stop depanneur56km = new Stop(21, LieuType.depaneur, itemDepanneur56km);
+                Stop restaurant70km = new Stop(21, LieuType.restaurant, itemRestaurant70km);
+                Stop garage91km = new Stop(21, LieuType.garage, itemGarage91km);
+                Stop station100km = new Stop(21, LieuType.stationEssence, itemStation100km);
+                Stop restaurant112km = new Stop(21, LieuType.restaurant, itemRestaurant112km);
+                Stop costco135km = new Stop(21, LieuType.costco, itemCostco135km);
+
+                stopRoad2.Add(costco5km);
+                stopRoad2.Add(garage21km);
+                stopRoad2.Add(station37km);
+                stopRoad2.Add(depanneur56km);
+                stopRoad2.Add(restaurant70km);
+                stopRoad2.Add(garage91km);
+                stopRoad2.Add(station100km);
+                stopRoad2.Add(restaurant112km);
+                stopRoad2.Add(costco135km);
+
+
+                // Quetes
+                Stop gary10km = new Stop(10, LieuType.arretBus);
+                Stop mariepier30km = new Stop(30, LieuType.arretBus);
+                Stop bob49km = new Stop(49, LieuType.arretBus);
+                Stop maxime62km = new Stop(62, LieuType.arretBus);
+                Stop jeremy100km = new Stop(100, LieuType.arretBus);
+
+                stopRoad2.Add(gary10km);
+                stopRoad2.Add(mariepier30km);
+                stopRoad2.Add(bob49km);
+                stopRoad2.Add(maxime62km);
+                stopRoad2.Add(jeremy100km);
+
+                List<Quest> questRoad1 = new List<Quest>();
+                questRoad1.Add(new Quest("Déposer le mystérieux monsieur et ses nombreux chapeaux à Trois-Rivière", 0, 0, new Quest.Destination(destination, null)));
+                questRoad1.Add(new Quest("Déposer Gary et son matériel informatique à Trois-Rivière", 10, 0, new Quest.Destination(destination, null)));
+                questRoad1.Add(new Quest("Déposer Marie-Pier et ses bagages jusqu'à la prochaine épicerie", 30, 0, new Quest.Destination(null, restaurant70km)));
+                questRoad1.Add(new Quest("Déposer Bob au prochain garage", 49, 0, new Quest.Destination(null, garage91km)));
+                questRoad1.Add(new Quest("Déposer Maxime et ses meubles à Trois-Rivière", 62, 0, new Quest.Destination(destination,null)));
+                questRoad1.Add(new Quest("Déposer Jeremy à la prochaine épicerie", 100, 0, new Quest.Destination(null, restaurant112km)));
+
 
                 Road newRoad = new Road(depart, destination, null, null, null, null, 5);
                 RoadManager.instance.SetRoad(newRoad);
                 currentEvent++;
+
+
                 break;
             case 1:
                 Ville depart1 = new Ville("Trois-Riviere");
