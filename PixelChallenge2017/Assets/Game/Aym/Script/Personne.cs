@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Personne : Item {
 
+    public string nom;
+
     public LieuType objectifStop;
 
     public float cashValue;
