@@ -738,6 +738,7 @@ MonoBehaviour:
   Gauche: {fileID: 114923684541325896}
   Bas: {fileID: 0}
   _caseOccupe: 0
+  _caseHovered: 0
   caseType: 0
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
   standardMat: {fileID: 0}
@@ -759,6 +760,7 @@ MonoBehaviour:
   Gauche: {fileID: 114989812589494404}
   Bas: {fileID: 114923684541325896}
   _caseOccupe: 0
+  _caseHovered: 0
   caseType: 0
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
   standardMat: {fileID: 0}
@@ -785,6 +787,7 @@ MonoBehaviour:
   itemShape: []
   offsetX: 1
   offsetY: 1
+  centralCase: {fileID: 0}
 --- !u!114 &114405453190920926
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -803,6 +806,7 @@ MonoBehaviour:
   Gauche: {fileID: 0}
   Bas: {fileID: 0}
   _caseOccupe: 0
+  _caseHovered: 0
   caseType: 0
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
   standardMat: {fileID: 0}
@@ -824,6 +828,7 @@ MonoBehaviour:
   Gauche: {fileID: 0}
   Bas: {fileID: 114989812589494404}
   _caseOccupe: 0
+  _caseHovered: 0
   caseType: 0
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
   standardMat: {fileID: 0}
@@ -845,6 +850,7 @@ MonoBehaviour:
   Gauche: {fileID: 114060823237563778}
   Bas: {fileID: 114022742645225104}
   _caseOccupe: 0
+  _caseHovered: 0
   caseType: 0
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
   standardMat: {fileID: 0}
@@ -866,6 +872,7 @@ MonoBehaviour:
   Gauche: {fileID: 0}
   Bas: {fileID: 114846771437532508}
   _caseOccupe: 0
+  _caseHovered: 0
   caseType: 0
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
   standardMat: {fileID: 0}
@@ -887,6 +894,7 @@ MonoBehaviour:
   Gauche: {fileID: 114405453190920926}
   Bas: {fileID: 0}
   _caseOccupe: 0
+  _caseHovered: 0
   caseType: 0
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
   standardMat: {fileID: 0}
@@ -908,6 +916,7 @@ MonoBehaviour:
   Gauche: {fileID: 0}
   Bas: {fileID: 114405453190920926}
   _caseOccupe: 0
+  _caseHovered: 0
   caseType: 0
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
   standardMat: {fileID: 0}
