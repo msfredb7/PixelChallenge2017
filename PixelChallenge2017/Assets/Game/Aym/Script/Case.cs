@@ -41,8 +41,36 @@ public class Case : MonoBehaviour {
     public Case Bas;
     #endregion
 
-    public bool caseOccupe;
+    public bool _caseOccupe;
+
+    public bool caseOccupe
+    {
+        get
+        {
+            return _caseOccupe;
+        }
+        set
+        {
+            _caseOccupe = value;
+            if(_caseOccupe == true)
+            {
+                GetComponent<Renderer>().material = occupedMat;
+            }
+            else
+            {
+                GetComponent<Renderer>().material = standardMat;
+            }
+        }
+    }
+
     public CaseType caseType;
 
+    public Material occupedMat;
+    private Material standardMat;
 
+    public void Start()
+    {
+        standardMat = GetComponent<Renderer>().material;
+    }
+    
 }

@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 114238869194367838}
   - component: {fileID: 114577005644065876}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: testobject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -477,11 +477,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68eb26ebc6825cd4382651816bca1997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _posX: 0
+  _posY: 0
   Haut: {fileID: 0}
   Droite: {fileID: 0}
   Gauche: {fileID: 0}
   Bas: {fileID: 114518773772147708}
   caseOccupe: 0
+  caseType: 0
 --- !u!114 &114159015888771132
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -493,11 +496,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68eb26ebc6825cd4382651816bca1997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _posX: 0
+  _posY: 0
   Haut: {fileID: 0}
   Droite: {fileID: 114396065596054368}
   Gauche: {fileID: 0}
   Bas: {fileID: 0}
   caseOccupe: 0
+  caseType: 0
 --- !u!114 &114238869194367838
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -533,11 +539,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68eb26ebc6825cd4382651816bca1997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _posX: 0
+  _posY: 0
   Haut: {fileID: 0}
   Droite: {fileID: 114518773772147708}
   Gauche: {fileID: 114159015888771132}
   Bas: {fileID: 0}
   caseOccupe: 0
+  caseType: 0
 --- !u!114 &114518773772147708
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -549,11 +558,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68eb26ebc6825cd4382651816bca1997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _posX: 0
+  _posY: 0
   Haut: {fileID: 114023891913060214}
   Droite: {fileID: 0}
   Gauche: {fileID: 114396065596054368}
   Bas: {fileID: 114840027891655644}
   caseOccupe: 0
+  caseType: 0
 --- !u!114 &114577005644065876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -577,8 +589,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68eb26ebc6825cd4382651816bca1997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _posX: 0
+  _posY: 0
   Haut: {fileID: 114518773772147708}
   Droite: {fileID: 0}
   Gauche: {fileID: 0}
   Bas: {fileID: 0}
   caseOccupe: 0
+  caseType: 0
