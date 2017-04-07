@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114423644772353052}
   - component: {fileID: 114236672355354734}
   - component: {fileID: 114566943502292178}
+  - component: {fileID: 114008627890827066}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -69,6 +70,20 @@ MonoBehaviour:
   timeToIgnore: 0
   timeLastStop: 0
   buyButton: {fileID: 0}
+--- !u!114 &114008627890827066
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1205413928877120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e1528c66c6897641b83c728c3bb423b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bank: []
+  listePersonne:
+  - {fileID: 114113780328602324, guid: 354a658e47f97ad4ca6a136431c5637c, type: 2}
 --- !u!114 &114236672355354734
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -102,6 +117,21 @@ MonoBehaviour:
   TowingGas: 10
   gasText: {fileID: 0}
   cashText: {fileID: 0}
+  grille: {fileID: 0}
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &114566943502292178
 MonoBehaviour:
   m_ObjectHideFlags: 1
