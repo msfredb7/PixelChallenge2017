@@ -5,15 +5,44 @@ using UnityEngine;
 public class EventScripting {
 
     public static int currentEvent = 0;
-
 	public static void Init(Voiture car)
     {
         Ville depart = new Ville("St-Stanislas");
         Ville destination = new Ville("Montreal");
 
-        // Evennement a faire...
+        // Evenement a faire...
 
-        Road newRoad = new Road(depart, destination, null, null, null, 5);
+        List<Stop> stopRoad1 = new List<Stop>();
+        List<ItemAVendre> depanneur22km = new List<ItemAVendre>();
+        List<ItemAVendre> station40km = new List<ItemAVendre>();
+        List<ItemAVendre> restaurant47km = new List<ItemAVendre>();
+        List<ItemAVendre> garage62km = new List<ItemAVendre>();
+
+        List<Item> randomItemBank1 = new List<Item>();
+        // randomItemBank1.Add(...);
+
+        List<Item> randomItemBank2 = new List<Item>();
+        // randomItemBank2.Add(...);
+
+        List<ItemEvent> itemEventRoad1 = new List<ItemEvent>();
+        // ItemEvent item29km = new ItemEvent(29)
+        // ItemEvent item35km = new ItemEvent(35)
+        // ItemEvent item52km = new ItemEvent(52)
+        // ItemEvent item67km = new ItemEvent(67)
+
+        // itemEventRoad1.Add(item29km);
+        // itemEventRoad1.Add(item35km);
+        // itemEventRoad1.Add(item52km);
+        // itemEventRoad1.Add(item67km);
+
+        // depanneur22km.Add(new ItemAVendre, )
+        // stopRoad1.Add(new Stop(22,));
+
+        QuestManager.instance.AddQuest(new Quest("Charles-Montreal"));
+        QuestManager.instance.AddQuest(new Quest("Marc-Station"));
+        QuestManager.instance.AddQuest(new Quest("Monique-Montreal"));
+
+        Road newRoad = new Road(depart, destination, stopRoad1, null,itemEventRoad1,70);
         RoadManager.instance.SetRoad(newRoad);
     }
 
