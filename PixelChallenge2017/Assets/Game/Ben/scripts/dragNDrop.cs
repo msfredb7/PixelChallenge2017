@@ -24,6 +24,8 @@ public class dragNDrop : MonoBehaviour {
             Vector3 objPos = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, depth));
             objPos.y = 0.1f;
             transform.position = objPos;
+            gameObject.SendMessage("OnDrag");
+
         }
     }
 
@@ -40,6 +42,4 @@ public class dragNDrop : MonoBehaviour {
         gameObject.SendMessage("EndDrag");
 
     }
-
-    
 } 

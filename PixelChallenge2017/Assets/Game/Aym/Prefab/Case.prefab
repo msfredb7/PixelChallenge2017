@@ -113,7 +113,9 @@ MonoBehaviour:
   Gauche: {fileID: 0}
   Bas: {fileID: 0}
   _caseOccupe: 0
+  _caseHovered: 0
   caseType: 0
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
   standardMat: {fileID: 0}
-  abimeMat: {fileID: 2100000, guid: 4ca2c299d2f79ca449373e49df1e435d, type: 2}
+  standardAlpha: 50
+  hoveredAlpha: 150
