@@ -15,6 +15,8 @@ public class Road {
 
     public List<ItemEvent> itemEventList = new List<ItemEvent>();
 
+    public List<Quest> questList = new List<Quest>();
+
     public Road(Ville depart, Ville destination, List<Stop> stopList, List<SpecialEvent> specialEventList, List<ItemEvent> itemEventList, float distance)
     {
         currentDepart = depart;
@@ -72,6 +74,23 @@ public class Road {
                 resultEvent = stopList[i];
             if (itemEventList[i].distance > resultEvent.distance)
                 resultEvent = stopList[i];
+        }
+        return resultEvent;
+    }
+
+    public Quest GetNextQuest(float distance)
+    {
+        if (questList == null)
+            return null;
+
+        Quest resultEvent = null;
+
+        for (int i = 0; i < questList.Count; i++)
+        {
+            if (resultEvent == null)
+                resultEvent = questList[i];
+            if (itemEventList[i].distance > resultEvent.distance)
+                resultEvent = questList[i];
         }
         return resultEvent;
     }

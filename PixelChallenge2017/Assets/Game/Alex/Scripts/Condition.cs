@@ -17,6 +17,19 @@ public class Condition : MonoBehaviour {
     public Condition(Ville destination)
     {
         currentCondition = conditionType.Destination;
+    }
 
+    public bool ConditionDone()
+    {
+        switch (currentCondition)
+        {
+            case conditionType.Destination:
+                if (RoadManager.instance.IsArrived())
+                    return true;
+                break;
+            case conditionType.Item:
+                break;
+        }
+        return false;
     }
 }

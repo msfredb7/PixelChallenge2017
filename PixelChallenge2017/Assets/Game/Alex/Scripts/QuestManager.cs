@@ -8,7 +8,7 @@ public class QuestManager : PublicSingleton<QuestManager> {
     public GameObject container;
     public GameObject textObject;
 
-    public List<Quest> quesList = new List<Quest>();
+    public List<Quest> questList = new List<Quest>();
 
     public int nbMax;
     public int currentNbQuest = 0;
@@ -25,7 +25,7 @@ public class QuestManager : PublicSingleton<QuestManager> {
             return;
         GameObject newQuest = Instantiate(textObject, container.transform);
         quest.OnBegin();
-        quesList.Add(quest);
+        questList.Add(quest);
         newQuest.GetComponent<Text>().text = quest.questDescription;
         currentNbQuest++;
     }
