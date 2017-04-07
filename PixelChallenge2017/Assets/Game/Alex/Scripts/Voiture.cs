@@ -12,6 +12,9 @@ public class Voiture {
 
     public bool IsRunning;
 
+    public List<Item> listItems = new List<Item>();
+    public List<Quest.ItemQuest> listSpecialItems = new List<Quest.ItemQuest>();
+
     public Voiture(float cash, float gas)
     {
         this.cash = cash;

@@ -81,7 +81,6 @@ public class RoadManager : PublicSingleton<RoadManager> {
 
                 // clean up
                 GameManager.instance.car.IsRunning = false;
-                
 
                 onDestinationReached.Invoke();
             }

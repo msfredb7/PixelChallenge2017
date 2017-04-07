@@ -10,8 +10,6 @@ public class Stop {
 
     public LieuType lieu;
 
-    public UnityEvent onEventComplete = new UnityEvent();
-
     public List<ItemAVendre> listItems = new List<ItemAVendre>();
 
     public Stop(float distance, LieuType lieu, List<ItemAVendre> listItems = null)

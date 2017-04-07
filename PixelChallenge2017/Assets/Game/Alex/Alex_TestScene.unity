@@ -301,7 +301,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4249314586145012, guid: b189d9f21358bfb4385fe95521b03c1a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4249314586145012, guid: b189d9f21358bfb4385fe95521b03c1a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -531,7 +531,7 @@ Canvas:
   m_GameObject: {fileID: 1162029273}
   m_Enabled: 1
   serializedVersion: 2
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
