@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemAVendre : MonoBehaviour {
+public class ItemAVendre {
 
     public Item item;
     public float cost;

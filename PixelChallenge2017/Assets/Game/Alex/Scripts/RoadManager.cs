@@ -33,6 +33,7 @@ public class RoadManager : PublicSingleton<RoadManager> {
 
             if(currentDistance > (lastPrint + 1))
             {
+                GameManager.instance.car.ChangeGas(-1);
                 print("They see me rollin' ! They hatin' ( Distance : " + lastPrint + "km )");
                 lastPrint++;
             }
@@ -44,7 +45,6 @@ public class RoadManager : PublicSingleton<RoadManager> {
 
             if (nextStop != null && nextStop.distance <= currentDistance)
             {
-                nextStop.onEventComplete.AddListener(ContinueRoadTrip);
                 GameManager.instance.car.IsRunning = false;
                 timeLastStop = Time.time;
                 nextStop.StartEvent();
@@ -82,7 +82,6 @@ public class RoadManager : PublicSingleton<RoadManager> {
 
                 // clean up
                 GameManager.instance.car.IsRunning = false;
-                
 
                 onDestinationReached.Invoke();
             }
