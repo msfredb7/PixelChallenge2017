@@ -12,6 +12,10 @@ public class TestScript_Fred : MonoBehaviour {
         {
             GlobalAnimator.StopAt(LieuType.stationEssence);
         }
-		
-	}
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            GlobalAnimator.StopAt(LieuType.Montreal);
+        }
+
+    }
 }
