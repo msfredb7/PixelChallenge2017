@@ -6,8 +6,8 @@ public class Case : MonoBehaviour {
 
 
     #region position
-    private int _posX;
-    private int _posY;
+    public int _posX;
+    public int _posY;
 
     public int posX
     {
@@ -42,6 +42,7 @@ public class Case : MonoBehaviour {
     #endregion
 
     public bool caseOccupe;
+    public CaseType caseType;
 
 
 }
