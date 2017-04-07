@@ -76,6 +76,7 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
         float duration = -1;
         float delayBeforeStop = 0;
         float decelerateDuration = 3;
+        bool continueButton = true;
         switch (type)
         {
             case LieuType.stationEssence:
@@ -84,6 +85,7 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
                 delayBeforeStop = 0.75f;
                 break;
             case LieuType.nullePart:
+                continueButton = false;
                 duration = -1;
                 break;
             case LieuType.depaneur:
@@ -130,6 +132,9 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
         {
             if (onStopComplete != null)
                 onStopComplete.Invoke();
+            
+            if (continueButton)
+                PewDiePieUI.instance.continueButton.gameObject.SetActive(true);
 
             if(duration >= 0)
                 CCC.Manager.DelayManager.CallTo(delegate ()

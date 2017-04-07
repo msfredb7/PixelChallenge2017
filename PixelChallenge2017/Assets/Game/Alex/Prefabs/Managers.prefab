@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startCash: 50
-  startGas: 5
+  startGas: 50
   startFood: 10
   TowingCost: 1
   TowingGas: 10
