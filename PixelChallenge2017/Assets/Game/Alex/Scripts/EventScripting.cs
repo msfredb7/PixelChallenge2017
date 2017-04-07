@@ -19,12 +19,25 @@ public class EventScripting {
 
         // Evenement a faire...
 
+        List<ItemAVendre> itemDepanneur22km = new List<ItemAVendre>();
+        List<ItemAVendre> itemStation40km = new List<ItemAVendre>();
+        List<ItemAVendre> itemRestaurant47km = new List<ItemAVendre>();
+        List<ItemAVendre> itemGarage62km = new List<ItemAVendre>();
+
         List<Stop> stopRoad1 = new List<Stop>();
-        List<ItemAVendre> depanneur22km = new List<ItemAVendre>();
-        List<ItemAVendre> station40km = new List<ItemAVendre>();
-        List<ItemAVendre> restaurant47km = new List<ItemAVendre>();
-        List<ItemAVendre> garage62km = new List<ItemAVendre>();
-        
+        Stop depanneur22km = new Stop(22, null, itemDepanneur22km);
+        Stop station40km = new Stop(40, null, itemStation40km);
+        Stop restaurant47km = new Stop(47, null, itemRestaurant47km);
+        Stop garage62km = new Stop(62, null, itemGarage62km);
+
+
+        stopRoad1.Add(depanneur22km);
+        stopRoad1.Add(station40km);
+        stopRoad1.Add(restaurant47km);
+        stopRoad1.Add(garage62km);
+
+
+
         List<ItemEvent> itemEventRoad1 = new List<ItemEvent>();
         // ItemEvent item29km = new ItemEvent(29)
         // ItemEvent item35km = new ItemEvent(35)
@@ -40,9 +53,9 @@ public class EventScripting {
         // stopRoad1.Add(new Stop(22,));
 
         List<Quest> questRoad1 = new List<Quest>();
-        questRoad1.Add(new Quest("Charles-Montreal", 10, destination));
-        // questRoad1.Add(new Quest("Marc-Station", 17, ));
-        questRoad1.Add(new Quest("Monique-Montreal", 57, destination));
+        questRoad1.Add(new Quest("Charles-Montreal", 10, new Quest.Destination(destination,null)));
+        questRoad1.Add(new Quest("Marc-Station", 10, new Quest.Destination(null,station40km)));
+        questRoad1.Add(new Quest("Monique-Montreal", 57, new Quest.Destination(destination, null)));
 
         Road newRoad = new Road(depart, destination, stopRoad1, null,itemEventRoad1,questRoad1,70);
         RoadManager.instance.SetRoad(newRoad);
@@ -78,7 +91,7 @@ public class EventScripting {
 
                 // Evenement a faire...
 
-                Road newRoad2 = new Road(depart2, destination2, null, null, null,null 5);
+                Road newRoad2 = new Road(depart2, destination2, null, null, null,null, 5);
                 RoadManager.instance.SetRoad(newRoad2);
                 currentEvent++;
                 break;
