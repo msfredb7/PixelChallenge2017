@@ -41,7 +41,7 @@ public class Case : MonoBehaviour {
     public Case Bas;
     #endregion
 
-
+    public bool caseOccupe;
 
 
 }
