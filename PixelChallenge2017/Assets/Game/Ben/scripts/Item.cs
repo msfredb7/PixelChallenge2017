@@ -82,8 +82,13 @@ public class Item : MonoBehaviour {
                 {
                     GameManager.instance.car.listItems.Remove(this);
                 }
+                GlobalAnimator.AddFloatingItem(gameObject);
             }
-            
+            if (_placementState != ItemState.notPlaced)
+            {
+                GlobalAnimator.RemoveFloatingItem(gameObject);
+            }
+
         }
     }
 
