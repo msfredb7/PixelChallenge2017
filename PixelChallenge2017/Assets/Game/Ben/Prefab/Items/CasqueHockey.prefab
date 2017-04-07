@@ -610,7 +610,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &65053903675337738
 BoxCollider:
@@ -683,3 +683,4 @@ MonoBehaviour:
   itemShape: []
   offsetX: 1
   offsetY: 1
+  centralCase: {fileID: 0}

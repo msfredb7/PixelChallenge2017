@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class EventScripting {
 
-    CCC.Utility.RandomList<Item> randomItemFood = new CCC.Utility.RandomList<Item>(new List<Item>()
-    {
-        ItemBank.GetItemByIndex(2),
-    });
-
     List<Item> randomItemBank2 = new List<Item>();
     // randomItemBank2.Add(...);
 

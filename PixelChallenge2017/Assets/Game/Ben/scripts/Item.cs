@@ -32,7 +32,7 @@ public class Item : MonoBehaviour {
     Case beforePlacement;
     private Vector3 posBeforePlacement;
 
-    SpriteRenderer rend;
+    List<SpriteRenderer> rend;
     ItemState _placementState;
 
     ItemState placementState
@@ -46,12 +46,23 @@ public class Item : MonoBehaviour {
             _placementState = value;
             if(_placementState == ItemState.placed || _placementState == ItemState.onDragPlacable)
             {
-                if(rend != null)
-                     rend.color = Color.white;
+                if(rend.Count > 0)
+                {
+                    foreach(SpriteRenderer r in rend)
+                    {
+                        r.color = Color.white;
+                    }
+                }
+                    
             }else if (_placementState == ItemState.notPlaced || _placementState == ItemState.onDragUnplacable)
             {
-                if (rend != null)
-                    rend.color = Color.red;
+                if (rend.Count > 0)
+                {
+                    foreach (SpriteRenderer r in rend)
+                    {
+                        r.color = Color.red;
+                    }
+                }
             }
         }
     }
@@ -189,7 +200,9 @@ public class Item : MonoBehaviour {
         collidedCase = new List<Case>();
         occupedCase = new List<Case>();
         tempoHovered = new List<Case>();
-        rend = GetComponent<SpriteRenderer>();
+        rend = new List<SpriteRenderer>();
+        rend.AddRange(GetComponents<SpriteRenderer>());
+        rend.AddRange(GetComponentsInChildren<SpriteRenderer>());
 
 
         
