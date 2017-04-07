@@ -13,12 +13,6 @@ public class QuestManager : PublicSingleton<QuestManager> {
     public int nbMax;
     public int currentNbQuest = 0;
 
-    void Update()
-    {
-        // Check Quest State
-
-    }
-
     public void AddQuest(Quest quest)
     {
         if (currentNbQuest >= nbMax)

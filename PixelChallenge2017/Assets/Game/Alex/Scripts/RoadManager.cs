@@ -8,6 +8,7 @@ public class RoadManager : PublicSingleton<RoadManager> {
     public Road currentRoad;
 
     public UnityEvent onDestinationReached = new UnityEvent();
+    public UnityEvent onStopReached = new UnityEvent();
 
     [HideInInspector]
     public float startTime = 0;
@@ -41,6 +42,8 @@ public class RoadManager : PublicSingleton<RoadManager> {
                 GameManager.instance.car.IsRunning = false;
                 timeLastStop = Time.time;
                 nextStop.StartEvent();
+                currentRoad.currentStop = nextStop;
+                onStopReached.Invoke();
             }
 
             if (nextEvent != null && nextEvent.distance <= currentDistance)

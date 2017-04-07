@@ -7,6 +7,8 @@ public class Road {
     public Ville currentDepart;
     public Ville currentDestination;
 
+    public Stop currentStop;
+
     public float distance; // distance entre depart et destination (temps de la route)
 
     public List<Stop> stopList = new List<Stop>();
