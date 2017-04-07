@@ -110,7 +110,7 @@ public class Case : MonoBehaviour {
         try
         {
 
-        if(gr != null)
+        if(gr != null )
         {
             return gr.grille[posX + xOffSet][posY - yOffSet];
         }
@@ -120,7 +120,10 @@ public class Case : MonoBehaviour {
         {
             return null;
         }
-
+        catch (NullReferenceException e)
+        {
+            return null;
+        }
         Case actCase = this;
 
         if(xOffSet<0)

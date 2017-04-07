@@ -28,6 +28,7 @@ public class Nourriture : Item {
             {
                 Personne p = (Personne)it;
                 p.food += ValeurNourriture;
+                clearCase();
                 Destroy(gameObject);
                 return;
             }
