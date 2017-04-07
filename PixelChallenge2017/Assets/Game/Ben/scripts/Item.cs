@@ -32,6 +32,10 @@ public class Item : MonoBehaviour {
     Case beforePlacement;
     private Vector3 posBeforePlacement;
 
+    bool doubledSize;
+    public float scaleFacteur;
+
+
     protected List<SpriteRenderer> rend;
     ItemState _placementState;
 
@@ -89,10 +93,20 @@ public class Item : MonoBehaviour {
                     }
                     
                 }
+                if (!doubledSize)
+                {
+                    gameObject.transform.localScale *= scaleFacteur;
+                    doubledSize = true;
+                }
                 GlobalAnimator.AddFloatingItem(gameObject);
             }
             if (_placementState != ItemState.notPlaced)
             {
+                if(doubledSize)
+                {
+                    gameObject.transform.localScale /= scaleFacteur;
+                    doubledSize = false;
+                }
                 GlobalAnimator.RemoveFloatingItem(gameObject);
             }
 
@@ -226,6 +240,11 @@ public class Item : MonoBehaviour {
         {
             allItem = new List<Item>();
         }
+
+        if(scaleFacteur <= 0)
+        {
+            scaleFacteur = 1;
+        }
         allItem.Add(this);
         checkOffset();
         colIn = new List<Collider>();
@@ -260,6 +279,17 @@ public class Item : MonoBehaviour {
         {
             placementState = ItemState.notPlaced;
         }
+
+        if(placementState == ItemState.notPlaced)
+        {
+            if(doubledSize != true)
+            {
+                gameObject.transform.localScale *= scaleFacteur;
+                doubledSize = true;
+            }
+
+        }
+
         
 	}
 

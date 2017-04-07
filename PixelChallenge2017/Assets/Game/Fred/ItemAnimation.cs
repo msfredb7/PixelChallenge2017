@@ -11,6 +11,13 @@ public class ItemAnimation : MonoBehaviour
     public float maxX;
     public float minX;
 
+    public GameObject toSpawnTest;
+
+    void Start()
+    {
+        Instantiate(toSpawnTest,transform.position,transform.rotation);
+    }
+
     void Update()
     {
         if (speed == 0)
