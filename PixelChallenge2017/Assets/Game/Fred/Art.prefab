@@ -427,6 +427,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1452822748837234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4778734585322586}
+  - component: {fileID: 114441494301224240}
+  m_Layer: 0
+  m_Name: Floating Items
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1549360548466720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,7 +1065,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1901015940095696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 8.22}
+  m_LocalPosition: {x: 0, y: 0, z: 8.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4259960813214126}
@@ -1064,6 +1080,7 @@ Transform:
   - {fileID: 4097716354845904}
   - {fileID: 4924023348479982}
   - {fileID: 4933924434666344}
+  - {fileID: 4778734585322586}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1475,6 +1492,19 @@ Transform:
   m_Father: {fileID: 4369619684515088}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: -90, z: 0}
+--- !u!4 &4778734585322586
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1452822748837234}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4249314586145012}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4779735105174748
 Transform:
   m_ObjectHideFlags: 1
@@ -1737,6 +1767,21 @@ MonoBehaviour:
   minX: -10
   maxZ: 95.5
   minZ: 70.4
+--- !u!114 &114441494301224240
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1452822748837234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afecbfacd6bcebf45aa8ef794b85ebae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 45
+  items: []
+  maxX: 65
+  minX: -17
 --- !u!114 &114445625183022684
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1765,6 +1810,7 @@ MonoBehaviour:
   building: {fileID: 114611327010780098}
   ville: {fileID: 114329540978808920}
   arretBus: {fileID: 114269757668364528}
+  items: {fileID: 114441494301224240}
 --- !u!114 &114573746786343856
 MonoBehaviour:
   m_ObjectHideFlags: 1

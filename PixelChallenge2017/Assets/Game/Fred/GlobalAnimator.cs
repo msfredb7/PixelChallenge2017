@@ -25,6 +25,7 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
     public BuildingAnimation building;
     public BuildingAnimation ville;
     public BuildingAnimation arretBus;
+    public ItemAnimation items;
 
     void Stop(TweenCallback onComplete, float decelerateDuration = 3, float delay = 0)
     {
@@ -36,6 +37,7 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
             DOTween.To(() => sign.speed, x => sign.speed = x, 0, decelerateDuration).SetEase(Ease.InOutSine);
             DOTween.To(() => building.speed, x => building.speed = x, 0, decelerateDuration).SetEase(Ease.InOutSine);
             DOTween.To(() => arretBus.speed, x => arretBus.speed = x, 0, decelerateDuration).SetEase(Ease.InOutSine);
+            DOTween.To(() => items.speed, x => items.speed = x, 0, decelerateDuration).SetEase(Ease.InOutSine);
             DOTween.To(() => ville.speed, x => ville.speed = x, 0, decelerateDuration).SetEase(Ease.InOutSine).OnComplete(onComplete);
         }, delay);
     }
@@ -50,6 +52,7 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
         DOTween.To(() => sign.speed, x => sign.speed = x, speed, duration).SetEase(Ease.InOutSine);
         DOTween.To(() => building.speed, x => building.speed = x, speed, duration).SetEase(Ease.InOutSine);
         DOTween.To(() => arretBus.speed, x => arretBus.speed = x, speed, duration).SetEase(Ease.InOutSine);
+        DOTween.To(() => items.speed, x => items.speed = x, speed, duration).SetEase(Ease.InOutSine);
         DOTween.To(() => ville.speed, x => ville.speed = x, speed, duration).SetEase(Ease.InOutSine).OnComplete(onComplete);
     }
 
@@ -126,6 +129,16 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
                 instance.Run(onContinueTrip);
             }, duration);
         }, decelerateDuration, delayBeforeStop);
+    }
+
+    static public void AddFloatingItem(GameObject item)
+    {
+        if (!instance.items.items.Contains(item))
+            instance.items.items.Add(item);
+    }
+    static public void RemoveFloatingItem(GameObject item)
+    {
+        instance.items.items.Remove(item);
     }
 
 
