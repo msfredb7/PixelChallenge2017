@@ -13,6 +13,8 @@ public class Personne : Item {
     public float _food;
     public float consomation;
 
+    public SpriteRenderer hummeur;
+
     public float food
     {
         get
@@ -32,7 +34,9 @@ public class Personne : Item {
 
     private void UpdateRepresentation()
     {
-
+        float green = (food * 0.01f);
+        float red = 1-green;
+        hummeur.color = new Color(red, green, 0);
     }
 
     private void OnNoFodd()
@@ -43,7 +47,7 @@ public class Personne : Item {
 	// Use this for initialization
 	protected override void Start () {
         base.Start();
-		
+        rend.Remove(hummeur);
 	}
 	
 	// Update is called once per frame
