@@ -16,6 +16,6 @@ public class ItemEvent {
 
     public void StartEvent()
     {
-        // evennement d'un item
+        Debug.Log("Un item apparait sur le bord de la route");
     }
 }

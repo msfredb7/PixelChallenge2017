@@ -41,8 +41,9 @@ public class GameManager : PublicSingleton<GameManager> {
         EventScripting.NextEvents(car);
     }
 
-    public void CreateStop(GameObject stop)
+    public void CreateStop(LieuType lieu)
     {
         // Gere le spaw du prefab stop et set toute le reste
+
     }
 }

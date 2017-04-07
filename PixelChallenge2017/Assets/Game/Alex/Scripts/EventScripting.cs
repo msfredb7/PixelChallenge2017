@@ -24,10 +24,10 @@ public class EventScripting {
         List<ItemAVendre> itemGarage62km = new List<ItemAVendre>();
 
         List<Stop> stopRoad1 = new List<Stop>();
-        Stop depanneur22km = new Stop(22, null, itemDepanneur22km);
-        Stop station40km = new Stop(40, null, itemStation40km);
-        Stop restaurant47km = new Stop(47, null, itemRestaurant47km);
-        Stop garage62km = new Stop(62, null, itemGarage62km);
+        Stop depanneur22km = new Stop(22, LieuType.depaneur, itemDepanneur22km);
+        Stop station40km = new Stop(40, LieuType.stationEssence, itemStation40km);
+        Stop restaurant47km = new Stop(47, LieuType.restaurant, itemRestaurant47km);
+        Stop garage62km = new Stop(62, LieuType.garage, itemGarage62km);
 
         stopRoad1.Add(depanneur22km);
         stopRoad1.Add(station40km);

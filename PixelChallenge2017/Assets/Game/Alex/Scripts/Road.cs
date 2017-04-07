@@ -41,10 +41,15 @@ public class Road {
         {
             if (resultEvent == null)
                 resultEvent = itemEventList[i];
-            if (itemEventList[i].distance > resultEvent.distance)
+            if (itemEventList[i].distance < resultEvent.distance)
                 resultEvent = itemEventList[i];
         }
         return resultEvent;
+    }
+
+    public void RemoveItem(ItemEvent item)
+    {
+        itemEventList.Remove(item);
     }
 
     public SpecialEvent GetNextSpecialEvent(float distance)
@@ -58,10 +63,15 @@ public class Road {
         {
             if (resultEvent == null)
                 resultEvent = specialEventList[i];
-            if (itemEventList[i].distance > resultEvent.distance)
+            if (specialEventList[i].distance < resultEvent.distance)
                 resultEvent = specialEventList[i];
         }
         return resultEvent;
+    }
+
+    public void RemoveSpecialEvent(SpecialEvent specialEvent)
+    {
+        specialEventList.Remove(specialEvent);
     }
 
     public Stop GetNextStop(float distance)
@@ -75,10 +85,15 @@ public class Road {
         {
             if (resultEvent == null)
                 resultEvent = stopList[i];
-            if (itemEventList[i].distance > resultEvent.distance)
+            if (stopList[i].distance < resultEvent.distance)
                 resultEvent = stopList[i];
         }
         return resultEvent;
+    }
+
+    public void RemoveStop(Stop stop)
+    {
+        stopList.Remove(stop);
     }
 
     public Quest GetNextQuest(float distance)
@@ -92,9 +107,14 @@ public class Road {
         {
             if (resultEvent == null)
                 resultEvent = questList[i];
-            if (itemEventList[i].distance > resultEvent.distance)
+            if (questList[i].distance < resultEvent.distance)
                 resultEvent = questList[i];
         }
         return resultEvent;
+    }
+
+    public void RemoveQuestEvent(Quest quest)
+    {
+        questList.Remove(quest);
     }
 }
