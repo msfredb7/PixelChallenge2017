@@ -40,6 +40,13 @@ public class GameManager : PublicSingleton<GameManager> {
 
     public void OnDestinationReached()
     {
+        for (int i = 0; i < car.listSpecialItems.Count; i++)
+        {
+            car.ChangeCash(car.listSpecialItems[i].reward);
+            car.listItems.Remove(car.listSpecialItems[i].item);
+        }
+        car.listSpecialItems.Clear();
+
         EventScripting.NextEvents(car);
     }
 

@@ -64,6 +64,19 @@ public class Item : MonoBehaviour {
                     }
                 }
             }
+
+            if(_placementState == ItemState.placed)
+            {
+                if(GameManager.instance.car.listItems.Contains(this))
+                {
+                    GameManager.instance.car.listItems.Add(this);
+                }
+            }
+            if(_placementState == ItemState.notPlaced)
+            {
+                GameManager.instance.car.listItems.Remove(this);
+            }
+
         }
     }
 
@@ -154,7 +167,7 @@ public class Item : MonoBehaviour {
             }
             foreach (Case c in tryToOccupe)
             {
-                if (c.caseOccupe)
+                if (valideCase(c)==false)
                 {
                     canOccupe = false;
                 }
@@ -189,7 +202,7 @@ public class Item : MonoBehaviour {
 
     //public classCaseItem myCaseItem; 
 
-    void Start () {
+    protected virtual void Start () {
         if(allItem == null)
         {
             allItem = new List<Item>();
@@ -229,9 +242,9 @@ public class Item : MonoBehaviour {
         }
         
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    protected virtual void Update () {
 		
 	}
 
@@ -398,4 +411,12 @@ public class Item : MonoBehaviour {
             placementState = ItemState.onDragUnplacable;
         }
     }
+
+    virtual protected bool valideCase(Case c)
+    {
+        return !c._caseOccupe;
+    }
+
+
+
 }

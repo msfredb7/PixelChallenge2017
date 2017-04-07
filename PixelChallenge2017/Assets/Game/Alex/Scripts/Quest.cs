@@ -5,6 +5,18 @@ using UnityEngine.Events;
 
 public class Quest {
 
+    public class ItemQuest
+    {
+        public float reward;
+        public Item item;
+
+        public ItemQuest(Item item, float reward)
+        {
+            this.reward = reward;
+            this.item = item;
+        }
+    }
+
     public class Destination
     {
         public Ville ville;
@@ -34,9 +46,9 @@ public class Quest {
     public string questDescription;
 
     public Destination destination;
-    public List<Item> itemNecessaire = new List<Item>();
+    public List<ItemQuest> itemNecessaire = new List<ItemQuest>();
 
-    public Quest(string questDescription, float distance, Destination destination, List<Item> itemNecessaire = null)
+    public Quest(string questDescription, float distance, Destination destination, List<ItemQuest> itemNecessaire = null)
     {
         this.questDescription = questDescription;
         this.distance = distance;
@@ -44,9 +56,9 @@ public class Quest {
         if(itemNecessaire != null)
             this.itemNecessaire = itemNecessaire;
         if(destination.DestinationIsStop())
-            RoadManager.instance.onDestinationReached.AddListener(OnCityReached);
+            RoadManager.instance.onDestinationReached.AddListener(OnStopReached);
         else if(destination.DestinationIsCity())
-            RoadManager.instance.onStopReached.AddListener(OnStopReached);
+            RoadManager.instance.onStopReached.AddListener(OnCityReached);
     }
 
     public void OnBegin()
@@ -75,5 +87,10 @@ public class Quest {
     public void OnComplete()
     {
         Debug.Log("la quete est une reussite!");
+
+        for(int i = 0; i < GameManager.instance.car.listItems.Count; i++)
+        {
+            // todo
+        }
     }
 }
