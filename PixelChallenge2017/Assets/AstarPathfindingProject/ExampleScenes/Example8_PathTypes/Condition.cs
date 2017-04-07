@@ -18,6 +18,4 @@ public class Condition {
     {
 
     }
-
-    public void AddI
 }
