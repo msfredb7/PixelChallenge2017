@@ -43,16 +43,19 @@ public class Quest {
 
     public float distance;
 
+    public float recompense;
+
     public string questDescription;
 
     public Destination destination;
     public List<ItemQuest> itemNecessaire = new List<ItemQuest>();
 
-    public Quest(string questDescription, float distance, Destination destination, List<ItemQuest> itemNecessaire = null)
+    public Quest(string questDescription, float distance, float recompense, Destination destination, List<ItemQuest> itemNecessaire = null)
     {
         this.questDescription = questDescription;
         this.distance = distance;
         this.destination = destination;
+        this.recompense = recompense;
         if(itemNecessaire != null)
             this.itemNecessaire = itemNecessaire;
         if(destination.DestinationIsStop())
@@ -88,9 +91,19 @@ public class Quest {
     {
         Debug.Log("la quete est une reussite!");
 
-        for(int i = 0; i < GameManager.instance.car.listItems.Count; i++)
+        GameManager.instance.car.ChangeCash(recompense);
+
+        QuestManager.instance.DeleteQuest(this);
+
+        for(int j = 0; j < GameManager.instance.car.listSpecialItems.Count; j++)
         {
-            // todo
+            for (int i = 0; i < GameManager.instance.car.listItems.Count; i++)
+            {
+                if (GameManager.instance.car.listSpecialItems[j].item == GameManager.instance.car.listItems[i])
+                    GameManager.instance.car.listItems.Remove(GameManager.instance.car.listItems[i]);
+            }
+            GameManager.instance.car.ChangeCash(GameManager.instance.car.listSpecialItems[j].reward);
+            GameManager.instance.car.listSpecialItems.Remove(GameManager.instance.car.listSpecialItems[j]);
         }
     }
 }

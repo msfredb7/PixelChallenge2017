@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EventScripting {
 
+    // Initialisation des lotteries
     static CCC.Utility.Lottery lotteryFood = new CCC.Utility.Lottery(new CCC.Utility.Lottery.LotteryItem[]
         {
         new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(0),1),
@@ -34,13 +35,17 @@ public class EventScripting {
         });
 
     public static int currentEvent = 0;
+
+
 	public static void Init(Voiture car)
     {
+
+        // Chemin St-Stanilas a Montreal
         Ville depart = new Ville("St-Stanislas");
         Ville destination = new Ville("Montreal");
 
-        // Evenement a faire...
 
+        // Objets des magasins
         List<ItemAVendre> itemDepanneur22km = new List<ItemAVendre>();
         itemDepanneur22km.Add(new ItemAVendre(ItemBank.GetItemByIndex(2), 5, 3));
         itemDepanneur22km.Add(new ItemAVendre(ItemBank.GetItemByIndex(3), 3, 3));
@@ -60,6 +65,8 @@ public class EventScripting {
         itemGarage62km.Add(new ItemAVendre(ItemBank.GetItemByIndex(9), 20, 1));
         itemGarage62km.Add(new ItemAVendre(ItemBank.GetItemByIndex(10), 5, 5));
 
+
+        // Magasins
         List<Stop> stopRoad1 = new List<Stop>();
         Stop depanneur22km = new Stop(22, LieuType.depaneur, itemDepanneur22km);
         Stop station40km = new Stop(40, LieuType.stationEssence, itemStation40km);
@@ -71,8 +78,26 @@ public class EventScripting {
         stopRoad1.Add(restaurant47km);
         stopRoad1.Add(garage62km);
 
+
+        // Quetes
+        Stop charles10km = new Stop(10, LieuType.arretBus);
+        Stop marc17km = new Stop(17, LieuType.arretBus);
+        Stop monique57km = new Stop(57, LieuType.arretBus);
+
+        stopRoad1.Add(charles10km);
+        stopRoad1.Add(marc17km);
+        stopRoad1.Add(monique57km);
+
+        List<Quest> questRoad1 = new List<Quest>();
+        questRoad1.Add(new Quest("Déposer Marise et ses valises à Montréal", 0, 0, new Quest.Destination(destination, null)));
+        questRoad1.Add(new Quest("Déposer Charles et son équipement de hockey à Montreal", 10, 0, new Quest.Destination(destination, null)));
+        questRoad1.Add(new Quest("Déposer Marc à la prochaine station service", 17, 999, new Quest.Destination(null, station40km)));
+        questRoad1.Add(new Quest("Déposer Monique à Montreal", 57, 0, new Quest.Destination(destination, null)));
+
+
+        // Loteries
         List<ItemEvent> itemEventRoad1 = new List<ItemEvent>();
-        ItemEvent item5km = new ItemEvent(5, 0, (Item)lotteryFood.Pick());
+        ItemEvent item5km = new ItemEvent(5, 0, ItemBank.GetItemByIndex(17));
         ItemEvent item29km = new ItemEvent(29,0,(Item)lotteryFood.Pick());
         ItemEvent item35km = new ItemEvent(35,0,(Item)lotteryEssence.Pick());
         ItemEvent item52km = new ItemEvent(52,0,(Item)lotteryUtility.Pick());
@@ -84,12 +109,8 @@ public class EventScripting {
         itemEventRoad1.Add(item52km);
         itemEventRoad1.Add(item67km);
 
-        List <Quest> questRoad1 = new List<Quest>();
-        questRoad1.Add(new Quest("Déposer Marise et ses valises à Montréal", 0, new Quest.Destination(destination, null)));
-        questRoad1.Add(new Quest("Déposer Charles et son équipement de hockey à Montreal", 10, new Quest.Destination(destination,null)));
-        questRoad1.Add(new Quest("Déposer Marc à la prochaine station service", 17, new Quest.Destination(null,station40km)));
-        questRoad1.Add(new Quest("Déposer Monique à Montreal", 57, new Quest.Destination(destination, null)));
 
+        // Initialisation de la route
         Road newRoad = new Road(depart, destination, stopRoad1, null,itemEventRoad1,questRoad1,70);
         RoadManager.instance.SetRoad(newRoad);
     }

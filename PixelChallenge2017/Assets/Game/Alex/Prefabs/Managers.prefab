@@ -94,10 +94,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fac0651d132b13c4a86307617a72a393, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startCash: 100
-  startGas: 100
-  startFood: 100
+  startCash: 1
+  startGas: 0
+  startFood: 10
   TowingCost: 0
+  TowingGas: 10
+  gasText: {fileID: 0}
+  cashText: {fileID: 0}
 --- !u!114 &114566943502292178
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -109,6 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb119c8990355ff4398d96357d0f4bfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bank: []
   listeItem:
   - {fileID: 114741965587436950, guid: 0315cdb9a9940b1438b0d156ed29172b, type: 2}
   - {fileID: 114426024364749242, guid: bee33e75ddf44004fa7559db06594c95, type: 2}

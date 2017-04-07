@@ -22,8 +22,16 @@ public class ItemEvent {
     {
         Debug.Log("Un item apparait sur le bord de la route");
 
-        SpecialObjectAnimation.instance.SetObject(item.gameObject);
-        SpecialObjectAnimation.instance.Repawn();
+        if (item == null)
+            return;
+
+        GameObject obj = GameObject.Instantiate(item.gameObject);
+
+        //obj.transform.localScale = new Vector3(obj.transform.localScale.x*5, obj.transform.localScale.y, obj.transform.localScale.z*5);
+
+        obj.gameObject.transform.localPosition = new Vector3(110, 0, Random.Range(-80, -20));
+
+        GlobalAnimator.AddFloatingItem(obj);
 
         DelayManager.CallTo(AfterEvent, 3);
     }
