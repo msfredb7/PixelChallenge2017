@@ -80,6 +80,40 @@ public class RoadManager : PublicSingleton<RoadManager> {
             {
                 print("Welcome to the amazing city of " + currentRoad.currentDestination.nom);
 
+                switch (currentRoad.currentDestination.nom)
+                {
+                    case "Montreal":
+                        GlobalAnimator.StopAt(LieuType.Montreal, delegate ()
+                        {
+                            ContinueRoadTrip();
+                        });
+                        break;
+                    case "Trois-Riviere":
+                        GlobalAnimator.StopAt(LieuType.TroisRiviere, delegate ()
+                        {
+                            ContinueRoadTrip();
+                        });
+                        break;
+                    case "Quebec":
+                        GlobalAnimator.StopAt(LieuType.Quebec, delegate ()
+                        {
+                            ContinueRoadTrip();
+                        });
+                        break;
+                    case "Saguenay":
+                        GlobalAnimator.StopAt(LieuType.Saguenay, delegate ()
+                        {
+                            ContinueRoadTrip();
+                        });
+                        break;
+                    case "Sept-Iles":
+                        GlobalAnimator.StopAt(LieuType.SeptIles, delegate ()
+                        {
+                            ContinueRoadTrip();
+                        });
+                        break;
+                }
+
                 // clean up
                 GameManager.instance.car.IsRunning = false;
 

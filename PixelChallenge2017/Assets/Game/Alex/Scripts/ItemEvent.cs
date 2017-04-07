@@ -22,7 +22,14 @@ public class ItemEvent {
     {
         Debug.Log("Un item apparait sur le bord de la route");
 
-        //DelayManager.CallTo(AfterEvent, 3);
+        Transform transform = item.gameObject.transform; 
+        transform.position = new Vector3(404, -300, Random.Range(-200, 0));
+
+        GameObject obj = GameObject.Instantiate(item.gameObject, transform);
+
+        GlobalAnimator.AddFloatingItem(obj);
+
+        DelayManager.CallTo(AfterEvent, 3);
     }
 
     public void AfterEvent()
