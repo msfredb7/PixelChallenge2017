@@ -19,12 +19,8 @@ public class Grille : MonoBehaviour {
 
     private void initGrille()
     {
-        grille = new Case[nbCaseX][];
-        for(int x = 0; x < nbCaseX;x++)
-        {
-            grille[x] = new Case[nbCaseY];
-        }
 
+        allocateGrillTab();
         //Instantiate the grille
         for(int x = 0;x<nbCaseX;x++)
         {
@@ -67,6 +63,38 @@ public class Grille : MonoBehaviour {
 
     #endregion
 
+    private void allocateGrillTab()
+    {
+        grille = new Case[nbCaseX][];
+        for (int x = 0; x < nbCaseX; x++)
+        {
+            grille[x] = new Case[nbCaseY];
+        }
+    }
+
+    private void GetChildsCases()
+    {
+        Case[] listCases = GetComponentsInChildren<Case>();
+        foreach (Case c in listCases)
+        {
+            if(c.posX>nbCaseX)
+            {
+                nbCaseX = c.posX;
+            }
+            if (c.posX > nbCaseX)
+            {
+                nbCaseY = c.posY;
+            }
+        }
+
+        allocateGrillTab();
+
+        foreach (Case c in listCases)
+        {
+            grille[c.posX][c.posY] = c;
+        }
+
+    }
 
     // Use this for initialization
     void Start()
@@ -75,18 +103,18 @@ public class Grille : MonoBehaviour {
         {
             initGrille();
         }
+        else
+        {
+            GetChildsCases();
+        }
 
     }
 
     public void Update()
     {
-        testCamera();
+
     }
 
-    public void testCamera()
-    {
-        //Debug.Log(Camera.main.WorldToScreenPoint(grille[0][0].transform.position));
-       
-    }
+
 
 }
