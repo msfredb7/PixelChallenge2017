@@ -500,6 +500,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4357417135973384}
   - component: {fileID: 114245337754461510}
+  - component: {fileID: 114406449830414978}
   m_Layer: 0
   m_Name: Panneau
   m_TagString: Untagged
@@ -1049,7 +1050,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1901015940095696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 8.22}
+  m_LocalPosition: {x: 0, y: -1, z: 8.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4259960813214126}
@@ -1709,6 +1710,22 @@ MonoBehaviour:
   maxX: 105
   minX: -140
   centerX: 0
+--- !u!114 &114406449830414978
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1561680302287160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de402d06a0689d7498cfeab094ee182a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 45
+  obj: {fileID: 0}
+  pause: 15
+  maxX: 110
+  minX: -16
 --- !u!114 &114431455681289860
 MonoBehaviour:
   m_ObjectHideFlags: 1
