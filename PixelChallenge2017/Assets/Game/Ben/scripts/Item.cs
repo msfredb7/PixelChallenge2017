@@ -21,7 +21,7 @@ public class Item : MonoBehaviour {
     bool colInChange = true;
     List<Case> collidedCase;
 
-    Case centralCase;
+    public Case centralCase;
     List<Case> occupedCase;
 
     List<Case> tempoHovered;
@@ -183,9 +183,24 @@ public class Item : MonoBehaviour {
         tempoHovered = new List<Case>();
         rend = GetComponent<SpriteRenderer>();
 
+
+        
+
         if(centralCase != null)
         {
-            placementState = ItemState.placed;
+            transform.position = centralCase.transform.position + new Vector3(0, 0.1f, 0);
+            CalculCollidedCase();
+            collidedCase.Add(centralCase);
+            occupeCase();
+            if(centralCase !=null)
+            {
+                placementState = ItemState.placed;
+            }
+            else
+            {
+                placementState = ItemState.notPlaced;
+            }
+
         }
         else
         {
