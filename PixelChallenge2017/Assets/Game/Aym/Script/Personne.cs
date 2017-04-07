@@ -17,13 +17,13 @@ public class Personne : Item {
     {
         get
         {
-            return food;
+            return _food;
         }
         set
         {
-            food = value;
+            _food = value;
             UpdateRepresentation();
-            if(food < 0)
+            if(_food < 0)
             {
                 OnNoFodd();
             }
@@ -41,12 +41,19 @@ public class Personne : Item {
     }
 
 	// Use this for initialization
-	void Start () {
+	protected override void Start () {
+        base.Start();
 		
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	protected override void Update () {
+        base.Update();
         food -= Time.deltaTime * consomation;
 	}
+
+    override protected bool valideCase(Case c)
+    {
+        return c.caseOccupe == false && c.caseType != CaseType.Coffre;
+    }
 }
