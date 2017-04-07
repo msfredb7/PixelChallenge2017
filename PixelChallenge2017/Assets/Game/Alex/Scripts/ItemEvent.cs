@@ -22,10 +22,14 @@ public class ItemEvent {
     {
         Debug.Log("Un item apparait sur le bord de la route");
 
-        Transform transform = item.gameObject.transform; 
-        transform.position = new Vector3(404, -300, Random.Range(-200, 0));
+        if (item == null)
+            return;
 
-        GameObject obj = GameObject.Instantiate(item.gameObject, transform);
+        GameObject obj = GameObject.Instantiate(item.gameObject);
+
+        obj.transform.localScale = new Vector3(obj.transform.localScale.x*5, obj.transform.localScale.y, obj.transform.localScale.z*5);
+
+        obj.gameObject.transform.localPosition = new Vector3(110, 0, Random.Range(-80, -20));
 
         GlobalAnimator.AddFloatingItem(obj);
 

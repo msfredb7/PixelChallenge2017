@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using CCC.Manager;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -18,6 +19,8 @@ public class RoadManager : PublicSingleton<RoadManager> {
     public float timeLastStop = 0;
 
     private int lastPrint = 0;
+
+    public GameObject buyButton;
 
     void Update()
     {
@@ -50,6 +53,8 @@ public class RoadManager : PublicSingleton<RoadManager> {
                 nextStop.StartEvent();
                 currentRoad.currentStop = nextStop;
                 onStopReached.Invoke();
+                buyButton.SetActive(true);
+                DelayManager.CallTo(StopEnd, 6);
 
                 // On a fini de traiter l'evennement, on le supprime
                 currentRoad.RemoveStop(nextStop);
@@ -120,6 +125,11 @@ public class RoadManager : PublicSingleton<RoadManager> {
                 onDestinationReached.Invoke();
             }
         }
+    }
+
+    public void StopEnd()
+    {
+        buyButton.SetActive(false);
     }
 
     public void SetRoad(Road road)

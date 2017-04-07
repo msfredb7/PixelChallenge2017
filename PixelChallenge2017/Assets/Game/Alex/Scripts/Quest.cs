@@ -93,6 +93,8 @@ public class Quest {
 
         GameManager.instance.car.ChangeCash(recompense);
 
+        QuestManager.instance.DeleteQuest(this);
+
         for(int j = 0; j < GameManager.instance.car.listSpecialItems.Count; j++)
         {
             for (int i = 0; i < GameManager.instance.car.listItems.Count; i++)
