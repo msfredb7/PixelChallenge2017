@@ -8,15 +8,6 @@ public class TestScriptAlex : MonoBehaviour {
 
 	void Update ()
     {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            myQuest = new Quest("MOST EPIC QUEST EVER");
-            QuestManager.instance.AddQuest(myQuest);
-        }
 
-        if (Input.GetKeyDown(KeyCode.B))
-        {
-            QuestManager.instance.DeleteQuest(myQuest);
-        }
     }
 }

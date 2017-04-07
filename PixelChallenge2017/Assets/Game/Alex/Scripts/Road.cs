@@ -7,6 +7,8 @@ public class Road {
     public Ville currentDepart;
     public Ville currentDestination;
 
+    public Stop currentStop;
+
     public float distance; // distance entre depart et destination (temps de la route)
 
     public List<Stop> stopList = new List<Stop>();
@@ -15,13 +17,16 @@ public class Road {
 
     public List<ItemEvent> itemEventList = new List<ItemEvent>();
 
-    public Road(Ville depart, Ville destination, List<Stop> stopList, List<SpecialEvent> specialEventList, List<ItemEvent> itemEventList, float distance)
+    public List<Quest> questList = new List<Quest>();
+
+    public Road(Ville depart, Ville destination, List<Stop> stopList, List<SpecialEvent> specialEventList, List<ItemEvent> itemEventList, List<Quest> questList , float distance)
     {
         currentDepart = depart;
         currentDestination = destination;
         this.stopList = stopList;
         this.specialEventList = specialEventList;
         this.itemEventList = itemEventList;
+        this.questList = questList;
         this.distance = distance;
     }
 
@@ -72,6 +77,23 @@ public class Road {
                 resultEvent = stopList[i];
             if (itemEventList[i].distance > resultEvent.distance)
                 resultEvent = stopList[i];
+        }
+        return resultEvent;
+    }
+
+    public Quest GetNextQuest(float distance)
+    {
+        if (questList == null)
+            return null;
+
+        Quest resultEvent = null;
+
+        for (int i = 0; i < questList.Count; i++)
+        {
+            if (resultEvent == null)
+                resultEvent = questList[i];
+            if (itemEventList[i].distance > resultEvent.distance)
+                resultEvent = questList[i];
         }
         return resultEvent;
     }

@@ -8,6 +8,7 @@ public class RoadManager : PublicSingleton<RoadManager> {
     public Road currentRoad;
 
     public UnityEvent onDestinationReached = new UnityEvent();
+    public UnityEvent onStopReached = new UnityEvent();
 
     [HideInInspector]
     public float startTime = 0;
@@ -33,6 +34,7 @@ public class RoadManager : PublicSingleton<RoadManager> {
             Stop nextStop = currentRoad.GetNextStop(currentDistance);
             SpecialEvent nextEvent = currentRoad.GetNextSpecialEvent(currentDistance);
             ItemEvent nextItem = currentRoad.GetNextItem(currentDistance);
+            Quest nextQuest = currentRoad.GetNextQuest(currentDistance);
 
             if (nextStop != null && nextStop.distance <= currentDistance)
             {
@@ -40,6 +42,8 @@ public class RoadManager : PublicSingleton<RoadManager> {
                 GameManager.instance.car.IsRunning = false;
                 timeLastStop = Time.time;
                 nextStop.StartEvent();
+                currentRoad.currentStop = nextStop;
+                onStopReached.Invoke();
             }
 
             if (nextEvent != null && nextEvent.distance <= currentDistance)
@@ -50,6 +54,11 @@ public class RoadManager : PublicSingleton<RoadManager> {
             if (nextItem != null && nextItem.distance <= currentDistance)
             {
                 nextItem.StartEvent();
+            }
+
+            if (nextQuest != null && nextQuest.distance <= currentDistance)
+            {
+                QuestManager.instance.AddQuest(nextQuest);
             }
 
             if (currentRoad.distance <= currentDistance)
@@ -72,5 +81,10 @@ public class RoadManager : PublicSingleton<RoadManager> {
     {
         GameManager.instance.car.IsRunning = true;
         timeToIgnore += Time.time - timeLastStop;
+    }
+
+    public bool IsArrived()
+    {
+        return currentRoad.distance <= ((Time.time - startTime) - timeToIgnore);
     }
 }

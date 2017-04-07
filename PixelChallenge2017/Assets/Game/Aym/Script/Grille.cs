@@ -114,14 +114,7 @@ public class Grille : MonoBehaviour {
 
     public void Update()
     {
-        if(Time.time>6 && Time.time < 12)
-        {
-            grille[5][5].caseOccupe = true;
-        }
-        else if(Time.time >12)
-        {
-            grille[5][5].caseOccupe = false;
-        }
+
     }
 
 
