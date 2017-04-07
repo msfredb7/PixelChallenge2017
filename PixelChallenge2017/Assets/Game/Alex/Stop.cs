@@ -23,6 +23,6 @@ public class Stop : MonoBehaviour {
 
     public void StartEvent()
     {
-        //specialEvent.Invoke();
+
     }
 }

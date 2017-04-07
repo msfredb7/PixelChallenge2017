@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 314129203}
   - component: {fileID: 314129202}
   - component: {fileID: 314129204}
+  - component: {fileID: 314129205}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -119,7 +120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e135c458fd7b0e04d918fdde99726cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentRoad: {fileID: 0}
   startTime: 0
 --- !u!4 &314129203
 Transform:
@@ -145,6 +145,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5844a96d5b4508429d09eec70591786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &314129205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 314129201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a635d1fa5fa46044280b6a4f845cbe0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startCash: 0
+  startGas: 0
+  startFood: 0
 --- !u!1 &1139367113
 GameObject:
   m_ObjectHideFlags: 0

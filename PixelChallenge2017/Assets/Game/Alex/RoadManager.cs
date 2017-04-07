@@ -6,6 +6,7 @@ public class RoadManager : PublicSingleton<RoadManager> {
 
     public Road currentRoad;
 
+    [HideInInspector]
     public float startTime;
 
     void Update()
