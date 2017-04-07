@@ -17,6 +17,7 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
     public SignAnimation sign;
     public BuildingAnimation building;
     public BuildingAnimation ville;
+    public BuildingAnimation arretBus;
 
     void Stop(TweenCallback onComplete, float decelerateDuration = 3, float delay = 0)
     {
@@ -27,6 +28,7 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
             DOTween.To(() => gazonGauche.speed, x => gazonGauche.speed = x, 0, decelerateDuration).SetEase(Ease.InOutSine);
             DOTween.To(() => sign.speed, x => sign.speed = x, 0, decelerateDuration).SetEase(Ease.InOutSine);
             DOTween.To(() => building.speed, x => building.speed = x, 0, decelerateDuration).SetEase(Ease.InOutSine);
+            DOTween.To(() => arretBus.speed, x => arretBus.speed = x, 0, decelerateDuration).SetEase(Ease.InOutSine);
             DOTween.To(() => ville.speed, x => ville.speed = x, 0, decelerateDuration).SetEase(Ease.InOutSine).OnComplete(onComplete);
         }, delay);
     }
@@ -40,6 +42,7 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
         DOTween.To(() => gazonGauche.speed, x => gazonGauche.speed = x, speed, duration).SetEase(Ease.InOutSine);
         DOTween.To(() => sign.speed, x => sign.speed = x, speed, duration).SetEase(Ease.InOutSine);
         DOTween.To(() => building.speed, x => building.speed = x, speed, duration).SetEase(Ease.InOutSine);
+        DOTween.To(() => arretBus.speed, x => arretBus.speed = x, speed, duration).SetEase(Ease.InOutSine);
         DOTween.To(() => ville.speed, x => ville.speed = x, speed, duration).SetEase(Ease.InOutSine).OnComplete(onComplete);
     }
 
@@ -47,6 +50,7 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
     {
         float duration = 0;
         float delayBeforeStop = 0;
+        float decelerateDuration = 3;
         switch (type)
         {
             case LieuType.stationEssence:
@@ -99,6 +103,12 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
                 instance.ville.Run(instance.montrealSprite);
                 delayBeforeStop = 1.75f;
                 break;
+            case LieuType.arretBus:
+                duration = 2.5f;
+                instance.arretBus.Run(null);
+                delayBeforeStop = 0;
+                decelerateDuration = 2.5f;
+                break;
             default:
                 break;
         }
@@ -108,7 +118,7 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
             {
                 instance.Run(onContinueTrip);
             }, duration);
-        }, delay: delayBeforeStop);
+        }, decelerateDuration, delayBeforeStop);
     }
 
 
