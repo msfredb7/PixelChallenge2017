@@ -87,7 +87,7 @@ public class Case : MonoBehaviour {
 
         if(gr != null)
         {
-            return gr.grille[posX + xOffSet][posY + yOffSet];
+            return gr.grille[posX + xOffSet][posY - yOffSet];
         }
 
         }
@@ -125,7 +125,7 @@ public class Case : MonoBehaviour {
             {
                 if (actCase != null)
                 {
-                    actCase = actCase.Haut;
+                    actCase = actCase.Bas;
                 }
             }
         }
@@ -135,7 +135,7 @@ public class Case : MonoBehaviour {
             {
                 if (actCase != null)
                 {
-                    actCase = actCase.Bas;
+                    actCase = actCase.Haut;
                 }
             }
         }
