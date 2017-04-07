@@ -94,10 +94,10 @@ public class EventScripting
         stopRoad1.Add(monique57km);
 
         List<Quest> questRoad1 = new List<Quest>();
-        questRoad1.Add(new Quest("Déposer Marise et ses valises à Montréal", 0, 0, new Quest.Destination(destination, null)));
-        questRoad1.Add(new Quest("Déposer Charles et son équipement de hockey à Montreal", 10, 0, new Quest.Destination(destination, null)));
-        questRoad1.Add(new Quest("Déposer Marc à la prochaine station service", 17, 999, new Quest.Destination(null, station40km)));
-        questRoad1.Add(new Quest("Déposer Monique à Montreal", 57, 0, new Quest.Destination(destination, null)));
+        questRoad1.Add(new Quest("Déposer Marise et ses valises à Montréal", 0, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
+        questRoad1.Add(new Quest("Déposer Charles et son équipement de hockey à Montreal", 10, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
+        questRoad1.Add(new Quest("Déposer Marc à la prochaine station service", 17, 999, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, station40km)));
+        questRoad1.Add(new Quest("Déposer Monique à Montreal", 57, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
 
 
         // Loteries
@@ -211,12 +211,12 @@ public class EventScripting
                 stopRoad2.Add(jeremy100km);
 
                 List<Quest> questRoad1 = new List<Quest>();
-                questRoad1.Add(new Quest("Déposer le mystérieux monsieur et ses nombreux chapeaux à Trois-Rivière", 0, 0, new Quest.Destination(destination, null)));
-                questRoad1.Add(new Quest("Déposer Gary et son matériel informatique à Trois-Rivière", 10, 0, new Quest.Destination(destination, null)));
-                questRoad1.Add(new Quest("Déposer Marie-Pier et ses bagages jusqu'à la prochaine épicerie", 30, 0, new Quest.Destination(null, restaurant70km)));
-                questRoad1.Add(new Quest("Déposer Bob au prochain garage", 49, 0, new Quest.Destination(null, garage91km)));
-                questRoad1.Add(new Quest("Déposer Maxime et ses meubles à Trois-Rivière", 62, 0, new Quest.Destination(destination,null)));
-                questRoad1.Add(new Quest("Déposer Jeremy à la prochaine épicerie", 100, 0, new Quest.Destination(null, restaurant112km)));
+                questRoad1.Add(new Quest("Déposer le mystérieux monsieur et ses nombreux chapeaux à Trois-Rivière", 0, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
+                questRoad1.Add(new Quest("Déposer Gary et son matériel informatique à Trois-Rivière", 10, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
+                questRoad1.Add(new Quest("Déposer Marie-Pier et ses bagages jusqu'à la prochaine épicerie", 30, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, restaurant70km)));
+                questRoad1.Add(new Quest("Déposer Bob au prochain garage", 49, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage91km)));
+                questRoad1.Add(new Quest("Déposer Maxime et ses meubles à Trois-Rivière", 62, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination,null)));
+                questRoad1.Add(new Quest("Déposer Jeremy à la prochaine épicerie", 100, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, restaurant112km)));
 
 
                 Road newRoad = new Road(depart, destination, null, null, null, null, 5);

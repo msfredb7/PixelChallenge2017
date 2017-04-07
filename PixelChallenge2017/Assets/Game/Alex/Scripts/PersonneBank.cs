@@ -15,14 +15,4 @@ public class PersonneBank : Bank<Personne>
             AddItem(listePersonne[i]);
         }
     }
-
-    public Personne GetPersonneByName(string name)
-    {
-        for (int i = 0; i < listePersonne.Length; i++)
-        {
-            if (listePersonne[i].nom == name)
-                return listePersonne[i];
-        }
-        return null;
-    }
 }

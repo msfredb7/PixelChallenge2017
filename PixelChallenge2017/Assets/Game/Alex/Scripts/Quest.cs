@@ -51,12 +51,13 @@ public class Quest {
     public List<ItemQuest> itemNecessaire = new List<ItemQuest>();
     public Personne personne;
 
-    public Quest(string questDescription, float distance, float recompense, Destination destination, List<ItemQuest> itemNecessaire = null)
+    public Quest(string questDescription, float distance, float recompense, Personne personne , Destination destination, List<ItemQuest> itemNecessaire = null)
     {
         this.questDescription = questDescription;
         this.distance = distance;
         this.destination = destination;
         this.recompense = recompense;
+        this.personne = personne;
         if(itemNecessaire != null)
             this.itemNecessaire = itemNecessaire;
         if(destination.DestinationIsStop())
