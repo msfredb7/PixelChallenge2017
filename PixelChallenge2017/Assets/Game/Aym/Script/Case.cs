@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Case : MonoBehaviour {
 
+    
 
     #region position
     public int _posX;
@@ -65,8 +66,10 @@ public class Case : MonoBehaviour {
 
     public CaseType caseType;
 
+
+
     public Material occupedMat;
-    private Material standardMat;
+    public Material standardMat;
 
     public void Start()
     {
