@@ -50,7 +50,7 @@ public class EventScripting {
 
         List<Quest> questRoad1 = new List<Quest>();
         questRoad1.Add(new Quest("Charles-Montreal", 10, new Quest.Destination(destination,null)));
-        questRoad1.Add(new Quest("Marc-Station", 10, new Quest.Destination(null,station40km)));
+        questRoad1.Add(new Quest("Marc-Station", 17, new Quest.Destination(null,station40km)));
         questRoad1.Add(new Quest("Monique-Montreal", 57, new Quest.Destination(destination, null)));
 
         Road newRoad = new Road(depart, destination, stopRoad1, null,itemEventRoad1,questRoad1,70);

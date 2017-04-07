@@ -14,9 +14,4 @@ public class ItemBank : Bank<Item>{
             AddItem(listeItem[i]);
         }
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

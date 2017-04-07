@@ -4,7 +4,7 @@ using CCC.Utility;
 using System.Collections.Generic;
 
 // Stock tous les items disponible dans le jeu
-public class Bank<T> : Singleton<Bank<T>>
+public class Bank<T> : PublicSingleton<Bank<T>>
 {
     private List<T> bank = new List<T>(); // Liste des items disponible
 

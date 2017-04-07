@@ -46,6 +46,6 @@ public class GameManager : PublicSingleton<GameManager> {
     public void CreateStop(LieuType lieu)
     {
         // Gere le spaw du prefab stop et set toute le reste
-
+        print("On arrete a " + lieu);
     }
 }

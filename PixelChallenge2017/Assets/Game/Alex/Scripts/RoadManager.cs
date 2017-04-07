@@ -17,6 +17,8 @@ public class RoadManager : PublicSingleton<RoadManager> {
     [HideInInspector]
     public float timeLastStop = 0;
 
+    private int lastPrint = 0;
+
     void Update()
     {
         if (currentRoad == null)
@@ -29,7 +31,12 @@ public class RoadManager : PublicSingleton<RoadManager> {
         {
             float currentDistance = (Time.time - startTime) - timeToIgnore; // 1km = 1 secondes
 
-            print("They see me rollin' ! They hatin' ...( Distance : " + currentDistance);
+            if(currentDistance > (lastPrint + 1))
+            {
+                print("They see me rollin' ! They hatin' ...( Distance : " + lastPrint + "km");
+                lastPrint++;
+            }
+                
 
             Stop nextStop = currentRoad.GetNextStop(currentDistance);
             SpecialEvent nextEvent = currentRoad.GetNextSpecialEvent(currentDistance);
@@ -80,7 +87,7 @@ public class RoadManager : PublicSingleton<RoadManager> {
 
     public void SetRoad(Road road)
     {
-        print("Lets go boys n grills");
+        print("On part de " + road.currentDepart.nom);
         GameManager.instance.car.IsRunning = true;
         currentRoad = road;
         startTime = Time.time;
