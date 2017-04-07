@@ -30,6 +30,7 @@ public class ItemAnimation : MonoBehaviour
     void Kill(GameObject item)
     {
         items.Remove(item);
-        item.GetComponent<Item>().Kill();
+        if (item.GetComponent<Item>() != null)
+            item.GetComponent<Item>().Kill();
     }
 }
