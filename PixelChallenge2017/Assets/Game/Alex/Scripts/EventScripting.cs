@@ -97,7 +97,7 @@ public class EventScripting {
 
         // Loteries
         List<ItemEvent> itemEventRoad1 = new List<ItemEvent>();
-        ItemEvent item5km = new ItemEvent(5, 0, (Item)lotteryFood.Pick());
+        ItemEvent item5km = new ItemEvent(5, 0, ItemBank.GetItemByIndex(4));
         ItemEvent item29km = new ItemEvent(29,0,(Item)lotteryFood.Pick());
         ItemEvent item35km = new ItemEvent(35,0,(Item)lotteryEssence.Pick());
         ItemEvent item52km = new ItemEvent(52,0,(Item)lotteryUtility.Pick());
