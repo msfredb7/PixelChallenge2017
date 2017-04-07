@@ -4,18 +4,17 @@ using UnityEngine;
 
 public class EventScripting {
 
+    List<Item> randomItemBank1 = new List<Item>();
+    // randomItemBank1.Add(...);
+
+    List<Item> randomItemBank2 = new List<Item>();
+    // randomItemBank2.Add(...);
+
     public static int currentEvent = 0;
 	public static void Init(Voiture car)
     {
         Ville depart = new Ville("St-Stanislas");
         Ville destination = new Ville("Montreal");
-
-        List<Item> randomItemBank1 = new List<Item>();
-        // randomItemBank1.Add(...);
-
-        List<Item> randomItemBank2 = new List<Item>();
-        // randomItemBank2.Add(...);
-
 
         // Evenement a faire...
 
@@ -30,13 +29,10 @@ public class EventScripting {
         Stop restaurant47km = new Stop(47, null, itemRestaurant47km);
         Stop garage62km = new Stop(62, null, itemGarage62km);
 
-
         stopRoad1.Add(depanneur22km);
         stopRoad1.Add(station40km);
         stopRoad1.Add(restaurant47km);
         stopRoad1.Add(garage62km);
-
-
 
         List<ItemEvent> itemEventRoad1 = new List<ItemEvent>();
         // ItemEvent item29km = new ItemEvent(29)
