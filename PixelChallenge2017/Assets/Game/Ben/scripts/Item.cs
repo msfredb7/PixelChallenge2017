@@ -444,3 +444,13 @@ public class Item : MonoBehaviour {
         Destroy(gameObject);
     }
 }
+
+        
+        if(placementState == ItemState.notPlaced)
+        {
+            foreach(SpriteRenderer r in rend)
+            {
+                r.color = Color.white;
+            }
+            
+        }
