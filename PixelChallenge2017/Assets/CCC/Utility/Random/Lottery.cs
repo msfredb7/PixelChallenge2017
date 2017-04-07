@@ -18,7 +18,11 @@ namespace CCC.Utility
         {
             list.AddRange(items);
         }
-        class LotteryItem
+        public Lottery(LotteryItem[] items)
+        {
+            list.AddRange(items);
+        }
+        public class LotteryItem
         {
             // Constructeur d'un élément qui va faire parti du lot
             public LotteryItem(object obj, int weight)
