@@ -64,6 +64,19 @@ public class Item : MonoBehaviour {
                     }
                 }
             }
+
+            if(_placementState == ItemState.placed)
+            {
+                if(GameManager.instance.car.listItems.Contains(this))
+                {
+                    GameManager.instance.car.listItems.Add(this);
+                }
+            }
+            if(_placementState == ItemState.notPlaced)
+            {
+                GameManager.instance.car.listItems.Remove(this);
+            }
+
         }
     }
 
@@ -403,4 +416,7 @@ public class Item : MonoBehaviour {
     {
         return !c._caseOccupe;
     }
+
+
+
 }
