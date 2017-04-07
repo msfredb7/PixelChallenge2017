@@ -6,6 +6,7 @@ public class Voiture {
 
     public float cash;
     public float gas;
+    public float maxGas = 50;
 
     public bool noMoreCash;
     public bool noMoreGas;
@@ -20,6 +21,7 @@ public class Voiture {
         this.cash = cash;
         this.gas = gas;
         IsRunning = false;
+        OilDisplay.UpdateOil(gas / maxGas);
     }
 
     public void ChangeCash(float amount) // peut etre negatif
@@ -36,7 +38,11 @@ public class Voiture {
         gas += amount;
         if (gas < 0)
             gas = 0;
+        if (gas > maxGas)
+            gas = maxGas;
         if (gas == 0)
             noMoreGas = true;
+
+        OilDisplay.UpdateOil(gas / maxGas);
     }
 }
