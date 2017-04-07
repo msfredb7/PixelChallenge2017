@@ -108,6 +108,8 @@ public class Grille : MonoBehaviour {
             GetChildsCases();
         }
 
+        applyDesactivation();
+
     }
 
     public void Update()
@@ -123,5 +125,17 @@ public class Grille : MonoBehaviour {
     }
 
 
-
+    private void applyDesactivation()
+    {
+        for (int x = 0; x < nbCaseX; x++)
+        {
+            for (int y = 0; y < nbCaseY; y++)
+            {
+               if(grille[x][y].caseType == CaseType.desactive)
+                {
+                    grille[x][y]._caseOccupe = true;
+                }
+            }
+        }
+    }
 }
