@@ -85,7 +85,7 @@ public class Grille : MonoBehaviour {
 
     public void testCamera()
     {
-        Debug.Log(Camera.main.WorldToScreenPoint(grille[0][0].transform.position));
+        //Debug.Log(Camera.main.WorldToScreenPoint(grille[0][0].transform.position));
        
     }
 
