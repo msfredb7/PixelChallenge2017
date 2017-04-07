@@ -16,6 +16,8 @@ public class GameManager : PublicSingleton<GameManager> {
     {
         car = new Voiture(startCash, startGas);
 
+        car.IsRunning = true;
+
         // Ajouts de la route initial
         EventScripting.Init(car);
         RoadManager.instance.onDestinationReached.AddListener(OnDestinationReached);
