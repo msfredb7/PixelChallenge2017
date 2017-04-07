@@ -22,14 +22,20 @@ public class ItemAnimation : MonoBehaviour
     {
         if (speed == 0)
             return;
+
+        if(Input.GetKeyDown("a"))
+        {
+            Instantiate(items[0], transform.position, transform.rotation);
+        }
+
         for (int i = 0; i < items.Count; i++)
         {
             GameObject item = items[i];
             item.transform.localPosition -= Vector3.right * speed * Time.deltaTime;
             if (item.transform.localPosition.x < minX)
             {
-                Kill(item);
-                i--;
+                /*Kill(item);
+                i--;*/
             }
         }
     }
@@ -37,7 +43,7 @@ public class ItemAnimation : MonoBehaviour
     void Kill(GameObject item)
     {
         items.Remove(item);
-        if (item.GetComponent<Item>() != null)
-            item.GetComponent<Item>().Kill();
+        //if (item.GetComponent<Item>() != null)
+         //   item.GetComponent<Item>().Kill();
     }
 }
