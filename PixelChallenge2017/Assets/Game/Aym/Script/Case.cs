@@ -65,6 +65,31 @@ public class Case : MonoBehaviour {
         }
     }
 
+    public bool _caseHovered;
+
+    public bool caseHovered
+    {
+        get
+        {
+            return _caseHovered;
+        }
+        set
+        {
+            _caseHovered = value;
+            if (_caseHovered == true)
+            {
+                GetComponent<Renderer>().material.SetFloat("_Metallic",1);
+
+            }
+            else
+            {
+                GetComponent<Renderer>().material.SetFloat("_Metallic", 0);
+            }
+        }
+    }
+
+
+
     public CaseType caseType;
 
 
