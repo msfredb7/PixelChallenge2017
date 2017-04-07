@@ -520,3 +520,4 @@ MonoBehaviour:
   offsetX: 3
   offsetY: 2
   centralCase: {fileID: 0}
+  scaleFacteur: 2

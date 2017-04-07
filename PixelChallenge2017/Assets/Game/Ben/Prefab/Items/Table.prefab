@@ -740,6 +740,8 @@ MonoBehaviour:
   itemShape: []
   offsetX: 2
   offsetY: 1
+  centralCase: {fileID: 0}
+  scaleFacteur: 2
 --- !u!114 &114555186042507686
 MonoBehaviour:
   m_ObjectHideFlags: 1

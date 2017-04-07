@@ -1319,6 +1319,7 @@ MonoBehaviour:
   offsetX: 2
   offsetY: 2
   centralCase: {fileID: 0}
+  scaleFacteur: 2
 --- !u!114 &114262076000443734
 MonoBehaviour:
   m_ObjectHideFlags: 1

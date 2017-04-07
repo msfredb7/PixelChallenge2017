@@ -162,6 +162,7 @@ MonoBehaviour:
   offsetX: 1
   offsetY: 1
   centralCase: {fileID: 0}
+  scaleFacteur: 2
 --- !u!212 &212198754989783802
 SpriteRenderer:
   m_ObjectHideFlags: 1
