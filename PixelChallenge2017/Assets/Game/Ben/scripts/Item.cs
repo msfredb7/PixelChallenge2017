@@ -69,9 +69,12 @@ public class Item : MonoBehaviour {
             {
                 if(GameManager.instance != null)
                 {
-                    if (GameManager.instance.car.listItems.Contains(this))
+                    if (GameManager.instance.car != null && GameManager.instance.car.listItems.Contains(this))
                     {
-                        GameManager.instance.car.listItems.Add(this);
+                        if(GameManager.instance.car.listItems != null)
+                        {
+                            GameManager.instance.car.listItems.Add(this);
+                        }
                     }
                 }
                 
@@ -80,7 +83,11 @@ public class Item : MonoBehaviour {
             {
                 if(GameManager.instance != null)
                 {
-                    GameManager.instance.car.listItems.Remove(this);
+                    if(GameManager.instance.car != null && GameManager.instance.car.listItems!=null)
+                    {
+                        GameManager.instance.car.listItems.Remove(this);
+                    }
+                    
                 }
             }
             
@@ -426,5 +433,9 @@ public class Item : MonoBehaviour {
     }
 
 
-
+    public void Kill()
+    {
+        allItem.Remove(this);
+        Destroy(gameObject);
+    }
 }
