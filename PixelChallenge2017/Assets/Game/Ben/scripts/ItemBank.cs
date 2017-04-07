@@ -7,6 +7,7 @@ public class ItemBank : Bank<Item>{
 
     public Item[] listeItem;
 
+    
     // Use this for initialization
     void Start() {
         for (int i = 0; i < listeItem.Length; i++)

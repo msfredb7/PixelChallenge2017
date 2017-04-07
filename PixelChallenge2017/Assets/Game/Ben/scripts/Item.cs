@@ -100,7 +100,11 @@ public class Item : MonoBehaviour {
                 }
 
                 if (GetComponent<GazRefill>() != null && OilDisplay.IsMouseIn())
+                {
                     GameManager.instance.car.ChangeGas(GetComponent<GazRefill>().refillValue);
+                    Kill();
+                    return;
+                }
                 GlobalAnimator.AddFloatingItem(gameObject);
             }
             if (_placementState != ItemState.notPlaced)
