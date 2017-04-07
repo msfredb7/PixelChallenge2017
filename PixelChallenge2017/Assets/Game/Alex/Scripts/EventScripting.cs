@@ -5,7 +5,7 @@ using UnityEngine;
 public class EventScripting {
 
     List<Item> randomItemBank1 = new List<Item>();
-    // randomItemBank1.Add(...);
+    // randomItemBank1.Add(...)
 
     List<Item> randomItemBank2 = new List<Item>();
     // randomItemBank2.Add(...);
@@ -24,10 +24,10 @@ public class EventScripting {
         List<ItemAVendre> itemGarage62km = new List<ItemAVendre>();
 
         List<Stop> stopRoad1 = new List<Stop>();
-        Stop depanneur22km = new Stop(22, null, itemDepanneur22km);
-        Stop station40km = new Stop(40, null, itemStation40km);
-        Stop restaurant47km = new Stop(47, null, itemRestaurant47km);
-        Stop garage62km = new Stop(62, null, itemGarage62km);
+        Stop depanneur22km = new Stop(22, LieuType.depaneur, itemDepanneur22km);
+        Stop station40km = new Stop(40, LieuType.stationEssence, itemStation40km);
+        Stop restaurant47km = new Stop(47, LieuType.restaurant, itemRestaurant47km);
+        Stop garage62km = new Stop(62, LieuType.garage, itemGarage62km);
 
         stopRoad1.Add(depanneur22km);
         stopRoad1.Add(station40km);
@@ -50,7 +50,7 @@ public class EventScripting {
 
         List<Quest> questRoad1 = new List<Quest>();
         questRoad1.Add(new Quest("Charles-Montreal", 10, new Quest.Destination(destination,null)));
-        questRoad1.Add(new Quest("Marc-Station", 10, new Quest.Destination(null,station40km)));
+        questRoad1.Add(new Quest("Marc-Station", 17, new Quest.Destination(null,station40km)));
         questRoad1.Add(new Quest("Monique-Montreal", 57, new Quest.Destination(destination, null)));
 
         Road newRoad = new Road(depart, destination, stopRoad1, null,itemEventRoad1,questRoad1,70);

@@ -16,6 +16,8 @@ public class GameManager : PublicSingleton<GameManager> {
     {
         car = new Voiture(startCash, startGas);
 
+        car.IsRunning = true;
+
         // Ajouts de la route initial
         EventScripting.Init(car);
         RoadManager.instance.onDestinationReached.AddListener(OnDestinationReached);
@@ -41,8 +43,9 @@ public class GameManager : PublicSingleton<GameManager> {
         EventScripting.NextEvents(car);
     }
 
-    public void CreateStop(GameObject stop)
+    public void CreateStop(LieuType lieu)
     {
         // Gere le spaw du prefab stop et set toute le reste
+        print("On arrete a " + lieu);
     }
 }

@@ -17,10 +17,15 @@ public class QuestManager : PublicSingleton<QuestManager> {
     {
         if (currentNbQuest >= nbMax)
             return;
-        GameObject newQuest = Instantiate(textObject, container.transform);
+
+        // Debut de l'event
         quest.OnBegin();
         questList.Add(quest);
+
+        // UI Quete
+        GameObject newQuest = Instantiate(textObject, container.transform);
         newQuest.GetComponent<Text>().text = quest.questDescription;
+
         currentNbQuest++;
     }
 

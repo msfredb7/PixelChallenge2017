@@ -17,6 +17,7 @@ public class SpecialEvent {
 
     public void StartEvent()
     {
+        Debug.Log("Evennement special commence !!");
         specialEvent.Invoke();
     }
 }

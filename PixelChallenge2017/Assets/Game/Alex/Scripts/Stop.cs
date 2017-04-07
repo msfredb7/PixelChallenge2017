@@ -8,18 +8,18 @@ public class Stop {
 
     public float distance;
 
-    public GameObject prefabStop;
+    public LieuType lieu;
 
-    public UnityEvent onEventComplete;
+    public UnityEvent onEventComplete = new UnityEvent();
 
     public List<ItemAVendre> listItems = new List<ItemAVendre>();
 
-    public Stop(float distance, GameObject prefabStop, List<ItemAVendre> listItems = null)
+    public Stop(float distance, LieuType lieu, List<ItemAVendre> listItems = null)
     {
         this.distance = distance;
         if (listItems != null)
             this.listItems = listItems;
-        this.prefabStop = prefabStop;
+        this.lieu = lieu;
     }
 
     public void AddItemAVendre(Item item, float cost, int quantity)
@@ -29,7 +29,7 @@ public class Stop {
 
     public void StartEvent()
     {
-        GameManager.instance.CreateStop(prefabStop);
+        GameManager.instance.CreateStop(lieu);
         onEventComplete.Invoke();
     }
 }

@@ -17,6 +17,8 @@ public class RoadManager : PublicSingleton<RoadManager> {
     [HideInInspector]
     public float timeLastStop = 0;
 
+    private int lastPrint = 0;
+
     void Update()
     {
         if (currentRoad == null)
@@ -29,7 +31,12 @@ public class RoadManager : PublicSingleton<RoadManager> {
         {
             float currentDistance = (Time.time - startTime) - timeToIgnore; // 1km = 1 secondes
 
-            //print("They see me rollin' ! They hatin' ...( Distance : " + currentDistance);
+            if(currentDistance > (lastPrint + 1))
+            {
+                print("They see me rollin' ! They hatin' ...( Distance : " + lastPrint + "km");
+                lastPrint++;
+            }
+                
 
             Stop nextStop = currentRoad.GetNextStop(currentDistance);
             SpecialEvent nextEvent = currentRoad.GetNextSpecialEvent(currentDistance);
@@ -44,21 +51,30 @@ public class RoadManager : PublicSingleton<RoadManager> {
                 nextStop.StartEvent();
                 currentRoad.currentStop = nextStop;
                 onStopReached.Invoke();
+
+                // On a fini de traiter l'evennement, on le supprime
+                currentRoad.RemoveStop(nextStop);
             }
 
             if (nextEvent != null && nextEvent.distance <= currentDistance)
             {
                 nextEvent.StartEvent();
+
+                currentRoad.RemoveSpecialEvent(nextEvent);
             }
 
             if (nextItem != null && nextItem.distance <= currentDistance)
             {
                 nextItem.StartEvent();
+
+                currentRoad.RemoveItem(nextItem);
             }
 
             if (nextQuest != null && nextQuest.distance <= currentDistance)
             {
                 QuestManager.instance.AddQuest(nextQuest);
+
+                currentRoad.RemoveQuestEvent(nextQuest);
             }
 
             if (currentRoad.distance <= currentDistance)
@@ -71,7 +87,7 @@ public class RoadManager : PublicSingleton<RoadManager> {
 
     public void SetRoad(Road road)
     {
-        print("Lets go boys n grills");
+        print("On part de " + road.currentDepart.nom);
         GameManager.instance.car.IsRunning = true;
         currentRoad = road;
         startTime = Time.time;

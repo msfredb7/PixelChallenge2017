@@ -51,26 +51,29 @@ public class Quest {
 
     public void OnBegin()
     {
-
+        Debug.Log("la quete commence");
     }
 
     public void OnCityReached()
     {
-
+        if (RoadManager.instance.currentRoad.currentDestination == destination.ville)
+            OnComplete();
     }
+
 
     public void OnStopReached()
     {
-
+        if (RoadManager.instance.currentRoad.currentStop == destination.stop)
+            OnComplete();
     }
 
     public void OnFail()
     {
-
+        Debug.Log("la quete a fail");
     }
 
     public void OnComplete()
     {
-
+        Debug.Log("la quete est une reussite!");
     }
 }
