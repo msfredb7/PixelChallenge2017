@@ -106,7 +106,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68eb26ebc6825cd4382651816bca1997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _posX: 0
+  _posY: 0
   Haut: {fileID: 0}
   Droite: {fileID: 0}
   Gauche: {fileID: 0}
   Bas: {fileID: 0}
+  _caseOccupe: 0
+  caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
