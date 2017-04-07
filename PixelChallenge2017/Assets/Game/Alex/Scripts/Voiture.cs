@@ -6,16 +6,17 @@ public class Voiture {
 
     public float cash;
     public float gas;
-    public float food;
 
     public bool noMoreCash;
     public bool noMoreGas;
 
-    public Voiture(float cash, float essence, float food)
+    public bool IsRunning;
+
+    public Voiture(float cash, float gas)
     {
         this.cash = cash;
-        this.gas = essence;
-        this.food = food;
+        this.gas = gas;
+        IsRunning = false;
     }
 
     public void ChangeCash(float amount) // peut etre negatif
@@ -34,10 +35,5 @@ public class Voiture {
             gas = 0;
         if (gas == 0)
             noMoreGas = true;
-    }
-
-    public void ChangeFood(float amount)
-    {
-
     }
 }

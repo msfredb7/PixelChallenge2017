@@ -2,4 +2,4 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum CaseType {Classique,Coffre,desactive,abime};
+public enum LieuType { stationEssence, laveAuto, depaneur, MainCity };

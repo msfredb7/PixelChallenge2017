@@ -44363,8 +44363,10 @@ MonoBehaviour:
   Droite: {fileID: 114565907654758330}
   Gauche: {fileID: 114643704529553274}
   Bas: {fileID: 114339476690526232}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114003350749166664
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44382,8 +44384,10 @@ MonoBehaviour:
   Droite: {fileID: 114954808353631474}
   Gauche: {fileID: 114322324811821424}
   Bas: {fileID: 114391766446421356}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114006173149534324
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44401,8 +44405,10 @@ MonoBehaviour:
   Droite: {fileID: 114740656110936028}
   Gauche: {fileID: 114304560536965142}
   Bas: {fileID: 114375525628077554}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114009442257531268
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44420,8 +44426,10 @@ MonoBehaviour:
   Droite: {fileID: 114640641669695540}
   Gauche: {fileID: 114020123126643312}
   Bas: {fileID: 114485609689511544}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114013249395183456
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44439,8 +44447,10 @@ MonoBehaviour:
   Droite: {fileID: 114366531333626580}
   Gauche: {fileID: 114521682766198834}
   Bas: {fileID: 114115290596381826}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114013314701841174
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44458,8 +44468,10 @@ MonoBehaviour:
   Droite: {fileID: 114704461849602064}
   Gauche: {fileID: 114661053988999202}
   Bas: {fileID: 114773407593706680}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114014698920921740
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44477,8 +44489,10 @@ MonoBehaviour:
   Droite: {fileID: 114433242780715716}
   Gauche: {fileID: 114521173240874550}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114015375142544514
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44496,8 +44510,10 @@ MonoBehaviour:
   Droite: {fileID: 114063055380464920}
   Gauche: {fileID: 114245677723187338}
   Bas: {fileID: 0}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114015949685503130
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44515,8 +44531,10 @@ MonoBehaviour:
   Droite: {fileID: 114275662801985940}
   Gauche: {fileID: 114502417529502496}
   Bas: {fileID: 114924353955549728}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114018690779685476
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44534,8 +44552,10 @@ MonoBehaviour:
   Droite: {fileID: 114992346134899510}
   Gauche: {fileID: 114139130800406760}
   Bas: {fileID: 114544207664633410}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114020123126643312
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44553,8 +44573,10 @@ MonoBehaviour:
   Droite: {fileID: 114009442257531268}
   Gauche: {fileID: 114198265547633620}
   Bas: {fileID: 114781722002780846}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114028810969783608
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44572,8 +44594,10 @@ MonoBehaviour:
   Droite: {fileID: 114348860499899170}
   Gauche: {fileID: 114416410511319226}
   Bas: {fileID: 114618415486742274}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114029243523238794
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44591,8 +44615,10 @@ MonoBehaviour:
   Droite: {fileID: 114259577657976564}
   Gauche: {fileID: 114856318404443686}
   Bas: {fileID: 114517559731292508}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114031027534768462
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44610,8 +44636,10 @@ MonoBehaviour:
   Droite: {fileID: 114737009768944960}
   Gauche: {fileID: 114607615106597264}
   Bas: {fileID: 114578285760192542}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114031175292293662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44629,8 +44657,10 @@ MonoBehaviour:
   Droite: {fileID: 114607827806383420}
   Gauche: {fileID: 114061704131717934}
   Bas: {fileID: 114625970421407102}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114033009255419758
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44648,8 +44678,10 @@ MonoBehaviour:
   Droite: {fileID: 0}
   Gauche: {fileID: 114121833880052844}
   Bas: {fileID: 114730819702419802}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114034213437693468
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44667,8 +44699,10 @@ MonoBehaviour:
   Droite: {fileID: 114214334119732168}
   Gauche: {fileID: 114774097383241224}
   Bas: {fileID: 114433440929412054}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114035534044361946
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44686,8 +44720,10 @@ MonoBehaviour:
   Droite: {fileID: 114539409001508652}
   Gauche: {fileID: 114799702866859374}
   Bas: {fileID: 114784829678177432}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114035667571968676
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44705,8 +44741,10 @@ MonoBehaviour:
   Droite: {fileID: 114377898500828788}
   Gauche: {fileID: 114063055380464920}
   Bas: {fileID: 0}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114036923954783812
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44724,8 +44762,10 @@ MonoBehaviour:
   Droite: {fileID: 114717472810998886}
   Gauche: {fileID: 114581184098707562}
   Bas: {fileID: 114902629380201726}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114038189242887482
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44743,8 +44783,10 @@ MonoBehaviour:
   Droite: {fileID: 114665485240910958}
   Gauche: {fileID: 114145396603126310}
   Bas: {fileID: 114034213437693468}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114038204308534692
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44762,8 +44804,10 @@ MonoBehaviour:
   Droite: {fileID: 114736870581020624}
   Gauche: {fileID: 114092426460245038}
   Bas: {fileID: 114195511954108744}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114039035883100258
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44781,8 +44825,10 @@ MonoBehaviour:
   Droite: {fileID: 114576601883434944}
   Gauche: {fileID: 114140961472284524}
   Bas: {fileID: 114285347901096306}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114041462924109624
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44800,8 +44846,10 @@ MonoBehaviour:
   Droite: {fileID: 114457235413335512}
   Gauche: {fileID: 114348549843832158}
   Bas: {fileID: 114918175512087262}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114045028473372894
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44819,8 +44867,10 @@ MonoBehaviour:
   Droite: {fileID: 114587264327948314}
   Gauche: {fileID: 114118636968013480}
   Bas: {fileID: 114930635136693784}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114047786214828750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44838,8 +44888,10 @@ MonoBehaviour:
   Droite: {fileID: 0}
   Gauche: {fileID: 114975517647219692}
   Bas: {fileID: 114571258606616938}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114050595742513942
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44857,8 +44909,10 @@ MonoBehaviour:
   Droite: {fileID: 114391766446421356}
   Gauche: {fileID: 114514997861982396}
   Bas: {fileID: 114632150920135960}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114053812882796626
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44876,8 +44930,10 @@ MonoBehaviour:
   Droite: {fileID: 114671190277798774}
   Gauche: {fileID: 114563135173546000}
   Bas: {fileID: 114315747755487222}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114056724733907272
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44895,8 +44951,10 @@ MonoBehaviour:
   Droite: {fileID: 114996195804470780}
   Gauche: {fileID: 114810586016653742}
   Bas: {fileID: 114801154069951980}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114057713181520734
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44914,8 +44972,10 @@ MonoBehaviour:
   Droite: {fileID: 114603895721114500}
   Gauche: {fileID: 114285567807576848}
   Bas: {fileID: 114404949989878642}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114058117854069348
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44933,8 +44993,10 @@ MonoBehaviour:
   Droite: {fileID: 114750791987891316}
   Gauche: {fileID: 114943193988446670}
   Bas: {fileID: 114013249395183456}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114059127278418504
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44952,8 +45014,10 @@ MonoBehaviour:
   Droite: {fileID: 114099086959027082}
   Gauche: {fileID: 114219850498736096}
   Bas: {fileID: 114917963317205376}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114059586235872440
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44971,8 +45035,10 @@ MonoBehaviour:
   Droite: {fileID: 114867671210880164}
   Gauche: {fileID: 114870818615415448}
   Bas: {fileID: 114937282345511160}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114059668261123028
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44990,8 +45056,10 @@ MonoBehaviour:
   Droite: {fileID: 114104726767813640}
   Gauche: {fileID: 114072401826776490}
   Bas: {fileID: 114018690779685476}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114061704131717934
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45009,8 +45077,10 @@ MonoBehaviour:
   Droite: {fileID: 114031175292293662}
   Gauche: {fileID: 114506856415173444}
   Bas: {fileID: 114530849685041030}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114061845345491504
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45028,8 +45098,10 @@ MonoBehaviour:
   Droite: {fileID: 114640494176628358}
   Gauche: {fileID: 114322062531637968}
   Bas: {fileID: 114731646525401736}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114063055380464920
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45047,8 +45119,10 @@ MonoBehaviour:
   Droite: {fileID: 114035667571968676}
   Gauche: {fileID: 114015375142544514}
   Bas: {fileID: 0}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114063471541300778
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45066,8 +45140,10 @@ MonoBehaviour:
   Droite: {fileID: 114276551859261816}
   Gauche: {fileID: 114558342195335552}
   Bas: {fileID: 114237745645687802}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114064356050025130
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45085,8 +45161,10 @@ MonoBehaviour:
   Droite: {fileID: 114449002110533514}
   Gauche: {fileID: 114501472284330160}
   Bas: {fileID: 114810586016653742}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114067562550361914
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45104,8 +45182,10 @@ MonoBehaviour:
   Droite: {fileID: 114967901617786798}
   Gauche: {fileID: 114642869092134556}
   Bas: {fileID: 114164073700090644}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114067929711241030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45123,8 +45203,10 @@ MonoBehaviour:
   Droite: {fileID: 114810586016653742}
   Gauche: {fileID: 114640641669695540}
   Bas: {fileID: 114254485412584406}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114069025316386528
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45142,8 +45224,10 @@ MonoBehaviour:
   Droite: {fileID: 114995763154156882}
   Gauche: {fileID: 114898303597947430}
   Bas: {fileID: 114961636405549568}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114070364559707124
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45161,8 +45245,10 @@ MonoBehaviour:
   Droite: {fileID: 114346343297959708}
   Gauche: {fileID: 114586145476659414}
   Bas: {fileID: 114701445920508918}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114070801197870876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45180,8 +45266,10 @@ MonoBehaviour:
   Droite: {fileID: 114491069772432524}
   Gauche: {fileID: 114578285760192542}
   Bas: {fileID: 114746170754318666}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114072401826776490
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45199,8 +45287,10 @@ MonoBehaviour:
   Droite: {fileID: 114059668261123028}
   Gauche: {fileID: 0}
   Bas: {fileID: 114139130800406760}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114073521124455652
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45218,8 +45308,10 @@ MonoBehaviour:
   Droite: {fileID: 114342270704280606}
   Gauche: {fileID: 114769073213779192}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114075589921207930
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45237,8 +45329,10 @@ MonoBehaviour:
   Droite: {fileID: 114379028082094904}
   Gauche: {fileID: 114641199425751584}
   Bas: {fileID: 114437936025720116}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114078060241406452
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45256,8 +45350,10 @@ MonoBehaviour:
   Droite: {fileID: 114774097383241224}
   Gauche: {fileID: 114163423056620872}
   Bas: {fileID: 114411128988423072}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114078167782625472
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45275,8 +45371,10 @@ MonoBehaviour:
   Droite: {fileID: 114188983722169664}
   Gauche: {fileID: 114178352692629392}
   Bas: {fileID: 114015375142544514}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114080941931988054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45294,8 +45392,10 @@ MonoBehaviour:
   Droite: {fileID: 114501472284330160}
   Gauche: {fileID: 114506436252633966}
   Bas: {fileID: 114640641669695540}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114083012827400530
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45313,8 +45413,10 @@ MonoBehaviour:
   Droite: {fileID: 114602141845331342}
   Gauche: {fileID: 114701445920508918}
   Bas: {fileID: 114102405920995990}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114083172413895398
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45332,8 +45434,10 @@ MonoBehaviour:
   Droite: {fileID: 114544493812210260}
   Gauche: {fileID: 114830428572778042}
   Bas: {fileID: 114884169533737784}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114085828371023174
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45351,8 +45455,10 @@ MonoBehaviour:
   Droite: {fileID: 114410981520302546}
   Gauche: {fileID: 114438586310518748}
   Bas: {fileID: 114505932593363488}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114090022499787316
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45370,8 +45476,10 @@ MonoBehaviour:
   Droite: {fileID: 114293158789082442}
   Gauche: {fileID: 114919244531727180}
   Bas: {fileID: 114813628283623622}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114092101101818760
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45389,8 +45497,10 @@ MonoBehaviour:
   Droite: {fileID: 114707958320586034}
   Gauche: {fileID: 0}
   Bas: {fileID: 114422386632063822}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114092426460245038
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45408,8 +45518,10 @@ MonoBehaviour:
   Droite: {fileID: 114038204308534692}
   Gauche: {fileID: 114348860499899170}
   Bas: {fileID: 114403097864709914}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114092708914681516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45427,8 +45539,10 @@ MonoBehaviour:
   Droite: {fileID: 114400286217767064}
   Gauche: {fileID: 114162012125270654}
   Bas: {fileID: 114233718783645474}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114094545842717878
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45446,8 +45560,10 @@ MonoBehaviour:
   Droite: {fileID: 114652790886007996}
   Gauche: {fileID: 114930911782516768}
   Bas: {fileID: 114573944154137192}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114099086959027082
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45465,8 +45581,10 @@ MonoBehaviour:
   Droite: {fileID: 114902629380201726}
   Gauche: {fileID: 114059127278418504}
   Bas: {fileID: 114466392631823898}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114101540781493668
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45484,8 +45602,10 @@ MonoBehaviour:
   Droite: {fileID: 114571258606616938}
   Gauche: {fileID: 114384095206366708}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114102405920995990
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45503,8 +45623,10 @@ MonoBehaviour:
   Droite: {fileID: 114319592115296360}
   Gauche: {fileID: 114665485240910958}
   Bas: {fileID: 114135158840419916}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114104609133304816
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45522,8 +45644,10 @@ MonoBehaviour:
   Droite: {fileID: 114237745645687802}
   Gauche: {fileID: 114697539113669240}
   Bas: {fileID: 114513026177718756}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114104726767813640
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45541,8 +45665,10 @@ MonoBehaviour:
   Droite: {fileID: 114751938319946508}
   Gauche: {fileID: 114059668261123028}
   Bas: {fileID: 114992346134899510}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114105820078289836
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45560,8 +45686,10 @@ MonoBehaviour:
   Droite: {fileID: 114386639360862120}
   Gauche: {fileID: 114294852633919228}
   Bas: {fileID: 114242579256692342}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114105946817860594
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45579,8 +45707,10 @@ MonoBehaviour:
   Droite: {fileID: 114642869092134556}
   Gauche: {fileID: 114884169533737784}
   Bas: {fileID: 114903319683078116}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114107796864182114
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45598,8 +45728,10 @@ MonoBehaviour:
   Droite: {fileID: 114268970232457588}
   Gauche: {fileID: 114769570128226366}
   Bas: {fileID: 114094545842717878}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114109430852775602
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45617,8 +45749,10 @@ MonoBehaviour:
   Droite: {fileID: 114367010416820948}
   Gauche: {fileID: 114552106009642200}
   Bas: {fileID: 114375014910142930}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114115290596381826
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45636,8 +45770,10 @@ MonoBehaviour:
   Droite: {fileID: 114339360901589716}
   Gauche: {fileID: 114426192518354566}
   Bas: {fileID: 114591147207061708}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114118477197598486
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45655,8 +45791,10 @@ MonoBehaviour:
   Droite: {fileID: 0}
   Gauche: {fileID: 114709458278109360}
   Bas: {fileID: 114268970232457588}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114118636968013480
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45674,8 +45812,10 @@ MonoBehaviour:
   Droite: {fileID: 114045028473372894}
   Gauche: {fileID: 114866544782610548}
   Bas: {fileID: 114218607934081366}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114120110131087216
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45693,8 +45833,10 @@ MonoBehaviour:
   Droite: {fileID: 114892724391798648}
   Gauche: {fileID: 114505932593363488}
   Bas: {fileID: 114919244531727180}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114121225927469254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45712,8 +45854,10 @@ MonoBehaviour:
   Droite: {fileID: 114690282284799990}
   Gauche: {fileID: 114280578944423812}
   Bas: {fileID: 114343340995563206}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114121833880052844
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45731,8 +45875,10 @@ MonoBehaviour:
   Droite: {fileID: 114033009255419758}
   Gauche: {fileID: 114602141845331342}
   Bas: {fileID: 114246750742335406}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114123787875598500
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45750,8 +45896,10 @@ MonoBehaviour:
   Droite: {fileID: 114769570128226366}
   Gauche: {fileID: 114260661570696000}
   Bas: {fileID: 114515150949621510}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114129844714425222
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45769,8 +45917,10 @@ MonoBehaviour:
   Droite: {fileID: 0}
   Gauche: {fileID: 114185461605347642}
   Bas: {fileID: 114033009255419758}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114133224795434480
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45788,8 +45938,10 @@ MonoBehaviour:
   Droite: {fileID: 114924353955549728}
   Gauche: {fileID: 114452275526436010}
   Bas: {fileID: 114640473175919200}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114135158840419916
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45807,8 +45959,10 @@ MonoBehaviour:
   Droite: {fileID: 114463406694719918}
   Gauche: {fileID: 114214334119732168}
   Bas: {fileID: 114322324811821424}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114139122767184058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45826,8 +45980,10 @@ MonoBehaviour:
   Droite: {fileID: 114255896782757228}
   Gauche: {fileID: 114746170754318666}
   Bas: {fileID: 114145223184659756}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114139130800406760
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45845,8 +46001,10 @@ MonoBehaviour:
   Droite: {fileID: 114018690779685476}
   Gauche: {fileID: 0}
   Bas: {fileID: 114522962577152486}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114140961472284524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45864,8 +46022,10 @@ MonoBehaviour:
   Droite: {fileID: 114039035883100258}
   Gauche: {fileID: 114880178481989080}
   Bas: {fileID: 114824261147018450}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114145223184659756
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45883,8 +46043,10 @@ MonoBehaviour:
   Droite: {fileID: 114299472739550400}
   Gauche: {fileID: 114460418848322254}
   Bas: {fileID: 114105820078289836}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114145396603126310
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45902,8 +46064,10 @@ MonoBehaviour:
   Droite: {fileID: 114038189242887482}
   Gauche: {fileID: 114826077164139858}
   Bas: {fileID: 114774097383241224}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114146367729117130
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45921,8 +46085,10 @@ MonoBehaviour:
   Droite: {fileID: 114937282345511160}
   Gauche: {fileID: 114855279486800264}
   Bas: {fileID: 114967382573403384}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114155771155907924
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45940,8 +46106,10 @@ MonoBehaviour:
   Droite: {fileID: 114394822818613484}
   Gauche: {fileID: 114600392419922710}
   Bas: {fileID: 114776975600408160}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114162012125270654
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45959,8 +46127,10 @@ MonoBehaviour:
   Droite: {fileID: 114092708914681516}
   Gauche: {fileID: 114466392631823898}
   Bas: {fileID: 114587264327948314}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114163423056620872
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45978,8 +46148,10 @@ MonoBehaviour:
   Droite: {fileID: 114078060241406452}
   Gauche: {fileID: 114924353955549728}
   Bas: {fileID: 114189597729951754}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114164073700090644
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45997,8 +46169,10 @@ MonoBehaviour:
   Droite: {fileID: 114312138910402574}
   Gauche: {fileID: 114699510603521094}
   Bas: {fileID: 114444926433883796}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114164809263199378
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46016,8 +46190,10 @@ MonoBehaviour:
   Droite: {fileID: 114494310840588210}
   Gauche: {fileID: 114736870581020624}
   Bas: {fileID: 114306362247966684}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114168075151500534
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46035,8 +46211,10 @@ MonoBehaviour:
   Droite: {fileID: 114947523973268236}
   Gauche: {fileID: 114250431690165408}
   Bas: {fileID: 114733713573318078}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114168085527483704
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46054,8 +46232,10 @@ MonoBehaviour:
   Droite: {fileID: 114280578944423812}
   Gauche: {fileID: 114422386632063822}
   Bas: {fileID: 114911975231950762}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114168187455290458
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46073,8 +46253,10 @@ MonoBehaviour:
   Droite: {fileID: 114811905838115364}
   Gauche: {fileID: 114731646525401736}
   Bas: {fileID: 114822794465316332}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114169950733551428
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46092,8 +46274,10 @@ MonoBehaviour:
   Droite: {fileID: 114477117850577954}
   Gauche: {fileID: 114517559731292508}
   Bas: {fileID: 114557387668706372}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114170213825218576
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46111,8 +46295,10 @@ MonoBehaviour:
   Droite: {fileID: 114661053988999202}
   Gauche: {fileID: 114340608454536944}
   Bas: {fileID: 114740122042139688}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114171896784192374
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46130,8 +46316,10 @@ MonoBehaviour:
   Droite: {fileID: 114465225530181764}
   Gauche: {fileID: 114474788466339142}
   Bas: {fileID: 114346343297959708}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114178352692629392
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46149,8 +46337,10 @@ MonoBehaviour:
   Droite: {fileID: 114078167782625472}
   Gauche: {fileID: 0}
   Bas: {fileID: 114245677723187338}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114178597550618944
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46168,8 +46358,10 @@ MonoBehaviour:
   Droite: {fileID: 114448060249316500}
   Gauche: {fileID: 114813628283623622}
   Bas: {fileID: 114880178481989080}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114183671000118646
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46187,8 +46379,10 @@ MonoBehaviour:
   Droite: {fileID: 114198265547633620}
   Gauche: {fileID: 114776192843683192}
   Bas: {fileID: 114598951638479364}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114185461605347642
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46206,8 +46400,10 @@ MonoBehaviour:
   Droite: {fileID: 114129844714425222}
   Gauche: {fileID: 114723662591951674}
   Bas: {fileID: 114121833880052844}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114188983722169664
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46225,8 +46421,10 @@ MonoBehaviour:
   Droite: {fileID: 114375014910142930}
   Gauche: {fileID: 114078167782625472}
   Bas: {fileID: 114063055380464920}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114189597729951754
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46244,8 +46442,10 @@ MonoBehaviour:
   Droite: {fileID: 114411128988423072}
   Gauche: {fileID: 114989189968169266}
   Bas: {fileID: 114575016393213864}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114192083071340400
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46263,8 +46463,10 @@ MonoBehaviour:
   Droite: {fileID: 114609802792952178}
   Gauche: {fileID: 114821531398886398}
   Bas: {fileID: 114348549843832158}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114195511954108744
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46282,8 +46484,10 @@ MonoBehaviour:
   Droite: {fileID: 114403866239565592}
   Gauche: {fileID: 114403097864709914}
   Bas: {fileID: 114276551859261816}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114196185115055184
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46301,8 +46505,10 @@ MonoBehaviour:
   Droite: {fileID: 114702459907369186}
   Gauche: {fileID: 114583525386138234}
   Bas: {fileID: 114974800220013382}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114196364606523666
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46320,8 +46526,10 @@ MonoBehaviour:
   Droite: {fileID: 114872407680236358}
   Gauche: {fileID: 114648988329784486}
   Bas: {fileID: 114821531398886398}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114196620583294464
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46339,8 +46547,10 @@ MonoBehaviour:
   Droite: {fileID: 114821531398886398}
   Gauche: {fileID: 114394822818613484}
   Bas: {fileID: 114384376138660166}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114198265547633620
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46358,8 +46568,10 @@ MonoBehaviour:
   Droite: {fileID: 114020123126643312}
   Gauche: {fileID: 114183671000118646}
   Bas: {fileID: 114564944713464788}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114199161863546888
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46377,8 +46589,10 @@ MonoBehaviour:
   Droite: {fileID: 114250431690165408}
   Gauche: {fileID: 114448060249316500}
   Bas: {fileID: 114039035883100258}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114200596574715540
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46396,8 +46610,10 @@ MonoBehaviour:
   Droite: {fileID: 114704782654159894}
   Gauche: {fileID: 114363736271426408}
   Bas: {fileID: 114742044355789020}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114202252092283802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46415,8 +46631,10 @@ MonoBehaviour:
   Droite: {fileID: 114343340995563206}
   Gauche: {fileID: 114911975231950762}
   Bas: {fileID: 114312010847782662}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114202785537703012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46434,8 +46652,10 @@ MonoBehaviour:
   Droite: {fileID: 114251031189982934}
   Gauche: {fileID: 114444926433883796}
   Bas: {fileID: 114438586310518748}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114204547527271334
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46453,8 +46673,10 @@ MonoBehaviour:
   Droite: {fileID: 114418787518220256}
   Gauche: {fileID: 114717472810998886}
   Bas: {fileID: 114249795628734430}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114209217195226752
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46472,8 +46694,10 @@ MonoBehaviour:
   Droite: {fileID: 114438586310518748}
   Gauche: {fileID: 114948205609841748}
   Bas: {fileID: 114031027534768462}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114210976876718826
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46491,8 +46715,10 @@ MonoBehaviour:
   Droite: {fileID: 114823173144091604}
   Gauche: {fileID: 114808638821775446}
   Bas: {fileID: 114537593516786092}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114213279461562366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46510,8 +46736,10 @@ MonoBehaviour:
   Droite: {fileID: 114557387668706372}
   Gauche: {fileID: 114449002110533514}
   Bas: {fileID: 114996195804470780}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114214334119732168
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46529,8 +46757,10 @@ MonoBehaviour:
   Droite: {fileID: 114135158840419916}
   Gauche: {fileID: 114034213437693468}
   Bas: {fileID: 114961325415109470}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114215279122208140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46548,8 +46778,10 @@ MonoBehaviour:
   Droite: {fileID: 114709458278109360}
   Gauche: {fileID: 114691378810530976}
   Bas: {fileID: 114769570128226366}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114218607934081366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46567,8 +46799,10 @@ MonoBehaviour:
   Droite: {fileID: 114930635136693784}
   Gauche: {fileID: 114377898500828788}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114218853496401394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46586,8 +46820,10 @@ MonoBehaviour:
   Droite: {fileID: 114929150230219540}
   Gauche: {fileID: 114597690180086944}
   Bas: {fileID: 114550316604130776}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114219850498736096
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46605,8 +46841,10 @@ MonoBehaviour:
   Droite: {fileID: 114059127278418504}
   Gauche: {fileID: 114867441874574206}
   Bas: {fileID: 114367010416820948}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114221795525608128
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46624,8 +46862,10 @@ MonoBehaviour:
   Droite: {fileID: 114515150949621510}
   Gauche: {fileID: 114704461849602064}
   Bas: {fileID: 114643704529553274}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114221848650721140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46643,8 +46883,10 @@ MonoBehaviour:
   Droite: {fileID: 114591879657980030}
   Gauche: {fileID: 114339476690526232}
   Bas: {fileID: 114059586235872440}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114223139541625358
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46662,8 +46904,10 @@ MonoBehaviour:
   Droite: {fileID: 114404874090814218}
   Gauche: {fileID: 114242579256692342}
   Bas: {fileID: 114897941163793430}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114226258075351196
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46681,8 +46925,10 @@ MonoBehaviour:
   Droite: {fileID: 114648988329784486}
   Gauche: {fileID: 114298005614048558}
   Bas: {fileID: 114394822818613484}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114229292830802290
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46700,8 +46946,10 @@ MonoBehaviour:
   Droite: {fileID: 114914276993049336}
   Gauche: {fileID: 114312010847782662}
   Bas: {fileID: 114363736271426408}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114231670678423454
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46719,8 +46967,10 @@ MonoBehaviour:
   Droite: {fileID: 114890878416582128}
   Gauche: {fileID: 114557387668706372}
   Bas: {fileID: 114524826109320846}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114233718783645474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46738,8 +46988,10 @@ MonoBehaviour:
   Droite: {fileID: 114776192843683192}
   Gauche: {fileID: 114587264327948314}
   Bas: {fileID: 114275559749014048}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114237745645687802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46757,8 +47009,10 @@ MonoBehaviour:
   Droite: {fileID: 114452275526436010}
   Gauche: {fileID: 114104609133304816}
   Bas: {fileID: 114807480371212548}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114240640528454578
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46776,8 +47030,10 @@ MonoBehaviour:
   Droite: {fileID: 114772068099611786}
   Gauche: {fileID: 114660785433805616}
   Bas: {fileID: 114920125116425784}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 0}
+  standardMat: {fileID: 0}
 --- !u!114 &114242579256692342
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46795,8 +47051,10 @@ MonoBehaviour:
   Droite: {fileID: 114223139541625358}
   Gauche: {fileID: 114815673142422742}
   Bas: {fileID: 114621258323995472}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114245677723187338
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46814,8 +47072,10 @@ MonoBehaviour:
   Droite: {fileID: 114015375142544514}
   Gauche: {fileID: 0}
   Bas: {fileID: 0}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114246750742335406
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46833,8 +47093,10 @@ MonoBehaviour:
   Droite: {fileID: 114730819702419802}
   Gauche: {fileID: 114319592115296360}
   Bas: {fileID: 114596540583502038}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114249795628734430
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46852,8 +47114,10 @@ MonoBehaviour:
   Droite: {fileID: 114290419049833934}
   Gauche: {fileID: 114371649072371794}
   Bas: {fileID: 114400286217767064}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114250431690165408
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46871,8 +47135,10 @@ MonoBehaviour:
   Droite: {fileID: 114168075151500534}
   Gauche: {fileID: 114199161863546888}
   Bas: {fileID: 114576601883434944}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114251031189982934
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46890,8 +47156,10 @@ MonoBehaviour:
   Droite: {fileID: 114537593516786092}
   Gauche: {fileID: 114202785537703012}
   Bas: {fileID: 114085828371023174}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114254485412584406
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46909,8 +47177,10 @@ MonoBehaviour:
   Droite: {fileID: 114512973975197214}
   Gauche: {fileID: 114618194367614846}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114255896782757228
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46928,8 +47198,10 @@ MonoBehaviour:
   Droite: {fileID: 114813628283623622}
   Gauche: {fileID: 114139122767184058}
   Bas: {fileID: 114299472739550400}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114259051635975310
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46947,8 +47219,10 @@ MonoBehaviour:
   Droite: {fileID: 114655165792233536}
   Gauche: {fileID: 114741601119968678}
   Bas: {fileID: 114059668261123028}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114259414681140910
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46966,8 +47240,10 @@ MonoBehaviour:
   Droite: {fileID: 114415318973675904}
   Gauche: {fileID: 114605800264963874}
   Bas: {fileID: 114345427096442496}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114259577657976564
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46985,8 +47261,10 @@ MonoBehaviour:
   Droite: {fileID: 114607882555995614}
   Gauche: {fileID: 114029243523238794}
   Bas: {fileID: 114169950733551428}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114260661570696000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47004,8 +47282,10 @@ MonoBehaviour:
   Droite: {fileID: 114123787875598500}
   Gauche: {fileID: 114404949989878642}
   Bas: {fileID: 114221795525608128}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114261657201698944
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47023,8 +47303,10 @@ MonoBehaviour:
   Droite: {fileID: 114960226623185218}
   Gauche: {fileID: 0}
   Bas: {fileID: 114805062480000958}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114267927893299176
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47042,8 +47324,10 @@ MonoBehaviour:
   Droite: {fileID: 114960161971635478}
   Gauche: {fileID: 114784216458377342}
   Bas: {fileID: 114080941931988054}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114268970232457588
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47061,8 +47345,10 @@ MonoBehaviour:
   Droite: {fileID: 0}
   Gauche: {fileID: 114107796864182114}
   Bas: {fileID: 114652790886007996}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114275559749014048
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47080,8 +47366,10 @@ MonoBehaviour:
   Droite: {fileID: 114315870018889478}
   Gauche: {fileID: 114659377587136530}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114275662801985940
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47099,8 +47387,10 @@ MonoBehaviour:
   Droite: {fileID: 114826077164139858}
   Gauche: {fileID: 114015949685503130}
   Bas: {fileID: 114163423056620872}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114276551859261816
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47118,8 +47408,10 @@ MonoBehaviour:
   Droite: {fileID: 114502417529502496}
   Gauche: {fileID: 114063471541300778}
   Bas: {fileID: 114452275526436010}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114280578944423812
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47137,8 +47429,10 @@ MonoBehaviour:
   Droite: {fileID: 114121225927469254}
   Gauche: {fileID: 114168085527483704}
   Bas: {fileID: 114202252092283802}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114285347901096306
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47156,8 +47450,10 @@ MonoBehaviour:
   Droite: {fileID: 114563135173546000}
   Gauche: {fileID: 114824261147018450}
   Bas: {fileID: 114314750563934874}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114285567807576848
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47175,8 +47471,10 @@ MonoBehaviour:
   Droite: {fileID: 114057713181520734}
   Gauche: {fileID: 114353665485502146}
   Bas: {fileID: 114654687683406196}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114287431087239296
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47194,8 +47492,10 @@ MonoBehaviour:
   Droite: {fileID: 114312010847782662}
   Gauche: {fileID: 114440575968557750}
   Bas: {fileID: 114411480239182052}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114289941742048460
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47213,8 +47513,10 @@ MonoBehaviour:
   Droite: {fileID: 0}
   Gauche: {fileID: 114803831023487248}
   Bas: {fileID: 114118477197598486}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114290419049833934
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47232,8 +47534,10 @@ MonoBehaviour:
   Droite: {fileID: 114677762960860536}
   Gauche: {fileID: 114249795628734430}
   Bas: {fileID: 114943795503034518}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114292829453620130
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47251,8 +47555,10 @@ MonoBehaviour:
   Droite: {fileID: 114942201527969340}
   Gauche: {fileID: 114427941264915672}
   Bas: {fileID: 114736870581020624}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114293158789082442
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47270,8 +47576,10 @@ MonoBehaviour:
   Droite: {fileID: 114700991493433672}
   Gauche: {fileID: 114090022499787316}
   Bas: {fileID: 114178597550618944}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114294852633919228
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47289,8 +47597,10 @@ MonoBehaviour:
   Droite: {fileID: 114105820078289836}
   Gauche: {fileID: 114832858149044506}
   Bas: {fileID: 114815673142422742}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114298005614048558
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47308,8 +47618,10 @@ MonoBehaviour:
   Droite: {fileID: 114226258075351196}
   Gauche: {fileID: 114637808758361960}
   Bas: {fileID: 114155771155907924}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114298393600285628
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47327,8 +47639,10 @@ MonoBehaviour:
   Droite: {fileID: 114433440929412054}
   Gauche: {fileID: 114411128988423072}
   Bas: {fileID: 114788670854604696}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114299472739550400
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47346,8 +47660,10 @@ MonoBehaviour:
   Droite: {fileID: 114921428768515982}
   Gauche: {fileID: 114145223184659756}
   Bas: {fileID: 114386639360862120}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114303354104079570
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47365,8 +47681,10 @@ MonoBehaviour:
   Droite: {fileID: 114934702784957854}
   Gauche: {fileID: 114315533237885054}
   Bas: {fileID: 114348860499899170}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114304560536965142
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47384,8 +47702,10 @@ MonoBehaviour:
   Droite: {fileID: 114006173149534324}
   Gauche: {fileID: 114550316604130776}
   Bas: {fileID: 114737510968711044}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114306362247966684
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47403,8 +47723,10 @@ MonoBehaviour:
   Droite: {fileID: 114953651993687322}
   Gauche: {fileID: 114403866239565592}
   Bas: {fileID: 114015949685503130}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114310491057950716
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47422,8 +47744,10 @@ MonoBehaviour:
   Droite: {fileID: 114504573172451312}
   Gauche: {fileID: 0}
   Bas: {fileID: 114178352692629392}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114312010847782662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47441,8 +47765,10 @@ MonoBehaviour:
   Droite: {fileID: 114229292830802290}
   Gauche: {fileID: 114287431087239296}
   Bas: {fileID: 114409157564027794}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114312138910402574
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47460,8 +47786,10 @@ MonoBehaviour:
   Droite: {fileID: 114808638821775446}
   Gauche: {fileID: 114164073700090644}
   Bas: {fileID: 114202785537703012}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114313797327493742
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47479,8 +47807,10 @@ MonoBehaviour:
   Droite: {fileID: 114367766256004636}
   Gauche: {fileID: 114391766446421356}
   Bas: {fileID: 114803831023487248}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114314750563934874
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47498,8 +47828,10 @@ MonoBehaviour:
   Droite: {fileID: 114676573542681058}
   Gauche: {fileID: 114814427120194426}
   Bas: {fileID: 114259577657976564}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114315533237885054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47517,8 +47849,10 @@ MonoBehaviour:
   Droite: {fileID: 114303354104079570}
   Gauche: {fileID: 114651336696106298}
   Bas: {fileID: 114028810969783608}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114315747755487222
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47536,8 +47870,10 @@ MonoBehaviour:
   Droite: {fileID: 114340608454536944}
   Gauche: {fileID: 114676573542681058}
   Bas: {fileID: 114333289361263152}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114315800713610268
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47555,8 +47891,10 @@ MonoBehaviour:
   Droite: {fileID: 114895166565904958}
   Gauche: {fileID: 114992346134899510}
   Bas: {fileID: 114596792498167130}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114315870018889478
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47574,8 +47912,10 @@ MonoBehaviour:
   Droite: {fileID: 114598951638479364}
   Gauche: {fileID: 114275559749014048}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114316655834108378
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47593,8 +47933,10 @@ MonoBehaviour:
   Droite: {fileID: 114739510444956108}
   Gauche: {fileID: 114943795503034518}
   Bas: {fileID: 114198265547633620}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114319592115296360
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47612,8 +47954,10 @@ MonoBehaviour:
   Droite: {fileID: 114246750742335406}
   Gauche: {fileID: 114102405920995990}
   Bas: {fileID: 114463406694719918}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114322062531637968
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47631,8 +47975,10 @@ MonoBehaviour:
   Droite: {fileID: 114061845345491504}
   Gauche: {fileID: 114751938319946508}
   Bas: {fileID: 114895166565904958}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114322324811821424
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47650,8 +47996,10 @@ MonoBehaviour:
   Droite: {fileID: 114003350749166664}
   Gauche: {fileID: 114961325415109470}
   Bas: {fileID: 114050595742513942}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114333289361263152
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47669,8 +48017,10 @@ MonoBehaviour:
   Droite: {fileID: 114589024067920030}
   Gauche: {fileID: 114607882555995614}
   Bas: {fileID: 114424981970721292}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114334475247533856
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47688,8 +48038,10 @@ MonoBehaviour:
   Droite: {fileID: 114514997861982396}
   Gauche: {fileID: 114788670854604696}
   Bas: {fileID: 114636111932948860}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114336769995160884
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47707,8 +48059,10 @@ MonoBehaviour:
   Droite: {fileID: 114401461312561872}
   Gauche: {fileID: 114591147207061708}
   Bas: {fileID: 114898303597947430}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114339360901589716
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47726,8 +48080,10 @@ MonoBehaviour:
   Droite: {fileID: 114832858149044506}
   Gauche: {fileID: 114115290596381826}
   Bas: {fileID: 114336769995160884}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114339476690526232
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47745,8 +48101,10 @@ MonoBehaviour:
   Droite: {fileID: 114221848650721140}
   Gauche: {fileID: 114646268160942816}
   Bas: {fileID: 114870818615415448}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114340608454536944
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47764,8 +48122,10 @@ MonoBehaviour:
   Droite: {fileID: 114170213825218576}
   Gauche: {fileID: 114315747755487222}
   Bas: {fileID: 114589024067920030}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114342270704280606
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47783,8 +48143,10 @@ MonoBehaviour:
   Droite: {fileID: 114350448503665354}
   Gauche: {fileID: 114073521124455652}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114342958006460968
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47802,8 +48164,10 @@ MonoBehaviour:
   Droite: {fileID: 0}
   Gauche: {fileID: 114867671210880164}
   Bas: {fileID: 114047786214828750}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114343340995563206
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47821,8 +48185,10 @@ MonoBehaviour:
   Droite: {fileID: 114585020949052970}
   Gauche: {fileID: 114202252092283802}
   Bas: {fileID: 114229292830802290}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114345427096442496
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47840,8 +48206,10 @@ MonoBehaviour:
   Droite: {fileID: 114570216854338912}
   Gauche: {fileID: 114967901617786798}
   Bas: {fileID: 114808638821775446}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114346343297959708
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47859,8 +48227,10 @@ MonoBehaviour:
   Droite: {fileID: 114723662591951674}
   Gauche: {fileID: 114070364559707124}
   Bas: {fileID: 114083012827400530}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114348549843832158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47878,8 +48248,10 @@ MonoBehaviour:
   Droite: {fileID: 114041462924109624}
   Gauche: {fileID: 114374054807240104}
   Bas: {fileID: 114539409001508652}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114348860499899170
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47897,8 +48269,10 @@ MonoBehaviour:
   Droite: {fileID: 114092426460245038}
   Gauche: {fileID: 114028810969783608}
   Bas: {fileID: 114518633584708342}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114348957683520316
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47916,8 +48290,10 @@ MonoBehaviour:
   Droite: {fileID: 114524826109320846}
   Gauche: {fileID: 114996195804470780}
   Bas: {fileID: 114073521124455652}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114350448503665354
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47935,8 +48311,10 @@ MonoBehaviour:
   Droite: {fileID: 114974800220013382}
   Gauche: {fileID: 114342270704280606}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114353665485502146
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47954,8 +48332,10 @@ MonoBehaviour:
   Droite: {fileID: 114285567807576848}
   Gauche: {fileID: 114569452859629362}
   Bas: {fileID: 114842765206063458}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114362585597926336
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47973,8 +48353,10 @@ MonoBehaviour:
   Droite: {fileID: 114460418848322254}
   Gauche: {fileID: 114366531333626580}
   Bas: {fileID: 114832858149044506}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114362750594160454
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47992,8 +48374,10 @@ MonoBehaviour:
   Droite: {fileID: 0}
   Gauche: {fileID: 114591879657980030}
   Bas: {fileID: 114342958006460968}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114363736271426408
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48011,8 +48395,10 @@ MonoBehaviour:
   Droite: {fileID: 114200596574715540}
   Gauche: {fileID: 114409157564027794}
   Bas: {fileID: 114594204902653140}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114366531333626580
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48030,8 +48416,10 @@ MonoBehaviour:
   Droite: {fileID: 114362585597926336}
   Gauche: {fileID: 114013249395183456}
   Bas: {fileID: 114339360901589716}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114367010416820948
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48049,8 +48437,10 @@ MonoBehaviour:
   Droite: {fileID: 114917963317205376}
   Gauche: {fileID: 114109430852775602}
   Bas: {fileID: 114866544782610548}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114367766256004636
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48068,8 +48458,10 @@ MonoBehaviour:
   Droite: {fileID: 0}
   Gauche: {fileID: 114313797327493742}
   Bas: {fileID: 114289941742048460}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114371649072371794
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48087,8 +48479,10 @@ MonoBehaviour:
   Droite: {fileID: 114249795628734430}
   Gauche: {fileID: 114902629380201726}
   Bas: {fileID: 114092708914681516}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114374054807240104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48106,8 +48500,10 @@ MonoBehaviour:
   Droite: {fileID: 114348549843832158}
   Gauche: {fileID: 114384376138660166}
   Bas: {fileID: 114035534044361946}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114375014910142930
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48125,8 +48521,10 @@ MonoBehaviour:
   Droite: {fileID: 114866544782610548}
   Gauche: {fileID: 114188983722169664}
   Bas: {fileID: 114035667571968676}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114375525628077554
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48144,8 +48542,10 @@ MonoBehaviour:
   Droite: {fileID: 114943193988446670}
   Gauche: {fileID: 114737510968711044}
   Bas: {fileID: 114759814009086958}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114377898500828788
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48163,8 +48563,10 @@ MonoBehaviour:
   Droite: {fileID: 114218607934081366}
   Gauche: {fileID: 114035667571968676}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114379028082094904
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48182,8 +48584,10 @@ MonoBehaviour:
   Droite: {fileID: 114413175245867144}
   Gauche: {fileID: 114075589921207930}
   Bas: {fileID: 114841589043341534}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114379839091765272
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48201,8 +48605,10 @@ MonoBehaviour:
   Droite: {fileID: 114411480239182052}
   Gauche: {fileID: 0}
   Bas: {fileID: 114741601119968678}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114384095206366708
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48220,8 +48626,10 @@ MonoBehaviour:
   Droite: {fileID: 114101540781493668}
   Gauche: {fileID: 114967382573403384}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114384376138660166
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48239,8 +48647,10 @@ MonoBehaviour:
   Droite: {fileID: 114374054807240104}
   Gauche: {fileID: 114578455058882146}
   Bas: {fileID: 114799702866859374}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114384919992768134
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48258,8 +48668,10 @@ MonoBehaviour:
   Droite: {fileID: 114578285760192542}
   Gauche: {fileID: 114835655184415188}
   Bas: {fileID: 114750791987891316}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114386639360862120
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48277,8 +48689,10 @@ MonoBehaviour:
   Droite: {fileID: 114618444925556510}
   Gauche: {fileID: 114105820078289836}
   Bas: {fileID: 114223139541625358}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114391422009793976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48296,8 +48710,10 @@ MonoBehaviour:
   Droite: {fileID: 114632617596617222}
   Gauche: {fileID: 114784829678177432}
   Bas: {fileID: 114929150230219540}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114391766446421356
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48315,8 +48731,10 @@ MonoBehaviour:
   Droite: {fileID: 114313797327493742}
   Gauche: {fileID: 114050595742513942}
   Bas: {fileID: 114398579118852282}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114394822818613484
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48334,8 +48752,10 @@ MonoBehaviour:
   Droite: {fileID: 114196620583294464}
   Gauche: {fileID: 114155771155907924}
   Bas: {fileID: 114578455058882146}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114398579118852282
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48353,8 +48773,10 @@ MonoBehaviour:
   Droite: {fileID: 114803831023487248}
   Gauche: {fileID: 114632150920135960}
   Bas: {fileID: 114215279122208140}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114400286217767064
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48372,8 +48794,10 @@ MonoBehaviour:
   Droite: {fileID: 114943795503034518}
   Gauche: {fileID: 114092708914681516}
   Bas: {fileID: 114776192843683192}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114401461312561872
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48391,8 +48815,10 @@ MonoBehaviour:
   Droite: {fileID: 114815673142422742}
   Gauche: {fileID: 114336769995160884}
   Bas: {fileID: 114069025316386528}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114403097864709914
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48410,8 +48836,10 @@ MonoBehaviour:
   Droite: {fileID: 114195511954108744}
   Gauche: {fileID: 114518633584708342}
   Bas: {fileID: 114063471541300778}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114403866239565592
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48429,8 +48857,10 @@ MonoBehaviour:
   Droite: {fileID: 114306362247966684}
   Gauche: {fileID: 114195511954108744}
   Bas: {fileID: 114502417529502496}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114404874090814218
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48448,8 +48878,10 @@ MonoBehaviour:
   Droite: {fileID: 114451709395857450}
   Gauche: {fileID: 114223139541625358}
   Bas: {fileID: 114820578407505778}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114404949989878642
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48467,8 +48899,10 @@ MonoBehaviour:
   Droite: {fileID: 114260661570696000}
   Gauche: {fileID: 114654687683406196}
   Bas: {fileID: 114704461849602064}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114409157564027794
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48486,8 +48920,10 @@ MonoBehaviour:
   Droite: {fileID: 114363736271426408}
   Gauche: {fileID: 114411480239182052}
   Bas: {fileID: 114655165792233536}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114410827864580608
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48505,8 +48941,10 @@ MonoBehaviour:
   Droite: {fileID: 114701445920508918}
   Gauche: {fileID: 114540734800973016}
   Bas: {fileID: 114038189242887482}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114410981520302546
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48524,8 +48962,10 @@ MonoBehaviour:
   Droite: {fileID: 114978921744151830}
   Gauche: {fileID: 114085828371023174}
   Bas: {fileID: 114120110131087216}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114411128988423072
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48543,8 +48983,10 @@ MonoBehaviour:
   Droite: {fileID: 114298393600285628}
   Gauche: {fileID: 114189597729951754}
   Bas: {fileID: 114763851754753602}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114411480239182052
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48562,8 +49004,10 @@ MonoBehaviour:
   Droite: {fileID: 114409157564027794}
   Gauche: {fileID: 114379839091765272}
   Bas: {fileID: 114259051635975310}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114413175245867144
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48581,8 +49025,10 @@ MonoBehaviour:
   Droite: {fileID: 114474788466339142}
   Gauche: {fileID: 114379028082094904}
   Bas: {fileID: 114586145476659414}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114413568414684772
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48600,8 +49046,10 @@ MonoBehaviour:
   Droite: {fileID: 114552106009642200}
   Gauche: {fileID: 114310491057950716}
   Bas: {fileID: 114240640528454578}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 0}
+  standardMat: {fileID: 0}
 --- !u!114 &114415318973675904
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48619,8 +49067,10 @@ MonoBehaviour:
   Droite: {fileID: 114651336696106298}
   Gauche: {fileID: 114259414681140910}
   Bas: {fileID: 114570216854338912}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114416410511319226
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48638,8 +49088,10 @@ MonoBehaviour:
   Droite: {fileID: 114028810969783608}
   Gauche: {fileID: 114570216854338912}
   Bas: {fileID: 114823173144091604}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114418787518220256
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48657,8 +49109,10 @@ MonoBehaviour:
   Droite: {fileID: 114898303597947430}
   Gauche: {fileID: 114204547527271334}
   Bas: {fileID: 114290419049833934}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114422386632063822
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48676,8 +49130,10 @@ MonoBehaviour:
   Droite: {fileID: 114168085527483704}
   Gauche: {fileID: 0}
   Bas: {fileID: 114952415677572456}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114422531807867054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48695,8 +49151,10 @@ MonoBehaviour:
   Droite: {fileID: 114770631703878492}
   Gauche: {fileID: 114702459907369186}
   Bas: {fileID: 114926286441028112}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114424981970721292
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48714,8 +49172,10 @@ MonoBehaviour:
   Droite: {fileID: 114952664741920684}
   Gauche: {fileID: 114477117850577954}
   Bas: {fileID: 114890878416582128}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114426192518354566
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48733,8 +49193,10 @@ MonoBehaviour:
   Droite: {fileID: 114115290596381826}
   Gauche: {fileID: 114430336676509384}
   Bas: {fileID: 114898153672942260}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114426379498384048
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48752,8 +49214,10 @@ MonoBehaviour:
   Droite: {fileID: 114813511443319818}
   Gauche: {fileID: 114929150230219540}
   Bas: {fileID: 114006173149534324}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114427941264915672
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48771,8 +49235,10 @@ MonoBehaviour:
   Droite: {fileID: 114292829453620130}
   Gauche: {fileID: 114934702784957854}
   Bas: {fileID: 114038204308534692}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114430336676509384
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48790,8 +49256,10 @@ MonoBehaviour:
   Droite: {fileID: 114426192518354566}
   Gauche: {fileID: 114811905838115364}
   Bas: {fileID: 114981402041680786}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114430595119872144
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48809,8 +49277,10 @@ MonoBehaviour:
   Droite: {fileID: 114534913808594914}
   Gauche: {fileID: 114601139300934862}
   Bas: {fileID: 114353665485502146}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114433242780715716
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48828,8 +49298,10 @@ MonoBehaviour:
   Droite: {fileID: 114967382573403384}
   Gauche: {fileID: 114014698920921740}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114433440929412054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48847,8 +49319,10 @@ MonoBehaviour:
   Droite: {fileID: 114961325415109470}
   Gauche: {fileID: 114298393600285628}
   Bas: {fileID: 114334475247533856}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114437936025720116
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48866,8 +49340,10 @@ MonoBehaviour:
   Droite: {fileID: 114841589043341534}
   Gauche: {fileID: 114494310840588210}
   Bas: {fileID: 114977734408764942}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114438586310518748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48885,8 +49361,10 @@ MonoBehaviour:
   Droite: {fileID: 114085828371023174}
   Gauche: {fileID: 114209217195226752}
   Bas: {fileID: 114737009768944960}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114440575968557750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48904,8 +49382,10 @@ MonoBehaviour:
   Droite: {fileID: 114287431087239296}
   Gauche: {fileID: 0}
   Bas: {fileID: 114379839091765272}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114440656824849276
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48923,8 +49403,10 @@ MonoBehaviour:
   Droite: {fileID: 114517559731292508}
   Gauche: {fileID: 114464255578915442}
   Bas: {fileID: 114449002110533514}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114444926433883796
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48942,8 +49424,10 @@ MonoBehaviour:
   Droite: {fileID: 114202785537703012}
   Gauche: {fileID: 114653280462854700}
   Bas: {fileID: 114209217195226752}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114445641630078664
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48961,8 +49445,10 @@ MonoBehaviour:
   Droite: {fileID: 114760055258255512}
   Gauche: {fileID: 114537593516786092}
   Bas: {fileID: 114978921744151830}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114445753715444736
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48980,8 +49466,10 @@ MonoBehaviour:
   Droite: {fileID: 114607615106597264}
   Gauche: {fileID: 114813511443319818}
   Bas: {fileID: 114835655184415188}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114448060249316500
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -48999,8 +49487,10 @@ MonoBehaviour:
   Droite: {fileID: 114199161863546888}
   Gauche: {fileID: 114178597550618944}
   Bas: {fileID: 114140961472284524}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114449002110533514
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49018,8 +49508,10 @@ MonoBehaviour:
   Droite: {fileID: 114213279461562366}
   Gauche: {fileID: 114064356050025130}
   Bas: {fileID: 114056724733907272}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114451709395857450
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49037,8 +49529,10 @@ MonoBehaviour:
   Droite: {fileID: 114814427120194426}
   Gauche: {fileID: 114404874090814218}
   Bas: {fileID: 114856318404443686}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114452275526436010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49056,8 +49550,10 @@ MonoBehaviour:
   Droite: {fileID: 114133224795434480}
   Gauche: {fileID: 114237745645687802}
   Bas: {fileID: 114657005621234652}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114457235413335512
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49075,8 +49571,10 @@ MonoBehaviour:
   Droite: {fileID: 114903319683078116}
   Gauche: {fileID: 114041462924109624}
   Bas: {fileID: 114741699490471010}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114460418848322254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49094,8 +49592,10 @@ MonoBehaviour:
   Droite: {fileID: 114145223184659756}
   Gauche: {fileID: 114362585597926336}
   Bas: {fileID: 114294852633919228}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114463406694719918
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49113,8 +49613,10 @@ MonoBehaviour:
   Droite: {fileID: 114596540583502038}
   Gauche: {fileID: 114135158840419916}
   Bas: {fileID: 114003350749166664}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114464255578915442
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49132,8 +49634,10 @@ MonoBehaviour:
   Droite: {fileID: 114440656824849276}
   Gauche: {fileID: 114960161971635478}
   Bas: {fileID: 114064356050025130}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114465225530181764
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49151,8 +49655,10 @@ MonoBehaviour:
   Droite: {fileID: 114882448380084382}
   Gauche: {fileID: 114171896784192374}
   Bas: {fileID: 114723662591951674}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114466392631823898
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49170,8 +49676,10 @@ MonoBehaviour:
   Droite: {fileID: 114162012125270654}
   Gauche: {fileID: 114917963317205376}
   Bas: {fileID: 114045028473372894}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114467505752321632
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49189,8 +49697,10 @@ MonoBehaviour:
   Droite: {fileID: 114632150920135960}
   Gauche: {fileID: 114636111932948860}
   Bas: {fileID: 114603895721114500}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114474788466339142
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49208,8 +49718,10 @@ MonoBehaviour:
   Droite: {fileID: 114171896784192374}
   Gauche: {fileID: 114413175245867144}
   Bas: {fileID: 114070364559707124}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114476721145481790
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49227,8 +49739,10 @@ MonoBehaviour:
   Droite: {fileID: 114737510968711044}
   Gauche: {fileID: 114958849403969456}
   Bas: {fileID: 114640494176628358}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114477117850577954
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49246,8 +49760,10 @@ MonoBehaviour:
   Droite: {fileID: 114424981970721292}
   Gauche: {fileID: 114169950733551428}
   Bas: {fileID: 114231670678423454}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114481457533170214
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49265,8 +49781,10 @@ MonoBehaviour:
   Droite: {fileID: 114773407593706680}
   Gauche: {fileID: 114740122042139688}
   Bas: {fileID: 114766656222260378}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114485609689511544
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49284,8 +49802,10 @@ MonoBehaviour:
   Droite: {fileID: 114618194367614846}
   Gauche: {fileID: 114781722002780846}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114491069772432524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49303,8 +49823,10 @@ MonoBehaviour:
   Droite: {fileID: 114919244531727180}
   Gauche: {fileID: 114070801197870876}
   Bas: {fileID: 114139122767184058}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114491477487574124
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49322,8 +49844,10 @@ MonoBehaviour:
   Droite: {fileID: 114530849685041030}
   Gauche: {fileID: 0}
   Bas: {fileID: 114310491057950716}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114494310840588210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49341,8 +49865,10 @@ MonoBehaviour:
   Droite: {fileID: 114437936025720116}
   Gauche: {fileID: 114164809263199378}
   Bas: {fileID: 114953651993687322}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114497910460963026
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49360,8 +49886,10 @@ MonoBehaviour:
   Droite: {fileID: 114654835892673198}
   Gauche: {fileID: 114890878416582128}
   Bas: {fileID: 114196185115055184}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114501472284330160
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49379,8 +49907,10 @@ MonoBehaviour:
   Droite: {fileID: 114064356050025130}
   Gauche: {fileID: 114080941931988054}
   Bas: {fileID: 114067929711241030}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114502245951170136
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49398,8 +49928,10 @@ MonoBehaviour:
   Droite: {fileID: 114669716983977370}
   Gauche: {fileID: 114690432513670976}
   Bas: {fileID: 114752922994021352}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114502417529502496
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49417,8 +49949,10 @@ MonoBehaviour:
   Droite: {fileID: 114015949685503130}
   Gauche: {fileID: 114276551859261816}
   Bas: {fileID: 114133224795434480}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114503544780647740
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49436,8 +49970,10 @@ MonoBehaviour:
   Droite: {fileID: 114746170754318666}
   Gauche: {fileID: 114750791987891316}
   Bas: {fileID: 114362585597926336}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114504573172451312
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49455,8 +49991,10 @@ MonoBehaviour:
   Droite: {fileID: 114552106009642200}
   Gauche: {fileID: 114310491057950716}
   Bas: {fileID: 114078167782625472}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114505932593363488
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49474,8 +50012,10 @@ MonoBehaviour:
   Droite: {fileID: 114120110131087216}
   Gauche: {fileID: 114737009768944960}
   Bas: {fileID: 114491069772432524}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114506436252633966
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49493,8 +50033,10 @@ MonoBehaviour:
   Droite: {fileID: 114080941931988054}
   Gauche: {fileID: 114739510444956108}
   Bas: {fileID: 114009442257531268}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114506856415173444
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49512,8 +50054,10 @@ MonoBehaviour:
   Droite: {fileID: 114061704131717934}
   Gauche: {fileID: 0}
   Bas: {fileID: 114491477487574124}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114512973975197214
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49531,8 +50075,10 @@ MonoBehaviour:
   Droite: {fileID: 114801154069951980}
   Gauche: {fileID: 114254485412584406}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114513026177718756
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49550,8 +50096,10 @@ MonoBehaviour:
   Droite: {fileID: 114807480371212548}
   Gauche: {fileID: 114969399890394164}
   Bas: {fileID: 114700991493433672}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114514997861982396
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49569,8 +50117,10 @@ MonoBehaviour:
   Droite: {fileID: 114050595742513942}
   Gauche: {fileID: 114334475247533856}
   Bas: {fileID: 114467505752321632}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114515150949621510
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49588,8 +50138,10 @@ MonoBehaviour:
   Droite: {fileID: 114930911782516768}
   Gauche: {fileID: 114221795525608128}
   Bas: {fileID: 114001900771882288}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114517258378330368
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49607,8 +50159,10 @@ MonoBehaviour:
   Droite: {fileID: 114529516195984536}
   Gauche: {fileID: 114544493812210260}
   Bas: {fileID: 114642869092134556}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114517559731292508
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49626,8 +50180,10 @@ MonoBehaviour:
   Droite: {fileID: 114169950733551428}
   Gauche: {fileID: 114440656824849276}
   Bas: {fileID: 114213279461562366}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114518633584708342
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49645,8 +50201,10 @@ MonoBehaviour:
   Droite: {fileID: 114403097864709914}
   Gauche: {fileID: 114618415486742274}
   Bas: {fileID: 114558342195335552}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114521173240874550
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49664,8 +50222,10 @@ MonoBehaviour:
   Droite: {fileID: 114014698920921740}
   Gauche: {fileID: 114926286441028112}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114521682766198834
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49683,8 +50243,10 @@ MonoBehaviour:
   Droite: {fileID: 114013249395183456}
   Gauche: {fileID: 114759814009086958}
   Bas: {fileID: 114426192518354566}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114522962577152486
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49702,8 +50264,10 @@ MonoBehaviour:
   Droite: {fileID: 114544207664633410}
   Gauche: {fileID: 0}
   Bas: {fileID: 114506856415173444}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114524826109320846
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49721,8 +50285,10 @@ MonoBehaviour:
   Droite: {fileID: 114583525386138234}
   Gauche: {fileID: 114348957683520316}
   Bas: {fileID: 114342270704280606}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114529516195984536
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49740,8 +50306,10 @@ MonoBehaviour:
   Droite: {fileID: 114605800264963874}
   Gauche: {fileID: 114517258378330368}
   Bas: {fileID: 114067562550361914}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114530115749922240
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49759,8 +50327,10 @@ MonoBehaviour:
   Droite: {fileID: 114981402041680786}
   Gauche: {fileID: 114822794465316332}
   Bas: {fileID: 114036923954783812}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114530849685041030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49778,8 +50348,10 @@ MonoBehaviour:
   Droite: {fileID: 114625970421407102}
   Gauche: {fileID: 114491477487574124}
   Bas: {fileID: 114504573172451312}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114534913808594914
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49797,8 +50369,10 @@ MonoBehaviour:
   Droite: {fileID: 114636111932948860}
   Gauche: {fileID: 114430595119872144}
   Bas: {fileID: 114285567807576848}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114537593516786092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49816,8 +50390,10 @@ MonoBehaviour:
   Droite: {fileID: 114445641630078664}
   Gauche: {fileID: 114251031189982934}
   Bas: {fileID: 114410981520302546}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114539409001508652
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49835,8 +50411,10 @@ MonoBehaviour:
   Droite: {fileID: 114918175512087262}
   Gauche: {fileID: 114035534044361946}
   Bas: {fileID: 114391422009793976}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114540734800973016
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49854,8 +50432,10 @@ MonoBehaviour:
   Droite: {fileID: 114410827864580608}
   Gauche: {fileID: 114977734408764942}
   Bas: {fileID: 114145396603126310}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114544207664633410
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49873,8 +50453,10 @@ MonoBehaviour:
   Droite: {fileID: 114750793233008242}
   Gauche: {fileID: 114522962577152486}
   Bas: {fileID: 114061704131717934}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114544493812210260
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49892,8 +50474,10 @@ MonoBehaviour:
   Droite: {fileID: 114517258378330368}
   Gauche: {fileID: 114083172413895398}
   Bas: {fileID: 114105946817860594}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114550316604130776
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49911,8 +50495,10 @@ MonoBehaviour:
   Droite: {fileID: 114304560536965142}
   Gauche: {fileID: 114704782654159894}
   Bas: {fileID: 114476721145481790}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114552106009642200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49930,8 +50516,10 @@ MonoBehaviour:
   Droite: {fileID: 114109430852775602}
   Gauche: {fileID: 114504573172451312}
   Bas: {fileID: 114188983722169664}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114557387668706372
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49949,8 +50537,10 @@ MonoBehaviour:
   Droite: {fileID: 114231670678423454}
   Gauche: {fileID: 114213279461562366}
   Bas: {fileID: 114348957683520316}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114558342195335552
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49968,8 +50558,10 @@ MonoBehaviour:
   Droite: {fileID: 114063471541300778}
   Gauche: {fileID: 114760055258255512}
   Bas: {fileID: 114104609133304816}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114563135173546000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49987,8 +50579,10 @@ MonoBehaviour:
   Droite: {fileID: 114053812882796626}
   Gauche: {fileID: 114285347901096306}
   Bas: {fileID: 114676573542681058}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114564944713464788
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50006,8 +50600,10 @@ MonoBehaviour:
   Droite: {fileID: 114781722002780846}
   Gauche: {fileID: 114598951638479364}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114565907654758330
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50025,8 +50621,10 @@ MonoBehaviour:
   Droite: {fileID: 114573944154137192}
   Gauche: {fileID: 114001900771882288}
   Bas: {fileID: 114221848650721140}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114569452859629362
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50044,8 +50642,10 @@ MonoBehaviour:
   Droite: {fileID: 114353665485502146}
   Gauche: {fileID: 114963218859235406}
   Bas: {fileID: 114866406385561880}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114570216854338912
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50063,8 +50663,10 @@ MonoBehaviour:
   Droite: {fileID: 114416410511319226}
   Gauche: {fileID: 114345427096442496}
   Bas: {fileID: 114210976876718826}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114571258606616938
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50082,8 +50684,10 @@ MonoBehaviour:
   Droite: {fileID: 0}
   Gauche: {fileID: 114101540781493668}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114572863548798010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50101,8 +50705,10 @@ MonoBehaviour:
   Droite: {fileID: 114948205609841748}
   Gauche: {fileID: 114888302164219960}
   Bas: {fileID: 114445753715444736}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114573944154137192
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50120,8 +50726,10 @@ MonoBehaviour:
   Droite: {fileID: 114982370636553922}
   Gauche: {fileID: 114565907654758330}
   Bas: {fileID: 114591879657980030}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114575016393213864
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50139,8 +50747,10 @@ MonoBehaviour:
   Droite: {fileID: 114763851754753602}
   Gauche: {fileID: 114881338120504410}
   Bas: {fileID: 114601139300934862}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114576601883434944
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50158,8 +50768,10 @@ MonoBehaviour:
   Droite: {fileID: 114733713573318078}
   Gauche: {fileID: 114039035883100258}
   Bas: {fileID: 114563135173546000}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114578285760192542
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50177,8 +50789,10 @@ MonoBehaviour:
   Droite: {fileID: 114070801197870876}
   Gauche: {fileID: 114384919992768134}
   Bas: {fileID: 114503544780647740}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114578455058882146
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50196,8 +50810,10 @@ MonoBehaviour:
   Droite: {fileID: 114384376138660166}
   Gauche: {fileID: 114776975600408160}
   Bas: {fileID: 114690282284799990}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114581184098707562
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50215,8 +50831,10 @@ MonoBehaviour:
   Droite: {fileID: 114036923954783812}
   Gauche: {fileID: 114827547931998112}
   Bas: {fileID: 114099086959027082}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114583525386138234
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50234,8 +50852,10 @@ MonoBehaviour:
   Droite: {fileID: 114196185115055184}
   Gauche: {fileID: 114524826109320846}
   Bas: {fileID: 114350448503665354}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114585020949052970
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50253,8 +50873,10 @@ MonoBehaviour:
   Droite: {fileID: 114901041710725694}
   Gauche: {fileID: 114343340995563206}
   Bas: {fileID: 114914276993049336}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114586145476659414
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50272,8 +50894,10 @@ MonoBehaviour:
   Droite: {fileID: 114070364559707124}
   Gauche: {fileID: 114841589043341534}
   Bas: {fileID: 114410827864580608}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114587264327948314
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50291,8 +50915,10 @@ MonoBehaviour:
   Droite: {fileID: 114233718783645474}
   Gauche: {fileID: 114045028473372894}
   Bas: {fileID: 114659377587136530}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114589024067920030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50310,8 +50936,10 @@ MonoBehaviour:
   Droite: {fileID: 114740122042139688}
   Gauche: {fileID: 114333289361263152}
   Bas: {fileID: 114952664741920684}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114591147207061708
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50329,8 +50957,10 @@ MonoBehaviour:
   Droite: {fileID: 114336769995160884}
   Gauche: {fileID: 114898153672942260}
   Bas: {fileID: 114418787518220256}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114591879657980030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50348,8 +50978,10 @@ MonoBehaviour:
   Droite: {fileID: 114362750594160454}
   Gauche: {fileID: 114221848650721140}
   Bas: {fileID: 114867671210880164}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114594204902653140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50367,8 +50999,10 @@ MonoBehaviour:
   Droite: {fileID: 114742044355789020}
   Gauche: {fileID: 114655165792233536}
   Bas: {fileID: 114751938319946508}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114596540583502038
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50386,8 +51020,10 @@ MonoBehaviour:
   Droite: {fileID: 114741790347131818}
   Gauche: {fileID: 114463406694719918}
   Bas: {fileID: 114954808353631474}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114596792498167130
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50405,8 +51041,10 @@ MonoBehaviour:
   Droite: {fileID: 114744339537234402}
   Gauche: {fileID: 114750793233008242}
   Bas: {fileID: 114607827806383420}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114597690180086944
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50424,8 +51062,10 @@ MonoBehaviour:
   Droite: {fileID: 114218853496401394}
   Gauche: {fileID: 114914276993049336}
   Bas: {fileID: 114704782654159894}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114598951638479364
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50443,8 +51083,10 @@ MonoBehaviour:
   Droite: {fileID: 114564944713464788}
   Gauche: {fileID: 114315870018889478}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114600392419922710
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50462,8 +51104,10 @@ MonoBehaviour:
   Droite: {fileID: 114155771155907924}
   Gauche: {fileID: 114759056707211250}
   Bas: {fileID: 114759378488265708}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114600725463093330
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50481,8 +51125,10 @@ MonoBehaviour:
   Droite: {fileID: 114759814009086958}
   Gauche: {fileID: 114640494176628358}
   Bas: {fileID: 114811905838115364}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114601139300934862
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50500,8 +51146,10 @@ MonoBehaviour:
   Droite: {fileID: 114430595119872144}
   Gauche: {fileID: 114947523973268236}
   Bas: {fileID: 114569452859629362}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114602141845331342
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50519,8 +51167,10 @@ MonoBehaviour:
   Droite: {fileID: 114121833880052844}
   Gauche: {fileID: 114083012827400530}
   Bas: {fileID: 114319592115296360}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114603895721114500
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50538,8 +51188,10 @@ MonoBehaviour:
   Droite: {fileID: 114691378810530976}
   Gauche: {fileID: 114057713181520734}
   Bas: {fileID: 114260661570696000}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114605800264963874
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50557,8 +51209,10 @@ MonoBehaviour:
   Droite: {fileID: 114259414681140910}
   Gauche: {fileID: 114529516195984536}
   Bas: {fileID: 114967901617786798}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114607615106597264
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50576,8 +51230,10 @@ MonoBehaviour:
   Droite: {fileID: 114031027534768462}
   Gauche: {fileID: 114445753715444736}
   Bas: {fileID: 114384919992768134}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114607827806383420
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50595,8 +51251,10 @@ MonoBehaviour:
   Droite: {fileID: 114704728264407516}
   Gauche: {fileID: 114031175292293662}
   Bas: {fileID: 114867441874574206}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114607882555995614
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50614,8 +51272,10 @@ MonoBehaviour:
   Droite: {fileID: 114333289361263152}
   Gauche: {fileID: 114259577657976564}
   Bas: {fileID: 114477117850577954}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114609802792952178
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50633,8 +51293,10 @@ MonoBehaviour:
   Droite: {fileID: 114884169533737784}
   Gauche: {fileID: 114192083071340400}
   Bas: {fileID: 114041462924109624}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114618194367614846
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50652,8 +51314,10 @@ MonoBehaviour:
   Droite: {fileID: 114254485412584406}
   Gauche: {fileID: 114485609689511544}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114618415486742274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50671,8 +51335,10 @@ MonoBehaviour:
   Droite: {fileID: 114518633584708342}
   Gauche: {fileID: 114823173144091604}
   Bas: {fileID: 114760055258255512}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114618444925556510
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50690,8 +51356,10 @@ MonoBehaviour:
   Droite: {fileID: 114827666581874512}
   Gauche: {fileID: 114386639360862120}
   Bas: {fileID: 114404874090814218}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114621258323995472
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50709,8 +51377,10 @@ MonoBehaviour:
   Droite: {fileID: 114897941163793430}
   Gauche: {fileID: 114995763154156882}
   Bas: {fileID: 114267927893299176}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114625970421407102
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50728,8 +51398,10 @@ MonoBehaviour:
   Droite: {fileID: 114867441874574206}
   Gauche: {fileID: 114530849685041030}
   Bas: {fileID: 114552106009642200}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114632150920135960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50747,8 +51419,10 @@ MonoBehaviour:
   Droite: {fileID: 114398579118852282}
   Gauche: {fileID: 114467505752321632}
   Bas: {fileID: 114691378810530976}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114632617596617222
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50766,8 +51440,10 @@ MonoBehaviour:
   Droite: {fileID: 114888302164219960}
   Gauche: {fileID: 114391422009793976}
   Bas: {fileID: 114426379498384048}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114636111932948860
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50785,8 +51461,10 @@ MonoBehaviour:
   Droite: {fileID: 114467505752321632}
   Gauche: {fileID: 114534913808594914}
   Bas: {fileID: 114057713181520734}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114637808758361960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50804,8 +51482,10 @@ MonoBehaviour:
   Droite: {fileID: 114298005614048558}
   Gauche: {fileID: 114960226623185218}
   Bas: {fileID: 114600392419922710}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114640473175919200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50823,8 +51503,10 @@ MonoBehaviour:
   Droite: {fileID: 114989189968169266}
   Gauche: {fileID: 114657005621234652}
   Bas: {fileID: 114924465283467832}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114640494176628358
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50842,8 +51524,10 @@ MonoBehaviour:
   Droite: {fileID: 114600725463093330}
   Gauche: {fileID: 114061845345491504}
   Bas: {fileID: 114168187455290458}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114640641669695540
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50861,8 +51545,10 @@ MonoBehaviour:
   Droite: {fileID: 114067929711241030}
   Gauche: {fileID: 114009442257531268}
   Bas: {fileID: 114618194367614846}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114641199425751584
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50880,8 +51566,10 @@ MonoBehaviour:
   Droite: {fileID: 114075589921207930}
   Gauche: {fileID: 114942201527969340}
   Bas: {fileID: 114494310840588210}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114642869092134556
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50899,8 +51587,10 @@ MonoBehaviour:
   Droite: {fileID: 114067562550361914}
   Gauche: {fileID: 114105946817860594}
   Bas: {fileID: 114699510603521094}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114643704529553274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50918,8 +51608,10 @@ MonoBehaviour:
   Droite: {fileID: 114001900771882288}
   Gauche: {fileID: 114948397553741896}
   Bas: {fileID: 114646268160942816}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114646268160942816
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50937,8 +51629,10 @@ MonoBehaviour:
   Droite: {fileID: 114339476690526232}
   Gauche: {fileID: 114941845447248852}
   Bas: {fileID: 114669716983977370}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114648988329784486
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50956,8 +51650,10 @@ MonoBehaviour:
   Droite: {fileID: 114196364606523666}
   Gauche: {fileID: 114226258075351196}
   Bas: {fileID: 114196620583294464}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114651336696106298
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50975,8 +51671,10 @@ MonoBehaviour:
   Droite: {fileID: 114315533237885054}
   Gauche: {fileID: 114415318973675904}
   Bas: {fileID: 114416410511319226}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114652790886007996
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50994,8 +51692,10 @@ MonoBehaviour:
   Droite: {fileID: 0}
   Gauche: {fileID: 114094545842717878}
   Bas: {fileID: 114982370636553922}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114653280462854700
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51013,8 +51713,10 @@ MonoBehaviour:
   Droite: {fileID: 114444926433883796}
   Gauche: {fileID: 114998421712253496}
   Bas: {fileID: 114948205609841748}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114654687683406196
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51032,8 +51734,10 @@ MonoBehaviour:
   Droite: {fileID: 114404949989878642}
   Gauche: {fileID: 114842765206063458}
   Bas: {fileID: 114013314701841174}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114654835892673198
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51051,8 +51755,10 @@ MonoBehaviour:
   Droite: {fileID: 114926829587431472}
   Gauche: {fileID: 114497910460963026}
   Bas: {fileID: 114702459907369186}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114655165792233536
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51070,8 +51776,10 @@ MonoBehaviour:
   Droite: {fileID: 114594204902653140}
   Gauche: {fileID: 114259051635975310}
   Bas: {fileID: 114104726767813640}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114657005621234652
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51089,8 +51797,10 @@ MonoBehaviour:
   Droite: {fileID: 114640473175919200}
   Gauche: {fileID: 114807480371212548}
   Bas: {fileID: 114921856071896746}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114659377587136530
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51108,8 +51818,10 @@ MonoBehaviour:
   Droite: {fileID: 114275559749014048}
   Gauche: {fileID: 114930635136693784}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114660785433805616
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51127,8 +51839,10 @@ MonoBehaviour:
   Droite: {fileID: 114240640528454578}
   Gauche: {fileID: 0}
   Bas: {fileID: 114245677723187338}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 0}
+  standardMat: {fileID: 0}
 --- !u!114 &114661053988999202
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51146,8 +51860,10 @@ MonoBehaviour:
   Droite: {fileID: 114013314701841174}
   Gauche: {fileID: 114170213825218576}
   Bas: {fileID: 114481457533170214}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114662630080811984
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51165,8 +51881,10 @@ MonoBehaviour:
   Droite: {fileID: 114921856071896746}
   Gauche: {fileID: 114700991493433672}
   Bas: {fileID: 114199161863546888}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114665485240910958
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51184,8 +51902,10 @@ MonoBehaviour:
   Droite: {fileID: 114102405920995990}
   Gauche: {fileID: 114038189242887482}
   Bas: {fileID: 114214334119732168}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114669716983977370
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51203,8 +51923,10 @@ MonoBehaviour:
   Droite: {fileID: 114870818615415448}
   Gauche: {fileID: 114502245951170136}
   Bas: {fileID: 114855279486800264}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114671190277798774
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51222,8 +51944,10 @@ MonoBehaviour:
   Droite: {fileID: 114866406385561880}
   Gauche: {fileID: 114053812882796626}
   Bas: {fileID: 114340608454536944}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114674164393219684
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51241,8 +51965,10 @@ MonoBehaviour:
   Droite: {fileID: 0}
   Gauche: {fileID: 114954808353631474}
   Bas: {fileID: 114367766256004636}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114676573542681058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51260,8 +51986,10 @@ MonoBehaviour:
   Droite: {fileID: 114315747755487222}
   Gauche: {fileID: 114314750563934874}
   Bas: {fileID: 114607882555995614}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114677762960860536
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51279,8 +52007,10 @@ MonoBehaviour:
   Droite: {fileID: 114961636405549568}
   Gauche: {fileID: 114290419049833934}
   Bas: {fileID: 114316655834108378}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114690282284799990
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51298,8 +52028,10 @@ MonoBehaviour:
   Droite: {fileID: 114799702866859374}
   Gauche: {fileID: 114121225927469254}
   Bas: {fileID: 114585020949052970}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114690432513670976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51317,8 +52049,10 @@ MonoBehaviour:
   Droite: {fileID: 114502245951170136}
   Gauche: {fileID: 114926829587431472}
   Bas: {fileID: 114770631703878492}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114691378810530976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51336,8 +52070,10 @@ MonoBehaviour:
   Droite: {fileID: 114215279122208140}
   Gauche: {fileID: 114603895721114500}
   Bas: {fileID: 114123787875598500}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114697539113669240
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51355,8 +52091,10 @@ MonoBehaviour:
   Droite: {fileID: 114104609133304816}
   Gauche: {fileID: 114978921744151830}
   Bas: {fileID: 114969399890394164}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114699510603521094
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51374,8 +52112,10 @@ MonoBehaviour:
   Droite: {fileID: 114164073700090644}
   Gauche: {fileID: 114903319683078116}
   Bas: {fileID: 114653280462854700}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114700991493433672
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51393,8 +52133,10 @@ MonoBehaviour:
   Droite: {fileID: 114662630080811984}
   Gauche: {fileID: 114293158789082442}
   Bas: {fileID: 114448060249316500}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114701445920508918
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51412,8 +52154,10 @@ MonoBehaviour:
   Droite: {fileID: 114083012827400530}
   Gauche: {fileID: 114410827864580608}
   Bas: {fileID: 114665485240910958}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114702459907369186
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51431,8 +52175,10 @@ MonoBehaviour:
   Droite: {fileID: 114422531807867054}
   Gauche: {fileID: 114196185115055184}
   Bas: {fileID: 114893476091699442}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114704461849602064
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51450,8 +52196,10 @@ MonoBehaviour:
   Droite: {fileID: 114221795525608128}
   Gauche: {fileID: 114013314701841174}
   Bas: {fileID: 114948397553741896}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114704728264407516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51469,8 +52217,10 @@ MonoBehaviour:
   Droite: {fileID: 114827547931998112}
   Gauche: {fileID: 114607827806383420}
   Bas: {fileID: 114219850498736096}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114704782654159894
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51488,8 +52238,10 @@ MonoBehaviour:
   Droite: {fileID: 114550316604130776}
   Gauche: {fileID: 114200596574715540}
   Bas: {fileID: 114958849403969456}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114707958320586034
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51507,8 +52259,10 @@ MonoBehaviour:
   Droite: {fileID: 114759378488265708}
   Gauche: {fileID: 114092101101818760}
   Bas: {fileID: 114168085527483704}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114709458278109360
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51526,8 +52280,10 @@ MonoBehaviour:
   Droite: {fileID: 114118477197598486}
   Gauche: {fileID: 114215279122208140}
   Bas: {fileID: 114107796864182114}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114716579147165420
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51545,8 +52301,10 @@ MonoBehaviour:
   Droite: {fileID: 114941845447248852}
   Gauche: {fileID: 114766656222260378}
   Bas: {fileID: 114690432513670976}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114717472810998886
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51564,8 +52322,10 @@ MonoBehaviour:
   Droite: {fileID: 114204547527271334}
   Gauche: {fileID: 114036923954783812}
   Bas: {fileID: 114371649072371794}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114723662591951674
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51583,8 +52343,10 @@ MonoBehaviour:
   Droite: {fileID: 114185461605347642}
   Gauche: {fileID: 114346343297959708}
   Bas: {fileID: 114602141845331342}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114730819702419802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51602,8 +52364,10 @@ MonoBehaviour:
   Droite: {fileID: 0}
   Gauche: {fileID: 114246750742335406}
   Bas: {fileID: 114741790347131818}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114731646525401736
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51621,8 +52385,10 @@ MonoBehaviour:
   Droite: {fileID: 114168187455290458}
   Gauche: {fileID: 114895166565904958}
   Bas: {fileID: 114894305059943926}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114733713573318078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51640,8 +52406,10 @@ MonoBehaviour:
   Droite: {fileID: 114963218859235406}
   Gauche: {fileID: 114576601883434944}
   Bas: {fileID: 114053812882796626}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114736870581020624
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51659,8 +52427,10 @@ MonoBehaviour:
   Droite: {fileID: 114164809263199378}
   Gauche: {fileID: 114038204308534692}
   Bas: {fileID: 114403866239565592}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114737009768944960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51678,8 +52448,10 @@ MonoBehaviour:
   Droite: {fileID: 114505932593363488}
   Gauche: {fileID: 114031027534768462}
   Bas: {fileID: 114070801197870876}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114737510968711044
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51697,8 +52469,10 @@ MonoBehaviour:
   Droite: {fileID: 114375525628077554}
   Gauche: {fileID: 114476721145481790}
   Bas: {fileID: 114600725463093330}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114739510444956108
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51716,8 +52490,10 @@ MonoBehaviour:
   Droite: {fileID: 114506436252633966}
   Gauche: {fileID: 114316655834108378}
   Bas: {fileID: 114020123126643312}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114740122042139688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51735,8 +52511,10 @@ MonoBehaviour:
   Droite: {fileID: 114481457533170214}
   Gauche: {fileID: 114589024067920030}
   Bas: {fileID: 114787850523752752}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114740656110936028
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51754,8 +52532,10 @@ MonoBehaviour:
   Droite: {fileID: 114835655184415188}
   Gauche: {fileID: 114006173149534324}
   Bas: {fileID: 114943193988446670}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114741601119968678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51773,8 +52553,10 @@ MonoBehaviour:
   Droite: {fileID: 114259051635975310}
   Gauche: {fileID: 0}
   Bas: {fileID: 114072401826776490}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114741699490471010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51792,8 +52574,10 @@ MonoBehaviour:
   Droite: {fileID: 114998421712253496}
   Gauche: {fileID: 114918175512087262}
   Bas: {fileID: 114888302164219960}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114741790347131818
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51811,8 +52595,10 @@ MonoBehaviour:
   Droite: {fileID: 0}
   Gauche: {fileID: 114596540583502038}
   Bas: {fileID: 114674164393219684}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114742044355789020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51830,8 +52616,10 @@ MonoBehaviour:
   Droite: {fileID: 114958849403969456}
   Gauche: {fileID: 114594204902653140}
   Bas: {fileID: 114322062531637968}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114744339537234402
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51849,8 +52637,10 @@ MonoBehaviour:
   Droite: {fileID: 114894305059943926}
   Gauche: {fileID: 114596792498167130}
   Bas: {fileID: 114704728264407516}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114746170754318666
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51868,8 +52658,10 @@ MonoBehaviour:
   Droite: {fileID: 114139122767184058}
   Gauche: {fileID: 114503544780647740}
   Bas: {fileID: 114460418848322254}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114750791987891316
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51887,8 +52679,10 @@ MonoBehaviour:
   Droite: {fileID: 114503544780647740}
   Gauche: {fileID: 114058117854069348}
   Bas: {fileID: 114366531333626580}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114750793233008242
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51906,8 +52700,10 @@ MonoBehaviour:
   Droite: {fileID: 114596792498167130}
   Gauche: {fileID: 114544207664633410}
   Bas: {fileID: 114031175292293662}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114751938319946508
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51925,8 +52721,10 @@ MonoBehaviour:
   Droite: {fileID: 114322062531637968}
   Gauche: {fileID: 114104726767813640}
   Bas: {fileID: 114315800713610268}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114752922994021352
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51944,8 +52742,10 @@ MonoBehaviour:
   Droite: {fileID: 114855279486800264}
   Gauche: {fileID: 114770631703878492}
   Bas: {fileID: 114014698920921740}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114759056707211250
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51963,8 +52763,10 @@ MonoBehaviour:
   Droite: {fileID: 114600392419922710}
   Gauche: {fileID: 114805062480000958}
   Bas: {fileID: 114707958320586034}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114759378488265708
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51982,8 +52784,10 @@ MonoBehaviour:
   Droite: {fileID: 114776975600408160}
   Gauche: {fileID: 114707958320586034}
   Bas: {fileID: 114280578944423812}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114759814009086958
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52001,8 +52805,10 @@ MonoBehaviour:
   Droite: {fileID: 114521682766198834}
   Gauche: {fileID: 114600725463093330}
   Bas: {fileID: 114430336676509384}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114760055258255512
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52020,8 +52826,10 @@ MonoBehaviour:
   Droite: {fileID: 114558342195335552}
   Gauche: {fileID: 114445641630078664}
   Bas: {fileID: 114697539113669240}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114763851754753602
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52039,8 +52847,10 @@ MonoBehaviour:
   Droite: {fileID: 114788670854604696}
   Gauche: {fileID: 114575016393213864}
   Bas: {fileID: 114430595119872144}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114766656222260378
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52058,8 +52868,10 @@ MonoBehaviour:
   Droite: {fileID: 114716579147165420}
   Gauche: {fileID: 114787850523752752}
   Bas: {fileID: 114926829587431472}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114768326798439950
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52094,8 +52906,10 @@ MonoBehaviour:
   Droite: {fileID: 114073521124455652}
   Gauche: {fileID: 114801154069951980}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114769570128226366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52113,8 +52927,10 @@ MonoBehaviour:
   Droite: {fileID: 114107796864182114}
   Gauche: {fileID: 114123787875598500}
   Bas: {fileID: 114930911782516768}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114770631703878492
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52132,8 +52948,10 @@ MonoBehaviour:
   Droite: {fileID: 114752922994021352}
   Gauche: {fileID: 114422531807867054}
   Bas: {fileID: 114521173240874550}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114772068099611786
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52151,8 +52969,10 @@ MonoBehaviour:
   Droite: {fileID: 114375014910142930}
   Gauche: {fileID: 114240640528454578}
   Bas: {fileID: 114063055380464920}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 0}
+  standardMat: {fileID: 0}
 --- !u!114 &114773407593706680
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52170,8 +52990,10 @@ MonoBehaviour:
   Droite: {fileID: 114948397553741896}
   Gauche: {fileID: 114481457533170214}
   Bas: {fileID: 114716579147165420}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114774097383241224
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52189,8 +53011,10 @@ MonoBehaviour:
   Droite: {fileID: 114034213437693468}
   Gauche: {fileID: 114078060241406452}
   Bas: {fileID: 114298393600285628}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114776192843683192
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52208,8 +53032,10 @@ MonoBehaviour:
   Droite: {fileID: 114183671000118646}
   Gauche: {fileID: 114233718783645474}
   Bas: {fileID: 114315870018889478}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114776975600408160
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52227,8 +53053,10 @@ MonoBehaviour:
   Droite: {fileID: 114578455058882146}
   Gauche: {fileID: 114759378488265708}
   Bas: {fileID: 114121225927469254}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114781722002780846
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52246,8 +53074,10 @@ MonoBehaviour:
   Droite: {fileID: 114485609689511544}
   Gauche: {fileID: 114564944713464788}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114784216458377342
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52265,8 +53095,10 @@ MonoBehaviour:
   Droite: {fileID: 114267927893299176}
   Gauche: {fileID: 114961636405549568}
   Bas: {fileID: 114506436252633966}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114784829678177432
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52284,8 +53116,10 @@ MonoBehaviour:
   Droite: {fileID: 114391422009793976}
   Gauche: {fileID: 114901041710725694}
   Bas: {fileID: 114218853496401394}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114787850523752752
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52303,8 +53137,10 @@ MonoBehaviour:
   Droite: {fileID: 114766656222260378}
   Gauche: {fileID: 114952664741920684}
   Bas: {fileID: 114654835892673198}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114788670854604696
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52322,8 +53158,10 @@ MonoBehaviour:
   Droite: {fileID: 114334475247533856}
   Gauche: {fileID: 114763851754753602}
   Bas: {fileID: 114534913808594914}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114799702866859374
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52341,8 +53179,10 @@ MonoBehaviour:
   Droite: {fileID: 114035534044361946}
   Gauche: {fileID: 114690282284799990}
   Bas: {fileID: 114901041710725694}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114801154069951980
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52360,8 +53200,10 @@ MonoBehaviour:
   Droite: {fileID: 114769073213779192}
   Gauche: {fileID: 114512973975197214}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114803831023487248
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52379,8 +53221,10 @@ MonoBehaviour:
   Droite: {fileID: 114289941742048460}
   Gauche: {fileID: 114398579118852282}
   Bas: {fileID: 114709458278109360}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114805062480000958
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52398,8 +53242,10 @@ MonoBehaviour:
   Droite: {fileID: 114759056707211250}
   Gauche: {fileID: 0}
   Bas: {fileID: 114092101101818760}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114807480371212548
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52417,8 +53263,10 @@ MonoBehaviour:
   Droite: {fileID: 114657005621234652}
   Gauche: {fileID: 114513026177718756}
   Bas: {fileID: 114662630080811984}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114808638821775446
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52436,8 +53284,10 @@ MonoBehaviour:
   Droite: {fileID: 114210976876718826}
   Gauche: {fileID: 114312138910402574}
   Bas: {fileID: 114251031189982934}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114810586016653742
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52455,8 +53305,10 @@ MonoBehaviour:
   Droite: {fileID: 114056724733907272}
   Gauche: {fileID: 114067929711241030}
   Bas: {fileID: 114512973975197214}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114811905838115364
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52474,8 +53326,10 @@ MonoBehaviour:
   Droite: {fileID: 114430336676509384}
   Gauche: {fileID: 114168187455290458}
   Bas: {fileID: 114530115749922240}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114813511443319818
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52493,8 +53347,10 @@ MonoBehaviour:
   Droite: {fileID: 114445753715444736}
   Gauche: {fileID: 114426379498384048}
   Bas: {fileID: 114740656110936028}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114813628283623622
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52512,8 +53368,10 @@ MonoBehaviour:
   Droite: {fileID: 114178597550618944}
   Gauche: {fileID: 114255896782757228}
   Bas: {fileID: 114921428768515982}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114814427120194426
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52531,8 +53389,10 @@ MonoBehaviour:
   Droite: {fileID: 114314750563934874}
   Gauche: {fileID: 114451709395857450}
   Bas: {fileID: 114029243523238794}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114815673142422742
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52550,8 +53410,10 @@ MonoBehaviour:
   Droite: {fileID: 114242579256692342}
   Gauche: {fileID: 114401461312561872}
   Bas: {fileID: 114995763154156882}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114818967261836942
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52569,8 +53431,10 @@ MonoBehaviour:
   Droite: {fileID: 0}
   Gauche: {fileID: 114882448380084382}
   Bas: {fileID: 114129844714425222}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114820578407505778
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52588,8 +53452,10 @@ MonoBehaviour:
   Droite: {fileID: 114856318404443686}
   Gauche: {fileID: 114897941163793430}
   Bas: {fileID: 114464255578915442}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114821531398886398
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52607,8 +53473,10 @@ MonoBehaviour:
   Droite: {fileID: 114192083071340400}
   Gauche: {fileID: 114196620583294464}
   Bas: {fileID: 114374054807240104}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114822794465316332
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52626,8 +53494,10 @@ MonoBehaviour:
   Droite: {fileID: 114530115749922240}
   Gauche: {fileID: 114894305059943926}
   Bas: {fileID: 114581184098707562}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114823173144091604
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52645,8 +53515,10 @@ MonoBehaviour:
   Droite: {fileID: 114618415486742274}
   Gauche: {fileID: 114210976876718826}
   Bas: {fileID: 114445641630078664}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114824261147018450
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52664,8 +53536,10 @@ MonoBehaviour:
   Droite: {fileID: 114285347901096306}
   Gauche: {fileID: 114827666581874512}
   Bas: {fileID: 114814427120194426}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114826077164139858
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52683,8 +53557,10 @@ MonoBehaviour:
   Droite: {fileID: 114145396603126310}
   Gauche: {fileID: 114275662801985940}
   Bas: {fileID: 114078060241406452}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114827547931998112
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52702,8 +53578,10 @@ MonoBehaviour:
   Droite: {fileID: 114581184098707562}
   Gauche: {fileID: 114704728264407516}
   Bas: {fileID: 114059127278418504}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114827666581874512
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52721,8 +53599,10 @@ MonoBehaviour:
   Droite: {fileID: 114824261147018450}
   Gauche: {fileID: 114618444925556510}
   Bas: {fileID: 114451709395857450}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114830428572778042
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52740,8 +53620,10 @@ MonoBehaviour:
   Droite: {fileID: 114083172413895398}
   Gauche: {fileID: 114872407680236358}
   Bas: {fileID: 114609802792952178}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114832858149044506
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52759,8 +53641,10 @@ MonoBehaviour:
   Droite: {fileID: 114294852633919228}
   Gauche: {fileID: 114339360901589716}
   Bas: {fileID: 114401461312561872}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114835655184415188
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52778,8 +53662,10 @@ MonoBehaviour:
   Droite: {fileID: 114384919992768134}
   Gauche: {fileID: 114740656110936028}
   Bas: {fileID: 114058117854069348}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114841589043341534
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52797,8 +53683,10 @@ MonoBehaviour:
   Droite: {fileID: 114586145476659414}
   Gauche: {fileID: 114437936025720116}
   Bas: {fileID: 114540734800973016}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114842765206063458
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52816,8 +53704,10 @@ MonoBehaviour:
   Droite: {fileID: 114654687683406196}
   Gauche: {fileID: 114866406385561880}
   Bas: {fileID: 114661053988999202}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114855279486800264
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52835,8 +53725,10 @@ MonoBehaviour:
   Droite: {fileID: 114146367729117130}
   Gauche: {fileID: 114752922994021352}
   Bas: {fileID: 114433242780715716}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114856318404443686
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52854,8 +53746,10 @@ MonoBehaviour:
   Droite: {fileID: 114029243523238794}
   Gauche: {fileID: 114820578407505778}
   Bas: {fileID: 114440656824849276}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114866406385561880
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52873,8 +53767,10 @@ MonoBehaviour:
   Droite: {fileID: 114842765206063458}
   Gauche: {fileID: 114671190277798774}
   Bas: {fileID: 114170213825218576}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114866544782610548
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52892,8 +53788,10 @@ MonoBehaviour:
   Droite: {fileID: 114118636968013480}
   Gauche: {fileID: 114375014910142930}
   Bas: {fileID: 114377898500828788}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114867441874574206
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52911,8 +53809,10 @@ MonoBehaviour:
   Droite: {fileID: 114219850498736096}
   Gauche: {fileID: 114625970421407102}
   Bas: {fileID: 114109430852775602}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114867671210880164
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52930,8 +53830,10 @@ MonoBehaviour:
   Droite: {fileID: 114342958006460968}
   Gauche: {fileID: 114059586235872440}
   Bas: {fileID: 114975517647219692}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114870818615415448
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52949,8 +53851,10 @@ MonoBehaviour:
   Droite: {fileID: 114059586235872440}
   Gauche: {fileID: 114669716983977370}
   Bas: {fileID: 114146367729117130}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114872407680236358
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52968,8 +53872,10 @@ MonoBehaviour:
   Droite: {fileID: 114830428572778042}
   Gauche: {fileID: 114196364606523666}
   Bas: {fileID: 114192083071340400}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114880178481989080
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52987,8 +53893,10 @@ MonoBehaviour:
   Droite: {fileID: 114140961472284524}
   Gauche: {fileID: 114921428768515982}
   Bas: {fileID: 114827666581874512}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114881338120504410
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53006,8 +53914,10 @@ MonoBehaviour:
   Droite: {fileID: 114575016393213864}
   Gauche: {fileID: 114924465283467832}
   Bas: {fileID: 114947523973268236}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114882448380084382
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53025,8 +53935,10 @@ MonoBehaviour:
   Droite: {fileID: 114818967261836942}
   Gauche: {fileID: 114465225530181764}
   Bas: {fileID: 114185461605347642}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114884169533737784
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53044,8 +53956,10 @@ MonoBehaviour:
   Droite: {fileID: 114105946817860594}
   Gauche: {fileID: 114609802792952178}
   Bas: {fileID: 114457235413335512}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114888302164219960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53063,8 +53977,10 @@ MonoBehaviour:
   Droite: {fileID: 114572863548798010}
   Gauche: {fileID: 114632617596617222}
   Bas: {fileID: 114813511443319818}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114890878416582128
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53082,8 +53998,10 @@ MonoBehaviour:
   Droite: {fileID: 114497910460963026}
   Gauche: {fileID: 114231670678423454}
   Bas: {fileID: 114583525386138234}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114892724391798648
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53101,8 +54019,10 @@ MonoBehaviour:
   Droite: {fileID: 114969399890394164}
   Gauche: {fileID: 114120110131087216}
   Bas: {fileID: 114090022499787316}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114893476091699442
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53120,8 +54040,10 @@ MonoBehaviour:
   Droite: {fileID: 114926286441028112}
   Gauche: {fileID: 114974800220013382}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114894305059943926
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53139,8 +54061,10 @@ MonoBehaviour:
   Droite: {fileID: 114822794465316332}
   Gauche: {fileID: 114744339537234402}
   Bas: {fileID: 114827547931998112}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114895166565904958
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53158,8 +54082,10 @@ MonoBehaviour:
   Droite: {fileID: 114731646525401736}
   Gauche: {fileID: 114315800713610268}
   Bas: {fileID: 114744339537234402}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114897941163793430
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53177,8 +54103,10 @@ MonoBehaviour:
   Droite: {fileID: 114820578407505778}
   Gauche: {fileID: 114621258323995472}
   Bas: {fileID: 114960161971635478}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114898153672942260
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53196,8 +54124,10 @@ MonoBehaviour:
   Droite: {fileID: 114591147207061708}
   Gauche: {fileID: 114981402041680786}
   Bas: {fileID: 114204547527271334}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114898303597947430
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53215,8 +54145,10 @@ MonoBehaviour:
   Droite: {fileID: 114069025316386528}
   Gauche: {fileID: 114418787518220256}
   Bas: {fileID: 114677762960860536}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114901041710725694
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53234,8 +54166,10 @@ MonoBehaviour:
   Droite: {fileID: 114784829678177432}
   Gauche: {fileID: 114585020949052970}
   Bas: {fileID: 114597690180086944}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114902629380201726
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53253,8 +54187,10 @@ MonoBehaviour:
   Droite: {fileID: 114371649072371794}
   Gauche: {fileID: 114099086959027082}
   Bas: {fileID: 114162012125270654}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114903319683078116
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53272,8 +54208,10 @@ MonoBehaviour:
   Droite: {fileID: 114699510603521094}
   Gauche: {fileID: 114457235413335512}
   Bas: {fileID: 114998421712253496}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114911975231950762
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53291,8 +54229,10 @@ MonoBehaviour:
   Droite: {fileID: 114202252092283802}
   Gauche: {fileID: 114952415677572456}
   Bas: {fileID: 114287431087239296}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114914276993049336
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53310,8 +54250,10 @@ MonoBehaviour:
   Droite: {fileID: 114597690180086944}
   Gauche: {fileID: 114229292830802290}
   Bas: {fileID: 114200596574715540}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114917963317205376
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53329,8 +54271,10 @@ MonoBehaviour:
   Droite: {fileID: 114466392631823898}
   Gauche: {fileID: 114367010416820948}
   Bas: {fileID: 114118636968013480}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114918175512087262
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53348,8 +54292,10 @@ MonoBehaviour:
   Droite: {fileID: 114741699490471010}
   Gauche: {fileID: 114539409001508652}
   Bas: {fileID: 114632617596617222}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114919244531727180
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53367,8 +54313,10 @@ MonoBehaviour:
   Droite: {fileID: 114090022499787316}
   Gauche: {fileID: 114491069772432524}
   Bas: {fileID: 114255896782757228}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114920125116425784
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53386,8 +54334,10 @@ MonoBehaviour:
   Droite: {fileID: 114063055380464920}
   Gauche: {fileID: 114245677723187338}
   Bas: {fileID: 0}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 0}
+  standardMat: {fileID: 0}
 --- !u!114 &114921428768515982
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53405,8 +54355,10 @@ MonoBehaviour:
   Droite: {fileID: 114880178481989080}
   Gauche: {fileID: 114299472739550400}
   Bas: {fileID: 114618444925556510}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114921856071896746
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53424,8 +54376,10 @@ MonoBehaviour:
   Droite: {fileID: 114924465283467832}
   Gauche: {fileID: 114662630080811984}
   Bas: {fileID: 114250431690165408}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114924353955549728
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53443,8 +54397,10 @@ MonoBehaviour:
   Droite: {fileID: 114163423056620872}
   Gauche: {fileID: 114133224795434480}
   Bas: {fileID: 114989189968169266}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114924465283467832
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53462,8 +54418,10 @@ MonoBehaviour:
   Droite: {fileID: 114881338120504410}
   Gauche: {fileID: 114921856071896746}
   Bas: {fileID: 114168075151500534}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114926286441028112
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53481,8 +54439,10 @@ MonoBehaviour:
   Droite: {fileID: 114521173240874550}
   Gauche: {fileID: 114893476091699442}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114926829587431472
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53500,8 +54460,10 @@ MonoBehaviour:
   Droite: {fileID: 114690432513670976}
   Gauche: {fileID: 114654835892673198}
   Bas: {fileID: 114422531807867054}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114929150230219540
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53519,8 +54481,10 @@ MonoBehaviour:
   Droite: {fileID: 114426379498384048}
   Gauche: {fileID: 114218853496401394}
   Bas: {fileID: 114304560536965142}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114930635136693784
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53538,8 +54502,10 @@ MonoBehaviour:
   Droite: {fileID: 114659377587136530}
   Gauche: {fileID: 114218607934081366}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114930911782516768
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53557,8 +54523,10 @@ MonoBehaviour:
   Droite: {fileID: 114094545842717878}
   Gauche: {fileID: 114515150949621510}
   Bas: {fileID: 114565907654758330}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114934702784957854
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53576,8 +54544,10 @@ MonoBehaviour:
   Droite: {fileID: 114427941264915672}
   Gauche: {fileID: 114303354104079570}
   Bas: {fileID: 114092426460245038}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114937282345511160
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53595,8 +54565,10 @@ MonoBehaviour:
   Droite: {fileID: 114975517647219692}
   Gauche: {fileID: 114146367729117130}
   Bas: {fileID: 114384095206366708}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114941845447248852
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53614,8 +54586,10 @@ MonoBehaviour:
   Droite: {fileID: 114646268160942816}
   Gauche: {fileID: 114716579147165420}
   Bas: {fileID: 114502245951170136}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114942201527969340
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53633,8 +54607,10 @@ MonoBehaviour:
   Droite: {fileID: 114641199425751584}
   Gauche: {fileID: 114292829453620130}
   Bas: {fileID: 114164809263199378}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114943193988446670
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53652,8 +54628,10 @@ MonoBehaviour:
   Droite: {fileID: 114058117854069348}
   Gauche: {fileID: 114375525628077554}
   Bas: {fileID: 114521682766198834}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114943795503034518
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53671,8 +54649,10 @@ MonoBehaviour:
   Droite: {fileID: 114316655834108378}
   Gauche: {fileID: 114400286217767064}
   Bas: {fileID: 114183671000118646}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114947523973268236
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53690,8 +54670,10 @@ MonoBehaviour:
   Droite: {fileID: 114601139300934862}
   Gauche: {fileID: 114168075151500534}
   Bas: {fileID: 114963218859235406}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114948205609841748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53709,8 +54691,10 @@ MonoBehaviour:
   Droite: {fileID: 114209217195226752}
   Gauche: {fileID: 114572863548798010}
   Bas: {fileID: 114607615106597264}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114948397553741896
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53728,8 +54712,10 @@ MonoBehaviour:
   Droite: {fileID: 114643704529553274}
   Gauche: {fileID: 114773407593706680}
   Bas: {fileID: 114941845447248852}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114952415677572456
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53747,8 +54733,10 @@ MonoBehaviour:
   Droite: {fileID: 114911975231950762}
   Gauche: {fileID: 0}
   Bas: {fileID: 114440575968557750}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114952664741920684
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53766,8 +54754,10 @@ MonoBehaviour:
   Droite: {fileID: 114787850523752752}
   Gauche: {fileID: 114424981970721292}
   Bas: {fileID: 114497910460963026}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114953651993687322
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53785,8 +54775,10 @@ MonoBehaviour:
   Droite: {fileID: 114977734408764942}
   Gauche: {fileID: 114306362247966684}
   Bas: {fileID: 114275662801985940}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114954808353631474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53804,8 +54796,10 @@ MonoBehaviour:
   Droite: {fileID: 114674164393219684}
   Gauche: {fileID: 114003350749166664}
   Bas: {fileID: 114313797327493742}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114958849403969456
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53823,8 +54817,10 @@ MonoBehaviour:
   Droite: {fileID: 114476721145481790}
   Gauche: {fileID: 114742044355789020}
   Bas: {fileID: 114061845345491504}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114960161971635478
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53842,8 +54838,10 @@ MonoBehaviour:
   Droite: {fileID: 114464255578915442}
   Gauche: {fileID: 114267927893299176}
   Bas: {fileID: 114501472284330160}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114960226623185218
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53861,8 +54859,10 @@ MonoBehaviour:
   Droite: {fileID: 114637808758361960}
   Gauche: {fileID: 114261657201698944}
   Bas: {fileID: 114759056707211250}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114961325415109470
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53880,8 +54880,10 @@ MonoBehaviour:
   Droite: {fileID: 114322324811821424}
   Gauche: {fileID: 114433440929412054}
   Bas: {fileID: 114514997861982396}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114961636405549568
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53899,8 +54901,10 @@ MonoBehaviour:
   Droite: {fileID: 114784216458377342}
   Gauche: {fileID: 114677762960860536}
   Bas: {fileID: 114739510444956108}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114963218859235406
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53918,8 +54922,10 @@ MonoBehaviour:
   Droite: {fileID: 114569452859629362}
   Gauche: {fileID: 114733713573318078}
   Bas: {fileID: 114671190277798774}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114967382573403384
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53937,8 +54943,10 @@ MonoBehaviour:
   Droite: {fileID: 114384095206366708}
   Gauche: {fileID: 114433242780715716}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114967901617786798
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53956,8 +54964,10 @@ MonoBehaviour:
   Droite: {fileID: 114345427096442496}
   Gauche: {fileID: 114067562550361914}
   Bas: {fileID: 114312138910402574}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114969399890394164
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53975,8 +54985,10 @@ MonoBehaviour:
   Droite: {fileID: 114513026177718756}
   Gauche: {fileID: 114892724391798648}
   Bas: {fileID: 114293158789082442}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114974800220013382
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53994,8 +55006,10 @@ MonoBehaviour:
   Droite: {fileID: 114893476091699442}
   Gauche: {fileID: 114350448503665354}
   Bas: {fileID: 0}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114975517647219692
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54013,8 +55027,10 @@ MonoBehaviour:
   Droite: {fileID: 114047786214828750}
   Gauche: {fileID: 114937282345511160}
   Bas: {fileID: 114101540781493668}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114977734408764942
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54032,8 +55048,10 @@ MonoBehaviour:
   Droite: {fileID: 114540734800973016}
   Gauche: {fileID: 114953651993687322}
   Bas: {fileID: 114826077164139858}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114978921744151830
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54051,8 +55069,10 @@ MonoBehaviour:
   Droite: {fileID: 114697539113669240}
   Gauche: {fileID: 114410981520302546}
   Bas: {fileID: 114892724391798648}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114981402041680786
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54070,8 +55090,10 @@ MonoBehaviour:
   Droite: {fileID: 114898153672942260}
   Gauche: {fileID: 114530115749922240}
   Bas: {fileID: 114717472810998886}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114982370636553922
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54089,8 +55111,10 @@ MonoBehaviour:
   Droite: {fileID: 0}
   Gauche: {fileID: 114573944154137192}
   Bas: {fileID: 114362750594160454}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114989189968169266
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54108,8 +55132,10 @@ MonoBehaviour:
   Droite: {fileID: 114189597729951754}
   Gauche: {fileID: 114640473175919200}
   Bas: {fileID: 114881338120504410}
-  caseOccupe: 1
+  _caseOccupe: 0
   caseType: 2
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114992346134899510
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54127,8 +55153,10 @@ MonoBehaviour:
   Droite: {fileID: 114315800713610268}
   Gauche: {fileID: 114018690779685476}
   Bas: {fileID: 114750793233008242}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 1
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114995763154156882
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54146,8 +55174,10 @@ MonoBehaviour:
   Droite: {fileID: 114621258323995472}
   Gauche: {fileID: 114069025316386528}
   Bas: {fileID: 114784216458377342}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114996195804470780
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54165,8 +55195,10 @@ MonoBehaviour:
   Droite: {fileID: 114348957683520316}
   Gauche: {fileID: 114056724733907272}
   Bas: {fileID: 114769073213779192}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}
 --- !u!114 &114998421712253496
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54184,5 +55216,7 @@ MonoBehaviour:
   Droite: {fileID: 114653280462854700}
   Gauche: {fileID: 114741699490471010}
   Bas: {fileID: 114572863548798010}
-  caseOccupe: 0
+  _caseOccupe: 0
   caseType: 0
+  occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
+  standardMat: {fileID: 0}

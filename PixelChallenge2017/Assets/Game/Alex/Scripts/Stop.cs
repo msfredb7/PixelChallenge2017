@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 // Structure de donnees pour les arrets (ville, snack, depaneur)
 public class Stop : MonoBehaviour {
 
     public float distance;
+
+    public UnityEvent onEventComplete;
 
     public List<ItemAVendre> listItems = new List<ItemAVendre>();
 
@@ -23,6 +26,7 @@ public class Stop : MonoBehaviour {
 
     public void StartEvent()
     {
-
+        // evennement d'un stop
+        onEventComplete.Invoke();
     }
 }
