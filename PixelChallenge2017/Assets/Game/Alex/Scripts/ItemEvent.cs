@@ -22,7 +22,7 @@ public class ItemEvent {
     {
         Debug.Log("Un item apparait sur le bord de la route");
 
-        DelayManager.CallTo(AfterEvent, 3);
+        //DelayManager.CallTo(AfterEvent, 3);
     }
 
     public void AfterEvent()
