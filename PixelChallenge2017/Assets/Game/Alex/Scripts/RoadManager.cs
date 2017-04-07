@@ -33,6 +33,7 @@ public class RoadManager : PublicSingleton<RoadManager> {
 
             if(currentDistance > (lastPrint + 1))
             {
+                GameManager.instance.car.ChangeGas(-1);
                 print("They see me rollin' ! They hatin' ( Distance : " + lastPrint + "km )");
                 lastPrint++;
             }

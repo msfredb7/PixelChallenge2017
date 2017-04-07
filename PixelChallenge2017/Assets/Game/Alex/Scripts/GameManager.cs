@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : PublicSingleton<GameManager> {
 
@@ -11,6 +12,10 @@ public class GameManager : PublicSingleton<GameManager> {
     public float startFood;
 
     public float TowingCost;
+    public float TowingGas;
+
+    public Text gasText;
+    public Text cashText;
 
     void Start ()
     {
@@ -26,16 +31,20 @@ public class GameManager : PublicSingleton<GameManager> {
     void Update()
     {
         // Condition de defaite ?
-        if (car.noMoreGas)
+        if (car.gas <= 0)
         {
             if (car.cash < TowingCost)
             {
                 // End of the game
                 print("GAME OVER");
+                car.IsRunning = false;
             }
             // Towing
-            car.ChangeCash(TowingCost);
+            car.ChangeCash(-TowingCost);
+            car.ChangeGas(TowingGas);
         }
+        gasText.text = car.gas + "L";
+        cashText.text = car.cash + "$";
     }
 
     public void OnDestinationReached()

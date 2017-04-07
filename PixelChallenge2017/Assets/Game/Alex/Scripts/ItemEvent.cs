@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using CCC.Manager;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,8 +22,16 @@ public class ItemEvent {
     {
         Debug.Log("Un item apparait sur le bord de la route");
 
+        SpecialObjectAnimation.instance.SetObject(item.gameObject);
+        SpecialObjectAnimation.instance.Repawn();
+
+        DelayManager.CallTo(AfterEvent, 3);
+    }
+
+    public void AfterEvent()
+    {
         // Apres l'event
-        if(reward > 0) // Si l'objet pick up est sense etre un objet recompense quand on arrive a la ville
+        if (reward > 0) // Si l'objet pick up est sense etre un objet recompense quand on arrive a la ville
         {
             for (int i = 0; i < GameManager.instance.car.listItems.Count; i++) // on trouve
             {
