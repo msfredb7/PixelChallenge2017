@@ -13,6 +13,11 @@ namespace CCC.Utility
     // parmis un lot d'éléments ayant également leur propre chance d'être pigé (weight)
     public class Lottery
     {
+        public Lottery() { }
+        public Lottery(ILottery[] items)
+        {
+            list.AddRange(items);
+        }
         class LotteryItem
         {
             // Constructeur d'un élément qui va faire parti du lot
