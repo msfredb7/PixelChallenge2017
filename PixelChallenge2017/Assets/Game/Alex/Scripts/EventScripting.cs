@@ -2,10 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EventScripting {
+public class EventScripting
+{
 
     // Initialisation des lotteries
-    static CCC.Utility.Lottery lotteryFood = new CCC.Utility.Lottery(new CCC.Utility.Lottery.LotteryItem[]
+    static CCC.Utility.Lottery lotteryFood;
+
+    static CCC.Utility.Lottery lotteryEssence;
+
+    static CCC.Utility.Lottery lotteryUtility;
+
+    static CCC.Utility.Lottery lotteryCollectable;
+
+    public static int currentEvent = 0;
+
+
+    public static void Init(Voiture car)
+    {
+        lotteryFood = new CCC.Utility.Lottery(new CCC.Utility.Lottery.LotteryItem[]
         {
         new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(0),1),
         new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(1),1),
@@ -13,32 +27,23 @@ public class EventScripting {
         new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(3),3),
         new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(4),3),
         });
-
-    static CCC.Utility.Lottery lotteryEssence = new CCC.Utility.Lottery(new CCC.Utility.Lottery.LotteryItem[]
+        lotteryEssence =  new CCC.Utility.Lottery(new CCC.Utility.Lottery.LotteryItem[]
         {
         new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(5),2),
         new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(6),3),
         new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(7),5),
         });
-
-    static CCC.Utility.Lottery lotteryUtility = new CCC.Utility.Lottery(new CCC.Utility.Lottery.LotteryItem[]
+        lotteryUtility = new CCC.Utility.Lottery(new CCC.Utility.Lottery.LotteryItem[]
         {
         new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(8),2),
         new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(9),2),
         new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(10),6),
         });
-
-    static CCC.Utility.Lottery lotteryCollectable = new CCC.Utility.Lottery(new CCC.Utility.Lottery.LotteryItem[]
+        lotteryCollectable = new CCC.Utility.Lottery(new CCC.Utility.Lottery.LotteryItem[]
         {
         new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(11),1),
         new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(12),2),
         });
-
-    public static int currentEvent = 0;
-
-
-	public static void Init(Voiture car)
-    {
 
         // Chemin St-Stanilas a Montreal
         Ville depart = new Ville("St-Stanislas");
@@ -98,10 +103,10 @@ public class EventScripting {
         // Loteries
         List<ItemEvent> itemEventRoad1 = new List<ItemEvent>();
         ItemEvent item5km = new ItemEvent(5, 0, ItemBank.GetItemByIndex(17));
-        ItemEvent item29km = new ItemEvent(29,0,(Item)lotteryFood.Pick());
-        ItemEvent item35km = new ItemEvent(35,0,(Item)lotteryEssence.Pick());
-        ItemEvent item52km = new ItemEvent(52,0,(Item)lotteryUtility.Pick());
-        ItemEvent item67km = new ItemEvent(67,0,(Item)lotteryCollectable.Pick());
+        ItemEvent item29km = new ItemEvent(29, 0, (Item)lotteryFood.Pick());
+        ItemEvent item35km = new ItemEvent(35, 0, (Item)lotteryEssence.Pick());
+        ItemEvent item52km = new ItemEvent(52, 0, (Item)lotteryUtility.Pick());
+        ItemEvent item67km = new ItemEvent(67, 0, (Item)lotteryCollectable.Pick());
 
         itemEventRoad1.Add(item5km);
         itemEventRoad1.Add(item29km);
@@ -111,7 +116,7 @@ public class EventScripting {
 
 
         // Initialisation de la route
-        Road newRoad = new Road(depart, destination, stopRoad1, null,itemEventRoad1,questRoad1,70);
+        Road newRoad = new Road(depart, destination, stopRoad1, null, itemEventRoad1, questRoad1, 70);
         RoadManager.instance.SetRoad(newRoad);
     }
 
@@ -125,7 +130,7 @@ public class EventScripting {
 
                 // Evenement a faire...
 
-                Road newRoad = new Road(depart, destination, null, null, null,null, 5);
+                Road newRoad = new Road(depart, destination, null, null, null, null, 5);
                 RoadManager.instance.SetRoad(newRoad);
                 currentEvent++;
                 break;
@@ -135,7 +140,7 @@ public class EventScripting {
 
                 // Evenement a faire...
 
-                Road newRoad1 = new Road(depart1, destination1, null, null, null,null, 5);
+                Road newRoad1 = new Road(depart1, destination1, null, null, null, null, 5);
                 RoadManager.instance.SetRoad(newRoad1);
                 currentEvent++;
                 break;
@@ -145,7 +150,7 @@ public class EventScripting {
 
                 // Evenement a faire...
 
-                Road newRoad2 = new Road(depart2, destination2, null, null, null,null, 5);
+                Road newRoad2 = new Road(depart2, destination2, null, null, null, null, 5);
                 RoadManager.instance.SetRoad(newRoad2);
                 currentEvent++;
                 break;
@@ -155,7 +160,7 @@ public class EventScripting {
 
                 // Evenement a faire...
 
-                Road newRoad3 = new Road(depart3, destination3, null, null, null,null, 5);
+                Road newRoad3 = new Road(depart3, destination3, null, null, null, null, 5);
                 RoadManager.instance.SetRoad(newRoad3);
                 currentEvent++;
                 break;

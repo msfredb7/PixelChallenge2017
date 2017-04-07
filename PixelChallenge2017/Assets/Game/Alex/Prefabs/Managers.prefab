@@ -68,6 +68,7 @@ MonoBehaviour:
   startTime: 0
   timeToIgnore: 0
   timeLastStop: 0
+  buyButton: {fileID: 0}
 --- !u!114 &114236672355354734
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -81,7 +82,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   container: {fileID: 0}
   textObject: {fileID: 1932279048123060, guid: 094996440292b7f45a3c819e7bddab42, type: 2}
-  nbMax: 5
+  nbMax: 7
   currentNbQuest: 0
 --- !u!114 &114423644772353052
 MonoBehaviour:
@@ -95,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startCash: 1
-  startGas: 0
+  startGas: 20
   startFood: 10
   TowingCost: 0
   TowingGas: 10
