@@ -3,21 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // Structure de donnees pour les arrets (ville, snack, depaneur)
-public class Stop {
-
-    public stopType type;
+public class Stop : MonoBehaviour {
 
     public float distance;
 
-    public enum stopType
+    public List<ItemAVendre> listItems = new List<ItemAVendre>();
+
+    public Stop(float distance, List<ItemAVendre> listItems = null)
     {
-        Snack = 1,
-        Essence = 2
+        this.distance = distance;
+        if (listItems != null)
+            this.listItems = listItems;
     }
 
-    public Stop(stopType type, float distance)
+    public void AddItemAVendre(Item item, float cost, int quantity)
     {
-        this.type = type;
-        this.distance = distance;
+        listItems.Add(new ItemAVendre(item, cost, quantity));
+    }
+
+    public void StartEvent()
+    {
+
     }
 }

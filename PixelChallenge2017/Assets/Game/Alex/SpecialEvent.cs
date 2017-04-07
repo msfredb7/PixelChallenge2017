@@ -1,18 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SpecialEvent {
 
     public float distance;
 
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public UnityAction specialEvent;
+
+    public SpecialEvent(float distance, UnityAction specialEvent)
+    {
+        this.distance = distance;
+        this.specialEvent = specialEvent;
+    }
+
+    public void StartEvent()
+    {
+        specialEvent.Invoke();
+    }
 }

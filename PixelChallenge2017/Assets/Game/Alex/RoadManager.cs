@@ -6,6 +6,7 @@ public class RoadManager : PublicSingleton<RoadManager> {
 
     public Road currentRoad;
 
+    [HideInInspector]
     public float startTime;
 
     void Update()
@@ -26,22 +27,21 @@ public class RoadManager : PublicSingleton<RoadManager> {
 
         if (nextStop != null && nextStop.distance <= currentDistance)
         {
-            // do stop event
+            nextStop.StartEvent();
         }
 
         if (nextEvent != null && nextEvent.distance <= currentDistance)
         {
-            // do special event
+            nextEvent.StartEvent();
         }
 
         if (nextItem != null && nextItem.distance <= currentDistance)
         {
-            // do next item
+            nextItem.StartEvent();
         }
 
         if(currentRoad.distance <= currentDistance)
         {
-            // do event arrive a destination
             print("Welcome to the amazing city of " + currentRoad.currentDestination.nom);
         }
     }
