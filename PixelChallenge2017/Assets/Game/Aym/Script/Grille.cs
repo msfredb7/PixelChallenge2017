@@ -33,6 +33,8 @@ public class Grille : MonoBehaviour {
                 GameObject temp = Instantiate(prefabCase,transform);
                 temp.transform.Translate(new Vector3(x*distanceX, y * distanceY,0));
                 grille[x][y] = temp.GetComponent<Case>();
+                grille[x][y].posX = x;
+                grille[x][y].posY = y;
             }
         }
 
@@ -74,6 +76,17 @@ public class Grille : MonoBehaviour {
             initGrille();
         }
 
+    }
+
+    public void Update()
+    {
+        testCamera();
+    }
+
+    public void testCamera()
+    {
+        Debug.Log(Camera.main.WorldToScreenPoint(grille[0][0].transform.position));
+       
     }
 
 }
