@@ -25,7 +25,7 @@ public class Item : MonoBehaviour {
     List<Case> collidedCase;
 
     public Case centralCase;
-    List<Case> occupedCase;
+    public List<Case> occupedCase;
 
     List<Case> tempoHovered;
 
@@ -48,7 +48,7 @@ public class Item : MonoBehaviour {
         set
         {
             _placementState = value;
-            if(_placementState == ItemState.placed || _placementState == ItemState.onDragPlacable)
+            if(_placementState == ItemState.placed || _placementState == ItemState.onDragPlacable || _placementState == ItemState.notPlaced )
             {
                 if(rend.Count > 0)
                 {
@@ -58,7 +58,7 @@ public class Item : MonoBehaviour {
                     }
                 }
                     
-            }else if (_placementState == ItemState.notPlaced || _placementState == ItemState.onDragUnplacable)
+            }else if ( _placementState == ItemState.onDragUnplacable)
             {
                 if (rend.Count > 0)
                 {
