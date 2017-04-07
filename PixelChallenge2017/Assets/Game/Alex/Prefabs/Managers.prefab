@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 114796114855803356}
   - component: {fileID: 114423644772353052}
   - component: {fileID: 114236672355354734}
+  - component: {fileID: 114566943502292178}
+  - component: {fileID: 114403523594249178}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -59,6 +61,11 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  onStopReached:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
   startTime: 0
   timeToIgnore: 0
   timeLastStop: 0
@@ -77,6 +84,18 @@ MonoBehaviour:
   textObject: {fileID: 1932279048123060, guid: 094996440292b7f45a3c819e7bddab42, type: 2}
   nbMax: 5
   currentNbQuest: 0
+--- !u!114 &114403523594249178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1205413928877120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb119c8990355ff4398d96357d0f4bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listeItem: []
 --- !u!114 &114423644772353052
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -92,6 +111,18 @@ MonoBehaviour:
   startGas: 100
   startFood: 100
   TowingCost: 0
+--- !u!114 &114566943502292178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1205413928877120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb119c8990355ff4398d96357d0f4bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listeItem: []
 --- !u!114 &114796114855803356
 MonoBehaviour:
   m_ObjectHideFlags: 1
