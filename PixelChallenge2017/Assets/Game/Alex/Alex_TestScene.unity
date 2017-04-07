@@ -298,11 +298,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114423644772353052, guid: e9130a173ca18a1448debcefc8fb17f5,
-        type: 2}
-      propertyPath: waypoints.Array.size
-      value: 13
-      objectReference: {fileID: 0}
     - target: {fileID: 4604554167642640, guid: e9130a173ca18a1448debcefc8fb17f5, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -335,6 +330,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114003409056798694, guid: e9130a173ca18a1448debcefc8fb17f5,
+        type: 2}
+      propertyPath: buyButton
+      value: 
+      objectReference: {fileID: 1623611728}
+    - target: {fileID: 114236672355354734, guid: e9130a173ca18a1448debcefc8fb17f5,
+        type: 2}
+      propertyPath: container
+      value: 
+      objectReference: {fileID: 834708763}
     - target: {fileID: 114423644772353052, guid: e9130a173ca18a1448debcefc8fb17f5,
         type: 2}
       propertyPath: gasText
@@ -345,21 +350,11 @@ Prefab:
       propertyPath: cashText
       value: 
       objectReference: {fileID: 1293725126}
-    - target: {fileID: 114236672355354734, guid: e9130a173ca18a1448debcefc8fb17f5,
+    - target: {fileID: 114423644772353052, guid: e9130a173ca18a1448debcefc8fb17f5,
         type: 2}
-      propertyPath: container
+      propertyPath: grille
       value: 
-      objectReference: {fileID: 834708763}
-    - target: {fileID: 114236672355354734, guid: e9130a173ca18a1448debcefc8fb17f5,
-        type: 2}
-      propertyPath: nbMax
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114003409056798694, guid: e9130a173ca18a1448debcefc8fb17f5,
-        type: 2}
-      propertyPath: buyButton
-      value: 
-      objectReference: {fileID: 1623611728}
+      objectReference: {fileID: 889401513}
     - target: {fileID: 114423644772353052, guid: e9130a173ca18a1448debcefc8fb17f5,
         type: 2}
       propertyPath: waypoints.Array.data[0]
@@ -425,15 +420,6 @@ Prefab:
       propertyPath: waypoints.Array.data[12]
       value: 
       objectReference: {fileID: 29676475}
-    - target: {fileID: 1205413928877120, guid: e9130a173ca18a1448debcefc8fb17f5, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114423644772353052, guid: e9130a173ca18a1448debcefc8fb17f5,
-        type: 2}
-      propertyPath: grille
-      value: 
-      objectReference: {fileID: 889401513}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9130a173ca18a1448debcefc8fb17f5, type: 2}
   m_IsPrefabParent: 0
@@ -749,7 +735,7 @@ Prefab:
     - target: {fileID: 224458130572650508, guid: ab2db0993ff0fae46ab10a531f715038,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 224458130572650508, guid: ab2db0993ff0fae46ab10a531f715038,
         type: 2}
@@ -759,7 +745,7 @@ Prefab:
     - target: {fileID: 224458130572650508, guid: ab2db0993ff0fae46ab10a531f715038,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ab2db0993ff0fae46ab10a531f715038, type: 2}
@@ -913,25 +899,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8880fe182f25421438f9212606609d66, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1370224704 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1205413928877120, guid: e9130a173ca18a1448debcefc8fb17f5,
-    type: 2}
-  m_PrefabInternal: {fileID: 583235517}
---- !u!114 &1370224705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1370224704}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e1528c66c6897641b83c728c3bb423b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bank: []
-  listePersonne:
-  - {fileID: 114113780328602324, guid: 354a658e47f97ad4ca6a136431c5637c, type: 2}
 --- !u!1 &1575868836
 GameObject:
   m_ObjectHideFlags: 0
