@@ -17,6 +17,10 @@ public class GameManager : PublicSingleton<GameManager> {
     public Text gasText;
     public Text cashText;
 
+    public GameObject grille;
+
+    public List<GameObject> waypoints = new List<GameObject>();
+
     void Start ()
     {
         car = new Voiture(startCash, startGas);
@@ -61,11 +65,30 @@ public class GameManager : PublicSingleton<GameManager> {
 
     public void CreateStop(LieuType lieu)
     {
-        // Gere le spaw du prefab stop et set toute le reste
         print("On arrete a " + lieu);
+        // Gere le spaw du prefab stop et set toute le reste
         GlobalAnimator.StopAt(lieu, delegate ()
         {
             RoadManager.instance.ContinueRoadTrip();
         });
+    }
+
+    // Spawn des items important avec le personnage
+    public void SpawnItems(List<Quest.ItemQuest> items)
+    {
+        int nbItems = 1; 
+        for(int i = 0; i < items.Count; i++)
+        {
+            if (i > (waypoints.Count - 1))
+                return; // Fuck off
+            Instantiate(items[i].item, waypoints[nbItems].transform);
+            nbItems++;
+        }
+    }
+
+    // Spawn un personnage
+    public void SpawnPersonne(Personne personne)
+    {
+        //Instantiate(personne, waypoints[0].transform);
     }
 }
