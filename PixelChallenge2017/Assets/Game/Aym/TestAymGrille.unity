@@ -53022,7 +53022,7 @@ MonoBehaviour:
   distanceY: 1.1
   nbCaseX: 32
   nbCaseY: 16
-  produceGrille: 1
+  produceGrille: 0
 --- !u!4 &2143159972
 Transform:
   m_ObjectHideFlags: 0
