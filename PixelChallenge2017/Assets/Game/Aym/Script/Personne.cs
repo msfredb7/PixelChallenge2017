@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine;
 
 public class Personne : Item {
 
@@ -29,7 +30,7 @@ public class Personne : Item {
             if(_food < 0)
             {
                 OnNoFodd();
-                food = 0;
+                food = maxFood/2;
             }
             if(food>maxFood)
             {
@@ -47,6 +48,38 @@ public class Personne : Item {
 
     private void OnNoFodd()
     {
+        if(centralCase != null)
+        {
+            List<Case> caseLibreProche = new List<Case>();
+            
+            if(occupedCase != null)
+            {
+                foreach (Case c in occupedCase)
+                {
+                    if (c.Haut != null && c.Haut.caseOccupe == false)
+                    {
+                        caseLibreProche.Add(c.Haut);
+                    }
+                    if (c.Bas != null && c.Bas.caseOccupe == false)
+                    {
+                        caseLibreProche.Add(c.Bas);
+                    }
+                    if (c.Gauche != null && c.Gauche.caseOccupe == false)
+                    {
+                        caseLibreProche.Add(c.Gauche);
+                    }
+                    if (c.Droite != null && c.Droite.caseOccupe == false)
+                    {
+                        caseLibreProche.Add(c.Droite);
+                    }
+                }
+
+                Case randomCase = caseLibreProche[Random.Range(0, caseLibreProche.Count)];
+                randomCase.gameObject.SetActive(false);
+            }
+           
+        }
+
 
     }
 
