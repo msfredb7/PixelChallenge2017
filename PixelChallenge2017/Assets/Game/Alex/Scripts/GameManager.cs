@@ -17,6 +17,8 @@ public class GameManager : PublicSingleton<GameManager> {
     public Text gasText;
     public Text cashText;
 
+    public GameObject grille;
+
     public List<GameObject> waypoints = new List<GameObject>();
 
     void Start ()
