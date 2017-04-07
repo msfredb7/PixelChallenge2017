@@ -72,10 +72,17 @@ public class EventScripting {
         stopRoad1.Add(garage62km);
 
         List<ItemEvent> itemEventRoad1 = new List<ItemEvent>();
+        ItemEvent item5km = new ItemEvent(5, 0, (Item)lotteryFood.Pick());
         ItemEvent item29km = new ItemEvent(29,0,(Item)lotteryFood.Pick());
         ItemEvent item35km = new ItemEvent(35,0,(Item)lotteryEssence.Pick());
         ItemEvent item52km = new ItemEvent(52,0,(Item)lotteryUtility.Pick());
         ItemEvent item67km = new ItemEvent(67,0,(Item)lotteryCollectable.Pick());
+
+        itemEventRoad1.Add(item5km);
+        itemEventRoad1.Add(item29km);
+        itemEventRoad1.Add(item35km);
+        itemEventRoad1.Add(item52km);
+        itemEventRoad1.Add(item67km);
 
         List <Quest> questRoad1 = new List<Quest>();
         questRoad1.Add(new Quest("Déposer Marise et ses valises à Montréal", 0, new Quest.Destination(destination, null)));

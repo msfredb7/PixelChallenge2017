@@ -56,9 +56,9 @@ public class Quest {
         if(itemNecessaire != null)
             this.itemNecessaire = itemNecessaire;
         if(destination.DestinationIsStop())
-            RoadManager.instance.onDestinationReached.AddListener(OnStopReached);
+            RoadManager.instance.onStopReached.AddListener(OnStopReached);
         else if(destination.DestinationIsCity())
-            RoadManager.instance.onStopReached.AddListener(OnCityReached);
+            RoadManager.instance.onDestinationReached.AddListener(OnCityReached);
     }
 
     public void OnBegin()

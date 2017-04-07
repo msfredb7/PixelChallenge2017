@@ -32,7 +32,7 @@ public class Item : MonoBehaviour {
     Case beforePlacement;
     private Vector3 posBeforePlacement;
 
-    List<SpriteRenderer> rend;
+    protected List<SpriteRenderer> rend;
     ItemState _placementState;
 
     ItemState placementState
@@ -64,19 +64,26 @@ public class Item : MonoBehaviour {
                     }
                 }
             }
-
+            
             if(_placementState == ItemState.placed)
             {
-                if(GameManager.instance.car.listItems.Contains(this))
+                if(GameManager.instance != null)
                 {
-                    GameManager.instance.car.listItems.Add(this);
+                    if (GameManager.instance.car.listItems.Contains(this))
+                    {
+                        GameManager.instance.car.listItems.Add(this);
+                    }
                 }
+                
             }
             if(_placementState == ItemState.notPlaced)
             {
-                GameManager.instance.car.listItems.Remove(this);
+                if(GameManager.instance != null)
+                {
+                    GameManager.instance.car.listItems.Remove(this);
+                }
             }
-
+            
         }
     }
 
@@ -216,6 +223,7 @@ public class Item : MonoBehaviour {
         rend = new List<SpriteRenderer>();
         rend.AddRange(GetComponents<SpriteRenderer>());
         rend.AddRange(GetComponentsInChildren<SpriteRenderer>());
+        
 
 
         
