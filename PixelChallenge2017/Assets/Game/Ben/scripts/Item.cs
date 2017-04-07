@@ -492,7 +492,7 @@ public class Item : MonoBehaviour {
 	}
 
 
-    private void ajustPos()
+    protected void ajustPos()
     {
         if (collidedCase.Count > 0)
         {
@@ -507,7 +507,7 @@ public class Item : MonoBehaviour {
         }
     }
 
-    private void fillCollidedCase()
+    protected void fillCollidedCase()
     {
         foreach (Collider col in colIn)
         {
@@ -519,7 +519,7 @@ public class Item : MonoBehaviour {
         }
     }
 
-    private void clearCase()
+    protected void clearCase()
     {
         centralCase = null;
         foreach (Case c in occupedCase)
@@ -528,7 +528,7 @@ public class Item : MonoBehaviour {
         }
     }
 
-    private Case calculCentralCase()
+    protected Case calculCentralCase()
     {
         if (collidedCase.Count > 0)
         {
@@ -549,7 +549,7 @@ public class Item : MonoBehaviour {
         return null;
      }
 
-    private void checkOffset()
+    protected void checkOffset()
     {
         //We assume that the matrix is at least a rectangle. This don't support row with variable sizes
         if (offsetX >= cases.rows[0].row.Length || offsetX < 0)
@@ -564,7 +564,7 @@ public class Item : MonoBehaviour {
         }
     }
 
-    private void CalculCollidedCase()
+    protected void CalculCollidedCase()
     {
         if (colInChange == true)
         {
@@ -594,7 +594,7 @@ public class Item : MonoBehaviour {
         collidedCase.Clear();
     }
 
-    public void EndDrag()
+    virtual public void EndDrag()
     {
         CalculCollidedCase();
         if(collidedCase.Count != 0)
