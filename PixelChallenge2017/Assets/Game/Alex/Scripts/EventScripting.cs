@@ -58,7 +58,7 @@ public class EventScripting {
 
                 // Evenement a faire...
 
-                Road newRoad = new Road(depart, destination, null, null, null, 5);
+                Road newRoad = new Road(depart, destination, null, null, null,null, 5);
                 RoadManager.instance.SetRoad(newRoad);
                 currentEvent++;
                 break;
@@ -68,7 +68,7 @@ public class EventScripting {
 
                 // Evenement a faire...
 
-                Road newRoad1 = new Road(depart1, destination1, null, null, null, 5);
+                Road newRoad1 = new Road(depart1, destination1, null, null, null,null, 5);
                 RoadManager.instance.SetRoad(newRoad1);
                 currentEvent++;
                 break;
@@ -78,7 +78,7 @@ public class EventScripting {
 
                 // Evenement a faire...
 
-                Road newRoad2 = new Road(depart2, destination2, null, null, null, 5);
+                Road newRoad2 = new Road(depart2, destination2, null, null, null,null 5);
                 RoadManager.instance.SetRoad(newRoad2);
                 currentEvent++;
                 break;
@@ -88,7 +88,7 @@ public class EventScripting {
 
                 // Evenement a faire...
 
-                Road newRoad3 = new Road(depart3, destination3, null, null, null, 5);
+                Road newRoad3 = new Road(depart3, destination3, null, null, null,null, 5);
                 RoadManager.instance.SetRoad(newRoad3);
                 currentEvent++;
                 break;
