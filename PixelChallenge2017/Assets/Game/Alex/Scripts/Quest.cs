@@ -49,6 +49,7 @@ public class Quest {
 
     public Destination destination;
     public List<ItemQuest> itemNecessaire = new List<ItemQuest>();
+    public Personne personne;
 
     public Quest(string questDescription, float distance, float recompense, Destination destination, List<ItemQuest> itemNecessaire = null)
     {
@@ -67,6 +68,9 @@ public class Quest {
     public void OnBegin()
     {
         Debug.Log("la quete commence");
+
+        GameManager.instance.SpawnItems(itemNecessaire);
+        GameManager.instance.SpawnPersonne(personne);
     }
 
     public void OnCityReached()
@@ -85,6 +89,8 @@ public class Quest {
     public void OnFail()
     {
         Debug.Log("la quete a fail");
+
+        QuestManager.instance.DeleteQuest(this);
     }
 
     public void OnComplete()
