@@ -15,5 +15,8 @@ public class ItemAVendre : MonoBehaviour {
         this.quantity = quantity;
     }
 
+    public void BuyItem()
+    {
 
+    }
 }
