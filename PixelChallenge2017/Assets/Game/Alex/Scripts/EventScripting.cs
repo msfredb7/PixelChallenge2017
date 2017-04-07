@@ -4,11 +4,34 @@ using UnityEngine;
 
 public class EventScripting {
 
-    List<Item> randomItemBank2 = new List<Item>();
-    // randomItemBank2.Add(...);
+    static CCC.Utility.Lottery lotteryFood = new CCC.Utility.Lottery(new CCC.Utility.Lottery.LotteryItem[]
+        {
+        new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(0),1),
+        new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(1),1),
+        new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(2),2),
+        new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(3),3),
+        new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(4),3),
+        });
 
-    List<Item> randomItemBank3 = new List<Item>();
-    // randomItemBank3.Add(...);
+    static CCC.Utility.Lottery lotteryEssence = new CCC.Utility.Lottery(new CCC.Utility.Lottery.LotteryItem[]
+        {
+        new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(5),2),
+        new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(6),3),
+        new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(7),5),
+        });
+
+    static CCC.Utility.Lottery lotteryUtility = new CCC.Utility.Lottery(new CCC.Utility.Lottery.LotteryItem[]
+        {
+        new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(8),2),
+        new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(9),2),
+        new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(10),6),
+        });
+
+    static CCC.Utility.Lottery lotteryCollectable = new CCC.Utility.Lottery(new CCC.Utility.Lottery.LotteryItem[]
+        {
+        new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(11),1),
+        new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(12),2),
+        });
 
     public static int currentEvent = 0;
 	public static void Init(Voiture car)
@@ -49,23 +72,16 @@ public class EventScripting {
         stopRoad1.Add(garage62km);
 
         List<ItemEvent> itemEventRoad1 = new List<ItemEvent>();
-        // ItemEvent item29km = new ItemEvent(29)
-        // ItemEvent item35km = new ItemEvent(35)
-        // ItemEvent item52km = new ItemEvent(52)
-        // ItemEvent item67km = new ItemEvent(67)
+        ItemEvent item29km = new ItemEvent(29,(Item)lotteryFood.Pick());
+        ItemEvent item35km = new ItemEvent(35,(Item)lotteryEssence.Pick());
+        ItemEvent item52km = new ItemEvent(52,(Item)lotteryUtility.Pick());
+        ItemEvent item67km = new ItemEvent(67,(Item)lotteryCollectable.Pick());
 
-        // itemEventRoad1.Add(item29km);
-        // itemEventRoad1.Add(item35km);
-        // itemEventRoad1.Add(item52km);
-        // itemEventRoad1.Add(item67km);
-
-        // depanneur22km.Add(new ItemAVendre, )
-        // stopRoad1.Add(new Stop(22,));
-
-        List<Quest> questRoad1 = new List<Quest>();
-        questRoad1.Add(new Quest("Charles-Montreal", 10, new Quest.Destination(destination,null)));
-        questRoad1.Add(new Quest("Marc-Station", 17, new Quest.Destination(null,station40km)));
-        questRoad1.Add(new Quest("Monique-Montreal", 57, new Quest.Destination(destination, null)));
+        List <Quest> questRoad1 = new List<Quest>();
+        questRoad1.Add(new Quest("Déposer Marise et ses valises à Montréal", 0, new Quest.Destination(destination, null)));
+        questRoad1.Add(new Quest("Déposer Charles et son équipement de hockey à Montreal", 10, new Quest.Destination(destination,null)));
+        questRoad1.Add(new Quest("Déposer Marc à la prochaine station service", 17, new Quest.Destination(null,station40km)));
+        questRoad1.Add(new Quest("Déposer Monique à Montreal", 57, new Quest.Destination(destination, null)));
 
         Road newRoad = new Road(depart, destination, stopRoad1, null,itemEventRoad1,questRoad1,70);
         RoadManager.instance.SetRoad(newRoad);

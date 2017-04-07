@@ -35,7 +35,7 @@ public class GazonAnimation : MonoBehaviour
                 SpriteRenderer spr = renderer.GetComponent<SpriteRenderer>();
                 if (spr != null)
                     spr.sprite = sprites[Random.Range(0, sprites.Length)];
-                renderer.transform.localPosition = new Vector3(renderer.transform.position.x, renderer.transform.position.y, Random.Range(minZ, maxZ));
+                renderer.transform.localPosition = new Vector3(renderer.transform.localPosition.x, renderer.transform.localPosition.y, Random.Range(minZ, maxZ));
                 renderer.transform.localPosition += Vector3.right * (maxX - minX);
             }
         }

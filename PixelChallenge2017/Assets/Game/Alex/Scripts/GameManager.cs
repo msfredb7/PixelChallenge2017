@@ -47,5 +47,9 @@ public class GameManager : PublicSingleton<GameManager> {
     {
         // Gere le spaw du prefab stop et set toute le reste
         print("On arrete a " + lieu);
+        GlobalAnimator.StopAt(lieu, delegate ()
+        {
+            RoadManager.instance.ContinueRoadTrip();
+        });
     }
 }

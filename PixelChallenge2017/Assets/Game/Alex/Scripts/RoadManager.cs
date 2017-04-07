@@ -44,7 +44,6 @@ public class RoadManager : PublicSingleton<RoadManager> {
 
             if (nextStop != null && nextStop.distance <= currentDistance)
             {
-                nextStop.onEventComplete.AddListener(ContinueRoadTrip);
                 GameManager.instance.car.IsRunning = false;
                 timeLastStop = Time.time;
                 nextStop.StartEvent();
