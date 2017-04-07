@@ -7,14 +7,19 @@ namespace CCC.Utility
 {
     // Structure de données contenant une liste et permettant de la manipulé avec du aléatoire
     [System.Serializable]
-    public class RandomList<T> 
+    public class RandomList<T>
     {
         [SerializeField]
-        List<T> list;
+        List<T> list = new List<T>();
 
-        public RandomList()
+        public RandomList() { }
+
+        public RandomList(List<T> list)
         {
-            list = new List<T>();
+            foreach (T item in list)
+            {
+                this.list.Add(item);
+            }
         }
 
         /// <summary>
@@ -79,3 +84,4 @@ namespace CCC.Utility
     [System.Serializable]
     public class RandomBooltList : RandomList<bool> { }
 }
+
