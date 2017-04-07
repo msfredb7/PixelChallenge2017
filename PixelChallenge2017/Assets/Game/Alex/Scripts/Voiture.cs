@@ -10,10 +10,13 @@ public class Voiture {
     public bool noMoreCash;
     public bool noMoreGas;
 
+    public bool IsRunning;
+
     public Voiture(float cash, float gas)
     {
         this.cash = cash;
         this.gas = gas;
+        IsRunning = false;
     }
 
     public void ChangeCash(float amount) // peut etre negatif

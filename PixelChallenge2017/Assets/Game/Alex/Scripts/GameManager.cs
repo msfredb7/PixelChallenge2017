@@ -14,7 +14,7 @@ public class GameManager : PublicSingleton<GameManager> {
 
     void Start ()
     {
-        car = new Voiture(startCash, startGas, startFood);
+        car = new Voiture(startCash, startGas);
 
         // Ajouts de la route initial
         EventScripting.Init(car);
