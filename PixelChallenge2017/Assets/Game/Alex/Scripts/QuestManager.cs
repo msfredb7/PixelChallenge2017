@@ -9,6 +9,12 @@ public class QuestManager : PublicSingleton<QuestManager>
     public GameObject container;
     public GameObject textObject;
 
+    public GameObject containerEcran;
+    public Text personneNom;
+    public Text description;
+    public Text reward;
+    public Text quantityObject;
+
     public GameObject questNotification;
 
     public List<Quest> questList = new List<Quest>();
@@ -47,6 +53,33 @@ public class QuestManager : PublicSingleton<QuestManager>
     }
     void OnQuestWin(Quest quest)
     {
+        float totalReward = quest.recompense;
+        int totalItems = 0;
+        if(quest.items.Count >= 1)
+        {
+            for (int j = 0; j < GameManager.instance.car.listSpecialItems.Count; j++)
+            {
+                if (quest.items.Contains(GameManager.instance.car.listSpecialItems[j].item)) // si il est dans la liste
+                {
+                    totalItems++;
+                    totalReward += GameManager.instance.car.listSpecialItems[j].reward;
+                }
+            }
+        }
+
+        // Affichage de l'ecran de completion
+        containerEcran.SetActive(true);
+        personneNom.text = "Nom du personnage : " + quest.personne.nom;
+        description.text = "Description : " + quest.questDescription;
+        reward.text = "Recompense : " + totalReward + "$";
+        quantityObject.text = "Transport de bagages : " + totalItems + " objets";
+
+    // Faire disparaitre l'ecran de completion dans 6 secondes
+    DelayManager.CallTo(delegate()
+        {
+            containerEcran.SetActive(false);
+        },6);
+
         DeleteQuest(quest);
     }
 
