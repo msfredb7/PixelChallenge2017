@@ -102,10 +102,10 @@ public class EventScripting
         stopRoad1.Add(monique57km);
 
         List<Quest> questRoad1 = new List<Quest>();
-        questRoad1.Add(new Quest("Deposer Marise et ses valises a Montreal", 0, 0, GameManager.instance.personne, new Quest.Destination(destination, null)));
-        questRoad1.Add(new Quest("Deposer Charles et son équipement de hockey a Montreal", 10, 25, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null), questItemCharles10km));
-        questRoad1.Add(new Quest("Deposer Marc à la prochaine station service", 17, 20, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, station40km)));
-        questRoad1.Add(new Quest("Deposer Monique a Montreal", 57, 20, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
+        questRoad1.Add(new Quest("Deposer Marise et ses valises a Montreal", 0, 20, GameManager.instance.personne, new Quest.Destination(destination, null)));
+        questRoad1.Add(new Quest("Deposer Charles et son équipement de hockey a Montreal", 10, 20, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null), questItemCharles10km));
+        questRoad1.Add(new Quest("Deposer Marc à la prochaine station service", 17, 10, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, station40km)));
+        questRoad1.Add(new Quest("Deposer Monique a Montreal", 57, 10, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
 
 
         // Loteries
@@ -136,7 +136,7 @@ public class EventScripting
             DelayManager.CallTo(delegate ()
             {
                 GameObject.Destroy(obj);
-            }, 4);
+            }, 5);
         }));
 
         specialEventList.Add(new SpecialEvent(9, delegate ()
@@ -150,7 +150,7 @@ public class EventScripting
             DelayManager.CallTo(delegate ()
             {
                 GameObject.Destroy(obj);
-            }, 3);
+            }, 5);
         }));
 
         specialEventList.Add(new SpecialEvent(20, delegate ()
@@ -164,7 +164,7 @@ public class EventScripting
             DelayManager.CallTo(delegate ()
             {
                 GameObject.Destroy(obj);
-            }, 3);
+            }, 5);
         }));
 
         specialEventList.Add(new SpecialEvent(30, delegate ()
@@ -178,7 +178,7 @@ public class EventScripting
             DelayManager.CallTo(delegate ()
             {
                 GameObject.Destroy(obj);
-            }, 3);
+            }, 5);
         }));
 
         specialEventList.Add(new SpecialEvent(40, delegate ()
@@ -192,7 +192,7 @@ public class EventScripting
             DelayManager.CallTo(delegate ()
             {
                 GameObject.Destroy(obj);
-            }, 3);
+            }, 5);
         }));
 
         specialEventList.Add(new SpecialEvent(45, delegate ()
@@ -206,7 +206,7 @@ public class EventScripting
             DelayManager.CallTo(delegate ()
             {
                 GameObject.Destroy(obj);
-            }, 3);
+            }, 5);
         }));
 
         specialEventList.Add(new SpecialEvent(60, delegate ()
@@ -220,7 +220,7 @@ public class EventScripting
             DelayManager.CallTo(delegate ()
             {
                 GameObject.Destroy(obj);
-            }, 3);
+            }, 5);
         }));
 
         float eventCountdown = 0;
