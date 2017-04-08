@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 1848888100584558}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: 12.4, y: -0, z: 2.85}
-  m_LocalScale: {x: 16, y: 16, z: 1}
+  m_LocalScale: {x: 20, y: 20, z: 1}
   m_Children:
   - {fileID: 4562874151032394}
   m_Father: {fileID: 0}
@@ -115,17 +115,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cases:
     rows:
-    - row: 01010100000000
-    - row: 01010100000000
-    - row: 01010100000000
-    - row: 00000000000000
-    - row: 00000000000000
+    - row: 01010101010000
+    - row: 01010101010000
+    - row: 01010101010000
+    - row: 01010101010000
+    - row: 01010101010000
     - row: 00000000000000
     - row: 00000000000000
   itemShape: []
   nom: Bob
-  offsetX: 1
-  offsetY: 1
+  offsetX: 2
+  offsetY: 2
   centralCase: {fileID: 0}
   occupedCase: []
   scaleFacteur: 0
@@ -154,9 +154,13 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
   _placementState: 0
   wasInCar: 0
-  nom: Bob
   objectifStop: 0
   cashValue: 50
   _food: 100

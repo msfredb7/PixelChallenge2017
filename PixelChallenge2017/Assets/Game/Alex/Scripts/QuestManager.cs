@@ -21,9 +21,6 @@ public class QuestManager : PublicSingleton<QuestManager>
         if (currentNbQuest >= nbMax)
             return;
 
-        // Debut de l'event
-        quest.OnBegin();
-
         // Ajout a la liste de traitement
         questList.Add(quest);
 
@@ -33,15 +30,34 @@ public class QuestManager : PublicSingleton<QuestManager>
         newQuest.GetComponent<Text>().text = quest.questDescription;
 
         currentNbQuest++;
+
+        quest.onFail.AddListener(OnQuestFail);
+        quest.onWin.AddListener(OnQuestWin);
+
+        // Debut de l'event
+        quest.OnBegin();
+    }
+
+    void OnQuestFail(Quest quest)
+    {
+        DeleteQuest(quest);
+    }
+    void OnQuestWin(Quest quest)
+    {
+        DeleteQuest(quest);
     }
 
     // Supprimer la quete du UI
     public void DeleteQuest(Quest quest)
     {
-        foreach (Transform child in container.transform)
+        for (int i = 0; i < container.transform.childCount; i++)
         {
+            Transform child = container.transform.GetChild(i);
             if (child.GetComponent<Text>().text == quest.questDescription)
+            {
                 Destroy(child.gameObject);
+                return;
+            }
         }
     }
 

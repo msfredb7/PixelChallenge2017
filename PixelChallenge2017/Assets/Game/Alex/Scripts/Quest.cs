@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class Quest
 {
-
+    public class QuestEvent : UnityEvent<Quest> { }
     // Un item ayant une recompense donnée a un certain moment
     public class ItemQuest
     {
@@ -56,6 +56,10 @@ public class Quest
     public Destination destination;
     public List<ItemQuest> itemNecessaire = new List<ItemQuest>();
     public Personne personne;
+    public QuestEvent onWin = new QuestEvent();
+    public QuestEvent onFail = new QuestEvent();
+    private List<Item> items;
+    private bool isOver = false;
 
     public Quest(string questDescription, float distance, float recompense, Personne personne, Destination destination, List<ItemQuest> itemNecessaire = null)
     {
@@ -70,30 +74,45 @@ public class Quest
 
         // Listenner d'event de quand on arrive a un stop
         if (destination.DestinationIsStop())
-            RoadManager.instance.onStopReached.AddListener(OnStopReached);
+            RoadManager.instance.onLateStopReached.AddListener(OnStopReached);
 
         // Listenner d'event de quand on arrive a une ville
         else if (destination.DestinationIsCity())
-            RoadManager.instance.onDestinationReached.AddListener(OnCityReached);
+            RoadManager.instance.onLateDestinationReached.AddListener(OnCityReached);
     }
-
-    // TOUT LE RESTE EN DESSOUS EST A CHANGER
 
     // Debut de la quete
     public void OnBegin()
     {
-        Debug.Log("la quete commence");
 
-        GameManager.instance.SpawnItems(itemNecessaire); // On fait apparaitre les objets a l'arret
+        items = GameManager.instance.SpawnItems(itemNecessaire); // On fait apparaitre les objets a l'arret
 
-        if (personne != null)
-            GameManager.instance.SpawnPersonne(personne); // On fait apparaitre la personne a l'arret
+        int i = 0;
+        foreach (Item item in items)
+        {
+            ItemQuest itemQuest = new ItemQuest(item, itemNecessaire[i].reward);
+            GameManager.instance.car.listSpecialItems.Add(itemQuest);
+            item.onDeath.AddListener(delegate ()
+            {
+                if (!isOver)
+                    GameManager.instance.car.listSpecialItems.Remove(itemQuest);
+            });
+            i++;
+        }
+
+        if (personne == null)
+        {
+            Fail();
+            return;
+        }
+        personne = GameManager.instance.SpawnPersonne(personne); // On fait apparaitre la personne a l'arret
+        personne.onDeath.AddListener(Fail);
     }
 
     public void OnCityReached()
     {
         if (RoadManager.instance.currentRoad.currentDestination == destination.ville)
-            OnComplete();
+            Complete();
     }
 
 
@@ -101,56 +120,72 @@ public class Quest
     {
         if (RoadManager.instance.currentRoad.currentStop == destination.stop)
         {
-            DelayManager.CallTo(delegate () {
-                personne.onCarExit.AddListener(OnComplete);
-                timeDestination = Time.time;
-            }, 3);
+            Complete();
         }
     }
 
-    public void OnFail()
+    public void Fail()
     {
-        Debug.Log("la quete a fail");
+        RemoveSpecialItems(false);
+        RemoveListeners();
 
-        QuestManager.instance.DeleteQuest(this);
+        onFail.Invoke(this);
+        isOver = true;
+    }
 
+    public void Complete()
+    {
+        onWin.Invoke(this);
+
+        GameManager.instance.car.ChangeCash(recompense);
+
+        RemoveSpecialItems(true);
+        RemoveListeners();
+        RemovePerson();
+        isOver = true;
+    }
+
+    void RemovePerson()
+    {
+        if (personne != null)
+            personne.Kill();
+        personne = null;
+    }
+
+    void RemoveListeners()
+    {
+        if (personne != null)
+            personne.onDeath.RemoveListener(Fail);
+
+        // Listenner d'event de quand on arrive a un stop
+        if (destination.DestinationIsStop())
+            RoadManager.instance.onLateStopReached.RemoveListener(OnStopReached);
+
+        // Listenner d'event de quand on arrive a une ville
+        else if (destination.DestinationIsCity())
+            RoadManager.instance.onLateDestinationReached.RemoveListener(OnCityReached);
+    }
+
+    void RemoveSpecialItems(bool cashIn)
+    {
         for (int j = 0; j < GameManager.instance.car.listSpecialItems.Count; j++)
         {
-            for (int i = 0; i < GameManager.instance.car.listItems.Count; i++)
+            if (items.Contains(GameManager.instance.car.listSpecialItems[j].item)) // si il est dans la liste
             {
-                if (GameManager.instance.car.listSpecialItems[j].item == GameManager.instance.car.listItems[i])
-                    GameManager.instance.car.listItems.Remove(GameManager.instance.car.listItems[i]);
-            }
-            GameManager.instance.car.listSpecialItems.Remove(GameManager.instance.car.listSpecialItems[j]);
-        }
-    }
+                if (cashIn)
+                    GameManager.instance.car.ChangeCash(GameManager.instance.car.listSpecialItems[j].reward); //cash in
 
-    public void OnComplete()
-    {
-        Debug.Log("Quete complete");
-        // Si ca fait pas trop longtemp depuis le stop qu'on etait sense debarquer
-        if (Time.time <= timeDestination + 5)
-        {
-            Debug.Log("la quete est une reussite!");
-
-            GameManager.instance.car.ChangeCash(recompense);
-
-            QuestManager.instance.DeleteQuest(this);
-
-            for (int j = 0; j < GameManager.instance.car.listSpecialItems.Count; j++)
-            {
-                for (int i = 0; i < GameManager.instance.car.listItems.Count; i++)
-                {
-                    if (GameManager.instance.car.listSpecialItems[j].item == GameManager.instance.car.listItems[i])
-                        GameManager.instance.car.listItems.Remove(GameManager.instance.car.listItems[i]);
-                }
-                GameManager.instance.car.ChangeCash(GameManager.instance.car.listSpecialItems[j].reward);
-                GameManager.instance.car.listSpecialItems.Remove(GameManager.instance.car.listSpecialItems[j]);
+                GameManager.instance.car.listSpecialItems.Remove(GameManager.instance.car.listSpecialItems[j]); //remove
             }
         }
-        else
+        if (cashIn)
         {
-            OnFail();
+            for (int i = 0; i < items.Count; i++)
+            {
+                GameManager.instance.car.listItems.Remove(items[i]);
+                items[i].Kill();
+            }
+            items.Clear();
         }
     }
 }
