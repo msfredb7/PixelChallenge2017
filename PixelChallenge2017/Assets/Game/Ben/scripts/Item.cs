@@ -49,6 +49,8 @@ public class Item : MonoBehaviour
     public ItemState _placementState;
     public int wasInCar =-1;
 
+    public string descriptionTxt;
+
     ItemState placementState
     {
         get
@@ -510,6 +512,24 @@ public class Item : MonoBehaviour
         //GlobalAnimator.RemoveFloatingItem(gameObject);
         //DestroyImmediate(gameObject,true);
     }
+
+
+    public virtual string description()
+    {
+        return descriptionTxt;
+    }
+
+    public void OnMouseOver()
+    {
+        Tooltip.instance.PrintToolTip(description());
+    }
+
+    public void OnMouseExit()
+    {
+        Tooltip.instance.HideToolTip();
+    }
+
+
 }
 
 
