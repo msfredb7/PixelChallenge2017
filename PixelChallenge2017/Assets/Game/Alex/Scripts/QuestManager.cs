@@ -60,15 +60,15 @@ public class QuestManager : PublicSingleton<QuestManager>
 
         if (questList.Count < 1)
         {
-            for (int i = 0; 1 < questList.Count; i++)
+            for (int i = 0; i < reportQuest.Count; i++)
             {
                 DelayManager.CallTo(delegate ()
                 {
-                    float totalReward = quest.recompense;
+                    float totalReward = reportQuest[i-1].recompense;
                     int totalItems = 0;
                     for (int j = 0; j < GameManager.instance.car.listSpecialItems.Count; j++)
                     {
-                        if (quest.items.Contains(GameManager.instance.car.listSpecialItems[j].item)) // si il est dans la liste
+                        if (reportQuest[i - 1].items.Contains(GameManager.instance.car.listSpecialItems[j].item)) // si il est dans la liste
                         {
                             totalItems++;
                             totalReward += GameManager.instance.car.listSpecialItems[j].reward;
@@ -76,8 +76,8 @@ public class QuestManager : PublicSingleton<QuestManager>
                     }
                     // Affichage de l'ecran de completion
                     containerEcran.SetActive(true);
-                    personneNom.text = "Nom du personnage : " + quest.personne.nom;
-                    description.text = "Description : " + quest.questDescription;
+                    personneNom.text = "Nom du personnage : " + reportQuest[i - 1].personne.nom;
+                    description.text = "Description : " + reportQuest[i - 1].questDescription;
                     reward.text = "Recompense : " + totalReward + "$";
                     quantityObject.text = "Transport de bagages : " + totalItems + " objets";
 
@@ -86,6 +86,7 @@ public class QuestManager : PublicSingleton<QuestManager>
                         containerEcran.SetActive(false);
                     }, (i * 5) + 5);
                 }, i * 5);
+                print("");
             }
         }
     }
