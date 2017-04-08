@@ -1688,6 +1688,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114146211688413800, guid: ab2db0993ff0fae46ab10a531f715038,
+        type: 2}
+      propertyPath: spawnPos
+      value: 
+      objectReference: {fileID: 2104840602}
     - target: {fileID: 114752533705245536, guid: ab2db0993ff0fae46ab10a531f715038,
         type: 2}
       propertyPath: speaker
@@ -1698,61 +1703,6 @@ Prefab:
       propertyPath: sfxSpeaker
       value: 
       objectReference: {fileID: 1016000150}
-    - target: {fileID: 114146211688413800, guid: ab2db0993ff0fae46ab10a531f715038,
-        type: 2}
-      propertyPath: spawnPos
-      value: 
-      objectReference: {fileID: 2104840602}
-    - target: {fileID: 114861867878281566, guid: ab2db0993ff0fae46ab10a531f715038,
-        type: 2}
-      propertyPath: textPanneSeche
-      value: 
-      objectReference: {fileID: 1439204290}
-    - target: {fileID: 82610953239516568, guid: ab2db0993ff0fae46ab10a531f715038,
-        type: 2}
-      propertyPath: m_Volume
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 224458130572650508, guid: ab2db0993ff0fae46ab10a531f715038,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224458130572650508, guid: ab2db0993ff0fae46ab10a531f715038,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224458130572650508, guid: ab2db0993ff0fae46ab10a531f715038,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 183.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224458130572650508, guid: ab2db0993ff0fae46ab10a531f715038,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -26.620937
-      objectReference: {fileID: 0}
-    - target: {fileID: 224458130572650508, guid: ab2db0993ff0fae46ab10a531f715038,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 85.55956
-      objectReference: {fileID: 0}
-    - target: {fileID: 224458130572650508, guid: ab2db0993ff0fae46ab10a531f715038,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 29.241877
-      objectReference: {fileID: 0}
-    - target: {fileID: 224162709313381904, guid: ab2db0993ff0fae46ab10a531f715038,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 28.158844
-      objectReference: {fileID: 0}
-    - target: {fileID: 224162709313381904, guid: ab2db0993ff0fae46ab10a531f715038,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 69.31408
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ab2db0993ff0fae46ab10a531f715038, type: 2}
   m_IsPrefabParent: 0
@@ -2170,12 +2120,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1321218321}
   m_Script: {fileID: 11500000, guid: 68eb26ebc6825cd4382651816bca1997, type: 3}
---- !u!114 &1439204290 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114198732076091146, guid: ab2db0993ff0fae46ab10a531f715038,
-    type: 2}
-  m_PrefabInternal: {fileID: 1113338321}
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &1456066322
 Prefab:
   m_ObjectHideFlags: 0
