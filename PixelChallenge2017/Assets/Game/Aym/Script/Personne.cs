@@ -15,6 +15,7 @@ public class Personne : Item {
     public GameObject vomi;
     public GameObject dechet;
     public ItemState previousState;
+    public float vomiRassasiment = 0.34f;
 
     public UnityEvent onCarExit = new UnityEvent();
 
@@ -37,7 +38,7 @@ public class Personne : Item {
             if(_food < 0)
             {
                 OnNoFodd();
-                food = maxFood/2;
+                food = maxFood*vomiRassasiment;
             }
             if(food>maxFood)
             {
@@ -155,6 +156,10 @@ public class Personne : Item {
             maxFood = _food;
         }
         UpdateRepresentation();
+        if(vomiRassasiment <=0)
+        {
+            vomiRassasiment = 0.34f;
+        }
 	}
 	
 	// Update is called once per frame

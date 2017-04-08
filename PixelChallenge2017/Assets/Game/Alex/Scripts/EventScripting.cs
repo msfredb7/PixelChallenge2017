@@ -111,9 +111,9 @@ public class EventScripting
         firstQuest.spawnPerson = false;
         firstQuest.items = GameManager.instance.startItems;
         questRoad1.Add(firstQuest);
-        questRoad1.Add(new Quest("Deposer Charles et son équipement de hockey a Montreal", 10, 25, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null), questItemCharles10km));
-        questRoad1.Add(new Quest("Deposer Marc à la prochaine station service", 17, 20, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, station40km)));
-        questRoad1.Add(new Quest("Deposer Monique a Montreal", 57, 20, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
+        questRoad1.Add(new Quest("Deposer Charles et son equipement de hockey a Montreal", 10, 0, PersonneBank.GetItemByIndex(5), new Quest.Destination(destination, null), questItemCharles10km));
+        questRoad1.Add(new Quest("Deposer Marc a la prochaine station service", 17, 5, PersonneBank.GetItemByIndex(1), new Quest.Destination(null, station40km)));
+        questRoad1.Add(new Quest("Deposer Monique a Montreal", 57, 5, PersonneBank.GetItemByIndex(3), new Quest.Destination(destination, null)));
 
 
         // Loteries
@@ -371,7 +371,7 @@ public class EventScripting
                 stopRoad2.Add(jeremy100km);
 
                 List<Quest> questRoad2 = new List<Quest>();
-                questRoad2.Add(new Quest("Deposer le mysterieux monsieur et ses nombreux chapeaux a Trois-Riviere", 5, 50, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null),questItemMonsieur5km));
+                questRoad2.Add(new Quest("Deposer le mysterieux monsieur et ses nombreux chapeaux a Trois-Riviere", 1, 50, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null),questItemMonsieur5km));
                 questRoad2.Add(new Quest("Deposer Gary et son materiel informatique a Trois-Riviere", 10, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null), questItemGary10km));
                 questRoad2.Add(new Quest("Deposer Marie-Pier et ses bagages jusqu'a la prochaine epicerie", 30, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, restaurant70km)));
                 questRoad2.Add(new Quest("Deposer Bob au prochain garage", 49, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage91km)));
