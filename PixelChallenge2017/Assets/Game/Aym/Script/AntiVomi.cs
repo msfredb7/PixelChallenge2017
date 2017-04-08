@@ -55,7 +55,6 @@ public class AntiVomi : Item {
         if(central != null)
         {
             List<Case> tempOcc = caseUsedFromCentral(central);
-            Debug.Log(tempOcc.Count);
             List<Case> vomiTouched = new List<Case>();
             if(tempOcc == null || tempOcc.Count == 0)
             {
