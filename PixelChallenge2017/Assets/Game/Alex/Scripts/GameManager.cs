@@ -6,6 +6,8 @@ using UnityEngine.Events;
 public class GameManager : PublicSingleton<GameManager>
 {
 
+    public Personne personne;
+
     public Voiture car;
 
     public float startCash;
