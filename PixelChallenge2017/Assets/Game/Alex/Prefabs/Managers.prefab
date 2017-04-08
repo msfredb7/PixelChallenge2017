@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114236672355354734}
   - component: {fileID: 114566943502292178}
   - component: {fileID: 114008627890827066}
+  - component: {fileID: 114700004869412544}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -87,6 +88,7 @@ MonoBehaviour:
   lastPrint: 0
   currentDistance: 0
   start: 0
+  onestauneville: 0
 --- !u!114 &114008627890827066
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -138,6 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fac0651d132b13c4a86307617a72a393, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  personne: {fileID: 0}
   startCash: 50
   startGas: 25
   startFood: 10
@@ -149,7 +152,7 @@ MonoBehaviour:
   canvasUI: {fileID: 0}
   conducteur: {fileID: 0}
   conducteurUI: {fileID: 0}
-  startGame:
+  startItems:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -211,6 +214,17 @@ MonoBehaviour:
   - {fileID: 114531513713420860, guid: 8e699cd7663851a4a8a62b7262b44d4f, type: 2}
   - {fileID: 114164891331665686, guid: 9d909e5befebc664ead6e9afb2446742, type: 2}
   - {fileID: 114279009236178860, guid: 243831fd72c13d74ea70e2583edc5d77, type: 2}
+--- !u!114 &114700004869412544
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1205413928877120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8a211f7b0361b740bd4c903d8c782d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114796114855803356
 MonoBehaviour:
   m_ObjectHideFlags: 1

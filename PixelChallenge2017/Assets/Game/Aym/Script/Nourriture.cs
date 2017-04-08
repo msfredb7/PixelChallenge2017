@@ -65,7 +65,7 @@ public class Nourriture : Item {
         bool ret = base.canOccupeCase(central);
         if ( ret == false)
         {
-            foreach(Case c in occupedByCentral(central))
+            foreach(Case c in caseUsedFromCentral(central))
             {
                 foreach (Item v in allItem)
                 {
