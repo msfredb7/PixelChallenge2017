@@ -131,8 +131,9 @@ public class AntiVomi : Item {
             if (k)
             {
                 Kill();
+                return true;
             }
-            return false;
+            
         }
         return false;
     }
