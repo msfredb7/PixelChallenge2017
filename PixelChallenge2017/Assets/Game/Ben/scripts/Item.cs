@@ -16,6 +16,7 @@ public class Item : MonoBehaviour {
     }
     public ArrayLayout cases;
     public shape[] itemShape;
+    public string nom;
 
     public int offsetX;
     public int offsetY;
@@ -477,7 +478,7 @@ public class Item : MonoBehaviour {
     public void Kill()
     {
         allItem.Remove(this);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }
 
