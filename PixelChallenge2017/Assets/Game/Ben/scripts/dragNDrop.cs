@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class dragNDrop : MonoBehaviour {
 
+    private bool onDrag;
+
     private bool dragging;
     private Plane plan;
     public float depth;
@@ -33,13 +35,19 @@ public class dragNDrop : MonoBehaviour {
 
     private void OnMouseDown()
     {
-        dragging = true;
-        gameObject.SendMessage("StartDrag");
+        if(onDrag==false)
+        {
+            onDrag = true;
+            dragging = true;
+            gameObject.SendMessage("StartDrag");
+        }
+        
 
     }
 
     private void OnMouseUp()
     {
+        onDrag = false;
         dragging = false;
         gameObject.SendMessage("EndDrag");
 
