@@ -113,10 +113,14 @@ public class Personne : Item {
         base.Update();
         if ((RoadManager.instance.currentDistance % 2) < 0.1 && GameManager.instance.car.IsRunning)
             food --;
-        if (previousState != _placementState && _placementState == ItemState.notPlaced)
-            onCarExit.Invoke();
         if (previousState != _placementState)
+        {
+            if(_placementState == ItemState.notPlaced && previousState == ItemState.onDragUnplacable)
+            {
+                onCarExit.Invoke();
+            }
             previousState = _placementState;
+        }
     }
 
     override protected bool valideCase(Case c)
