@@ -430,7 +430,7 @@ public class Item : MonoBehaviour
         {
             posBeforePlacement = transform.position;
         }
-
+        Grille.Show(true, GetComponent<Personne>() == null);
         clearCase();
         collidedCase.Clear();
         onBeginDrag.Invoke();
@@ -471,6 +471,7 @@ public class Item : MonoBehaviour
         {
             centralCase = null;
         }
+        Grille.Show(false, true);
         onEndDrag.Invoke();
     }
 

@@ -134,6 +134,7 @@ public class EventScripting
             },5);
         }));
 
+        /*
         specialEventList.Add(new SpecialEvent(2, delegate ()
         {
             AccidentManager.instance.flatEvent();
@@ -143,6 +144,7 @@ public class EventScripting
         {
             AccidentManager.instance.PanneMoteur();
         }));
+        */
 
         // Initialisation de la route
         Road newRoad1 = new Road(depart, destination, stopRoad1, specialEventList, itemEventRoad1, questRoad1, 70);

@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class Case : MonoBehaviour {
+public class Case : MonoBehaviour
+{
 
-    
+
 
     #region position
     public int _posX;
@@ -54,12 +55,14 @@ public class Case : MonoBehaviour {
         set
         {
             _caseOccupe = value;
-            if(_caseOccupe == true)
+            if (_caseOccupe == true)
             {
+                Available(false);
                 GetComponent<Renderer>().material = occupedMat;
             }
             else
             {
+                Available(true);
                 GetComponent<Renderer>().material = standardMat;
             }
         }
@@ -78,28 +81,56 @@ public class Case : MonoBehaviour {
             _caseHovered = value;
             if (_caseHovered == true)
             {
-                GetComponent<Renderer>().material.SetFloat("_Metallic",1);
+                spr.sprite = fullSqr;
+                GetComponent<Renderer>().material.SetFloat("_Metallic", 1);
 
             }
             else
             {
+                spr.sprite = emptySqr;
                 GetComponent<Renderer>().material.SetFloat("_Metallic", 0);
             }
         }
     }
 
+    void Available(bool state)
+    {
+        if (state)
+            spr.color = new Color(1, 1, 1, alpha);
+        else
+            spr.color = new Color(1, 0.2f, 0.2f, alpha);
+    }
 
+    public void SetColor(float alpha, bool available)
+    {
+        this.alpha = alpha;
+        if (available)
+            spr.color = new Color(1, 1, 1, alpha);
+        else
+            spr.color = new Color(1, 0.2f, 0.2f, alpha);
+    }
 
     public CaseType caseType;
 
 
+    private float alpha = 0.1f;
+    private SpriteRenderer spr;
+    public Sprite fullSqr;
+    public Sprite emptySqr;
 
     public Material occupedMat;
     public Material standardMat;
 
-    public void Start()
+    public void Awake()
     {
+        spr = GetComponentInChildren<SpriteRenderer>();
         standardMat = GetComponent<Renderer>().material;
+
+        if (caseType == CaseType.desactive)
+        {
+            Available(false);
+            spr.sprite = fullSqr;
+        }
     }
 
     public Case getCaseWithOffset(int xOffSet, int yOffSet)
@@ -110,10 +141,10 @@ public class Case : MonoBehaviour {
         try
         {
 
-        if(gr != null )
-        {
-            return gr.grille[posX + xOffSet][posY - yOffSet];
-        }
+            if (gr != null)
+            {
+                return gr.grille[posX + xOffSet][posY - yOffSet];
+            }
 
         }
         catch (IndexOutOfRangeException e)
@@ -126,11 +157,11 @@ public class Case : MonoBehaviour {
         }
         Case actCase = this;
 
-        if(xOffSet<0)
+        if (xOffSet < 0)
         {
-            for(int i = xOffSet; i!=0;i++)
+            for (int i = xOffSet; i != 0; i++)
             {
-                if(actCase!=null)
+                if (actCase != null)
                 {
                     actCase = actCase.Gauche;
                 }
@@ -170,5 +201,5 @@ public class Case : MonoBehaviour {
         ret = actCase;
         return ret;
     }
-    
+
 }
