@@ -221,7 +221,7 @@ Prefab:
     - target: {fileID: 224458130572650508, guid: ab2db0993ff0fae46ab10a531f715038,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -22.948906
       objectReference: {fileID: 0}
     - target: {fileID: 224458130572650508, guid: ab2db0993ff0fae46ab10a531f715038,
         type: 2}
@@ -231,7 +231,7 @@ Prefab:
     - target: {fileID: 224458130572650508, guid: ab2db0993ff0fae46ab10a531f715038,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 21.89781
       objectReference: {fileID: 0}
     - target: {fileID: 224751376653838348, guid: ab2db0993ff0fae46ab10a531f715038,
         type: 2}
@@ -241,7 +241,7 @@ Prefab:
     - target: {fileID: 224751376653838348, guid: ab2db0993ff0fae46ab10a531f715038,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 70.07299
       objectReference: {fileID: 0}
     - target: {fileID: 224347022116310692, guid: ab2db0993ff0fae46ab10a531f715038,
         type: 2}
@@ -313,6 +313,11 @@ Prefab:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114752533705245536, guid: ab2db0993ff0fae46ab10a531f715038,
+        type: 2}
+      propertyPath: mouseClick1
+      value: 
+      objectReference: {fileID: 8300000, guid: 97aec42d93c9d3040bb9dae0a4f8218c, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ab2db0993ff0fae46ab10a531f715038, type: 2}
   m_IsPrefabParent: 0
@@ -564,7 +569,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.25
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
