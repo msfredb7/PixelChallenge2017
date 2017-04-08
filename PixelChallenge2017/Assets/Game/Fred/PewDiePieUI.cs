@@ -14,12 +14,15 @@ public class PewDiePieUI : PublicSingleton<PewDiePieUI> {
 
     public Image blackFG;
 
-        void Start()
+    bool gasStopped = false;
+
+    void Start()
     {
         repairButton.onClick.AddListener(OnRepairClick);
         continueButton.onClick.AddListener(OnContinueClick);
         GlobalAnimator.OnRestart.AddListener(OnGlobalAnimatorRestart);
         GameManager.instance.car.onDie.AddListener(OnCarDie);
+        GameManager.instance.car.onGasChange.AddListener(OnGasChange);
     }
 
 
@@ -49,6 +52,8 @@ public class PewDiePieUI : PublicSingleton<PewDiePieUI> {
         GameManager.instance.car.ChangeCash(-price);
         GameManager.instance.car.Repair();
         GlobalAnimator.Restart();
+
+        gasStopped = false;
     }
 
     void OnContinueClick()
@@ -67,29 +72,52 @@ public class PewDiePieUI : PublicSingleton<PewDiePieUI> {
     {
         GlobalAnimator.StopAt(LieuType.nullePart,null, delegate()
         {
-
-            textPanneSeche.gameObject.SetActive(true);
-
-            if (GameManager.instance.car.getItemOfType("Gros bidon d'essence") != null ||
-            GameManager.instance.car.getItemOfType("Moyen bidon d'essence") != null ||
-            GameManager.instance.car.getItemOfType("Petit bidon d'essence") != null)
+            if (GameManager.instance.car.gas > 0)
             {
-                if (GameManager.instance.car.cash < GameManager.instance.TowingCost)
-                {
-                    textPanneSeche.text = "Panne seche! Utilise tes bidons d'essence.";
-                }
-                textPanneSeche.text = "Panne seche! Utilise tes bidons d'essence ou paye 35$ a la depaneuse pour un plein.";
-                repairButton.gameObject.SetActive(true);
-
+                GlobalAnimator.Restart();
+                gasStopped = false;
             }
             else
-            {
-                textPanneSeche.text = "Panne seche! Paye 35$ a la depaneuse pour un plein.";
-                repairButton.gameObject.SetActive(true);
+            { 
+                textPanneSeche.gameObject.SetActive(true);
+
+                if (GameManager.instance.car.getItemOfType("Gros bidon d'essence") != null ||
+                GameManager.instance.car.getItemOfType("Moyen bidon d'essence") != null ||
+                GameManager.instance.car.getItemOfType("Petit bidon d'essence") != null)
+                {
+                    if (GameManager.instance.car.cash < GameManager.instance.TowingCost)
+                    {
+                        textPanneSeche.text = "Panne seche! Utilise tes bidons d'essence.";
+                    }
+                    textPanneSeche.text = "Panne seche! Utilise tes bidons d'essence ou paye 35$ a la depaneuse pour un plein.";
+                    repairButton.gameObject.SetActive(true);
+
+                }
+                else
+                {
+                    textPanneSeche.text = "Panne seche! Paye 35$ a la depaneuse pour un plein.";
+                    repairButton.gameObject.SetActive(true);
+                }
+                gasStopped = true;
             }
         });
 
     }
+
+
+    void OnGasChange()
+    {
+        if (gasStopped)
+        {
+            Debug.Log("gas change");
+            if (GameManager.instance.car.gas > 0)
+            {
+                GlobalAnimator.Restart();
+                gasStopped = false;
+            }
+        }
+    }
+
 
     public void GameOver()
     {
