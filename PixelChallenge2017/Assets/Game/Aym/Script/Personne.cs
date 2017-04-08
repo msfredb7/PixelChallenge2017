@@ -159,7 +159,7 @@ public class Personne : Item {
         base.Update();
         if ((RoadManager.instance.currentDistance % 2) < 0.1 && GameManager.instance.car.IsRunning)
         {
-            food--;
+            food-= consomation;
             if (lastDechet != RoadManager.instance.currentDistance && Random.Range(0f, 1f) < 0.05f)
             {
                 lastDechet = RoadManager.instance.currentDistance;
@@ -219,5 +219,11 @@ public class Personne : Item {
     override protected bool valideCase(Case c)
     {
         return c.caseOccupe == false && c.caseType != CaseType.Coffre;
+    }
+
+    public override string description()
+    {
+        string ret = "Nom : " + this.nom + System.Environment.NewLine + base.description();
+        return ret;
     }
 }

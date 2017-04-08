@@ -67,11 +67,14 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
             if (onContinueTrip != null)
                 onContinueTrip.Invoke();
             onContinueTrip = null;
+            RoadManager.instance.StopEnd();
         });
+       
     }
 
     static public void StopAt(LieuType type, TweenCallback onContinueTrip = null, TweenCallback onStopComplete = null)
     {
+        RoadManager.instance.timeLastStop = Time.time;
         GameManager.instance.car.IsRunning = false;
         GlobalAnimator.onContinueTrip = onContinueTrip;
         float duration = -1;

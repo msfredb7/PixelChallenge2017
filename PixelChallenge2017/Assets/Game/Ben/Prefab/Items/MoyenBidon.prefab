@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdb756bd897529745936ce46516ccdf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  refillValue: 90
+  refillValue: 15
 --- !u!114 &114180107932697332
 MonoBehaviour:
   m_ObjectHideFlags: 1
