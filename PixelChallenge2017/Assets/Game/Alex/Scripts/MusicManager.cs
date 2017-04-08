@@ -5,8 +5,11 @@ using UnityEngine;
 public class MusicManager : PublicSingleton<MusicManager> {
 
     public AudioSource speaker;
+    public AudioSource sfxSpeaker;
 
     public List<AudioClip> musicList = new List<AudioClip>();
+    public AudioClip mouseClick1;
+    public AudioClip mouseClick2;
 
     public int currentSong;
 
@@ -19,6 +22,19 @@ public class MusicManager : PublicSingleton<MusicManager> {
         speaker.Play();
     }
 
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            DoMouseClick1();
+        }
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            DoMouseClick2();
+        }
+    }
+
     public void OnClick()
     {
         if (musicList.Count < 1)
@@ -29,5 +45,19 @@ public class MusicManager : PublicSingleton<MusicManager> {
             currentSong = 0;
         speaker.clip = musicList[currentSong];
         speaker.Play();
+    }
+
+    public void DoMouseClick1()
+    {
+        sfxSpeaker.Stop();
+        sfxSpeaker.clip = mouseClick1;
+        sfxSpeaker.Play();
+    }
+
+    public void DoMouseClick2()
+    {
+        sfxSpeaker.Stop();
+        sfxSpeaker.clip = mouseClick2;
+        sfxSpeaker.Play();
     }
 }
