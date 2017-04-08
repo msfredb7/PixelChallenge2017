@@ -7,7 +7,7 @@ public class Voiture {
 
     public float cash;
     public float gas;
-    public float maxGas = 50;
+    public float maxGas = 25;
 
     public bool noMoreCash;
 
@@ -46,11 +46,13 @@ public class Voiture {
 
     public void ChangeCash(float amount) // peut etre negatif
     {
+        CashToaster.instance.SpawnAmount((int)amount);
         cash += amount;
         if (cash < 0)
             cash = 0;
         if(cash == 0)
             noMoreCash = true;
+        
     }
 
     public void ChangeGas(float amount)

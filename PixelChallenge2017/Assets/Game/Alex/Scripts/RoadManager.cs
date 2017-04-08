@@ -94,10 +94,7 @@ public class RoadManager : PublicSingleton<RoadManager>
 
             if (nextQuest != null && nextQuest.distance <= currentDistance)
             {
-                if(nextQuest.distance < 1)
-                    QuestManager.instance.AddQuest(nextQuest); // On ajoute la quête au UI et au gestionnaire
-                else
-                    QuestManager.instance.AddQuest(nextQuest, true);
+                QuestManager.instance.AddQuest(nextQuest, true);
 
                 currentRoad.RemoveQuestEvent(nextQuest); // On retire la quête des évennements a faire dans la route
             }

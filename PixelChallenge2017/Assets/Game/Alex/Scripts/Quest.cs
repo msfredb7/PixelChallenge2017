@@ -58,8 +58,11 @@ public class Quest
     public Personne personne;
     public QuestEvent onWin = new QuestEvent();
     public QuestEvent onFail = new QuestEvent();
-    private List<Item> items;
-    private bool isOver = false;
+    public List<Item> items;
+    public bool isOver = false;
+
+    public float totalReward;
+    public float totalItems;
 
     public Quest(string questDescription, float distance, float recompense, Personne personne, Destination destination, List<ItemQuest> itemNecessaire = null)
     {
@@ -68,6 +71,8 @@ public class Quest
         this.destination = destination;
         this.recompense = recompense;
         this.personne = personne;
+
+        totalReward = 0;
 
         if (itemNecessaire != null)
             this.itemNecessaire = itemNecessaire;
@@ -138,6 +143,7 @@ public class Quest
         onWin.Invoke(this);
 
         GameManager.instance.car.ChangeCash(recompense);
+        totalReward += recompense;
 
         RemoveSpecialItems(true);
         RemoveListeners();
@@ -173,7 +179,11 @@ public class Quest
             if (items.Contains(GameManager.instance.car.listSpecialItems[j].item)) // si il est dans la liste
             {
                 if (cashIn)
+                {
                     GameManager.instance.car.ChangeCash(GameManager.instance.car.listSpecialItems[j].reward); //cash in
+                    totalReward += GameManager.instance.car.listSpecialItems[j].reward;
+                    totalItems++;
+                }
 
                 GameManager.instance.car.listSpecialItems.Remove(GameManager.instance.car.listSpecialItems[j]); //remove
             }
