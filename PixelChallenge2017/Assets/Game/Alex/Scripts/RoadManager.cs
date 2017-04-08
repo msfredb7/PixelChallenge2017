@@ -28,6 +28,7 @@ public class RoadManager : PublicSingleton<RoadManager>
 
     void Update()
     {
+         
         if (currentRoad == null)
         {
             print("Ain't going anywhere bruh");
@@ -56,11 +57,12 @@ public class RoadManager : PublicSingleton<RoadManager>
 
                 timeLastStop = Time.time; // On garde une notion du temps perdu
 
-                nextStop.StartEvent(StopEnd, delegate ()
+                
+                nextStop.StartEvent(null, delegate ()
                 {
                     onLateStopReached.Invoke();
                 }); // On débute l'evennement du stop
-
+                
                 currentRoad.currentStop = nextStop; // Le stop courrant est maintenant ce stop
 
                 onStopReached.Invoke(); // Activation des events de quêtes qui se deroule a un stop
