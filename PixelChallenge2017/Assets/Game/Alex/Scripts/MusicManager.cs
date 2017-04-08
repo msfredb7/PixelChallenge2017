@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using CCC.Manager;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,10 +7,17 @@ public class MusicManager : PublicSingleton<MusicManager> {
 
     public AudioSource speaker;
     public AudioSource sfxSpeaker;
+    public AudioSource additionnalSfx;
 
     public List<AudioClip> musicList = new List<AudioClip>();
     public AudioClip mouseClick1;
     public AudioClip mouseClick2;
+
+    public AudioClip vomit;
+    public AudioClip door;
+    public AudioClip doorbell;
+    public AudioClip whistle;
+    public AudioClip coins;
 
     public int currentSong;
 
@@ -20,6 +28,8 @@ public class MusicManager : PublicSingleton<MusicManager> {
         currentSong = 0;
         speaker.clip = musicList[currentSong];
         speaker.Play();
+
+        RoadManager.instance.onStopReached.AddListener(DoDoorBellSound);
     }
 
     void Update()
@@ -59,5 +69,29 @@ public class MusicManager : PublicSingleton<MusicManager> {
         sfxSpeaker.Stop();
         sfxSpeaker.clip = mouseClick2;
         sfxSpeaker.Play();
+    }
+
+    public void DoDoorBellSound()
+    {
+        additionnalSfx.Stop();
+        if (RoadManager.instance.currentRoad.currentStop.lieu == LieuType.arretBus)
+        {
+            additionnalSfx.clip = whistle;
+            additionnalSfx.Play();
+        } else
+        {
+            additionnalSfx.clip = doorbell;
+            DelayManager.CallTo(delegate ()
+            {
+                additionnalSfx.Play();
+            }, 3);
+        }
+    }
+
+    public void DoCoinsSound()
+    {
+        additionnalSfx.Stop();
+        additionnalSfx.clip = coins;
+        additionnalSfx.Play();
     }
 }
