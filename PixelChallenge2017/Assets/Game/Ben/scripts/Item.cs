@@ -477,7 +477,7 @@ public class Item : MonoBehaviour {
     public void Kill()
     {
         allItem.Remove(this);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }
 

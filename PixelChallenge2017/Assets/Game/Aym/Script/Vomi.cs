@@ -12,5 +12,10 @@ public class Vomi : Item {
 	// Update is called once per frame
 	protected override void Update () {
         base.Update();
+        if(_placementState == ItemState.notPlaced)
+        {
+            Kill();
+      
+        }
 	}
 }
