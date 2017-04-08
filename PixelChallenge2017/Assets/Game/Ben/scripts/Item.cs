@@ -150,7 +150,7 @@ public class Item : MonoBehaviour {
 
             foreach(Case c in tryToOccupe)
             {
-                if(c.caseOccupe)
+                if(valideCase(c) != true)
                 {
                     canOccupe = false;
                 }
@@ -477,7 +477,8 @@ public class Item : MonoBehaviour {
     public void Kill()
     {
         allItem.Remove(this);
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
+        DestroyImmediate(gameObject,true);
     }
 }
 
