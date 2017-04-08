@@ -103,8 +103,8 @@ public class EventScripting
 
         List<Quest> questRoad1 = new List<Quest>();
         questRoad1.Add(new Quest("Deposer Marise et ses valises a Montreal", 0, 20, GameManager.instance.personne, new Quest.Destination(destination, null)));
-        questRoad1.Add(new Quest("Deposer Charles et son équipement de hockey a Montreal", 10, 20, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null), questItemCharles10km));
-        questRoad1.Add(new Quest("Deposer Marc à la prochaine station service", 17, 10, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, station40km)));
+        questRoad1.Add(new Quest("Deposer Charles et son equipement de hockey a Montreal", 10, 20, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null), questItemCharles10km));
+        questRoad1.Add(new Quest("Deposer Marc a la prochaine station service", 17, 10, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, station40km)));
         questRoad1.Add(new Quest("Deposer Monique a Montreal", 57, 10, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
 
 
@@ -145,7 +145,7 @@ public class EventScripting
             obj.transform.position = GameManager.instance.conducteurUI.transform.position;
             foreach (Transform child in obj.transform)
             {
-                child.GetComponent<Text>().text = "On devrait l'embarquer pour économiser, quitte à se débarasser de quelques objets...";
+                child.GetComponent<Text>().text = "On devrait l'embarquer pour economiser, quitte a se debarasser de quelques objets...";
             }
             DelayManager.CallTo(delegate ()
             {
@@ -159,7 +159,7 @@ public class EventScripting
             obj.transform.position = GameManager.instance.conducteurUI.transform.position;
             foreach (Transform child in obj.transform)
             {
-                child.GetComponent<Text>().text = "Nice un dépanneur, on va pouvoir acheter quelques provisions";
+                child.GetComponent<Text>().text = "Nice un depanneur, on va pouvoir acheter quelques provisions";
             }
             DelayManager.CallTo(delegate ()
             {
@@ -173,7 +173,7 @@ public class EventScripting
             obj.transform.position = GameManager.instance.conducteurUI.transform.position;
             foreach (Transform child in obj.transform)
             {
-                child.GetComponent<Text>().text = "Tu peux changer de poste de radio, gênes toi pas !";
+                child.GetComponent<Text>().text = "Tu peux changer de poste de radio, genes toi pas !";
             }
             DelayManager.CallTo(delegate ()
             {
@@ -187,7 +187,7 @@ public class EventScripting
             obj.transform.position = GameManager.instance.conducteurUI.transform.position;
             foreach (Transform child in obj.transform)
             {
-                child.GetComponent<Text>().text = "On devrait peut-être acheter quelques barils de plus pour éviter d'en manquer";
+                child.GetComponent<Text>().text = "On devrait peut-etre acheter quelques barils de plus pour eviter d'en manquer";
             }
             DelayManager.CallTo(delegate ()
             {
@@ -201,7 +201,7 @@ public class EventScripting
             obj.transform.position = GameManager.instance.conducteurUI.transform.position;
             foreach (Transform child in obj.transform)
             {
-                child.GetComponent<Text>().text = "Une épicerie, c'est le moment d'acheter de plus grandes quantitées de nourriture";
+                child.GetComponent<Text>().text = "Une epicerie, c'est le moment d'acheter de plus grandes quantitees de nourriture";
             }
             DelayManager.CallTo(delegate ()
             {
@@ -215,7 +215,7 @@ public class EventScripting
             obj.transform.position = GameManager.instance.conducteurUI.transform.position;
             foreach (Transform child in obj.transform)
             {
-                child.GetComponent<Text>().text = "Enfin un garage, on va pouvoir acheter des pièces de rechange";
+                child.GetComponent<Text>().text = "Enfin un garage, on va pouvoir acheter des pieces de rechange";
             }
             DelayManager.CallTo(delegate ()
             {
@@ -326,7 +326,7 @@ public class EventScripting
 
 
                 // Quetes
-                Stop monsieur5km = new Stop(5, LieuType.arretBus);
+                Stop monsieur5km = new Stop(1, LieuType.arretBus);
                 Stop gary10km = new Stop(10, LieuType.arretBus);
                 Stop mariepier30km = new Stop(30, LieuType.arretBus);
                 Stop bob49km = new Stop(49, LieuType.arretBus);
@@ -363,12 +363,12 @@ public class EventScripting
                 stopRoad2.Add(jeremy100km);
 
                 List<Quest> questRoad2 = new List<Quest>();
-                questRoad2.Add(new Quest("Déposer le mystérieux monsieur et ses nombreux chapeaux à Trois-Rivière", 5, 50, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null),questItemMonsieur5km));
-                questRoad2.Add(new Quest("Déposer Gary et son matériel informatique à Trois-Rivière", 10, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null), questItemGary10km));
-                questRoad2.Add(new Quest("Déposer Marie-Pier et ses bagages jusqu'à la prochaine épicerie", 30, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, restaurant70km)));
-                questRoad2.Add(new Quest("Déposer Bob au prochain garage", 49, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage91km)));
-                questRoad2.Add(new Quest("Déposer Maxime et ses meubles à Trois-Rivière", 62, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination,null)));
-                questRoad2.Add(new Quest("Déposer Jeremy à la prochaine épicerie", 100, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, restaurant112km)));
+                questRoad2.Add(new Quest("Deposer le mysterieux monsieur et ses nombreux chapeaux a Trois-Riviere", 5, 50, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null),questItemMonsieur5km));
+                questRoad2.Add(new Quest("Deposer Gary et son materiel informatique a Trois-Riviere", 10, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null), questItemGary10km));
+                questRoad2.Add(new Quest("Deposer Marie-Pier et ses bagages jusqu'a la prochaine epicerie", 30, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, restaurant70km)));
+                questRoad2.Add(new Quest("Deposer Bob au prochain garage", 49, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage91km)));
+                questRoad2.Add(new Quest("Deposer Maxime et ses meubles a Trois-Riviere", 62, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination,null)));
+                questRoad2.Add(new Quest("Deposer Jeremy a la prochaine epicerie", 100, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, restaurant112km)));
 
 
                 // Loteries
@@ -517,14 +517,14 @@ public class EventScripting
 
 
                 List<Quest> questRoad3 = new List<Quest>();
-                questRoad3.Add(new Quest("Déposer votre viel ami et ses meubles a Québec", 5, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination1, null)));
-                questRoad3.Add(new Quest("Déposer Marc et son équipement de hockey au prochain garage ", 15, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage80km)));
-                questRoad3.Add(new Quest("Déposer Marcos et son équipement de hockey au prochain garage ", 23, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage80km)));
-                questRoad3.Add(new Quest("Déposer Marcus et son équipement de hockey au prochain garage ", 40, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage80km)));
-                questRoad3.Add(new Quest("Déposer Marco et son équipement de hockey au prochain garage ", 45, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage80km)));
-                questRoad3.Add(new Quest("Déposer Marc-André et son équipement de hockey au prochain garage ", 67, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage80km)));
-                questRoad3.Add(new Quest("Déposer Mohamed et son équipement électronique à Québec ", 90, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination1,null)));
-                questRoad3.Add(new Quest("Déposer Natasha et ses valises à Québec ", 110, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination1, null)));
+                questRoad3.Add(new Quest("Deposer votre viel ami et ses meubles a Quebec", 5, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination1, null)));
+                questRoad3.Add(new Quest("Deposer Marc et son equipement de hockey au prochain garage ", 15, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage80km)));
+                questRoad3.Add(new Quest("Deposer Marcos et son equipement de hockey au prochain garage ", 23, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage80km)));
+                questRoad3.Add(new Quest("Deposer Marcus et son equipement de hockey au prochain garage ", 40, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage80km)));
+                questRoad3.Add(new Quest("Deposer Marco et son equipement de hockey au prochain garage ", 45, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage80km)));
+                questRoad3.Add(new Quest("Deposer Marc-Andre et son equipement de hockey au prochain garage ", 67, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage80km)));
+                questRoad3.Add(new Quest("Deposer Mohamed et son equipement equipement a Quebec ", 90, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination1,null)));
+                questRoad3.Add(new Quest("Deposer Natasha et ses valises a Quebec ", 110, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination1, null)));
 
 
                 // Loteries
