@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Tooltip : PublicSingleton<Tooltip> {
 
     Text textArea;
+    public Vector3 offset;
 
     public void Start()
     {
@@ -18,7 +19,7 @@ public class Tooltip : PublicSingleton<Tooltip> {
         gameObject.SetActive(true);
         
         textArea.text = inText;
-        transform.position = Input.mousePosition;
+        transform.position = Input.mousePosition + offset;
     }
 
     public void HideToolTip()

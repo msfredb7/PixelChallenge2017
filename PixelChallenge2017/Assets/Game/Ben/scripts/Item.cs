@@ -30,7 +30,7 @@ public class Item : MonoBehaviour
     public Case centralCase;
     public List<Case> occupedCase;
 
-    List<Case> tempoHovered;
+    protected List<Case> tempoHovered;
 
     Case beforePlacement;
     private Vector3 posBeforePlacement;
@@ -176,16 +176,6 @@ public class Item : MonoBehaviour
                 }
             }
 
-            foreach (Case c in tryToOccupe)
-            {
-                foreach (Item v in allItem)
-                {
-                    if (v.occupedCase.Contains(c) && v.GetType() == typeof(Personne))
-                    {
-                        canOccupe = true;
-                    }
-                }
-            }
             return canOccupe;
         }
         return false;
@@ -243,24 +233,9 @@ public class Item : MonoBehaviour
                     }
                 }
             }
-            foreach (Case c in tryToOccupe)
-            {
-                if (valideCase(c) == false)
-                {
-                    canOccupe = false;
-                }
-            }
+            canOccupe = canOccupeCase(centralCaseIn);
 
-            foreach (Case c in tryToOccupe)
-            {
-                foreach(Item it in allItem)
-                {
-                    if(it.occupedCase.Contains(c) && it.GetType() == typeof(Personne))
-                    {
-                        canOccupe = true;
-                    }
-                }
-            }
+           
             if (canOccupe == true)
             {
                 return tryToOccupe;
@@ -512,6 +487,7 @@ public class Item : MonoBehaviour
         }
         tempoHovered.Clear();
         CalculCollidedCase();
+        
         List<Case> ret = occupedByCentral(calculCentralCase());
         if (ret != null && ret.Count > 0)
         {
@@ -574,6 +550,37 @@ public class Item : MonoBehaviour
             Tooltip.instance.HideToolTip();
         }
        
+    }
+
+    protected List<Case> caseUsedFromCentral(Case c)
+    {
+        List<Case> ret = new List<Case>();
+
+        if (c != null)
+        {
+            
+            for (int y = 0; y < cases.rows.Length; y++)
+            {
+                for (int x = 0; x < cases.rows[y].row.Length; x++)
+                {
+                    if (cases.rows[y].row[x] == true)
+                    {
+                        Case temp = c.getCaseWithOffset(x - offsetX, y - offsetY);
+                        if (temp != null)
+                        {
+                            ret.Add(temp);
+                        }
+                        else
+                        {
+                            return null;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        return ret;
     }
 
 

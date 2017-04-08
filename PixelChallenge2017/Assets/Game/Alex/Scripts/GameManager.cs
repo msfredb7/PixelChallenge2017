@@ -26,7 +26,7 @@ public class GameManager : PublicSingleton<GameManager>
     public GameObject conducteur;
     public GameObject conducteurUI;
 
-    public List<GameObject> startGame = new List<GameObject>();
+    public List<Item> startItems = new List<Item>();
 
     public List<GameObject> waypoints = new List<GameObject>();
 
