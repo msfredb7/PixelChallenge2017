@@ -129,7 +129,7 @@ MonoBehaviour:
   centralCase: {fileID: 0}
   occupedCase:
   - {fileID: 0}
-  scaleFacteur: 0
+  scaleFacteur: 1.5
   onBeginDrag:
     m_PersistentCalls:
       m_Calls: []
