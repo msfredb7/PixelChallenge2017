@@ -122,18 +122,27 @@ MonoBehaviour:
     - row: 00000000000000
     - row: 00000000000000
   itemShape: []
+  nom: Bob
   offsetX: 1
   offsetY: 1
   centralCase: {fileID: 0}
   occupedCase: []
   scaleFacteur: 0
+  _placementState: 0
   nom: Bob
   objectifStop: 0
   cashValue: 50
   _food: 100
   consomation: 10
   maxFood: 0
-  vomi: {fileID: 1248902992234730, guid: fba73298225433c4f93b6207a68361b7, type: 2}
+  vomi: {fileID: 1136334764767230, guid: 142defaa4becda74b829c689000ab1bc, type: 2}
+  dechet: {fileID: 1416452898090006, guid: 207db48c9a8e6b04db28077ec6bd1503, type: 2}
+  previousState: 0
+  onCarExit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
   hummeur: {fileID: 212646120596910894}
 --- !u!114 &114988964671502418
 MonoBehaviour:
