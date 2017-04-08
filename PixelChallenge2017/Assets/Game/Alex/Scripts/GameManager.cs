@@ -29,7 +29,7 @@ public class GameManager : PublicSingleton<GameManager>
 
         // Ajouts de la route initial
         EventScripting.Init(car);
-        RoadManager.instance.onDestinationReached.AddListener(OnDestinationReached);
+        RoadManager.instance.onQuitCity.AddListener(OnQuitCity);
     }
 
     void Update()
@@ -50,13 +50,13 @@ public class GameManager : PublicSingleton<GameManager>
         cashText.text = car.cash + "$";
     }
 
-    public void OnDestinationReached()
+    public void OnQuitCity()
     {
-
         for (int i = 0; i < car.listSpecialItems.Count; i++)
         {
             car.ChangeCash(car.listSpecialItems[i].reward);
-            car.listItems.Remove(car.listSpecialItems[i].item);
+            car.listSpecialItems[i].item.Kill();
+            i--;
         }
         car.listSpecialItems.Clear();
 
@@ -65,7 +65,7 @@ public class GameManager : PublicSingleton<GameManager>
         car.IsRunning = true;
     }
 
-    public void CreateStop(LieuType lieu, List<ItemAVendre> items, UnityAction onContinue = null)
+    public void CreateStop(LieuType lieu, List<ItemAVendre> items, UnityAction onContinue = null, UnityAction onArrive = null)
     {
         print("On arrete a " + lieu);
         // Gere le spaw du prefab stop et set toute le reste
@@ -77,29 +77,35 @@ public class GameManager : PublicSingleton<GameManager>
         },
         delegate()
         {
+            if (onArrive != null)
+                onArrive.Invoke();
             if(items.Count > 0)
                 PewDiePieUI.instance.shop.Init(items);
         });
     }
 
     // Spawn des items important avec le personnage
-    public void SpawnItems(List<Quest.ItemQuest> items)
+    public List<Item> SpawnItems(List<Quest.ItemQuest> items)
     {
+        List<Item> newItems = new List<Item>();
         int nbItems = 1;
         for (int i = 0; i < items.Count; i++)
         {
             if (i > (waypoints.Count - 1))
-                return; // Fuck off
+                break; // Fuck off
             GameObject obj = Instantiate(items[i].item.gameObject);
             obj.transform.position = waypoints[nbItems].transform.position;
+            newItems.Add(obj.GetComponent<Item>());
             nbItems++;
         }
+        return newItems;
     }
 
     // Spawn un personnage
-    public void SpawnPersonne(Personne personne)
+    public Personne SpawnPersonne(Personne personne)
     {
         GameObject obj = Instantiate(personne.gameObject);
         obj.transform.position = waypoints[0].transform.position;
+        return obj.GetComponent<Personne>();
     }
 }

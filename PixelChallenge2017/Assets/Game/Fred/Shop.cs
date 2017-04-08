@@ -35,7 +35,8 @@ public class Shop : MonoBehaviour
 
     void Open()
     {
-
+        if (items == null)
+            return;
         for (int i = 0; i < itemPrefab.Length; i++)
         {
             if (i >= items.Count)

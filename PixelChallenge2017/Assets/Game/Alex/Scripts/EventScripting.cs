@@ -95,7 +95,7 @@ public class EventScripting
         stopRoad1.Add(monique57km);
 
         List<Quest.ItemQuest> itemQuestCharle = new List<Quest.ItemQuest>();
-        itemQuestCharle.Add(new Quest.ItemQuest(ItemBank.GetItemByIndex(5), 5));
+        itemQuestCharle.Add(new Quest.ItemQuest(ItemBank.GetItemByIndex(5), 20));
 
         List<Quest> questRoad1 = new List<Quest>();
         questRoad1.Add(new Quest("Déposer Marise et ses valises à Montréal", 0, 0, null, new Quest.Destination(destination, null)));
