@@ -49,6 +49,8 @@ public class EventScripting
         Ville depart = new Ville("St-Stanislas");
         Ville destination = new Ville("Montreal");
 
+        // Position vehicule initiale
+
 
         // Objets des magasins
         List<ItemAVendre> itemDepanneur22km = new List<ItemAVendre>();
