@@ -313,6 +313,7 @@ public class EventScripting
 
 
                 // Quetes
+                Stop monsieur5km = new Stop(5, LieuType.arretBus);
                 Stop gary10km = new Stop(10, LieuType.arretBus);
                 Stop mariepier30km = new Stop(30, LieuType.arretBus);
                 Stop bob49km = new Stop(49, LieuType.arretBus);
@@ -326,7 +327,7 @@ public class EventScripting
                 stopRoad2.Add(jeremy100km);
 
                 List<Quest> questRoad2 = new List<Quest>();
-                questRoad2.Add(new Quest("Déposer le mystérieux monsieur et ses nombreux chapeaux à Trois-Rivière", 0, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
+                questRoad2.Add(new Quest("Déposer le mystérieux monsieur et ses nombreux chapeaux à Trois-Rivière", 5, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
                 questRoad2.Add(new Quest("Déposer Gary et son matériel informatique à Trois-Rivière", 10, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
                 questRoad2.Add(new Quest("Déposer Marie-Pier et ses bagages jusqu'à la prochaine épicerie", 30, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, restaurant70km)));
                 questRoad2.Add(new Quest("Déposer Bob au prochain garage", 49, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage91km)));

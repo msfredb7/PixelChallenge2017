@@ -223,7 +223,8 @@ MonoBehaviour:
       PublicKeyToken=null
   _placementState: 0
   wasInCar: -1
-  descriptionTxt: 
+  descriptionTxt: Vous octroie une somme d'argent raisonnable, une fois transporte
+    a la prochaine ville
 --- !u!212 &212083191211586404
 SpriteRenderer:
   m_ObjectHideFlags: 1
