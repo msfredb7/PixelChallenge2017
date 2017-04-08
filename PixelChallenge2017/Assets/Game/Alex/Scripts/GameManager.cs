@@ -19,6 +19,11 @@ public class GameManager : PublicSingleton<GameManager>
 
     public GameObject grille;
 
+    public GameObject bulle;
+    public GameObject canvasUI;
+    public GameObject conducteur;
+    public GameObject conducteurUI;
+
     public List<GameObject> waypoints = new List<GameObject>();
 
     void Start()
@@ -75,11 +80,11 @@ public class GameManager : PublicSingleton<GameManager>
                 onContinue.Invoke();
             print("On repart!");
         },
-        delegate()
+        delegate ()
         {
             if (onArrive != null)
                 onArrive.Invoke();
-            if(items.Count > 0)
+            if (items.Count > 0)
                 PewDiePieUI.instance.shop.Init(items);
         });
     }

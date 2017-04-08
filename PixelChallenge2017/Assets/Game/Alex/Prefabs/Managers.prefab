@@ -56,12 +56,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e135c458fd7b0e04d918fdde99726cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onDestinationReached:
+  onQuitCity:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   onStopReached:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onDestinationReached:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onLateDestinationReached:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onLateStopReached:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
@@ -118,6 +133,10 @@ MonoBehaviour:
   TowingGas: 10
   cashText: {fileID: 0}
   grille: {fileID: 0}
+  bulle: {fileID: 1918845022447650, guid: 4179755dbc987d54ba609c7415b43649, type: 2}
+  canvasUI: {fileID: 0}
+  conducteur: {fileID: 0}
+  conducteurUI: {fileID: 0}
   waypoints:
   - {fileID: 0}
   - {fileID: 0}

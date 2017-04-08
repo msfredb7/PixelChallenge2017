@@ -17,6 +17,20 @@ public class Voiture {
     public List<Quest.ItemQuest> listSpecialItems = new List<Quest.ItemQuest>();
     public UnityEvent onDie = new UnityEvent();
 
+
+    public Item getItemOfType(string objName)
+    {
+        Item ret = null;
+
+        for (int i = 0; i < listItems.Count; i++)
+        {
+            if (listItems[i].nom == objName)
+                ret = listItems[i];
+        }
+
+        return ret;
+    }
+
     public Voiture(float cash, float gas)
     {
         this.cash = cash;
