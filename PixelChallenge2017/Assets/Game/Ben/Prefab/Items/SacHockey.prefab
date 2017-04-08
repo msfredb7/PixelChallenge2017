@@ -185,7 +185,7 @@ MonoBehaviour:
       PublicKeyToken=null
   _placementState: 0
   wasInCar: 0
-  descriptionTxt: "D\xE9gage une forte odeur naus\xE9abonde"
+  descriptionTxt: Degage une forte odeur nauseabonde
 --- !u!114 &114995073911578968
 MonoBehaviour:
   m_ObjectHideFlags: 1
