@@ -125,11 +125,13 @@ MonoBehaviour:
   offsetX: 1
   offsetY: 1
   centralCase: {fileID: 0}
-  nom: 
+  scaleFacteur: 0
+  nom: Bob
   objectifStop: 0
   cashValue: 50
   _food: 100
   consomation: 10
+  maxFood: 0
   hummeur: {fileID: 212646120596910894}
 --- !u!114 &114988964671502418
 MonoBehaviour:

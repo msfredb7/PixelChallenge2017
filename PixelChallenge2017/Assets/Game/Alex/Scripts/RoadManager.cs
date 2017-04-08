@@ -53,7 +53,8 @@ public class RoadManager : PublicSingleton<RoadManager> {
                 nextStop.StartEvent();
                 currentRoad.currentStop = nextStop;
                 onStopReached.Invoke();
-                buyButton.SetActive(true);
+                if(nextStop.lieu != LieuType.arretBus)
+                    buyButton.SetActive(true);
                 DelayManager.CallTo(StopEnd, 6);
 
                 // On a fini de traiter l'evennement, on le supprime

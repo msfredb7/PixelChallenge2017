@@ -22002,7 +22002,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: dc75b302e7bb31a4eb6606affb2ef3bf, type: 2}
+  - {fileID: 2100000, guid: 129a65ed44f1c77428a194acf52a03d4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22963,7 +22963,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 129a65ed44f1c77428a194acf52a03d4, type: 2}
+  - {fileID: 2100000, guid: dc75b302e7bb31a4eb6606affb2ef3bf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -25691,7 +25691,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 129a65ed44f1c77428a194acf52a03d4, type: 2}
+  - {fileID: 2100000, guid: dc75b302e7bb31a4eb6606affb2ef3bf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30248,7 +30248,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: dc75b302e7bb31a4eb6606affb2ef3bf, type: 2}
+  - {fileID: 2100000, guid: 129a65ed44f1c77428a194acf52a03d4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -46305,7 +46305,7 @@ MonoBehaviour:
   Droite: {fileID: 114890878416582128}
   Gauche: {fileID: 114557387668706372}
   Bas: {fileID: 114524826109320846}
-  _caseOccupe: 0
+  _caseOccupe: 1
   _caseHovered: 0
   caseType: 2
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
@@ -47229,9 +47229,9 @@ MonoBehaviour:
   Droite: {fileID: 114340608454536944}
   Gauche: {fileID: 114676573542681058}
   Bas: {fileID: 114333289361263152}
-  _caseOccupe: 0
+  _caseOccupe: 1
   _caseHovered: 0
-  caseType: 0
+  caseType: 2
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
   standardMat: {fileID: 0}
 --- !u!114 &114315800713610268
@@ -50333,7 +50333,7 @@ MonoBehaviour:
   Bas: {fileID: 114350448503665354}
   _caseOccupe: 0
   _caseHovered: 0
-  caseType: 2
+  caseType: 0
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
   standardMat: {fileID: 0}
 --- !u!114 &114585020949052970
@@ -51497,9 +51497,9 @@ MonoBehaviour:
   Droite: {fileID: 114315747755487222}
   Gauche: {fileID: 114314750563934874}
   Bas: {fileID: 114607882555995614}
-  _caseOccupe: 0
+  _caseOccupe: 1
   _caseHovered: 0
-  caseType: 0
+  caseType: 2
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
   standardMat: {fileID: 0}
 --- !u!114 &114677762960860536
@@ -53582,7 +53582,7 @@ MonoBehaviour:
   Droite: {fileID: 114497910460963026}
   Gauche: {fileID: 114231670678423454}
   Bas: {fileID: 114583525386138234}
-  _caseOccupe: 0
+  _caseOccupe: 1
   _caseHovered: 0
   caseType: 2
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
