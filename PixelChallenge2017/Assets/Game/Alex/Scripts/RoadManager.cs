@@ -16,7 +16,7 @@ public class RoadManager : PublicSingleton<RoadManager>
     public UnityEvent onLateStopReached = new UnityEvent();
 
     [HideInInspector]
-    public float startTime = 0;
+    public float startTime = -1;
     [HideInInspector]
     public float timeToIgnore = 0;
     [HideInInspector]
@@ -32,6 +32,8 @@ public class RoadManager : PublicSingleton<RoadManager>
     {
         if (!start)
             return;
+        if (startTime <= 0)
+            startTime = Time.time;
          
         if (currentRoad == null)
         {
