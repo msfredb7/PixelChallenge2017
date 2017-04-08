@@ -138,7 +138,7 @@ MonoBehaviour:
   offsetY: 0
   centralCase: {fileID: 0}
   occupedCase: []
-  scaleFacteur: 5
+  scaleFacteur: 3.5
   onBeginDrag:
     m_PersistentCalls:
       m_Calls: []
@@ -171,6 +171,7 @@ MonoBehaviour:
       PublicKeyToken=null
   _placementState: 0
   wasInCar: 0
+  descriptionTxt: 
   ValeurNourriture: 10
 --- !u!212 &212791257201546298
 SpriteRenderer:
