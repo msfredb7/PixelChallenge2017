@@ -25,7 +25,7 @@ public class ItemAnimation : MonoBehaviour
         {
             GameObject item = items[i];
             item.transform.localPosition -= Vector3.right * speed * Time.deltaTime;
-            if (item.transform.localPosition.x < minX)
+            if (item.transform.position.x < minX)
             {
                 Kill(item);
                 i--;
