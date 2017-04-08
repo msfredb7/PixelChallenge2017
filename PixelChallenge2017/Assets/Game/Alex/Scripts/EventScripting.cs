@@ -14,6 +14,7 @@ public class EventScripting
     static CCC.Utility.Lottery lotteryUtility;
 
     static CCC.Utility.Lottery lotteryCollectable;
+    static CCC.Utility.Lottery lotteryUseless;
 
     private static int currentEvent = 0;
 
@@ -46,6 +47,21 @@ public class EventScripting
         new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(11),1),
         new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(12),2),
         });
+
+        lotteryUseless = new CCC.Utility.Lottery(new CCC.Utility.Lottery.LotteryItem[]
+        {
+        new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(14),1),
+        new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(15),1),
+        new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(16),1),
+        new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(17),1),
+        new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(18),1),
+        new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(19),1),
+        new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(20),1),
+        new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(21),1),
+        new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(22),1),
+        new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(23),1),
+
+});
 
         // Chemin St-Stanilas a Montreal
         Ville depart = new Ville("St-Stanislas");
@@ -118,17 +134,35 @@ public class EventScripting
 
         // Loteries
         List<ItemEvent> itemEventRoad1 = new List<ItemEvent>();
+        ItemEvent item1km = new ItemEvent(1, 0, (Item)lotteryCollectable.Pick());
+        ItemEvent item1km2 = new ItemEvent(3, 0, (Item)lotteryCollectable.Pick());
         ItemEvent item5km = new ItemEvent(5, 0, (Item)lotteryFood.Pick());
-        ItemEvent item29km = new ItemEvent(29, 0, (Item)lotteryFood.Pick());
-        ItemEvent item35km = new ItemEvent(35, 0, (Item)lotteryEssence.Pick());
-        ItemEvent item52km = new ItemEvent(52, 0, (Item)lotteryUtility.Pick());
-        ItemEvent item67km = new ItemEvent(67, 0, (Item)lotteryCollectable.Pick());
+        ItemEvent item5km2 = new ItemEvent(7, 0, (Item)lotteryUseless.Pick());
+        ItemEvent item15km = new ItemEvent(15, 0, (Item)lotteryUseless.Pick());
+        ItemEvent item15km2 = new ItemEvent(13, 0, (Item)lotteryEssence.Pick());
+        ItemEvent item20km = new ItemEvent(27, 0, (Item)lotteryUseless.Pick());
+        ItemEvent item20km2 = new ItemEvent(28, 0, (Item)lotteryCollectable.Pick());
+        ItemEvent item35km = new ItemEvent(35, 0, (Item)lotteryUseless.Pick());
+        ItemEvent item35km2 = new ItemEvent(34, 0, (Item)lotteryEssence.Pick());
+        ItemEvent item52km = new ItemEvent(52, 0, (Item)lotteryUseless.Pick());
+        ItemEvent item52km2 = new ItemEvent(54, 0, (Item)lotteryUtility.Pick());
+        ItemEvent item67km = new ItemEvent(67, 0, (Item)lotteryUseless.Pick());
+        ItemEvent item67km2 = new ItemEvent(65, 0, (Item)lotteryCollectable.Pick());
 
+        itemEventRoad1.Add(item1km);
+        itemEventRoad1.Add(item1km2);
         itemEventRoad1.Add(item5km);
-        itemEventRoad1.Add(item29km);
+        itemEventRoad1.Add(item5km2);
+        itemEventRoad1.Add(item15km);
+        itemEventRoad1.Add(item15km2);
+        itemEventRoad1.Add(item20km);
+        itemEventRoad1.Add(item20km2);
+        itemEventRoad1.Add(item35km2);
         itemEventRoad1.Add(item35km);
         itemEventRoad1.Add(item52km);
+        itemEventRoad1.Add(item52km2);
         itemEventRoad1.Add(item67km);
+        itemEventRoad1.Add(item67km2);
 
         List<SpecialEvent> specialEventList = new List<SpecialEvent>();
 
