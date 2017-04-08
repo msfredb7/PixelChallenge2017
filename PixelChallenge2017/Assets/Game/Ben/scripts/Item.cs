@@ -517,7 +517,7 @@ public class Item : MonoBehaviour
         allItem.Remove(this);
         gameObject.SetActive(false);
 
-        //GlobalAnimator.RemoveFloatingItem(gameObject);
+        GlobalAnimator.RemoveFloatingItem(gameObject);
         //DestroyImmediate(gameObject,true);
     }
 

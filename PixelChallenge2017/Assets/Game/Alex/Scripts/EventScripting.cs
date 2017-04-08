@@ -505,12 +505,15 @@ public class EventScripting
                 questItemMarcAndre67km.Add(new Quest.ItemQuest(ItemBank.GetItemByIndex(17), 8));
 
                 stopRoad3.Add(mohamed90km);
-
-
+                List<Quest.ItemQuest> questItemMohamed90km = new List<Quest.ItemQuest>();
+                questItemMohamed90km.Add(new Quest.ItemQuest(ItemBank.GetItemByIndex(22), 20));
+                questItemMohamed90km.Add(new Quest.ItemQuest(ItemBank.GetItemByIndex(23), 10));
 
 
                 stopRoad3.Add(natasha110km);
-
+                List<Quest.ItemQuest> questItemNatasha110km= new List<Quest.ItemQuest>();
+                questItemNatasha110km.Add(new Quest.ItemQuest(ItemBank.GetItemByIndex(15), 10));
+                questItemNatasha110km.Add(new Quest.ItemQuest(ItemBank.GetItemByIndex(15), 10));
 
 
                 List<Quest> questRoad3 = new List<Quest>();
