@@ -199,7 +199,7 @@ MonoBehaviour:
       PublicKeyToken=null
   _placementState: 0
   wasInCar: 0
-  descriptionTxt: 
+  descriptionTxt: Sa forme est loin d'etre optimale, mais on s'en contentera
 --- !u!114 &114108919964117036
 MonoBehaviour:
   m_ObjectHideFlags: 1

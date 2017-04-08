@@ -172,7 +172,7 @@ MonoBehaviour:
       PublicKeyToken=null
   _placementState: 0
   wasInCar: 0
-  descriptionTxt: 
+  descriptionTxt: Permet de nettoyer les degats causes par vos passagers
 --- !u!114 &114880009657578416
 MonoBehaviour:
   m_ObjectHideFlags: 1

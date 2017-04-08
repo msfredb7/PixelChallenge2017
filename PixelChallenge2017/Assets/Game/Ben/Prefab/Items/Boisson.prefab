@@ -159,7 +159,7 @@ MonoBehaviour:
       PublicKeyToken=null
   _placementState: 0
   wasInCar: 0
-  descriptionTxt: 
+  descriptionTxt: A partager avec vos passagers
   ValeurNourriture: 40
 --- !u!114 &114786357829821870
 MonoBehaviour:
