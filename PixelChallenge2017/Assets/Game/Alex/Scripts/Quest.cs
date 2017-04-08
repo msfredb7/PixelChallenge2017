@@ -71,7 +71,11 @@ public class Quest {
         Debug.Log("la quete commence");
 
         GameManager.instance.SpawnItems(itemNecessaire);
-        GameManager.instance.SpawnPersonne(personne);
+        if(personne != null)
+        {
+            GameManager.instance.SpawnPersonne(personne);
+            personne.onCarExit.AddListener(OnFail);
+        }
     }
 
     public void OnCityReached()

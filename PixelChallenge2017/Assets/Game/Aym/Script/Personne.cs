@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Personne : Item {
 
@@ -14,6 +15,9 @@ public class Personne : Item {
     public float _food;
     public float consomation;
     public float maxFood;
+    public GameObject vomi;
+
+    public UnityEvent onCarExit = new UnityEvent();
 
     public SpriteRenderer hummeur;
 
@@ -75,7 +79,15 @@ public class Personne : Item {
                 }
 
                 Case randomCase = caseLibreProche[Random.Range(0, caseLibreProche.Count)];
-                randomCase.gameObject.SetActive(false);
+                GameObject temp = Instantiate(vomi);
+                Vomi v = temp.GetComponent<Vomi>();
+                if(v != null)
+                {
+                    v.centralCase = randomCase;
+                }
+
+
+                
             }
            
         }
@@ -84,7 +96,7 @@ public class Personne : Item {
     }
 
 	// Use this for initialization
-	protected override void Start () {
+	public override void Start () {
         base.Start();
         rend.Remove(hummeur);
         if(maxFood <=_food)
@@ -97,7 +109,9 @@ public class Personne : Item {
 	protected override void Update () {
         base.Update();
         food -= Time.deltaTime * consomation;
-	}
+        if (_placementState == ItemState.notPlaced)
+            onCarExit.Invoke();
+    }
 
     override protected bool valideCase(Case c)
     {
