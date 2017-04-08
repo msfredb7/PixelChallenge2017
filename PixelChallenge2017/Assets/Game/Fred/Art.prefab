@@ -1967,10 +1967,13 @@ MonoBehaviour:
     - row: 00000000000000
     - row: 00000000000000
   itemShape: []
+  nom: 
   offsetX: 1
   offsetY: 1
   centralCase: {fileID: 0}
+  occupedCase: []
   scaleFacteur: 3
+  _placementState: 0
 --- !u!114 &114903468470454528
 MonoBehaviour:
   m_ObjectHideFlags: 1
