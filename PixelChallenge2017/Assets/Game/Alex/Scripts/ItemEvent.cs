@@ -29,7 +29,7 @@ public class ItemEvent {
 
         //obj.transform.localScale = new Vector3(obj.transform.localScale.x*5, obj.transform.localScale.y, obj.transform.localScale.z*5);
 
-        obj.gameObject.transform.localPosition = new Vector3(110, 0, Random.Range(-80, -20));
+        obj.gameObject.transform.localPosition = new Vector3(110, 0, Random.Range(-65, -20));
 
         GlobalAnimator.AddFloatingItem(obj);
 
