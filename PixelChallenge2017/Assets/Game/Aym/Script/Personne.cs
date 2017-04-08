@@ -19,6 +19,7 @@ public class Personne : Item {
     public UnityEvent onCarExit = new UnityEvent();
 
     public SpriteRenderer hummeur;
+    public float lastDechet;
 
     public float food
     {
@@ -159,8 +160,9 @@ public class Personne : Item {
         if ((RoadManager.instance.currentDistance % 2) < 0.1 && GameManager.instance.car.IsRunning)
         {
             food--;
-            if (Random.Range(0f, 1f) > 0.15)
+            if (lastDechet != RoadManager.instance.currentDistance && Random.Range(0f, 1f) < 0.05f)
             {
+                lastDechet = RoadManager.instance.currentDistance;
                 if (centralCase != null)
                 {
                     List<Case> caseLibreProche = new List<Case>();
