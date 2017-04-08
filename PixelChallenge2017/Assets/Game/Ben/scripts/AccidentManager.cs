@@ -19,14 +19,6 @@ public class AccidentManager : PublicSingleton<AccidentManager>
 
     }
 
-    public void Update()
-    {
-        if (Input.GetKeyDown("n"))
-            flatEvent();
-        if (Input.GetKeyDown("m"))
-            PanneMoteur();
-    }
-
     public void flatEvent()
     {
         GlobalAnimator.StopAt(LieuType.nullePart, null, delegate ()
@@ -38,7 +30,7 @@ public class AccidentManager : PublicSingleton<AccidentManager>
                 float price = GameManager.instance.TowingCost;
                 if (GameManager.instance.car.cash < price)
                 {
-                    Debug.Log("You Lose!!!!!!!!");
+                    PewDiePieUI.instance.GameOver();
                     return;
                 }
             }
@@ -47,8 +39,6 @@ public class AccidentManager : PublicSingleton<AccidentManager>
         });
 
     }
-
-
 
     public void PanneMoteur()
     {
@@ -61,7 +51,7 @@ public class AccidentManager : PublicSingleton<AccidentManager>
                 float price = GameManager.instance.TowingCost;
                 if (GameManager.instance.car.cash < price)
                 {
-                    Debug.Log("You Lose!!!!!!!!");
+                    PewDiePieUI.instance.GameOver();
                     return;
                 }  
             }
