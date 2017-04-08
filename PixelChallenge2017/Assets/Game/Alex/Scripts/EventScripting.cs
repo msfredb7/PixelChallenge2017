@@ -97,7 +97,7 @@ public class EventScripting
         stopRoad1.Add(monique57km);
 
         List<Quest> questRoad1 = new List<Quest>();
-        questRoad1.Add(new Quest("Déposer Marise et ses valises à Montréal", 0, 0, null, new Quest.Destination(destination, null)));
+        questRoad1.Add(new Quest("Déposer Marise et ses valises à Montréal", 0, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
         questRoad1.Add(new Quest("Déposer Charles et son équipement de hockey à Montreal", 10, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
         questRoad1.Add(new Quest("Déposer Marc à la prochaine station service", 17, 999, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, station40km)));
         questRoad1.Add(new Quest("Déposer Monique à Montreal", 57, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
