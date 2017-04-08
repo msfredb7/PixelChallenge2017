@@ -34,15 +34,18 @@ public class MusicManager : PublicSingleton<MusicManager> {
 
     void Update()
     {
+        
         if (Input.GetMouseButtonDown(0))
         {
             DoMouseClick1();
         }
-
+        
+        /*
         if (Input.GetMouseButtonUp(0))
         {
             DoMouseClick2();
         }
+        */
     }
 
     public void OnClick()
