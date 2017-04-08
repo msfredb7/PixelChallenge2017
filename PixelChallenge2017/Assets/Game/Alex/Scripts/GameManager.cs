@@ -24,6 +24,8 @@ public class GameManager : PublicSingleton<GameManager>
     public GameObject conducteur;
     public GameObject conducteurUI;
 
+    public List<Quest.ItemQuest> startGame = new List<Quest.ItemQuest>();
+
     public List<GameObject> waypoints = new List<GameObject>();
 
     void Start()
