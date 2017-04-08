@@ -11,7 +11,7 @@ public class TestScript_Fred : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.T))
         {
-            PewDiePieUI.instance.shop.Init(items, new List<int>() { 1, 5, 1, 2 }, new List<int> { 2, 24, 2, 2 });
+            //PewDiePieUI.instance.shop.Init(items, new List<int>() { 1, 5, 1, 2 }, new List<int> { 2, 24, 2, 2 });
         }
 
     }

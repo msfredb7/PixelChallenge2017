@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class RoadManager : PublicSingleton<RoadManager> {
+public class RoadManager : PublicSingleton<RoadManager>
+{
 
     public Road currentRoad;
 
@@ -20,8 +21,6 @@ public class RoadManager : PublicSingleton<RoadManager> {
 
     public int lastPrint = 0;
 
-    public GameObject buyButton;
-
     public float currentDistance;
 
     void Update()
@@ -36,7 +35,7 @@ public class RoadManager : PublicSingleton<RoadManager> {
         {
             currentDistance = (Time.time - startTime) - timeToIgnore; // 1km = 1 secondes
 
-            if(currentDistance > (lastPrint + 1))
+            if (currentDistance > (lastPrint + 1))
             {
                 GameManager.instance.car.ChangeGas(-1);
                 print("They see me rollin' ! They hatin' ( Distance : " + lastPrint + "km )");
@@ -50,13 +49,17 @@ public class RoadManager : PublicSingleton<RoadManager> {
 
             if (nextStop != null && nextStop.distance <= currentDistance)
             {
-                GameManager.instance.car.IsRunning = false;
-                timeLastStop = Time.time;
-                nextStop.StartEvent();
-                currentRoad.currentStop = nextStop;
-                onStopReached.Invoke(); // Quete
-                if(nextStop.lieu != LieuType.arretBus)
-                    buyButton.SetActive(true);
+                GameManager.instance.car.IsRunning = false; // On arrête d'avancer
+
+                timeLastStop = Time.time; // On garde une notion du temps perdu
+
+                nextStop.StartEvent(); // On débute l'evennement du stop
+
+                currentRoad.currentStop = nextStop; // Le stop courrant est maintenant ce stop
+
+                onStopReached.Invoke(); // Activation des events de quêtes qui se deroule a un stop
+
+                // Dans 6 secondes, on aura fini d'être au stop et on reprendra la route.
                 DelayManager.CallTo(StopEnd, 6);
 
                 // On a fini de traiter l'evennement, on le supprime
@@ -79,9 +82,9 @@ public class RoadManager : PublicSingleton<RoadManager> {
 
             if (nextQuest != null && nextQuest.distance <= currentDistance)
             {
-                QuestManager.instance.AddQuest(nextQuest);
+                QuestManager.instance.AddQuest(nextQuest); // On ajoute la quête au UI et au gestionnaire
 
-                currentRoad.RemoveQuestEvent(nextQuest);
+                currentRoad.RemoveQuestEvent(nextQuest); // On retire la quête des évennements a faire dans la route
             }
 
             if (currentRoad.distance <= currentDistance)
@@ -130,13 +133,14 @@ public class RoadManager : PublicSingleton<RoadManager> {
         }
     }
 
+    // La fin d'un Stop
     public void StopEnd()
     {
-        buyButton.SetActive(false);
         GameManager.instance.car.IsRunning = true;
         timeToIgnore += Time.time - timeLastStop;
     }
 
+    // Permet de définir la route courante à suivre
     public void SetRoad(Road road)
     {
         GameManager.instance.car.IsRunning = true;
@@ -144,10 +148,5 @@ public class RoadManager : PublicSingleton<RoadManager> {
         startTime = Time.time;
         timeToIgnore = 0;
         print("On part de " + road.currentDepart.nom);
-    }
-
-    public bool IsArrived()
-    {
-        return currentRoad.distance <= ((Time.time - startTime) - timeToIgnore);
     }
 }
