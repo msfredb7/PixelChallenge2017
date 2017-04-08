@@ -61,9 +61,14 @@ public class GameManager : PublicSingleton<GameManager>
     {
         for (int i = 0; i < car.listSpecialItems.Count; i++)
         {
+            print("item: " + car.listSpecialItems[i].item.nom);
             car.ChangeCash(car.listSpecialItems[i].reward);
             car.listSpecialItems[i].item.Kill();
-            i--;
+            if (car.listItems.Contains(car.listSpecialItems[i].item))
+            {
+                car.listItems.Remove(car.listSpecialItems[i].item);
+                i--;
+            }
         }
         car.listSpecialItems.Clear();
 

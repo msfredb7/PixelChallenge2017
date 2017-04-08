@@ -227,7 +227,31 @@ public class Personne : Item {
 
     public override string description()
     {
-        string ret = "Nom : " + this.nom + System.Environment.NewLine + base.description();
+        string ret = "Nom : " + this.nom + System.Environment.NewLine;
+        Quest myQuest = foundMyQuest();
+        if(myQuest!=null)
+        {
+            ret+=System.Environment.NewLine + "Destination : " + myQuest.destination.ToString(); ;
+        }
+        ret+= base.description();
+        return ret;
+
+    }
+
+    private Quest foundMyQuest()
+    {
+        Quest ret = null;
+
+        Debug.Log(QuestManager.instance.questList.Count);
+        foreach(Quest q in QuestManager.instance.questList)
+        {
+            if(q.personne == this)
+            {
+                ret = q;
+            }
+        }
+
+
         return ret;
     }
 }
