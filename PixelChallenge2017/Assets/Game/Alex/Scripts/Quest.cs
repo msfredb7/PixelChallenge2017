@@ -89,13 +89,14 @@ public class Quest
     // Debut de la quete
     public void OnBegin()
     {
-
-        items = GameManager.instance.SpawnItems(itemNecessaire); // On fait apparaitre les objets a l'arret
+        if (items == null || items.Count <= 0)
+            items = GameManager.instance.SpawnItems(itemNecessaire); // On fait apparaitre les objets a l'arret
 
         int i = 0;
         foreach (Item item in items)
         {
             ItemQuest itemQuest = new ItemQuest(item, itemNecessaire[i].reward);
+            item.descriptionTxt = "Objet de quete. \nValeur de " + itemNecessaire[i].reward + "$";
             GameManager.instance.car.listSpecialItems.Add(itemQuest);
             item.onDeath.AddListener(delegate ()
             {
