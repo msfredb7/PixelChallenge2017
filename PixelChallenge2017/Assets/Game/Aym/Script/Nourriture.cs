@@ -33,6 +33,7 @@ public class Nourriture : Item {
                     {
                         Personne p = (Personne)it;
                         p.food += ValeurNourriture;
+                        MusicManager.instance.DoEatingSound();
                         clearCase();
                         Destroy(gameObject);
                         return;
