@@ -170,7 +170,6 @@ public class Quest
     {
         if (personne != null)
             personne.Kill();
-        personne = null;
     }
 
     void RemoveListeners()
