@@ -382,19 +382,35 @@ public class EventScripting
 
                 // Loteries
                 List<ItemEvent> itemEventRoad2 = new List<ItemEvent>();
+                ItemEvent item5km = new ItemEvent(5, 0, (Item)lotteryUseless.Pick());
                 ItemEvent item14km = new ItemEvent(14, 0, (Item)lotteryFood.Pick());
+                ItemEvent item19km = new ItemEvent(19, 0, (Item)lotteryUseless.Pick());
                 ItemEvent item25km = new ItemEvent(25, 0, (Item)lotteryCollectable.Pick());
+                ItemEvent item33km = new ItemEvent(33, 0, (Item)lotteryUseless.Pick());
+                ItemEvent item39km = new ItemEvent(39, 0, (Item)lotteryUseless.Pick());
                 ItemEvent item52km = new ItemEvent(52, 0, (Item)lotteryEssence.Pick());
+                ItemEvent item69km = new ItemEvent(69, 0, (Item)lotteryUseless.Pick());
                 ItemEvent item74km = new ItemEvent(74, 0, (Item)lotteryCollectable.Pick());
+                ItemEvent item79km = new ItemEvent(79, 0, (Item)lotteryUseless.Pick());
                 ItemEvent item86km = new ItemEvent(86, 0, (Item)lotteryFood.Pick());
+                ItemEvent item89km = new ItemEvent(89, 0, (Item)lotteryUseless.Pick());
+                ItemEvent item92km = new ItemEvent(92, 0, (Item)lotteryUseless.Pick());
                 ItemEvent item95km = new ItemEvent(95, 0, (Item)lotteryUtility.Pick());
                 ItemEvent item106km = new ItemEvent(106, 0, (Item)lotteryEssence.Pick());
 
+                itemEventRoad2.Add(item5km);
                 itemEventRoad2.Add(item14km);
+                itemEventRoad2.Add(item19km);
                 itemEventRoad2.Add(item25km);
+                itemEventRoad2.Add(item33km);
+                itemEventRoad2.Add(item39km);
                 itemEventRoad2.Add(item52km);
+                itemEventRoad2.Add(item69km);
                 itemEventRoad2.Add(item74km);
+                itemEventRoad2.Add(item79km);
                 itemEventRoad2.Add(item86km);
+                itemEventRoad2.Add(item89km);
+                itemEventRoad2.Add(item92km);
                 itemEventRoad2.Add(item95km);
                 itemEventRoad2.Add(item106km);
 
