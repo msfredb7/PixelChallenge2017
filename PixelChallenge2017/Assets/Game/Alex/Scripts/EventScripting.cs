@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using CCC.Manager;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EventScripting
 {
@@ -115,9 +117,30 @@ public class EventScripting
         itemEventRoad1.Add(item52km);
         itemEventRoad1.Add(item67km);
 
+        List<SpecialEvent> specialEventList = new List<SpecialEvent>();
+
+        // Evennement de Bulle
+        specialEventList.Add(new SpecialEvent(15, delegate()
+        {
+            GameObject obj = GameObject.Instantiate(GameManager.instance.bulle, GameManager.instance.canvasUI.transform);
+            obj.transform.position = GameManager.instance.conducteurUI.transform.position;
+            foreach (Transform child in obj.transform)
+            {
+                child.GetComponent<Text>().text = "Wow, fa bo icitte tabarnak \n C'est crissement epic looooooooooooooool";
+            }
+            DelayManager.CallTo(delegate()
+            {
+                GameObject.Destroy(obj);
+            },5);
+        }));
+
+        specialEventList.Add(new SpecialEvent(15, delegate ()
+        {
+            
+        }));
 
         // Initialisation de la route
-        Road newRoad1 = new Road(depart, destination, stopRoad1, null, itemEventRoad1, questRoad1, 70);
+        Road newRoad1 = new Road(depart, destination, stopRoad1, specialEventList, itemEventRoad1, questRoad1, 70);
         RoadManager.instance.SetRoad(newRoad1);
     }
 

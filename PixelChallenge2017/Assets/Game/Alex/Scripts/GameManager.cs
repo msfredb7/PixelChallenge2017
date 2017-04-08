@@ -19,6 +19,11 @@ public class GameManager : PublicSingleton<GameManager>
 
     public GameObject grille;
 
+    public GameObject bulle;
+    public GameObject canvasUI;
+    public GameObject conducteur;
+    public GameObject conducteurUI;
+
     public List<GameObject> waypoints = new List<GameObject>();
 
     void Start()
@@ -47,7 +52,7 @@ public class GameManager : PublicSingleton<GameManager>
         //    car.ChangeCash(-TowingCost);
         //    car.ChangeGas(TowingGas);
         //}
-        cashText.text = car.cash + "$";
+        cashText.text = "" + car.cash + "$";
     }
 
     public void OnDestinationReached()

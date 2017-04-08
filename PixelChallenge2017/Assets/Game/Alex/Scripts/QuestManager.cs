@@ -29,6 +29,7 @@ public class QuestManager : PublicSingleton<QuestManager>
 
         // UI Quete
         GameObject newQuest = Instantiate(textObject, container.transform);
+        newQuest.transform.localScale = Vector3.one;
         newQuest.GetComponent<Text>().text = quest.questDescription;
 
         currentNbQuest++;
