@@ -18,6 +18,11 @@ namespace CCC.Manager
             manager.InstanceCallTo(action, delay, realTime);
         }
 
+        static public void ClearAll()
+        {
+            manager.StopAllCoroutines();
+        }
+
         protected override void Awake()
         {
             base.Awake();

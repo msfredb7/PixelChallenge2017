@@ -4,11 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class PewDiePieUI : PublicSingleton<PewDiePieUI> {
     public Button repairButton;
     public Button continueButton;
     public Shop shop;
+
+    public Image blackFG;
 
     void Start()
     {
@@ -46,8 +49,14 @@ public class PewDiePieUI : PublicSingleton<PewDiePieUI> {
 
     }
 
-    void GameOver()
+    public void GameOver()
     {
-        // TODO
+        blackFG.color = new Color(0, 0, 0, 0);
+        blackFG.gameObject.SetActive(true);
+        blackFG.DOFade(1,2).OnComplete(delegate()
+        {
+            DelayManager.ClearAll();
+            SceneManager.LoadScene("TransitionToGameOver");
+        });
     }
 }
