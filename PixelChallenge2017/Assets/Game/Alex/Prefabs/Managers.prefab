@@ -108,6 +108,9 @@ MonoBehaviour:
   - {fileID: 114702657134345046, guid: 06aeaa8c6016a51459cc6fc87fb471fe, type: 2}
   - {fileID: 114219373766176630, guid: 1b50501396504834cb807fa98c6e776d, type: 2}
   - {fileID: 114371136104698934, guid: 654b893d29619d64c85583f60ac828da, type: 2}
+  - {fileID: 114371136104698934, guid: 3851574e1654fb64abce6a47aceee48b, type: 2}
+  - {fileID: 114557916991978392, guid: 7b36f21b6636d6c4681b6849c72569da, type: 2}
+  - {fileID: 114806730359944550, guid: 9cc29a9361697434bbb38484bbadb73d, type: 2}
 --- !u!114 &114236672355354734
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -140,12 +143,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fac0651d132b13c4a86307617a72a393, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  personne: {fileID: 0}
-  startCash: 50
+  car:
+    cash: 0
+    gas: 0
+    maxGas: 0
+    noMoreCash: 0
+    IsRunning: 0
+    listItems: []
+    onDie:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+    onGasChange:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  startCash: 20
   startGas: 25
   startFood: 10
-  TowingCost: 1
-  TowingGas: 50
+  TowingCost: 35
+  TowingGas: 25
   cashText: {fileID: 0}
   grille: {fileID: 0}
   bulle: {fileID: 1918845022447650, guid: 4179755dbc987d54ba609c7415b43649, type: 2}
@@ -163,6 +182,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  startPerson: {fileID: 0}
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -201,7 +221,7 @@ MonoBehaviour:
   - {fileID: 114065419883764788, guid: c0d4902a3167b304281f5baf6d10442d, type: 2}
   - {fileID: 114349820863689480, guid: c87a548745e0a704eaf8dc6495913d78, type: 2}
   - {fileID: 114246085290941328, guid: 7e0ea7244210bb0429b09b998774e181, type: 2}
-  - {fileID: 114164891331665686, guid: 9d909e5befebc664ead6e9afb2446742, type: 2}
+  - {fileID: 114665077420932396, guid: c0cc9895660ba2f4180e9bd1d5988707, type: 2}
   - {fileID: 114042667876477732, guid: 9a2eaf3d122958845859432cf65a10ac, type: 2}
   - {fileID: 114367114879490550, guid: 8ee53581b0bbd5c4db80e77a3e147978, type: 2}
   - {fileID: 114631591594865302, guid: 00bfa318fc164ad4bae61f62858c5e4b, type: 2}

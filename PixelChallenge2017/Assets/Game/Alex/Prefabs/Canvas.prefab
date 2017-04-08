@@ -1282,7 +1282,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1693,7 +1693,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Missions reussit !
+  m_Text: Missions reussies !
 --- !u!114 &114118139838406178
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3067,9 +3067,7 @@ MonoBehaviour:
   utilisePneuSecoursButton: {fileID: 114844757587489158}
   UtiliseOutilButton: {fileID: 114355986734850582}
   "D\xE9panneuseButton": {fileID: 114158351740962156}
-  textFlat: {fileID: 114802704147157754}
   textPanneMoteur: {fileID: 114198732076091146}
-  bG: {fileID: 114943952251821604}
 --- !u!114 &114697295327977534
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3697,6 +3695,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   repairButton: {fileID: 114376051059052890}
   continueButton: {fileID: 114288644411839460}
+  textPanneSeche: {fileID: 114198732076091146}
   shop: {fileID: 114146211688413800}
   blackFG: {fileID: 114042948968235652}
 --- !u!114 &114874506063132810
