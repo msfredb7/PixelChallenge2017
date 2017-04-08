@@ -465,11 +465,6 @@ Prefab:
       propertyPath: container
       value: 
       objectReference: {fileID: 1972366960}
-    - target: {fileID: 114003409056798694, guid: e9130a173ca18a1448debcefc8fb17f5,
-        type: 2}
-      propertyPath: buyButton
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9130a173ca18a1448debcefc8fb17f5, type: 2}
   m_IsPrefabParent: 0
