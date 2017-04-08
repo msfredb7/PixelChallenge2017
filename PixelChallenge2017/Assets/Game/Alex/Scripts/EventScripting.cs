@@ -134,9 +134,14 @@ public class EventScripting
             },5);
         }));
 
+        specialEventList.Add(new SpecialEvent(2, delegate ()
+        {
+            AccidentManager.instance.flatEvent();
+        }));
+
         specialEventList.Add(new SpecialEvent(15, delegate ()
         {
-            
+            AccidentManager.instance.PanneMoteur();
         }));
 
         // Initialisation de la route

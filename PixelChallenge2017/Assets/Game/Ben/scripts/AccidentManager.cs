@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class AccidentManager : PublicSingleton<QuestManager>
+public class AccidentManager : PublicSingleton<AccidentManager>
 {
     public Button utilisePneuSecoursButton;
     public Button UtiliseOutilButton;
