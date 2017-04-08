@@ -5,10 +5,12 @@ using UnityEngine.UI;
 
 public class PewDiePieUI : PublicSingleton<PewDiePieUI> {
     public Button repairButton;
+    public Button continueButton;
 
     void Start()
     {
         repairButton.onClick.AddListener(OnRepairClick);
+        continueButton.onClick.AddListener(OnContinueClick);
         GameManager.instance.car.onDie.AddListener(OnCarDie);
     }
 
@@ -19,6 +21,12 @@ public class PewDiePieUI : PublicSingleton<PewDiePieUI> {
         GameManager.instance.car.Repair();
         GlobalAnimator.Restart();
         repairButton.gameObject.SetActive(false);
+    }
+
+    void OnContinueClick()
+    {
+        continueButton.gameObject.SetActive(false);
+        GlobalAnimator.Restart();
     }
 
     void OnCarDie()
