@@ -159,7 +159,7 @@ public class Personne : Item {
         base.Update();
         if ((RoadManager.instance.currentDistance % 2) < 0.1 && GameManager.instance.car.IsRunning)
         {
-            food--;
+            food-= consomation;
             if (lastDechet != RoadManager.instance.currentDistance && Random.Range(0f, 1f) < 0.05f)
             {
                 lastDechet = RoadManager.instance.currentDistance;
