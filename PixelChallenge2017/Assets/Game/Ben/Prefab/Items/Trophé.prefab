@@ -57,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1246967198250926}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.55, y: 0, z: 0}
+  m_LocalPosition: {x: -0.04, y: 0, z: -0}
   m_LocalScale: {x: 13.5, y: 13.5, z: 1}
   m_Children: []
   m_Father: {fileID: 4793544954498498}
@@ -70,7 +70,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1767257326316976}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 41.40454, y: 45.75428, z: -3.9956436}
+  m_LocalPosition: {x: 2.2162094, y: -0.0000002878616, z: 1.7852418}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4743726447986042}
@@ -103,7 +103,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.1, y: 1, z: 3.2}
-  m_Center: {x: 0.55, y: 0, z: -1.1}
+  m_Center: {x: 0.07, y: 0, z: -1.1}
 --- !u!65 &65676764851494386
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -115,7 +115,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: -1.1, y: 0, z: 1.1}
+  m_Center: {x: -1.69, y: 0, z: 1.1}
 --- !u!65 &65754780250533208
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -127,7 +127,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.1, y: 1, z: 1}
-  m_Center: {x: 0.55, y: 0, z: 2.1}
+  m_Center: {x: 0.07, y: 0, z: 2.1}
 --- !u!65 &65889595815232650
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -139,7 +139,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 2.2, y: 0, z: 1.1}
+  m_Center: {x: 1.98, y: 0, z: 1.1}
 --- !u!65 &65997977381043150
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -151,7 +151,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 4.3, y: 1, z: 1}
-  m_Center: {x: 0.55, y: 0, z: -2.2}
+  m_Center: {x: 0.16, y: 0, z: -2.2}
 --- !u!114 &114100698245179622
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -177,17 +177,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cases:
     rows:
-    - row: 00010100000000
     - row: 01000001000000
-    - row: 00010100000000
-    - row: 00010100000000
-    - row: 01010101000000
+    - row: 01010100010000
+    - row: 01010100010000
+    - row: 01000001000000
+    - row: 00000000000000
     - row: 00000000000000
     - row: 00000000000000
   itemShape: []
   nom: "Troph\xE9e"
-  offsetX: 1
-  offsetY: 2
+  offsetX: 2
+  offsetY: 1
   centralCase: {fileID: 0}
   occupedCase: []
   scaleFacteur: 2
