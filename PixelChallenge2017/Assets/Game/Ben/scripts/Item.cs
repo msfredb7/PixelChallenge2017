@@ -478,8 +478,8 @@ public class Item : MonoBehaviour {
     public void Kill()
     {
         allItem.Remove(this);
-        //gameObject.SetActive(false);
-        DestroyImmediate(gameObject,true);
+        gameObject.SetActive(false);
+        //DestroyImmediate(gameObject,true);
     }
 }
 
