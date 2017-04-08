@@ -88,6 +88,7 @@ MonoBehaviour:
   lastPrint: 0
   currentDistance: 0
   start: 0
+  onestauneville: 0
 --- !u!114 &114008627890827066
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -151,7 +152,7 @@ MonoBehaviour:
   canvasUI: {fileID: 0}
   conducteur: {fileID: 0}
   conducteurUI: {fileID: 0}
-  startGame:
+  startItems:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

@@ -508,7 +508,7 @@ GameObject:
   - component: {fileID: 23695412637573434}
   - component: {fileID: 114978921744151830}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(MoyenneBoite2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1243,7 +1243,7 @@ GameObject:
   - component: {fileID: 23979804927615334}
   - component: {fileID: 114651336696106298}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(Pomme1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1516,7 +1516,7 @@ GameObject:
   - component: {fileID: 23305044132839084}
   - component: {fileID: 114316655834108378}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(Valise5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1739,7 +1739,7 @@ GameObject:
   - component: {fileID: 23395111585051700}
   - component: {fileID: 114750791987891316}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(Valise3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2368,7 +2368,7 @@ GameObject:
   - component: {fileID: 23811935239263784}
   - component: {fileID: 114336769995160884}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(Valise4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4179,7 +4179,7 @@ GameObject:
   - component: {fileID: 23976884147709026}
   - component: {fileID: 114242579256692342}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(Valise9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4567,7 +4567,7 @@ GameObject:
   - component: {fileID: 23028369670455664}
   - component: {fileID: 114823173144091604}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(Pomme3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4945,7 +4945,7 @@ GameObject:
   - component: {fileID: 23816490654210626}
   - component: {fileID: 114029243523238794}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(PetitBidonTest)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4999,7 +4999,7 @@ GameObject:
   - component: {fileID: 23400155798434580}
   - component: {fileID: 114917963317205376}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(MoyenBidon69)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5757,7 +5757,7 @@ GameObject:
   - component: {fileID: 23859679958871644}
   - component: {fileID: 114104609133304816}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(MoyenneBoiteNourriture)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6069,7 +6069,7 @@ GameObject:
   - component: {fileID: 23972913567501736}
   - component: {fileID: 114139122767184058}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(Valise8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7027,7 +7027,7 @@ GameObject:
   - component: {fileID: 23565579482554112}
   - component: {fileID: 114196620583294464}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(RoueSecours)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8055,7 +8055,7 @@ GameObject:
   - component: {fileID: 23777581004903604}
   - component: {fileID: 114168187455290458}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(Outil)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8243,7 +8243,7 @@ GameObject:
   - component: {fileID: 23174192282252232}
   - component: {fileID: 114085828371023174}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(Valise7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9408,7 +9408,7 @@ GameObject:
   - component: {fileID: 23042905389291438}
   - component: {fileID: 114293158789082442}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(PetiteBoiteNourriture2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10373,7 +10373,7 @@ GameObject:
   - component: {fileID: 23497139736277034}
   - component: {fileID: 114947523973268236}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(Boisson2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11038,7 +11038,7 @@ GameObject:
   - component: {fileID: 23009258224039870}
   - component: {fileID: 114345427096442496}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(Valise6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11226,7 +11226,7 @@ GameObject:
   - component: {fileID: 23386008337629876}
   - component: {fileID: 114963218859235406}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(Boisson1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12123,7 +12123,7 @@ GameObject:
   - component: {fileID: 23510492781455772}
   - component: {fileID: 114416410511319226}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(Pomme2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13024,7 +13024,7 @@ GameObject:
   - component: {fileID: 23105152238653628}
   - component: {fileID: 114818967261836942}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(Alex)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13269,7 +13269,7 @@ GameObject:
   - component: {fileID: 23037017620190778}
   - component: {fileID: 114642869092134556}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(Valise1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13323,7 +13323,7 @@ GameObject:
   - component: {fileID: 23277296954281054}
   - component: {fileID: 114451709395857450}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(MoyenBidon1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14491,7 +14491,7 @@ GameObject:
   - component: {fileID: 23662658754999636}
   - component: {fileID: 114348860499899170}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(GrosseBoiteNourriture)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14675,7 +14675,7 @@ GameObject:
   - component: {fileID: 23169054455324200}
   - component: {fileID: 114716579147165420}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(SamanthaTest)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15531,7 +15531,7 @@ GameObject:
   - component: {fileID: 23772562695727962}
   - component: {fileID: 114625970421407102}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(PetitBidon1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15945,7 +15945,7 @@ GameObject:
   - component: {fileID: 23451692044258778}
   - component: {fileID: 114213279461562366}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(BalaiTest)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16126,7 +16126,7 @@ GameObject:
   - component: {fileID: 23401383517857432}
   - component: {fileID: 114948205609841748}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(Valise2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16342,7 +16342,7 @@ GameObject:
   - component: {fileID: 23906330717290448}
   - component: {fileID: 114315800713610268}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(GrosBidon)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16599,7 +16599,7 @@ GameObject:
   - component: {fileID: 23107563509715748}
   - component: {fileID: 114080941931988054}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(Valise10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16618,7 +16618,7 @@ GameObject:
   - component: {fileID: 23438529460169414}
   - component: {fileID: 114056724733907272}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(MoyenBidon2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16939,7 +16939,7 @@ GameObject:
   - component: {fileID: 23867429673109150}
   - component: {fileID: 114799702866859374}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(PetitBidon2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17664,7 +17664,7 @@ GameObject:
   - component: {fileID: 23426508955286452}
   - component: {fileID: 114662630080811984}
   m_Layer: 0
-  m_Name: Case(Clone)
+  m_Name: Case(PetiteBoiteNourriture)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60139,7 +60139,7 @@ MonoBehaviour:
   Bas: {fileID: 114102405920995990}
   _caseOccupe: 0
   _caseHovered: 0
-  caseType: 2
+  caseType: 0
   fullSqr: {fileID: 21300000, guid: a7f516b0e3417ca479bc12f0f8edcd59, type: 3}
   emptySqr: {fileID: 21300000, guid: f9d3b43b019464540bdc5203e360d08a, type: 3}
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
@@ -60379,7 +60379,7 @@ MonoBehaviour:
   Bas: {fileID: 114135158840419916}
   _caseOccupe: 0
   _caseHovered: 0
-  caseType: 2
+  caseType: 0
   fullSqr: {fileID: 21300000, guid: a7f516b0e3417ca479bc12f0f8edcd59, type: 3}
   emptySqr: {fileID: 21300000, guid: f9d3b43b019464540bdc5203e360d08a, type: 3}
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
@@ -60715,7 +60715,7 @@ MonoBehaviour:
   Bas: {fileID: 114033009255419758}
   _caseOccupe: 0
   _caseHovered: 0
-  caseType: 2
+  caseType: 0
   fullSqr: {fileID: 21300000, guid: a7f516b0e3417ca479bc12f0f8edcd59, type: 3}
   emptySqr: {fileID: 21300000, guid: f9d3b43b019464540bdc5203e360d08a, type: 3}
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
@@ -60763,7 +60763,7 @@ MonoBehaviour:
   Bas: {fileID: 114322324811821424}
   _caseOccupe: 0
   _caseHovered: 0
-  caseType: 2
+  caseType: 0
   fullSqr: {fileID: 21300000, guid: a7f516b0e3417ca479bc12f0f8edcd59, type: 3}
   emptySqr: {fileID: 21300000, guid: f9d3b43b019464540bdc5203e360d08a, type: 3}
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
@@ -61051,7 +61051,7 @@ MonoBehaviour:
   Bas: {fileID: 114733713573318078}
   _caseOccupe: 0
   _caseHovered: 0
-  caseType: 2
+  caseType: 0
   fullSqr: {fileID: 21300000, guid: a7f516b0e3417ca479bc12f0f8edcd59, type: 3}
   emptySqr: {fileID: 21300000, guid: f9d3b43b019464540bdc5203e360d08a, type: 3}
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
@@ -62083,7 +62083,7 @@ MonoBehaviour:
   Bas: {fileID: 114576601883434944}
   _caseOccupe: 0
   _caseHovered: 0
-  caseType: 2
+  caseType: 0
   fullSqr: {fileID: 21300000, guid: a7f516b0e3417ca479bc12f0f8edcd59, type: 3}
   emptySqr: {fileID: 21300000, guid: f9d3b43b019464540bdc5203e360d08a, type: 3}
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
@@ -63019,7 +63019,7 @@ MonoBehaviour:
   Bas: {fileID: 114463406694719918}
   _caseOccupe: 0
   _caseHovered: 0
-  caseType: 2
+  caseType: 0
   fullSqr: {fileID: 21300000, guid: a7f516b0e3417ca479bc12f0f8edcd59, type: 3}
   emptySqr: {fileID: 21300000, guid: f9d3b43b019464540bdc5203e360d08a, type: 3}
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
@@ -64507,7 +64507,7 @@ MonoBehaviour:
   Bas: {fileID: 114353665485502146}
   _caseOccupe: 0
   _caseHovered: 0
-  caseType: 2
+  caseType: 0
   fullSqr: {fileID: 21300000, guid: a7f516b0e3417ca479bc12f0f8edcd59, type: 3}
   emptySqr: {fileID: 21300000, guid: f9d3b43b019464540bdc5203e360d08a, type: 3}
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
@@ -64891,7 +64891,7 @@ MonoBehaviour:
   Bas: {fileID: 114003350749166664}
   _caseOccupe: 0
   _caseHovered: 0
-  caseType: 2
+  caseType: 0
   fullSqr: {fileID: 21300000, guid: a7f516b0e3417ca479bc12f0f8edcd59, type: 3}
   emptySqr: {fileID: 21300000, guid: f9d3b43b019464540bdc5203e360d08a, type: 3}
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
@@ -64987,7 +64987,7 @@ MonoBehaviour:
   Bas: {fileID: 114603895721114500}
   _caseOccupe: 0
   _caseHovered: 0
-  caseType: 2
+  caseType: 0
   fullSqr: {fileID: 21300000, guid: a7f516b0e3417ca479bc12f0f8edcd59, type: 3}
   emptySqr: {fileID: 21300000, guid: f9d3b43b019464540bdc5203e360d08a, type: 3}
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
@@ -65755,7 +65755,7 @@ MonoBehaviour:
   Bas: {fileID: 114285567807576848}
   _caseOccupe: 0
   _caseHovered: 0
-  caseType: 2
+  caseType: 0
   fullSqr: {fileID: 21300000, guid: a7f516b0e3417ca479bc12f0f8edcd59, type: 3}
   emptySqr: {fileID: 21300000, guid: f9d3b43b019464540bdc5203e360d08a, type: 3}
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
@@ -66643,7 +66643,7 @@ MonoBehaviour:
   Bas: {fileID: 114569452859629362}
   _caseOccupe: 0
   _caseHovered: 0
-  caseType: 2
+  caseType: 0
   fullSqr: {fileID: 21300000, guid: a7f516b0e3417ca479bc12f0f8edcd59, type: 3}
   emptySqr: {fileID: 21300000, guid: f9d3b43b019464540bdc5203e360d08a, type: 3}
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
@@ -66667,7 +66667,7 @@ MonoBehaviour:
   Bas: {fileID: 114319592115296360}
   _caseOccupe: 0
   _caseHovered: 0
-  caseType: 2
+  caseType: 0
   fullSqr: {fileID: 21300000, guid: a7f516b0e3417ca479bc12f0f8edcd59, type: 3}
   emptySqr: {fileID: 21300000, guid: f9d3b43b019464540bdc5203e360d08a, type: 3}
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
@@ -67003,7 +67003,7 @@ MonoBehaviour:
   Bas: {fileID: 114057713181520734}
   _caseOccupe: 0
   _caseHovered: 0
-  caseType: 2
+  caseType: 0
   fullSqr: {fileID: 21300000, guid: a7f516b0e3417ca479bc12f0f8edcd59, type: 3}
   emptySqr: {fileID: 21300000, guid: f9d3b43b019464540bdc5203e360d08a, type: 3}
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
@@ -68275,7 +68275,7 @@ MonoBehaviour:
   Bas: {fileID: 114674164393219684}
   _caseOccupe: 0
   _caseHovered: 0
-  caseType: 0
+  caseType: 2
   fullSqr: {fileID: 21300000, guid: a7f516b0e3417ca479bc12f0f8edcd59, type: 3}
   emptySqr: {fileID: 21300000, guid: f9d3b43b019464540bdc5203e360d08a, type: 3}
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}
@@ -70596,7 +70596,7 @@ MonoBehaviour:
   Bas: {fileID: 114963218859235406}
   _caseOccupe: 0
   _caseHovered: 0
-  caseType: 2
+  caseType: 0
   fullSqr: {fileID: 21300000, guid: a7f516b0e3417ca479bc12f0f8edcd59, type: 3}
   emptySqr: {fileID: 21300000, guid: f9d3b43b019464540bdc5203e360d08a, type: 3}
   occupedMat: {fileID: 2100000, guid: 496fe5b6797ee4e47ad37a6025b1f3e9, type: 2}

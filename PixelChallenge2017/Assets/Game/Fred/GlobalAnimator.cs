@@ -27,6 +27,13 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
     public BuildingAnimation arretBus;
     public ItemAnimation items;
 
+    public Validator currentValidator;
+
+    public class Validator
+    {
+        public bool cancel = false;
+    }
+
     public UnityEvent onRestart = new UnityEvent();
 
     void Stop(TweenCallback onComplete, float decelerateDuration = 3, float delay = 0)
@@ -67,6 +74,7 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
     static public void Restart()
     {
         PewDiePieUI.instance.shop.Close();
+        instance.currentValidator.cancel = true;
         instance.Run(delegate()
         {
             GameManager.instance.car.IsRunning = true;
@@ -80,6 +88,10 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
 
     static public void StopAt(LieuType type, TweenCallback onContinueTrip = null, TweenCallback onStopComplete = null)
     {
+        if (instance.currentValidator != null)
+            instance.currentValidator.cancel = true;
+        Validator localValidator = new Validator();
+        instance.currentValidator = localValidator;
         print("Arret a " + type);
         RoadManager.instance.timeLastStop = Time.time;
         GameManager.instance.car.IsRunning = false;
@@ -158,7 +170,8 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
             if(duration >= 0)
                 CCC.Manager.DelayManager.CallTo(delegate ()
                 {
-                    Restart();
+                    if(!localValidator.cancel)
+                        Restart();
                 }, duration);
         }, decelerateDuration, delayBeforeStop);
     }
