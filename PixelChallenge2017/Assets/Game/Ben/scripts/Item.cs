@@ -43,6 +43,7 @@ public class Item : MonoBehaviour
     public UnityEvent onEnterCar = new UnityEvent();
     public UnityEvent onExitCar = new UnityEvent();
     public UnityEvent onFailPlacement = new UnityEvent();
+    public UnityEvent onDeath = new UnityEvent();
 
 
     protected List<SpriteRenderer> rend;
@@ -505,6 +506,7 @@ public class Item : MonoBehaviour
 
     public void Kill()
     {
+        onDeath.Invoke();
         clearCase();
         allItem.Remove(this);
         gameObject.SetActive(false);

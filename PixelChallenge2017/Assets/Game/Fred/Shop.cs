@@ -35,7 +35,8 @@ public class Shop : MonoBehaviour
 
     void Open()
     {
-
+        if (items == null)
+            return;
         for (int i = 0; i < itemPrefab.Length; i++)
         {
             if (i >= items.Count)
@@ -62,6 +63,7 @@ public class Shop : MonoBehaviour
             Debug.LogError("no spawn point reference");
             return;
         }
+        MusicManager.instance.DoCoinsSound();
         items[index].quantity--;
         itemPrefab[index].transform.Find("Text").GetComponent<Text>().text = items[index].item.name + " restant: " + items[index].quantity;
         GameManager.instance.car.ChangeCash(-items[index].cost);

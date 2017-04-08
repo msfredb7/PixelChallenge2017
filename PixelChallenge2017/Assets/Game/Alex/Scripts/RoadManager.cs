@@ -9,8 +9,11 @@ public class RoadManager : PublicSingleton<RoadManager>
 
     public Road currentRoad;
 
-    public UnityEvent onDestinationReached = new UnityEvent();
+    public UnityEvent onQuitCity = new UnityEvent();
     public UnityEvent onStopReached = new UnityEvent();
+    public UnityEvent onDestinationReached = new UnityEvent();
+    public UnityEvent onLateDestinationReached = new UnityEvent();
+    public UnityEvent onLateStopReached = new UnityEvent();
 
     [HideInInspector]
     public float startTime = 0;
@@ -53,7 +56,10 @@ public class RoadManager : PublicSingleton<RoadManager>
 
                 timeLastStop = Time.time; // On garde une notion du temps perdu
 
-                nextStop.StartEvent(StopEnd); // On débute l'evennement du stop
+                nextStop.StartEvent(StopEnd, delegate ()
+                {
+                    onLateStopReached.Invoke();
+                }); // On débute l'evennement du stop
 
                 currentRoad.currentStop = nextStop; // Le stop courrant est maintenant ce stop
 
@@ -90,42 +96,57 @@ public class RoadManager : PublicSingleton<RoadManager>
             if (currentRoad.distance <= currentDistance)
             {
                 print("Welcome to the amazing city of " + currentRoad.currentDestination.nom);
-
+                onDestinationReached.Invoke();
                 switch (currentRoad.currentDestination.nom)
                 {
                     case "Montreal":
                         GameManager.instance.car.IsRunning = false;
                         GlobalAnimator.StopAt(LieuType.Montreal, delegate ()
                         {
-                            onDestinationReached.Invoke();
+                            onQuitCity.Invoke();
+                        }, delegate ()
+                        {
+                            onLateDestinationReached.Invoke();
                         });
                         break;
                     case "Trois-Riviere":
                         GameManager.instance.car.IsRunning = false;
                         GlobalAnimator.StopAt(LieuType.TroisRiviere, delegate ()
                         {
-                            onDestinationReached.Invoke();
+                            onQuitCity.Invoke();
+                        }, delegate ()
+                        {
+                            onLateDestinationReached.Invoke();
                         });
                         break;
                     case "Quebec":
                         GameManager.instance.car.IsRunning = false;
                         GlobalAnimator.StopAt(LieuType.Quebec, delegate ()
                         {
-                            onDestinationReached.Invoke();
+                            onQuitCity.Invoke();
+                        }, delegate ()
+                        {
+                            onLateDestinationReached.Invoke();
                         });
                         break;
                     case "Saguenay":
                         GameManager.instance.car.IsRunning = false;
                         GlobalAnimator.StopAt(LieuType.Saguenay, delegate ()
                         {
-                            onDestinationReached.Invoke();
+                            onQuitCity.Invoke();
+                        }, delegate ()
+                        {
+                            onLateDestinationReached.Invoke();
                         });
                         break;
                     case "Sept-Iles":
                         GameManager.instance.car.IsRunning = false;
                         GlobalAnimator.StopAt(LieuType.SeptIles, delegate ()
                         {
-                            onDestinationReached.Invoke();
+                            onQuitCity.Invoke();
+                        }, delegate ()
+                        {
+                            onLateDestinationReached.Invoke();
                         });
                         break;
                 }

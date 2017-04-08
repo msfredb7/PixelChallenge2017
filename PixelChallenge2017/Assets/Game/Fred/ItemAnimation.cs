@@ -11,13 +11,6 @@ public class ItemAnimation : MonoBehaviour
     public float maxX;
     public float minX;
 
-
-
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         if (speed == 0)
