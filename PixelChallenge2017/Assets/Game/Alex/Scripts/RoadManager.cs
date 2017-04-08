@@ -53,14 +53,14 @@ public class RoadManager : PublicSingleton<RoadManager>
 
                 timeLastStop = Time.time; // On garde une notion du temps perdu
 
-                nextStop.StartEvent(); // On débute l'evennement du stop
+                nextStop.StartEvent(StopEnd); // On débute l'evennement du stop
 
                 currentRoad.currentStop = nextStop; // Le stop courrant est maintenant ce stop
 
                 onStopReached.Invoke(); // Activation des events de quêtes qui se deroule a un stop
 
                 // Dans 6 secondes, on aura fini d'être au stop et on reprendra la route.
-                DelayManager.CallTo(StopEnd, 6);
+                //DelayManager.CallTo(StopEnd, 6);
 
                 // On a fini de traiter l'evennement, on le supprime
                 currentRoad.RemoveStop(nextStop);
@@ -136,7 +136,7 @@ public class RoadManager : PublicSingleton<RoadManager>
     // La fin d'un Stop
     public void StopEnd()
     {
-        GameManager.instance.car.IsRunning = true;
+        //GameManager.instance.car.IsRunning = true;
         timeToIgnore += Time.time - timeLastStop;
     }
 
