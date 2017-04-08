@@ -1967,10 +1967,13 @@ MonoBehaviour:
     - row: 00000000000000
     - row: 00000000000000
   itemShape: []
+  nom: 
   offsetX: 1
   offsetY: 1
   centralCase: {fileID: 0}
+  occupedCase: []
   scaleFacteur: 3
+  _placementState: 0
 --- !u!114 &114903468470454528
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2016,6 +2019,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 114611327010780098}
+  items:
+  - {fileID: 114373817178993978, guid: 142defaa4becda74b829c689000ab1bc, type: 2}
+  - {fileID: 114928354896495470, guid: 5352e3f02db4d4e4eba0811641b1f567, type: 2}
+  - {fileID: 114164891331665686, guid: 9d909e5befebc664ead6e9afb2446742, type: 2}
+  - {fileID: 114229686487698376, guid: 735c3be7aedd9244c8aca1f6c9e58cdd, type: 2}
 --- !u!212 &212007482379084476
 SpriteRenderer:
   m_ObjectHideFlags: 1

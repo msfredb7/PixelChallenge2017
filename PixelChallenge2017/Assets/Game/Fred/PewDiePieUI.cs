@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PewDiePieUI : PublicSingleton<PewDiePieUI> {
     public Button repairButton;
     public Button continueButton;
+    public Shop shop;
 
     void Start()
     {
