@@ -16,11 +16,14 @@ public class QuestManager : PublicSingleton<QuestManager> {
 
     public void AddQuest(Quest quest)
     {
+        // Si on a deja trop de quete
         if (currentNbQuest >= nbMax)
             return;
 
         // Debut de l'event
         quest.OnBegin();
+
+        // Ajout a la liste de traitement
         questList.Add(quest);
 
         // UI Quete
@@ -30,6 +33,7 @@ public class QuestManager : PublicSingleton<QuestManager> {
         currentNbQuest++;
     }
 
+    // Supprimer la quete du UI
     public void DeleteQuest(Quest quest)
     {
         foreach (Transform child in container.transform)
@@ -39,6 +43,7 @@ public class QuestManager : PublicSingleton<QuestManager> {
         }
     }
 
+    // Supprimer toute les quetes de la liste
     public void ClearQuest()
     {
         questList.Clear();

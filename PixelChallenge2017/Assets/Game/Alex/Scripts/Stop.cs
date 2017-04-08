@@ -28,7 +28,5 @@ public class Stop {
     public void StartEvent()
     {
         GameManager.instance.CreateStop(lieu);
-        
-        // TODO : Magasin
     }
 }

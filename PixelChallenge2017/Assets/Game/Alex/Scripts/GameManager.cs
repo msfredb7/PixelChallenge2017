@@ -14,7 +14,6 @@ public class GameManager : PublicSingleton<GameManager> {
     public float TowingCost;
     public float TowingGas;
 
-    public Text gasText;
     public Text cashText;
 
     public GameObject grille;
@@ -47,7 +46,6 @@ public class GameManager : PublicSingleton<GameManager> {
         //    car.ChangeCash(-TowingCost);
         //    car.ChangeGas(TowingGas);
         //}
-        gasText.text = car.gas + "L";
         cashText.text = car.cash + "$";
     }
 
