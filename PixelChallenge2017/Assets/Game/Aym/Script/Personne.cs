@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Personne : Item {
 
@@ -14,6 +15,8 @@ public class Personne : Item {
     public float _food;
     public float consomation;
     public float maxFood;
+
+    public UnityEvent onCarExit = new UnityEvent();
 
     public SpriteRenderer hummeur;
 
@@ -97,7 +100,9 @@ public class Personne : Item {
 	protected override void Update () {
         base.Update();
         food -= Time.deltaTime * consomation;
-	}
+        if (_placementState == ItemState.notPlaced)
+            onCarExit.Invoke();
+    }
 
     override protected bool valideCase(Case c)
     {

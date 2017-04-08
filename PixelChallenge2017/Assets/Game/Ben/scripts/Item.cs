@@ -37,7 +37,7 @@ public class Item : MonoBehaviour {
 
 
     protected List<SpriteRenderer> rend;
-    ItemState _placementState;
+    public ItemState _placementState;
 
     ItemState placementState
     {

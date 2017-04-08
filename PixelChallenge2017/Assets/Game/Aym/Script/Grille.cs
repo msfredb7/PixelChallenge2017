@@ -109,7 +109,7 @@ public class Grille : MonoBehaviour {
         }
 
         applyDesactivation();
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
 
     }
 
