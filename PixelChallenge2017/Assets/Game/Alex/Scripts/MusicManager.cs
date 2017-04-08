@@ -105,4 +105,11 @@ public class MusicManager : PublicSingleton<MusicManager> {
         additionnalSfx.clip = eating;
         additionnalSfx.Play();
     }
+
+    public void DoVomitSound()
+    {
+        additionnalSfx.Stop();
+        additionnalSfx.clip = vomit;
+        additionnalSfx.Play();
+    }
 }
