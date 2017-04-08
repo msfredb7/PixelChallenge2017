@@ -147,7 +147,12 @@ public class AntiVomi : Item {
         bool ret = base.canOccupeCase(central);
         if (ret == false)
         {
-           foreach(Case c in caseUsedFromCentral(central))
+            List<Case> used = caseUsedFromCentral(central);
+            if (used == null)
+            {
+                return false;
+            }
+            foreach (Case c in used)
             {
                 foreach (Item v in allItem)
                 {
