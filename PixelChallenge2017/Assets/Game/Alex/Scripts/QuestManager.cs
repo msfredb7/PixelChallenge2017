@@ -24,6 +24,8 @@ public class QuestManager : PublicSingleton<QuestManager>
     public int nbMax;
     public int currentNbQuest = 0;
 
+    private float timer;
+
     public void AddQuest(Quest quest, bool notify = false)
     {
         // Si on a deja trop de quete
@@ -49,6 +51,23 @@ public class QuestManager : PublicSingleton<QuestManager>
         quest.OnBegin();
     }
 
+    void Start()
+    {
+        timer = Time.time;
+    }
+
+    void Update()
+    {
+        print("timer : " + timer + "| Time : " + Time.time);
+        if ((reportQuest.Count >= 1) && (timer + 5) < Time.time)
+        {
+            timer = Time.time;
+            ShowReport(reportQuest[0]);
+            reportQuest.Remove(reportQuest[0]);
+        } else if((timer + 5) < Time.time)
+            containerEcran.SetActive(false);
+    }
+
     void OnQuestFail(Quest quest)
     {
         DeleteQuest(quest);
@@ -57,38 +76,7 @@ public class QuestManager : PublicSingleton<QuestManager>
     {
         DeleteQuest(quest);
         reportQuest.Add(quest);
-
-        if (questList.Count < 1)
-        {
-            for (int i = 0; i < reportQuest.Count; i++)
-            {
-                DelayManager.CallTo(delegate ()
-                {
-                    float totalReward = reportQuest[i-1].recompense;
-                    int totalItems = 0;
-                    for (int j = 0; j < GameManager.instance.car.listSpecialItems.Count; j++)
-                    {
-                        if (reportQuest[i - 1].items.Contains(GameManager.instance.car.listSpecialItems[j].item)) // si il est dans la liste
-                        {
-                            totalItems++;
-                            totalReward += GameManager.instance.car.listSpecialItems[j].reward;
-                        }
-                    }
-                    // Affichage de l'ecran de completion
-                    containerEcran.SetActive(true);
-                    personneNom.text = "Nom du personnage : " + reportQuest[i - 1].personne.nom;
-                    description.text = "Description : " + reportQuest[i - 1].questDescription;
-                    reward.text = "Recompense : " + totalReward + "$";
-                    quantityObject.text = "Transport de bagages : " + totalItems + " objets";
-
-                    DelayManager.CallTo(delegate ()
-                    {
-                        containerEcran.SetActive(false);
-                    }, (i * 5) + 5);
-                }, i * 5);
-                print("");
-            }
-        }
+        Debug.Log(reportQuest.Count);
     }
 
     // Supprimer la quete du UI
@@ -143,6 +131,19 @@ public class QuestManager : PublicSingleton<QuestManager>
         {
             questNotification.SetActive(false);
         }, 7);
+    }
+
+    public void ShowReport(Quest quest)
+    {
+        if (quest == null)
+            return;
+        
+        // Affichage de l'ecran de completion
+        containerEcran.SetActive(true);
+        personneNom.text = "Nom du personnage : " + quest.personne.nom;
+        description.text = "Description : " + quest.questDescription;
+        reward.text = "Recompense : " + quest.totalReward + "$";
+        quantityObject.text = "Transport de bagages : " + quest.totalItems + " objets";
     }
 }
 

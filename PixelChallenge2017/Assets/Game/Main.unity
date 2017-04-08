@@ -2784,7 +2784,7 @@ MonoBehaviour:
   - Un road trip vers la merveilleuse region touristique de Chibougamau
   - Afin d'economiser, il decide d'embarquer avec lui d'autres voyageurs
   - A quel point sera t-il en mesure d'optimiser l'emplacement disponible?
-  skipIntro: 0
+  skipIntro: 1
 --- !u!4 &1860007568
 Transform:
   m_ObjectHideFlags: 0

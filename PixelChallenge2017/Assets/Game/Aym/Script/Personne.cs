@@ -87,6 +87,8 @@ public class Personne : Item {
                 }
                 List<Case> listVomi = new List<Case>();
 
+                MusicManager.instance.DoVomitSound();
+
                 Case randomCase = caseLibreProche[Random.Range(0, caseLibreProche.Count)];
                 GameObject temp = Instantiate(vomi);
                 Vomi v = temp.GetComponent<Vomi>();
