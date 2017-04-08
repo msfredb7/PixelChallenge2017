@@ -14,6 +14,7 @@ public class PewDiePieUI : PublicSingleton<PewDiePieUI> {
     {
         repairButton.onClick.AddListener(OnRepairClick);
         continueButton.onClick.AddListener(OnContinueClick);
+        GlobalAnimator.OnRestart.AddListener(OnGlobalAnimatorRestart);
         GameManager.instance.car.onDie.AddListener(OnCarDie);
     }
 
@@ -28,13 +29,17 @@ public class PewDiePieUI : PublicSingleton<PewDiePieUI> {
         GameManager.instance.car.ChangeCash(-price);
         GameManager.instance.car.Repair();
         GlobalAnimator.Restart();
-        repairButton.gameObject.SetActive(false);
     }
 
     void OnContinueClick()
     {
-        continueButton.gameObject.SetActive(false);
         GlobalAnimator.Restart();
+    }
+
+    void OnGlobalAnimatorRestart()
+    {
+        repairButton.gameObject.SetActive(false);
+        continueButton.gameObject.SetActive(false);
     }
 
     void OnCarDie()
