@@ -53,6 +53,7 @@ public class GameManager : PublicSingleton<GameManager> {
 
     public void OnDestinationReached()
     {
+
         for (int i = 0; i < car.listSpecialItems.Count; i++)
         {
             car.ChangeCash(car.listSpecialItems[i].reward);
@@ -61,6 +62,8 @@ public class GameManager : PublicSingleton<GameManager> {
         car.listSpecialItems.Clear();
 
         EventScripting.NextEvents(car);
+
+        car.IsRunning = true;
     }
 
     public void CreateStop(LieuType lieu, List<ItemAVendre> items)

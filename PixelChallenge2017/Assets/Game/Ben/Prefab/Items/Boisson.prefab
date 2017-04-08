@@ -19,10 +19,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4285384244439888}
-  - component: {fileID: 114373817178993978}
   - component: {fileID: 54461772634878590}
   - component: {fileID: 65309885968978832}
   - component: {fileID: 114786357829821870}
+  - component: {fileID: 114192050851754806}
   m_Layer: 0
   m_Name: Boisson
   m_TagString: Untagged
@@ -52,14 +52,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1136334764767230}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.92711973, y: 0, z: 18.7}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 11.94, y: 0, z: -3.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4979951179801930}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &4979951179801930
 Transform:
   m_ObjectHideFlags: 1
@@ -100,7 +100,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 4.3}
   m_Center: {x: 0, y: 0, z: -0.55}
---- !u!114 &114373817178993978
+--- !u!114 &114192050851754806
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1136334764767230}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b158d0ec76fedeb40be04b096e8ae9ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ad4032e6493e8f48a54a3eb990fda07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cases:
@@ -122,12 +122,13 @@ MonoBehaviour:
     - row: 00000000000000
   itemShape: []
   nom: "Boisson sucr\xE9e"
-  offsetX: 1
+  offsetX: 2
   offsetY: 0
   centralCase: {fileID: 0}
   occupedCase: []
   scaleFacteur: 2
   _placementState: 0
+  ValeurNourriture: 40
 --- !u!114 &114786357829821870
 MonoBehaviour:
   m_ObjectHideFlags: 1

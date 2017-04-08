@@ -19,10 +19,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4689208908672902}
-  - component: {fileID: 114741965587436950}
   - component: {fileID: 54711490819886422}
   - component: {fileID: 114342396387483524}
   - component: {fileID: 65785280509840502}
+  - component: {fileID: 114830964941469276}
   m_Layer: 0
   m_Name: GrosseBoiteNourriture
   m_TagString: Untagged
@@ -52,27 +52,27 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1908490384626420}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 13.5, y: 13.5, z: 1}
   m_Children: []
   m_Father: {fileID: 4689208908672902}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!4 &4689208908672902
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1449872736756988}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: 47.7858, y: 73.12143, z: -0.66094804}
-  m_LocalScale: {x: 28.110788, y: 27.102776, z: 4.393551}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 15.36, y: 0, z: -3.1056132}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4201581938901582}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!54 &54711490819886422
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -98,7 +98,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.12, y: 0.12000003, z: 0.20000005}
+  m_Size: {x: 3.2, y: 1, z: 3.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114342396387483524
 MonoBehaviour:
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   depth: 6
---- !u!114 &114741965587436950
+--- !u!114 &114830964941469276
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1449872736756988}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b158d0ec76fedeb40be04b096e8ae9ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ad4032e6493e8f48a54a3eb990fda07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cases:
@@ -140,6 +140,7 @@ MonoBehaviour:
   occupedCase: []
   scaleFacteur: 2
   _placementState: 0
+  ValeurNourriture: 90
 --- !u!212 &212794332081141422
 SpriteRenderer:
   m_ObjectHideFlags: 1
