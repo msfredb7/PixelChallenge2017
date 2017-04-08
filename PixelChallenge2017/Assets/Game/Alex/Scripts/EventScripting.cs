@@ -15,7 +15,7 @@ public class EventScripting
 
     static CCC.Utility.Lottery lotteryCollectable;
 
-    public static int currentEvent = 0;
+    private static int currentEvent = 0;
 
 
     public static void Init(Voiture car)
@@ -249,11 +249,12 @@ public class EventScripting
             }));
             IhateWhiletrue++;
         }
-   
+
 
         // Initialisation de la route
         Road newRoad1 = new Road(depart, destination, stopRoad1, specialEventList, itemEventRoad1, questRoad1, 70);
         RoadManager.instance.SetRoad(newRoad1);
+        //NextEvents(car);
     }
 
     public static void NextEvents(Voiture car)
@@ -314,13 +315,13 @@ public class EventScripting
                 List<Stop> stopRoad2 = new List<Stop>();
                 Stop costco5km = new Stop(5, LieuType.costco, itemCostco5km);
                 Stop garage21km = new Stop(21, LieuType.garage, itemGarage21km);
-                Stop station37km = new Stop(21, LieuType.stationEssence, itemStation37km);
-                Stop depanneur56km = new Stop(21, LieuType.depaneur, itemDepanneur56km);
-                Stop restaurant70km = new Stop(21, LieuType.restaurant, itemRestaurant70km);
-                Stop garage91km = new Stop(21, LieuType.garage, itemGarage91km);
-                Stop station100km = new Stop(21, LieuType.stationEssence, itemStation100km);
-                Stop restaurant112km = new Stop(21, LieuType.restaurant, itemRestaurant112km);
-                Stop costco135km = new Stop(21, LieuType.costco, itemCostco135km);
+                Stop station37km = new Stop(37, LieuType.stationEssence, itemStation37km);
+                Stop depanneur56km = new Stop(56, LieuType.depaneur, itemDepanneur56km);
+                Stop restaurant70km = new Stop(70, LieuType.restaurant, itemRestaurant70km);
+                Stop garage91km = new Stop(91, LieuType.garage, itemGarage91km);
+                Stop station100km = new Stop(100, LieuType.stationEssence, itemStation100km);
+                Stop restaurant112km = new Stop(112, LieuType.restaurant, itemRestaurant112km);
+                Stop costco135km = new Stop(135, LieuType.costco, itemCostco135km);
 
                 stopRoad2.Add(costco5km);
                 stopRoad2.Add(garage21km);
