@@ -139,7 +139,7 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
             if(duration >= 0)
                 CCC.Manager.DelayManager.CallTo(delegate ()
                 {
-                    Restart();
+                    //Restart();
                 }, duration);
         }, decelerateDuration, delayBeforeStop);
     }
