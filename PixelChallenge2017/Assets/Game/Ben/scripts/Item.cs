@@ -47,7 +47,9 @@ public class Item : MonoBehaviour
 
     protected List<SpriteRenderer> rend;
     public ItemState _placementState;
-    public bool wasInCar;
+    public int wasInCar =-1;
+
+    public string descriptionTxt;
 
     ItemState placementState
     {
@@ -93,9 +95,9 @@ public class Item : MonoBehaviour
                         }
                     }
                 }
-                if (!wasInCar)
+                if (wasInCar != 1)
                     onEnterCar.Invoke();
-                wasInCar = true;
+                wasInCar = 1;
             }
             if (_placementState == ItemState.notPlaced)
             {
@@ -120,9 +122,9 @@ public class Item : MonoBehaviour
                     return;
                 }
                 GlobalAnimator.AddFloatingItem(gameObject);
-                if (wasInCar)
+                if (wasInCar != 0)
                     onExitCar.Invoke();
-                wasInCar = false;
+                wasInCar = 0;
             }
             if (_placementState != ItemState.notPlaced)
             {
@@ -510,6 +512,24 @@ public class Item : MonoBehaviour
         //GlobalAnimator.RemoveFloatingItem(gameObject);
         //DestroyImmediate(gameObject,true);
     }
+
+
+    public virtual string description()
+    {
+        return descriptionTxt;
+    }
+
+    public void OnMouseOver()
+    {
+        Tooltip.instance.PrintToolTip(description());
+    }
+
+    public void OnMouseExit()
+    {
+        Tooltip.instance.HideToolTip();
+    }
+
+
 }
 
 

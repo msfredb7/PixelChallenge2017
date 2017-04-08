@@ -94,23 +94,22 @@ public class EventScripting
         stopRoad1.Add(marc17km);
         stopRoad1.Add(monique57km);
 
-        List<Quest.ItemQuest> itemQuestCharle = new List<Quest.ItemQuest>();
-        itemQuestCharle.Add(new Quest.ItemQuest(ItemBank.GetItemByIndex(5), 5));
-
         List<Quest> questRoad1 = new List<Quest>();
         questRoad1.Add(new Quest("Déposer Marise et ses valises à Montréal", 0, 0, null, new Quest.Destination(destination, null)));
-        questRoad1.Add(new Quest("Déposer Charles et son équipement de hockey à Montreal", 10, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null), itemQuestCharle));
+        questRoad1.Add(new Quest("Déposer Charles et son équipement de hockey à Montreal", 10, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
         questRoad1.Add(new Quest("Déposer Marc à la prochaine station service", 17, 999, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, station40km)));
         questRoad1.Add(new Quest("Déposer Monique à Montreal", 57, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
 
 
         // Loteries
         List<ItemEvent> itemEventRoad1 = new List<ItemEvent>();
+        ItemEvent item5km = new ItemEvent(5, 0, (Item)lotteryFood.Pick());
         ItemEvent item29km = new ItemEvent(29, 0, (Item)lotteryFood.Pick());
         ItemEvent item35km = new ItemEvent(35, 0, (Item)lotteryEssence.Pick());
         ItemEvent item52km = new ItemEvent(52, 0, (Item)lotteryUtility.Pick());
         ItemEvent item67km = new ItemEvent(67, 0, (Item)lotteryCollectable.Pick());
 
+        itemEventRoad1.Add(item5km);
         itemEventRoad1.Add(item29km);
         itemEventRoad1.Add(item35km);
         itemEventRoad1.Add(item52km);

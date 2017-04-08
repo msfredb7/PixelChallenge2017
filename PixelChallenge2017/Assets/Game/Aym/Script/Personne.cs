@@ -1,13 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine;
 using UnityEngine.Events;
 
 public class Personne : Item {
-
-    public string nom;
-
+    
     public LieuType objectifStop;
 
     public float cashValue;
@@ -153,6 +150,7 @@ public class Personne : Item {
         {
             maxFood = _food;
         }
+        UpdateRepresentation();
 	}
 	
 	// Update is called once per frame
