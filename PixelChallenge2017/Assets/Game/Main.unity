@@ -3052,6 +3052,31 @@ Prefab:
       objectReference: {fileID: 146550428}
     - target: {fileID: 114236672355354734, guid: e9130a173ca18a1448debcefc8fb17f5,
         type: 2}
+      propertyPath: containerEcran
+      value: 
+      objectReference: {fileID: 307951266}
+    - target: {fileID: 114236672355354734, guid: e9130a173ca18a1448debcefc8fb17f5,
+        type: 2}
+      propertyPath: personneNom
+      value: 
+      objectReference: {fileID: 827543452}
+    - target: {fileID: 114236672355354734, guid: e9130a173ca18a1448debcefc8fb17f5,
+        type: 2}
+      propertyPath: description
+      value: 
+      objectReference: {fileID: 632027253}
+    - target: {fileID: 114236672355354734, guid: e9130a173ca18a1448debcefc8fb17f5,
+        type: 2}
+      propertyPath: reward
+      value: 
+      objectReference: {fileID: 168021069}
+    - target: {fileID: 114236672355354734, guid: e9130a173ca18a1448debcefc8fb17f5,
+        type: 2}
+      propertyPath: quantityObject
+      value: 
+      objectReference: {fileID: 226970011}
+    - target: {fileID: 114236672355354734, guid: e9130a173ca18a1448debcefc8fb17f5,
+        type: 2}
       propertyPath: questNotification
       value: 
       objectReference: {fileID: 887741420}
@@ -3145,45 +3170,6 @@ Prefab:
       propertyPath: waypoints.Array.data[12]
       value: 
       objectReference: {fileID: 973272941}
-    - target: {fileID: 114423644772353052, guid: e9130a173ca18a1448debcefc8fb17f5,
-        type: 2}
-      propertyPath: startGas
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 114423644772353052, guid: e9130a173ca18a1448debcefc8fb17f5,
-        type: 2}
-      propertyPath: TowingGas
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 114236672355354734, guid: e9130a173ca18a1448debcefc8fb17f5,
-        type: 2}
-      propertyPath: containerEcran
-      value: 
-      objectReference: {fileID: 307951266}
-    - target: {fileID: 114236672355354734, guid: e9130a173ca18a1448debcefc8fb17f5,
-        type: 2}
-      propertyPath: personneNom
-      value: 
-      objectReference: {fileID: 827543452}
-    - target: {fileID: 114236672355354734, guid: e9130a173ca18a1448debcefc8fb17f5,
-        type: 2}
-      propertyPath: description
-      value: 
-      objectReference: {fileID: 632027253}
-    - target: {fileID: 114236672355354734, guid: e9130a173ca18a1448debcefc8fb17f5,
-        type: 2}
-      propertyPath: reward
-      value: 
-      objectReference: {fileID: 168021069}
-    - target: {fileID: 114236672355354734, guid: e9130a173ca18a1448debcefc8fb17f5,
-        type: 2}
-      propertyPath: quantityObject
-      value: 
-      objectReference: {fileID: 226970011}
-    - target: {fileID: 1205413928877120, guid: e9130a173ca18a1448debcefc8fb17f5, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9130a173ca18a1448debcefc8fb17f5, type: 2}
   m_IsPrefabParent: 0

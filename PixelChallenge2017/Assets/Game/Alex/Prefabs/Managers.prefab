@@ -99,7 +99,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bank: []
   listePersonne:
-  - {fileID: 114113780328602324, guid: 354a658e47f97ad4ca6a136431c5637c, type: 2}
+  - {fileID: 114093809928865092, guid: 8617fe080f0900e4699df45850a5df95, type: 2}
+  - {fileID: 114806730359944550, guid: 89f319b112ebfe940a412a39baf54184, type: 2}
+  - {fileID: 114557916991978392, guid: ae6a3d99c480f9341ac24106b93f7499, type: 2}
+  - {fileID: 114702657134345046, guid: 06aeaa8c6016a51459cc6fc87fb471fe, type: 2}
+  - {fileID: 114219373766176630, guid: 1b50501396504834cb807fa98c6e776d, type: 2}
+  - {fileID: 114371136104698934, guid: 654b893d29619d64c85583f60ac828da, type: 2}
 --- !u!114 &114236672355354734
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -113,6 +118,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   container: {fileID: 0}
   textObject: {fileID: 1932279048123060, guid: 094996440292b7f45a3c819e7bddab42, type: 2}
+  containerEcran: {fileID: 0}
+  personneNom: {fileID: 0}
+  description: {fileID: 0}
+  reward: {fileID: 0}
+  quantityObject: {fileID: 0}
   questNotification: {fileID: 0}
   nbMax: 7
   currentNbQuest: 0
@@ -128,10 +138,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startCash: 50
-  startGas: 50
+  startGas: 25
   startFood: 10
   TowingCost: 1
-  TowingGas: 10
+  TowingGas: 50
   cashText: {fileID: 0}
   grille: {fileID: 0}
   bulle: {fileID: 1918845022447650, guid: 4179755dbc987d54ba609c7415b43649, type: 2}
