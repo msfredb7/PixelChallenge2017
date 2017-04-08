@@ -67,10 +67,10 @@ public class PewDiePieUI : PublicSingleton<PewDiePieUI> {
     {
         GlobalAnimator.StopAt(LieuType.nullePart,null, delegate()
         {
-            
+
             textPanneSeche.gameObject.SetActive(true);
 
-            if(GameManager.instance.car.getItemOfType("Gros bidon d'essence") != null || 
+            if (GameManager.instance.car.getItemOfType("Gros bidon d'essence") != null ||
             GameManager.instance.car.getItemOfType("Moyen bidon d'essence") != null ||
             GameManager.instance.car.getItemOfType("Petit bidon d'essence") != null)
             {
@@ -82,8 +82,11 @@ public class PewDiePieUI : PublicSingleton<PewDiePieUI> {
                 repairButton.gameObject.SetActive(true);
 
             }
-               
-            else textPanneSeche.text = "Panne seche! Paye 35$ a la depaneuse pour un plein.";
+            else
+            {
+                textPanneSeche.text = "Panne seche! Paye 35$ a la depaneuse pour un plein.";
+                repairButton.gameObject.SetActive(true);
+            }
         });
 
     }
