@@ -25,8 +25,8 @@ public class Stop {
         listItems.Add(new ItemAVendre(item, cost, quantity));
     }
 
-    public void StartEvent()
+    public void StartEvent(UnityAction onContinue = null)
     {
-        GameManager.instance.CreateStop(lieu, listItems);
+        GameManager.instance.CreateStop(lieu, listItems, onContinue);
     }
 }

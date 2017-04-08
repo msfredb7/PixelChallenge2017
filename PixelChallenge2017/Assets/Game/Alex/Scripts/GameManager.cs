@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.Events;
 public class GameManager : PublicSingleton<GameManager>
 {
 
@@ -65,12 +65,14 @@ public class GameManager : PublicSingleton<GameManager>
         car.IsRunning = true;
     }
 
-    public void CreateStop(LieuType lieu, List<ItemAVendre> items)
+    public void CreateStop(LieuType lieu, List<ItemAVendre> items, UnityAction onContinue = null)
     {
         print("On arrete a " + lieu);
         // Gere le spaw du prefab stop et set toute le reste
         GlobalAnimator.StopAt(lieu, delegate ()
         {
+            if (onContinue != null)
+                onContinue.Invoke();
             print("On repart!");
         },
         delegate()
