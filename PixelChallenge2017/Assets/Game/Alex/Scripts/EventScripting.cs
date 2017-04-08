@@ -143,7 +143,7 @@ public class EventScripting
             DelayManager.CallTo(delegate ()
             {
                 GameObject.Destroy(obj);
-            }, 4);
+            }, 5);
         }));
 
         specialEventList.Add(new SpecialEvent(9, delegate ()
@@ -157,7 +157,7 @@ public class EventScripting
             DelayManager.CallTo(delegate ()
             {
                 GameObject.Destroy(obj);
-            }, 3);
+            }, 5);
         }));
 
         specialEventList.Add(new SpecialEvent(20, delegate ()
@@ -171,7 +171,7 @@ public class EventScripting
             DelayManager.CallTo(delegate ()
             {
                 GameObject.Destroy(obj);
-            }, 3);
+            }, 5);
         }));
 
         specialEventList.Add(new SpecialEvent(30, delegate ()
@@ -185,7 +185,7 @@ public class EventScripting
             DelayManager.CallTo(delegate ()
             {
                 GameObject.Destroy(obj);
-            }, 3);
+            }, 5);
         }));
 
         specialEventList.Add(new SpecialEvent(40, delegate ()
@@ -199,7 +199,7 @@ public class EventScripting
             DelayManager.CallTo(delegate ()
             {
                 GameObject.Destroy(obj);
-            }, 3);
+            }, 5);
         }));
 
         specialEventList.Add(new SpecialEvent(45, delegate ()
@@ -213,7 +213,7 @@ public class EventScripting
             DelayManager.CallTo(delegate ()
             {
                 GameObject.Destroy(obj);
-            }, 3);
+            }, 5);
         }));
 
         specialEventList.Add(new SpecialEvent(60, delegate ()
@@ -227,7 +227,7 @@ public class EventScripting
             DelayManager.CallTo(delegate ()
             {
                 GameObject.Destroy(obj);
-            }, 3);
+            }, 5);
         }));
 
         float eventCountdown = 0;
