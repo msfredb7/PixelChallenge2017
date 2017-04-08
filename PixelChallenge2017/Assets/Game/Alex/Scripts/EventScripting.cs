@@ -134,17 +134,25 @@ public class EventScripting
             },5);
         }));
 
-        /*
-        specialEventList.Add(new SpecialEvent(2, delegate ()
+        float eventCountdown = 0;
+        int IhateWhiletrue = 0;
+        while (eventCountdown < 150 && IhateWhiletrue < 1000)
         {
-            AccidentManager.instance.flatEvent();
-        }));
+            Random.InitState((int)eventCountdown);
 
-        specialEventList.Add(new SpecialEvent(15, delegate ()
-        {
-            AccidentManager.instance.PanneMoteur();
-        }));
-        */
+            eventCountdown += Random.Range(25.00f, 50.00f);
+            int evenType = Random.Range(0, 1);
+
+            specialEventList.Add(new SpecialEvent(eventCountdown, delegate ()
+            {
+                if (evenType == 0)
+                    AccidentManager.instance.flatEvent();
+                else
+                    AccidentManager.instance.PanneMoteur();
+            }));
+            IhateWhiletrue++;
+        }
+   
 
         // Initialisation de la route
         Road newRoad1 = new Road(depart, destination, stopRoad1, specialEventList, itemEventRoad1, questRoad1, 70);
