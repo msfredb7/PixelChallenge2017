@@ -102,10 +102,17 @@ public class EventScripting
         stopRoad1.Add(monique57km);
 
         List<Quest> questRoad1 = new List<Quest>();
-        questRoad1.Add(new Quest("Deposer Marise et ses valises a Montreal", 0, 20, GameManager.instance.personne, new Quest.Destination(destination, null)));
-        questRoad1.Add(new Quest("Deposer Charles et son equipement de hockey a Montreal", 10, 20, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null), questItemCharles10km));
-        questRoad1.Add(new Quest("Deposer Marc a la prochaine station service", 17, 10, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, station40km)));
-        questRoad1.Add(new Quest("Deposer Monique a Montreal", 57, 10, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
+        List<Quest.ItemQuest> questItemFIRSTS = new List<Quest.ItemQuest>();
+        foreach (Item item in GameManager.instance.startItems)
+        {
+            questItemFIRSTS.Add(new Quest.ItemQuest(item, 5));
+        }
+        Quest firstQuest = new Quest("Deposer Marise et ses valises a Montreal", 0, 0, GameManager.instance.personne, new Quest.Destination(destination, null), questItemFIRSTS);
+        firstQuest.items = GameManager.instance.startItems;
+        questRoad1.Add(firstQuest);
+        questRoad1.Add(new Quest("Deposer Charles et son équipement de hockey a Montreal", 10, 25, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null), questItemCharles10km));
+        questRoad1.Add(new Quest("Deposer Marc à la prochaine station service", 17, 20, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, station40km)));
+        questRoad1.Add(new Quest("Deposer Monique a Montreal", 57, 20, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
 
 
         // Loteries
