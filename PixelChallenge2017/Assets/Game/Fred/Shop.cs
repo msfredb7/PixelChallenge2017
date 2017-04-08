@@ -65,7 +65,7 @@ public class Shop : MonoBehaviour
         }
         MusicManager.instance.DoCoinsSound();
         items[index].quantity--;
-        itemPrefab[index].transform.Find("Text").GetComponent<Text>().text = items[index].item.name + " restant: " + items[index].quantity;
+        itemPrefab[index].transform.Find("Text").GetComponent<Text>().text = items[index].item.nom + " restant: " + items[index].quantity;
         GameManager.instance.car.ChangeCash(-items[index].cost);
         UpdateBuyButtons();
         Instantiate(items[index].item, spawnPos.position + new Vector3(Random.Range(-7,7), 0, Random.Range(-5,5)), spawnPos.rotation);
