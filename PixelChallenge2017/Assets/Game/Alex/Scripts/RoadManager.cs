@@ -15,11 +15,11 @@ public class RoadManager : PublicSingleton<RoadManager>
     public UnityEvent onLateDestinationReached = new UnityEvent();
     public UnityEvent onLateStopReached = new UnityEvent();
 
-    [HideInInspector]
+    
     public float startTime = -1;
-    [HideInInspector]
+    
     public float timeToIgnore = 0;
-    [HideInInspector]
+    
     public float timeLastStop = 0;
 
     public int lastPrint = 0;
@@ -27,6 +27,8 @@ public class RoadManager : PublicSingleton<RoadManager>
     public float currentDistance;
 
     public bool start = true;
+
+    public bool onestauneville = false;
 
     void Update()
     {
@@ -45,7 +47,8 @@ public class RoadManager : PublicSingleton<RoadManager>
         {
             currentDistance = (Time.time - startTime) - timeToIgnore; // 1km = 1 secondes
 
-            print(currentDistance);
+            print("current " + currentDistance);
+            print("ignore" + timeToIgnore);
 
             if (currentDistance > (lastPrint + 1))
             {
@@ -106,6 +109,7 @@ public class RoadManager : PublicSingleton<RoadManager>
             if (currentRoad.distance <= currentDistance)
             {
                 print("Welcome to the amazing city of " + currentRoad.currentDestination.nom);
+                onestauneville = true;
                 onDestinationReached.Invoke();
                 switch (currentRoad.currentDestination.nom)
                 {
@@ -168,7 +172,9 @@ public class RoadManager : PublicSingleton<RoadManager>
     public void StopEnd()
     {
         //GameManager.instance.car.IsRunning = true;
-        timeToIgnore += Time.time - timeLastStop;
+        if(!onestauneville)
+            timeToIgnore += Time.time - timeLastStop;
+        onestauneville = false;
     }
 
     // Permet de définir la route courante à suivre

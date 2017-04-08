@@ -80,6 +80,7 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
 
     static public void StopAt(LieuType type, TweenCallback onContinueTrip = null, TweenCallback onStopComplete = null)
     {
+        print("Arret a " + type);
         RoadManager.instance.timeLastStop = Time.time;
         GameManager.instance.car.IsRunning = false;
         GlobalAnimator.onContinueTrip = onContinueTrip;
