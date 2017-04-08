@@ -16,7 +16,7 @@ public class Item : MonoBehaviour {
     }
     public ArrayLayout cases;
     public shape[] itemShape;
-    public string name;
+    public string nom;
 
     public int offsetX;
     public int offsetY;
@@ -38,7 +38,7 @@ public class Item : MonoBehaviour {
 
 
     protected List<SpriteRenderer> rend;
-    ItemState _placementState;
+    public ItemState _placementState;
 
     ItemState placementState
     {
@@ -69,8 +69,8 @@ public class Item : MonoBehaviour {
                     }
                 }
             }
-            
-            if(_placementState == ItemState.placed)
+
+                if (_placementState == ItemState.placed)
             {
                 if(GameManager.instance != null)
                 {
@@ -242,8 +242,7 @@ public class Item : MonoBehaviour {
     }
 
     //public classCaseItem myCaseItem; 
-
-    protected virtual void Start () {
+    public virtual void Start () {
         if(allItem == null)
         {
             allItem = new List<Item>();
@@ -479,7 +478,7 @@ public class Item : MonoBehaviour {
     public void Kill()
     {
         allItem.Remove(this);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }
 

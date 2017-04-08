@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Personne : Item {
 
@@ -14,6 +15,9 @@ public class Personne : Item {
     public float _food;
     public float consomation;
     public float maxFood;
+    public GameObject vomi;
+
+    public UnityEvent onCarExit = new UnityEvent();
 
     public SpriteRenderer hummeur;
 
@@ -48,11 +52,11 @@ public class Personne : Item {
 
     private void OnNoFodd()
     {
-        if(centralCase != null)
+        if (centralCase != null)
         {
             List<Case> caseLibreProche = new List<Case>();
-            
-            if(occupedCase != null)
+
+            if (occupedCase != null)
             {
                 foreach (Case c in occupedCase)
                 {
@@ -73,18 +77,73 @@ public class Personne : Item {
                         caseLibreProche.Add(c.Droite);
                     }
                 }
+                if(caseLibreProche.Count == 0)
+                {
+                    return;
+                }
+                List<Case> listVomi = new List<Case>();
 
                 Case randomCase = caseLibreProche[Random.Range(0, caseLibreProche.Count)];
-                randomCase.gameObject.SetActive(false);
+                GameObject temp = Instantiate(vomi);
+                Vomi v = temp.GetComponent<Vomi>();
+                if (v != null)
+                {
+                    v.centralCase = randomCase;
+                }
+                listVomi.Add(randomCase);
+
+                for (int i = 0; i < 4; i++)
+                {
+                    List<Case> caseLibreProcheVomi = new List<Case>();
+
+                    if (listVomi != null)
+                    {
+                        foreach (Case c in listVomi)
+                        {
+                            if (c.Haut != null && c.Haut.caseOccupe == false)
+                            {
+                                caseLibreProcheVomi.Add(c.Haut);
+                            }
+                            if (c.Bas != null && c.Bas.caseOccupe == false)
+                            {
+                                caseLibreProcheVomi.Add(c.Bas);
+                            }
+                            if (c.Gauche != null && c.Gauche.caseOccupe == false)
+                            {
+                                caseLibreProcheVomi.Add(c.Gauche);
+                            }
+                            if (c.Droite != null && c.Droite.caseOccupe == false)
+                            {
+                                caseLibreProcheVomi.Add(c.Droite);
+                            }
+                        }
+                        if(caseLibreProcheVomi.Count == 0)
+                        {
+                            return;
+                        }
+                        randomCase = caseLibreProcheVomi[Random.Range(0, caseLibreProcheVomi.Count)];
+                        temp = Instantiate(vomi);
+                        v = temp.GetComponent<Vomi>();
+                        if (v != null)
+                        {
+                            v.centralCase = randomCase;
+                        }
+                        listVomi.Add(randomCase);
+                        caseLibreProcheVomi.Remove(randomCase);
+                    }
+
+                    
+
+
+                }
+
             }
-           
+
         }
-
-
     }
 
 	// Use this for initialization
-	protected override void Start () {
+	public override void Start () {
         base.Start();
         rend.Remove(hummeur);
         if(maxFood <=_food)
@@ -97,7 +156,9 @@ public class Personne : Item {
 	protected override void Update () {
         base.Update();
         food -= Time.deltaTime * consomation;
-	}
+        if (_placementState == ItemState.notPlaced)
+            onCarExit.Invoke();
+    }
 
     override protected bool valideCase(Case c)
     {

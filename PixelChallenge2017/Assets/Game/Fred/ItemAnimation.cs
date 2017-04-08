@@ -34,8 +34,8 @@ public class ItemAnimation : MonoBehaviour
             item.transform.localPosition -= Vector3.right * speed * Time.deltaTime;
             if (item.transform.localPosition.x < minX)
             {
-                /*Kill(item);
-                i--;*/
+                Kill(item);
+                i--;
             }
         }
     }
@@ -43,7 +43,7 @@ public class ItemAnimation : MonoBehaviour
     void Kill(GameObject item)
     {
         items.Remove(item);
-        //if (item.GetComponent<Item>() != null)
-         //   item.GetComponent<Item>().Kill();
+        if (item.GetComponent<Item>() != null)
+            item.GetComponent<Item>().Kill();
     }
 }

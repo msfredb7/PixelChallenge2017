@@ -66,14 +66,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1151780701036114}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 51.66321, y: 27.061743, z: 5.516803}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.76386225, y: 0, z: 19.566217}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4090247790062320}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!54 &54788741205335074
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -126,18 +126,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cases:
     rows:
-    - row: 00010000000000
-    - row: 01010100000000
-    - row: 00000000000000
+    - row: 01000000000000
+    - row: 01010000000000
+    - row: 01000000000000
     - row: 00000000000000
     - row: 00000000000000
     - row: 00000000000000
     - row: 00000000000000
   itemShape: []
-  offsetX: 1
+  offsetX: 0
   offsetY: 1
   centralCase: {fileID: 0}
+  occupedCase: []
   scaleFacteur: 2
+  _placementState: 0
 --- !u!114 &114712266209439316
 MonoBehaviour:
   m_ObjectHideFlags: 1
