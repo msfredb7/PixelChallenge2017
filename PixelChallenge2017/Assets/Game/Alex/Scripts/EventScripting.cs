@@ -51,7 +51,6 @@ public class EventScripting
 
         // Position vehicule initiale
 
-
         // Objets des magasins
         List<ItemAVendre> itemDepanneur22km = new List<ItemAVendre>();
         itemDepanneur22km.Add(new ItemAVendre(ItemBank.GetItemByIndex(2), 5, 3));
@@ -107,13 +106,11 @@ public class EventScripting
 
         // Loteries
         List<ItemEvent> itemEventRoad1 = new List<ItemEvent>();
-        ItemEvent item5km = new ItemEvent(5, 0, ItemBank.GetItemByIndex(17));
         ItemEvent item29km = new ItemEvent(29, 0, (Item)lotteryFood.Pick());
         ItemEvent item35km = new ItemEvent(35, 0, (Item)lotteryEssence.Pick());
         ItemEvent item52km = new ItemEvent(52, 0, (Item)lotteryUtility.Pick());
         ItemEvent item67km = new ItemEvent(67, 0, (Item)lotteryCollectable.Pick());
 
-        itemEventRoad1.Add(item5km);
         itemEventRoad1.Add(item29km);
         itemEventRoad1.Add(item35km);
         itemEventRoad1.Add(item52km);
@@ -121,8 +118,8 @@ public class EventScripting
 
 
         // Initialisation de la route
-        Road newRoad = new Road(depart, destination, stopRoad1, null, itemEventRoad1, questRoad1, 70);
-        RoadManager.instance.SetRoad(newRoad);
+        Road newRoad1 = new Road(depart, destination, stopRoad1, null, itemEventRoad1, questRoad1, 70);
+        RoadManager.instance.SetRoad(newRoad1);
     }
 
     public static void NextEvents(Voiture car)
@@ -215,17 +212,35 @@ public class EventScripting
                 stopRoad2.Add(maxime62km);
                 stopRoad2.Add(jeremy100km);
 
-                List<Quest> questRoad1 = new List<Quest>();
-                questRoad1.Add(new Quest("Déposer le mystérieux monsieur et ses nombreux chapeaux à Trois-Rivière", 0, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
-                questRoad1.Add(new Quest("Déposer Gary et son matériel informatique à Trois-Rivière", 10, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
-                questRoad1.Add(new Quest("Déposer Marie-Pier et ses bagages jusqu'à la prochaine épicerie", 30, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, restaurant70km)));
-                questRoad1.Add(new Quest("Déposer Bob au prochain garage", 49, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage91km)));
-                questRoad1.Add(new Quest("Déposer Maxime et ses meubles à Trois-Rivière", 62, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination,null)));
-                questRoad1.Add(new Quest("Déposer Jeremy à la prochaine épicerie", 100, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, restaurant112km)));
+                List<Quest> questRoad2 = new List<Quest>();
+                questRoad2.Add(new Quest("Déposer le mystérieux monsieur et ses nombreux chapeaux à Trois-Rivière", 0, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
+                questRoad2.Add(new Quest("Déposer Gary et son matériel informatique à Trois-Rivière", 10, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
+                questRoad2.Add(new Quest("Déposer Marie-Pier et ses bagages jusqu'à la prochaine épicerie", 30, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, restaurant70km)));
+                questRoad2.Add(new Quest("Déposer Bob au prochain garage", 49, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage91km)));
+                questRoad2.Add(new Quest("Déposer Maxime et ses meubles à Trois-Rivière", 62, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination,null)));
+                questRoad2.Add(new Quest("Déposer Jeremy à la prochaine épicerie", 100, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, restaurant112km)));
 
 
-                Road newRoad = new Road(depart, destination, null, null, null, null, 5);
-                RoadManager.instance.SetRoad(newRoad);
+                // Loteries
+                List<ItemEvent> itemEventRoad2 = new List<ItemEvent>();
+                ItemEvent item14km = new ItemEvent(14, 0, (Item)lotteryFood.Pick());
+                ItemEvent item25km = new ItemEvent(25, 0, (Item)lotteryCollectable.Pick());
+                ItemEvent item52km = new ItemEvent(42, 0, (Item)lotteryEssence.Pick());
+                ItemEvent item74km = new ItemEvent(74, 0, (Item)lotteryCollectable.Pick());
+                ItemEvent item86km = new ItemEvent(86, 0, (Item)lotteryFood.Pick());
+                ItemEvent item95km = new ItemEvent(95, 0, (Item)lotteryUtility.Pick());
+                ItemEvent item106km = new ItemEvent(106, 0, (Item)lotteryEssence.Pick());
+
+                itemEventRoad2.Add(item14km);
+                itemEventRoad2.Add(item25km);
+                itemEventRoad2.Add(item52km);
+                itemEventRoad2.Add(item74km);
+                itemEventRoad2.Add(item86km);
+                itemEventRoad2.Add(item95km);
+                itemEventRoad2.Add(item106km);
+
+                Road newRoad2 = new Road(depart, destination, stopRoad2, null, itemEventRoad2, questRoad2, 139);
+                RoadManager.instance.SetRoad(newRoad2);
                 currentEvent++;
 
 
@@ -233,11 +248,12 @@ public class EventScripting
             case 1:
                 Ville depart1 = new Ville("Trois-Riviere");
                 Ville destination1 = new Ville("Quebec");
+                // 129 km
 
-                // Evenement a faire...
 
-                Road newRoad1 = new Road(depart1, destination1, null, null, null, null, 5);
-                RoadManager.instance.SetRoad(newRoad1);
+
+                Road newRoad3 = new Road(depart1, destination1, null, null, null, null, 5);
+                RoadManager.instance.SetRoad(newRoad3);
                 currentEvent++;
                 break;
             case 2:
@@ -246,8 +262,8 @@ public class EventScripting
 
                 // Evenement a faire...
 
-                Road newRoad2 = new Road(depart2, destination2, null, null, null, null, 5);
-                RoadManager.instance.SetRoad(newRoad2);
+                Road newRoad4 = new Road(depart2, destination2, null, null, null, null, 5);
+                RoadManager.instance.SetRoad(newRoad4);
                 currentEvent++;
                 break;
             case 3:
@@ -256,8 +272,8 @@ public class EventScripting
 
                 // Evenement a faire...
 
-                Road newRoad3 = new Road(depart3, destination3, null, null, null, null, 5);
-                RoadManager.instance.SetRoad(newRoad3);
+                Road newRoad5 = new Road(depart3, destination3, null, null, null, null, 5);
+                RoadManager.instance.SetRoad(newRoad5);
                 currentEvent++;
                 break;
         }

@@ -150,6 +150,7 @@ public class Personne : Item {
         {
             maxFood = _food;
         }
+        UpdateRepresentation();
 	}
 	
 	// Update is called once per frame
