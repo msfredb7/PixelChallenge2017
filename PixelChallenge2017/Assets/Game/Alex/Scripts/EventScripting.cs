@@ -237,7 +237,7 @@ public class EventScripting
         {
             Random.InitState((int)eventCountdown);
 
-            eventCountdown += Random.Range(25.00f, 50.00f);
+            eventCountdown += Random.Range(50.00f, 100.00f);
             int evenType = Random.Range(0, 1);
 
             specialEventList.Add(new SpecialEvent(eventCountdown, delegate ()
