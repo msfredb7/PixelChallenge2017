@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 54755267503110526}
   - component: {fileID: 65405843026156842}
   - component: {fileID: 65908407307238872}
+  - component: {fileID: 114078105708896664}
   m_Layer: 0
   m_Name: GrosBidon
   m_TagString: Untagged
@@ -54,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1063190546924222}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.122329, y: 0, z: 19.426006}
+  m_LocalPosition: {x: 13.181529, y: 0, z: 6.6052656}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4503881536734848}
@@ -113,6 +114,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.1, y: 1, z: 2.1}
   m_Center: {x: -0.5, y: 0, z: 1.6}
+--- !u!114 &114078105708896664
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1063190546924222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdb756bd897529745936ce46516ccdf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  refillValue: 180
 --- !u!114 &114403178321010432
 MonoBehaviour:
   m_ObjectHideFlags: 1

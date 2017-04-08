@@ -35,10 +35,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4095596190477652}
-  - component: {fileID: 114426024364749242}
   - component: {fileID: 114100228530443966}
   - component: {fileID: 54901890524301940}
   - component: {fileID: 65965234682311786}
+  - component: {fileID: 114090876857763592}
   m_Layer: 0
   m_Name: MoyenneBoiteNourriture
   m_TagString: Untagged
@@ -100,7 +100,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.2, y: 1, z: 2.1}
   m_Center: {x: 0, y: 0, z: 0.55}
---- !u!114 &114100228530443966
+--- !u!114 &114090876857763592
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -108,19 +108,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1658862945321874}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22d26dbfdb9d42c47a98e9ecf74dae12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  depth: 0
---- !u!114 &114426024364749242
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1658862945321874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b158d0ec76fedeb40be04b096e8ae9ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ad4032e6493e8f48a54a3eb990fda07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cases:
@@ -133,12 +121,26 @@ MonoBehaviour:
     - row: 00000000000000
     - row: 00000000000000
   itemShape: []
+  nom: Lunch
   offsetX: 2
   offsetY: 3
   centralCase: {fileID: 0}
   occupedCase: []
   scaleFacteur: 2
   _placementState: 0
+  ValeurNourriture: 60
+--- !u!114 &114100228530443966
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1658862945321874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22d26dbfdb9d42c47a98e9ecf74dae12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  depth: 0
 --- !u!212 &212536013277819942
 SpriteRenderer:
   m_ObjectHideFlags: 1

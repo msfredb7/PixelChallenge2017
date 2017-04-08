@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 65148102112247174}
   - component: {fileID: 65250933913472142}
   - component: {fileID: 65779707633016250}
+  - component: {fileID: 114108919964117036}
   m_Layer: 0
   m_Name: MoyenBidon
   m_TagString: Untagged
@@ -56,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1075115841987624}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.42016572, y: 0, z: 19.848387}
+  m_LocalPosition: {x: 12.232295, y: -0.0000019657507, z: 11.610089}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4341082745295894}
@@ -167,6 +168,18 @@ MonoBehaviour:
   occupedCase: []
   scaleFacteur: 2
   _placementState: 0
+--- !u!114 &114108919964117036
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1075115841987624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdb756bd897529745936ce46516ccdf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  refillValue: 90
 --- !u!114 &114180107932697332
 MonoBehaviour:
   m_ObjectHideFlags: 1

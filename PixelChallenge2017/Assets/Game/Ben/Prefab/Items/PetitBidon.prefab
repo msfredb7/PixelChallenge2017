@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 54244507880530278}
   - component: {fileID: 65049582723643954}
   - component: {fileID: 65793342284234296}
+  - component: {fileID: 114052742553317048}
   m_Layer: 0
   m_Name: PetitBidon
   m_TagString: Untagged
@@ -54,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1240548776588154}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.7559887, y: 0, z: 19.187216}
+  m_LocalPosition: {x: 12.41389, y: -0.00000022736987, z: 2.2926836}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4547011573064686}
@@ -113,6 +114,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.1, y: 1, z: 1}
   m_Center: {x: 0.55, y: 0, z: 1.1}
+--- !u!114 &114052742553317048
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1240548776588154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdb756bd897529745936ce46516ccdf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  refillValue: 45
 --- !u!114 &114185730011208262
 MonoBehaviour:
   m_ObjectHideFlags: 1

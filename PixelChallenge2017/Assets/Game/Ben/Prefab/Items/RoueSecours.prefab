@@ -68,14 +68,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1057163731042412}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.954318, y: 0, z: 20.79324}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 23.90272, y: -0.00000025872913, z: 2.029623}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4334824369338508}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!54 &54356854710121766
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -161,8 +161,8 @@ MonoBehaviour:
     - row: 00000000000000
   itemShape: []
   nom: Roue de secours
-  offsetX: 0
-  offsetY: 2
+  offsetX: 2
+  offsetY: 0
   centralCase: {fileID: 0}
   occupedCase: []
   scaleFacteur: 2
