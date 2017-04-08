@@ -122,7 +122,7 @@ public class EventScripting
         ItemEvent item29km = new ItemEvent(29, 0, (Item)lotteryFood.Pick());
         ItemEvent item35km = new ItemEvent(35, 0, (Item)lotteryEssence.Pick());
         ItemEvent item52km = new ItemEvent(52, 0, (Item)lotteryUtility.Pick());
-        ItemEvent item67km = new ItemEvent(67, 0, (Item)lotteryCollectable.Pick());
+        ItemEvent item67km = new ItemEvent(67, 10, (Item)lotteryCollectable.Pick());
 
         itemEventRoad1.Add(item5km);
         itemEventRoad1.Add(item29km);
@@ -382,9 +382,9 @@ public class EventScripting
                 // Loteries
                 List<ItemEvent> itemEventRoad2 = new List<ItemEvent>();
                 ItemEvent item14km = new ItemEvent(14, 0, (Item)lotteryFood.Pick());
-                ItemEvent item25km = new ItemEvent(25, 0, (Item)lotteryCollectable.Pick());
+                ItemEvent item25km = new ItemEvent(25, 10, (Item)lotteryCollectable.Pick());
                 ItemEvent item52km = new ItemEvent(42, 0, (Item)lotteryEssence.Pick());
-                ItemEvent item74km = new ItemEvent(74, 0, (Item)lotteryCollectable.Pick());
+                ItemEvent item74km = new ItemEvent(74, 10, (Item)lotteryCollectable.Pick());
                 ItemEvent item86km = new ItemEvent(86, 0, (Item)lotteryFood.Pick());
                 ItemEvent item95km = new ItemEvent(95, 0, (Item)lotteryUtility.Pick());
                 ItemEvent item106km = new ItemEvent(106, 0, (Item)lotteryEssence.Pick());
@@ -541,11 +541,11 @@ public class EventScripting
                 ItemEvent item18km = new ItemEvent(18, 0, (Item)lotteryEssence.Pick());
                 ItemEvent item27km = new ItemEvent(27, 0, (Item)lotteryFood.Pick());
                 ItemEvent item35km = new ItemEvent(35, 0, (Item)lotteryFood.Pick());
-                ItemEvent item56km = new ItemEvent(56, 0, (Item)lotteryCollectable.Pick());
+                ItemEvent item56km = new ItemEvent(56, 10, (Item)lotteryCollectable.Pick());
                 ItemEvent item61km = new ItemEvent(61, 0, (Item)lotteryFood.Pick());
                 ItemEvent item71km = new ItemEvent(71, 0, (Item)lotteryUtility.Pick());
                 ItemEvent item75km = new ItemEvent(75, 0, (Item)lotteryEssence.Pick());
-                ItemEvent item85km = new ItemEvent(85, 0, (Item)lotteryCollectable.Pick());
+                ItemEvent item85km = new ItemEvent(85, 10, (Item)lotteryCollectable.Pick());
                 ItemEvent item96km = new ItemEvent(96, 0, (Item)lotteryUtility.Pick());
                 ItemEvent item107km = new ItemEvent(107, 0, (Item)lotteryFood.Pick());
                 ItemEvent item115km = new ItemEvent(115, 0, (Item)lotteryEssence.Pick());
