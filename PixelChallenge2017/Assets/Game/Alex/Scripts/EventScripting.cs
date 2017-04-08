@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EventScripting
 {
-
     // Initialisation des lotteries
     static CCC.Utility.Lottery lotteryFood;
 
@@ -19,6 +18,7 @@ public class EventScripting
 
     public static void Init(Voiture car)
     {
+        Debug.Log("Initialisation des evenements");
         lotteryFood = new CCC.Utility.Lottery(new CCC.Utility.Lottery.LotteryItem[]
         {
         new CCC.Utility.Lottery.LotteryItem(ItemBank.GetItemByIndex(0),1),

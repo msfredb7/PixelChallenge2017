@@ -10,6 +10,7 @@ public class ItemBank : Bank<Item>{
     
     // Use this for initialization
     void Start() {
+        print("Initialisation de la ItemBank");
         for (int i = 0; i < listeItem.Length; i++)
         {
             AddItem(listeItem[i]);

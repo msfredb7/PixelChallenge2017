@@ -20,10 +20,7 @@ public class QuestManager : PublicSingleton<QuestManager> {
             return;
 
         // Debut de l'event
-        DelayManager.CallTo(delegate ()
-        {
-            quest.OnBegin();
-        },3);
+        quest.OnBegin();
         questList.Add(quest);
 
         // UI Quete
