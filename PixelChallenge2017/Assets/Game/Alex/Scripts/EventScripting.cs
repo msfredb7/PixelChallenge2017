@@ -16,7 +16,7 @@ public class EventScripting
     static CCC.Utility.Lottery lotteryCollectable;
     static CCC.Utility.Lottery lotteryUseless;
 
-    private static int currentEvent = 0;
+    private static int currentEvent = 1;
 
 
     public static void Init(Voiture car)
@@ -286,9 +286,9 @@ public class EventScripting
 
 
         // Initialisation de la route
-        Road newRoad1 = new Road(depart, destination, stopRoad1, specialEventList, itemEventRoad1, questRoad1, 70);
-        RoadManager.instance.SetRoad(newRoad1);
-        //NextEvents(car);
+        //Road newRoad1 = new Road(depart, destination, stopRoad1, specialEventList, itemEventRoad1, questRoad1, 70);
+        //RoadManager.instance.SetRoad(newRoad1);
+        NextEvents(car);
     }
 
     public static void NextEvents(Voiture car)
@@ -374,7 +374,7 @@ public class EventScripting
                 Stop mariepier30km = new Stop(30, LieuType.arretBus);
                 Stop bob49km = new Stop(49, LieuType.arretBus);
                 Stop maxime62km = new Stop(62, LieuType.arretBus);
-                Stop jeremy100km = new Stop(100, LieuType.arretBus);
+                Stop jeremy100km = new Stop(105, LieuType.arretBus);
 
 
                 stopRoad2.Add(monsieur5km);
@@ -411,7 +411,7 @@ public class EventScripting
                 questRoad2.Add(new Quest("Deposer Annushka et ses bagages jusqu'a la prochaine epicerie", 30, 8, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, restaurant70km), questItemMariePier30km));
                 questRoad2.Add(new Quest("Deposer Bob au prochain garage", 49, 5, PersonneBank.GetItemByIndex(5), new Quest.Destination(null, garage91km)));
                 questRoad2.Add(new Quest("Deposer Maxime et ses meubles a Trois-Riviere", 62, 0, PersonneBank.GetItemByIndex(5), new Quest.Destination(destination,null), questItemMaxime62km));
-                questRoad2.Add(new Quest("Deposer Jeremy a la prochaine epicerie", 100, 0, PersonneBank.GetItemByIndex(5), new Quest.Destination(null, restaurant112km)));
+                questRoad2.Add(new Quest("Deposer Jeremy a la prochaine epicerie", 105, 0, PersonneBank.GetItemByIndex(5), new Quest.Destination(null, restaurant112km)));
 
 
                 // Loteries
@@ -533,11 +533,18 @@ public class EventScripting
                 Stop mohamed90km = new Stop(90, LieuType.arretBus);
                 Stop natasha110km = new Stop(110, LieuType.arretBus);
 
-                stopRoad3.Add(marc15km);
+
+                stopRoad3.Add(ami5km);
+
                 List<Quest.ItemQuest> questItemAmi5km = new List<Quest.ItemQuest>();
                 questItemAmi5km.Add(new Quest.ItemQuest(ItemBank.GetItemByIndex(19), 20));
                 questItemAmi5km.Add(new Quest.ItemQuest(ItemBank.GetItemByIndex(20), 20));
 
+                List<Quest.ItemQuest> questItemMarcos15km = new List<Quest.ItemQuest>();
+                stopRoad3.Add(marc15km);
+                questItemMarcos15km.Add(new Quest.ItemQuest(ItemBank.GetItemByIndex(14), 5));
+                questItemMarcos15km.Add(new Quest.ItemQuest(ItemBank.GetItemByIndex(16), 8));
+                questItemMarcos15km.Add(new Quest.ItemQuest(ItemBank.GetItemByIndex(17), 8));
 
                 stopRoad3.Add(marcos23km);
                 List<Quest.ItemQuest> questItemMarcos23km = new List<Quest.ItemQuest>();
@@ -576,14 +583,14 @@ public class EventScripting
 
 
                 List<Quest> questRoad3 = new List<Quest>();
-                questRoad3.Add(new Quest("Deposer votre viel ami et ses meubles a Quebec", 5, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination1, null)));
-                questRoad3.Add(new Quest("Deposer Marc et son equipement de hockey au prochain garage ", 15, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage80km)));
-                questRoad3.Add(new Quest("Deposer Marcos et son equipement de hockey au prochain garage ", 23, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage80km)));
-                questRoad3.Add(new Quest("Deposer Marcus et son equipement de hockey au prochain garage ", 40, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage80km)));
-                questRoad3.Add(new Quest("Deposer Marco et son equipement de hockey au prochain garage ", 45, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage80km)));
-                questRoad3.Add(new Quest("Deposer Marc-Andre et son equipement de hockey au prochain garage ", 67, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage80km)));
-                questRoad3.Add(new Quest("Deposer Mohamed et son equipement equipement a Quebec ", 90, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination1,null)));
-                questRoad3.Add(new Quest("Deposer Natasha et ses valises a Quebec ", 110, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination1, null)));
+                questRoad3.Add(new Quest("Deposer votre viel ami et ses meubles a Quebec", 5, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination1, null), questItemAmi5km));
+                questRoad3.Add(new Quest("Deposer Marc et son equipement de hockey au prochain garage ", 15, 0, PersonneBank.GetItemByIndex(1), new Quest.Destination(null, garage80km), questItemMarcos15km));
+                questRoad3.Add(new Quest("Deposer Marcos et son equipement de hockey au prochain garage ", 23, 0, PersonneBank.GetItemByIndex(2), new Quest.Destination(null, garage80km), questItemMarcos23km));
+                questRoad3.Add(new Quest("Deposer Marcus et son equipement de hockey au prochain garage ", 40, 0, PersonneBank.GetItemByIndex(3), new Quest.Destination(null, garage80km), questItemMarcus40km));
+                questRoad3.Add(new Quest("Deposer Marco et son equipement de hockey au prochain garage ", 45, 0, PersonneBank.GetItemByIndex(4), new Quest.Destination(null, garage80km), questItemMarcos45km));
+                questRoad3.Add(new Quest("Deposer Marc-Andre et son equipement de hockey au prochain garage ", 67, 0, PersonneBank.GetItemByIndex(5), new Quest.Destination(null, garage80km), questItemMarcAndre67km));
+                questRoad3.Add(new Quest("Deposer Mohamed et son equipement equipement a Quebec ", 90, 0, PersonneBank.GetItemByIndex(5), new Quest.Destination(destination1,null), questItemMohamed90km));
+                questRoad3.Add(new Quest("Deposer Natasha et ses valises a Quebec ", 110, 0, PersonneBank.GetItemByIndex(7), new Quest.Destination(destination1, null), questItemNatasha110km));
 
 
                 // Loteries
