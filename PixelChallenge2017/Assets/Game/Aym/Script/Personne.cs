@@ -16,7 +16,7 @@ public class Personne : Item {
     public float consomation;
     public float maxFood;
     public GameObject vomi;
-
+    public GameObject dechet;
     public ItemState previousState;
 
     public UnityEvent onCarExit = new UnityEvent();
@@ -159,7 +159,53 @@ public class Personne : Item {
 	protected override void Update () {
         base.Update();
         if ((RoadManager.instance.currentDistance % 2) < 0.1 && GameManager.instance.car.IsRunning)
-            food --;
+        {
+            food--;
+            if (Random.Range(0f, 1f) > 0.15)
+            {
+                if (centralCase != null)
+                {
+                    List<Case> caseLibreProche = new List<Case>();
+
+                    if (occupedCase != null)
+                    {
+                        foreach (Case c in occupedCase)
+                        {
+                            if (c.Haut != null && c.Haut.caseOccupe == false)
+                            {
+                                caseLibreProche.Add(c.Haut);
+                            }
+                            if (c.Bas != null && c.Bas.caseOccupe == false)
+                            {
+                                caseLibreProche.Add(c.Bas);
+                            }
+                            if (c.Gauche != null && c.Gauche.caseOccupe == false)
+                            {
+                                caseLibreProche.Add(c.Gauche);
+                            }
+                            if (c.Droite != null && c.Droite.caseOccupe == false)
+                            {
+                                caseLibreProche.Add(c.Droite);
+                            }
+                        }
+                        if (caseLibreProche.Count == 0)
+                        {
+                            return;
+                        }
+
+
+                        Case randomCase = caseLibreProche[Random.Range(0, caseLibreProche.Count)];
+                        GameObject temp = Instantiate(dechet);
+                        Item v = temp.GetComponent<Item>();
+                        if (v != null)
+                        {
+                            v.centralCase = randomCase;
+                        }
+
+                    }
+                }
+            }
+        }
         if (previousState != _placementState)
         {
             if(_placementState == ItemState.notPlaced && previousState == ItemState.onDragUnplacable)
