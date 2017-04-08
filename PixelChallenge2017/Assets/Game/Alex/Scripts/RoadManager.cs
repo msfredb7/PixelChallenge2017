@@ -43,10 +43,12 @@ public class RoadManager : PublicSingleton<RoadManager>
         {
             currentDistance = (Time.time - startTime) - timeToIgnore; // 1km = 1 secondes
 
+            print(currentDistance);
+
             if (currentDistance > (lastPrint + 1))
             {
                 GameManager.instance.car.ChangeGas(-1);
-                print("They see me rollin' ! They hatin' ( Distance : " + currentDistance + "km )");
+                //print("They see me rollin' ! They hatin' ( Distance : " + currentDistance + "km )");
                 lastPrint++;
             }
 
