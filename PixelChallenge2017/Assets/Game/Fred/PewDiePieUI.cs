@@ -41,6 +41,7 @@ public class PewDiePieUI : PublicSingleton<PewDiePieUI> {
     {
         if (GameManager.instance.car.cash < GameManager.instance.TowingCost)
         {
+            repairButton.gameObject.SetActive(false);
             manqueDeFond();
             return;
         }
