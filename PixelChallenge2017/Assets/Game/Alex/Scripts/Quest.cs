@@ -6,7 +6,6 @@ using UnityEngine.Events;
 
 public class Quest {
 
-    // Un item ayant une recompense donnée a un certain moment
     public class ItemQuest
     {
         public float reward;
@@ -19,7 +18,6 @@ public class Quest {
         }
     }
 
-    // Une destination pouvant etre une ville ou un stop
     public class Destination
     {
         public Ville ville;
@@ -63,30 +61,23 @@ public class Quest {
         this.destination = destination;
         this.recompense = recompense;
         this.personne = personne;
-
         if(itemNecessaire != null)
             this.itemNecessaire = itemNecessaire;
-
-        // Listenner d'event de quand on arrive a un stop
         if(destination.DestinationIsStop())
             RoadManager.instance.onStopReached.AddListener(OnStopReached);
-
-        // Listenner d'event de quand on arrive a une ville
-        else if (destination.DestinationIsCity())
+        else if(destination.DestinationIsCity())
             RoadManager.instance.onDestinationReached.AddListener(OnCityReached);
     }
 
-    // TOUT LE RESTE EN DESSOUS EST A CHANGER
-
-    // Debut de la quete
     public void OnBegin()
     {
         Debug.Log("la quete commence");
 
-        GameManager.instance.SpawnItems(itemNecessaire); // On fait apparaitre les objets a l'arret
-
-        if (personne != null)
-            GameManager.instance.SpawnPersonne(personne); // On fait apparaitre la personne a l'arret
+        GameManager.instance.SpawnItems(itemNecessaire);
+        if(personne != null)
+        {
+            GameManager.instance.SpawnPersonne(personne);
+        }
     }
 
     public void OnCityReached()
