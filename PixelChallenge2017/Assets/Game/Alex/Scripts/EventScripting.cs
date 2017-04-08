@@ -16,7 +16,7 @@ public class EventScripting
     static CCC.Utility.Lottery lotteryCollectable;
     static CCC.Utility.Lottery lotteryUseless;
 
-    private static int currentEvent = 1;
+    private static int currentEvent = 0;
 
 
     public static void Init(Voiture car)
@@ -286,9 +286,9 @@ public class EventScripting
 
 
         // Initialisation de la route
-        //Road newRoad1 = new Road(depart, destination, stopRoad1, specialEventList, itemEventRoad1, questRoad1, 70);
-        //RoadManager.instance.SetRoad(newRoad1);
-        NextEvents(car);
+        Road newRoad1 = new Road(depart, destination, stopRoad1, specialEventList, itemEventRoad1, questRoad1, 70);
+        RoadManager.instance.SetRoad(newRoad1);
+        //NextEvents(car);
     }
 
     public static void NextEvents(Voiture car)
