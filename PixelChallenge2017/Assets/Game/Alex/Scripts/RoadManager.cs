@@ -51,7 +51,7 @@ public class RoadManager : PublicSingleton<RoadManager>
 
             if (currentDistance > (lastPrint + 1))
             {
-                //print("They see me rollin' ! They hatin' ( Distance : " + currentDistance + "km )");
+                print("They see me rollin' ! They hatin' ( Distance : " + currentDistance + "km )");
                 lastPrint++;
             }
 

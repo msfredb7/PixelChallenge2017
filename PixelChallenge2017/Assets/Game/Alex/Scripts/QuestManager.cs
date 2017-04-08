@@ -58,7 +58,6 @@ public class QuestManager : PublicSingleton<QuestManager>
 
     void Update()
     {
-        print("timer : " + timer + "| Time : " + Time.time);
         if ((reportQuest.Count >= 1) && (timer + 5) < Time.time)
         {
             timer = Time.time;
