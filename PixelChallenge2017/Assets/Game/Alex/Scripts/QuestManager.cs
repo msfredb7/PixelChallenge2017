@@ -19,6 +19,8 @@ public class QuestManager : PublicSingleton<QuestManager>
 
     public List<Quest> questList = new List<Quest>();
 
+    public List<Quest> reportQuest = new List<Quest>();
+
     public int nbMax;
     public int currentNbQuest = 0;
 
@@ -35,7 +37,7 @@ public class QuestManager : PublicSingleton<QuestManager>
         GameObject newQuest = Instantiate(textObject, container.transform);
         newQuest.transform.localScale = Vector3.one;
         newQuest.GetComponent<Text>().text = quest.questDescription;
-        if(notify)
+        if (notify)
             Notify();
 
         currentNbQuest++;
@@ -53,40 +55,46 @@ public class QuestManager : PublicSingleton<QuestManager>
     }
     void OnQuestWin(Quest quest)
     {
-        
-        float totalReward = quest.recompense;
-        int totalItems = 0;
-        if(quest.items.Count >= 1)
+        DeleteQuest(quest);
+        reportQuest.Add(quest);
+
+        if (questList.Count < 1)
         {
-            for (int j = 0; j < GameManager.instance.car.listSpecialItems.Count; j++)
+            for (int i = 0; i < reportQuest.Count; i++)
             {
-                if (quest.items.Contains(GameManager.instance.car.listSpecialItems[j].item)) // si il est dans la liste
+                DelayManager.CallTo(delegate ()
                 {
-                    totalItems++;
-                    totalReward += GameManager.instance.car.listSpecialItems[j].reward;
-                }
+                    float totalReward = reportQuest[i-1].recompense;
+                    int totalItems = 0;
+                    for (int j = 0; j < GameManager.instance.car.listSpecialItems.Count; j++)
+                    {
+                        if (reportQuest[i - 1].items.Contains(GameManager.instance.car.listSpecialItems[j].item)) // si il est dans la liste
+                        {
+                            totalItems++;
+                            totalReward += GameManager.instance.car.listSpecialItems[j].reward;
+                        }
+                    }
+                    // Affichage de l'ecran de completion
+                    containerEcran.SetActive(true);
+                    personneNom.text = "Nom du personnage : " + reportQuest[i - 1].personne.nom;
+                    description.text = "Description : " + reportQuest[i - 1].questDescription;
+                    reward.text = "Recompense : " + totalReward + "$";
+                    quantityObject.text = "Transport de bagages : " + totalItems + " objets";
+
+                    DelayManager.CallTo(delegate ()
+                    {
+                        containerEcran.SetActive(false);
+                    }, (i * 5) + 5);
+                }, i * 5);
+                print("");
             }
         }
-
-        // Affichage de l'ecran de completion
-        containerEcran.SetActive(true);
-        personneNom.text = "Nom du personnage : " + quest.personne.nom;
-        description.text = "Description : " + quest.questDescription;
-        reward.text = "Recompense : " + totalReward + "$";
-        quantityObject.text = "Transport de bagages : " + totalItems + " objets";
-
-    // Faire disparaitre l'ecran de completion dans 6 secondes
-    DelayManager.CallTo(delegate()
-        {
-            containerEcran.SetActive(false);
-        },6);
-
-        DeleteQuest(quest);
     }
 
     // Supprimer la quete du UI
     public void DeleteQuest(Quest quest)
     {
+        questList.Remove(quest);
         for (int i = 0; i < container.transform.childCount; i++)
         {
             Transform child = container.transform.GetChild(i);
