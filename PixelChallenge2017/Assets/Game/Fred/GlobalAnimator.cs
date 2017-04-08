@@ -60,6 +60,7 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
 
     static public void Restart()
     {
+        PewDiePieUI.instance.shop.Close();
         instance.Run(delegate()
         {
             GameManager.instance.car.IsRunning = true;

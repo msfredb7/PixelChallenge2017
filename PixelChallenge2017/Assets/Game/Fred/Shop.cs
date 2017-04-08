@@ -46,7 +46,7 @@ public class Shop : MonoBehaviour
             if (items[i].quantity > 0)
                 itemPrefab[i].SetActive(true);
 
-            itemPrefab[i].transform.Find("Text").GetComponent<Text>().text = items[i].item.name + " restant: " + items[i].quantity;
+            itemPrefab[i].transform.Find("Text").GetComponent<Text>().text = items[i].item.nom + " restant: " + items[i].quantity;
             itemPrefab[i].transform.Find("Cost").GetComponent<Text>().text = "" + items[i].cost + "$";
             itemPrefab[i].transform.Find("Image").GetComponent<Image>().sprite = items[i].item.GetComponentInChildren<SpriteRenderer>().sprite;
 
