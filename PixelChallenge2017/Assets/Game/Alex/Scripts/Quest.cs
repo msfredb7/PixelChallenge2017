@@ -170,7 +170,6 @@ public class Quest
     {
         if (personne != null)
             personne.Kill();
-        personne = null;
     }
 
     void RemoveListeners()
@@ -212,7 +211,6 @@ public class Quest
             {
                 GameManager.instance.car.listItems.Remove(items[i]);
                 items[i].Kill();
-                i--;
             }
             items.Clear();
         }

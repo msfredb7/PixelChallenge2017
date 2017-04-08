@@ -19,6 +19,7 @@ public class MusicManager : PublicSingleton<MusicManager> {
     public AudioClip whistle;
     public AudioClip coins;
     public AudioClip eating;
+    public AudioClip fuel;
 
     public int currentSong;
 
@@ -103,6 +104,20 @@ public class MusicManager : PublicSingleton<MusicManager> {
     {
         additionnalSfx.Stop();
         additionnalSfx.clip = eating;
+        additionnalSfx.Play();
+    }
+
+    public void DoVomitSound()
+    {
+        additionnalSfx.Stop();
+        additionnalSfx.clip = vomit;
+        additionnalSfx.Play();
+    }
+
+    public void DoFuelSound()
+    {
+        additionnalSfx.Stop();
+        additionnalSfx.clip = fuel;
         additionnalSfx.Play();
     }
 }

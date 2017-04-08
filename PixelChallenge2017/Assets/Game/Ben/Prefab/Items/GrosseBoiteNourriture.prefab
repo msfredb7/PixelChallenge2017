@@ -172,7 +172,7 @@ MonoBehaviour:
   _placementState: 0
   wasInCar: 0
   descriptionTxt: Un copieux repas pour vos passagers les plus difficiles
-  ValeurNourriture: 90
+  ValeurNourriture: 15
 --- !u!212 &212794332081141422
 SpriteRenderer:
   m_ObjectHideFlags: 1
