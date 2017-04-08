@@ -374,9 +374,9 @@ public class EventScripting
                 questRoad2.Add(new Quest("Deposer le mysterieux monsieur et ses nombreux chapeaux a Trois-Riviere", 1, 10, PersonneBank.GetItemByIndex(2), new Quest.Destination(destination, null),questItemMonsieur5km));
                 questRoad2.Add(new Quest("Deposer Justine et son materiel informatique a Trois-Riviere", 10, 0, PersonneBank.GetItemByIndex(3), new Quest.Destination(destination, null), questItemGary10km));
                 questRoad2.Add(new Quest("Deposer Annushka et ses bagages jusqu'a la prochaine epicerie", 30, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, restaurant70km)));
-                questRoad2.Add(new Quest("Deposer Bob au prochain garage", 49, 0, PersonneBank.GetItemByIndex(6), new Quest.Destination(null, garage91km)));
-                questRoad2.Add(new Quest("Deposer Maxime et ses meubles a Trois-Riviere", 62, 0, PersonneBank.GetItemByIndex(7), new Quest.Destination(destination,null)));
-                questRoad2.Add(new Quest("Deposer Jeremy a la prochaine epicerie", 100, 0, PersonneBank.GetItemByIndex(8), new Quest.Destination(null, restaurant112km)));
+                questRoad2.Add(new Quest("Deposer Bob au prochain garage", 49, 0, PersonneBank.GetItemByIndex(5), new Quest.Destination(null, garage91km)));
+                questRoad2.Add(new Quest("Deposer Maxime et ses meubles a Trois-Riviere", 62, 0, PersonneBank.GetItemByIndex(5), new Quest.Destination(destination,null)));
+                questRoad2.Add(new Quest("Deposer Jeremy a la prochaine epicerie", 100, 0, PersonneBank.GetItemByIndex(5), new Quest.Destination(null, restaurant112km)));
 
 
                 // Loteries
