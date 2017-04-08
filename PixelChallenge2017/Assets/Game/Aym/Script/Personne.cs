@@ -220,4 +220,10 @@ public class Personne : Item {
     {
         return c.caseOccupe == false && c.caseType != CaseType.Coffre;
     }
+
+    public override string description()
+    {
+        string ret = "Nom : " + this.nom + System.Environment.NewLine + base.description();
+        return ret;
+    }
 }
