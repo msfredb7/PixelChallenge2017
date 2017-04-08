@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class TestScriptAlex : MonoBehaviour {
 
-    public Quest myQuest;
-
 	void Update ()
     {
-
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            PewDiePieUI.instance.GameOver();
+        }
     }
 }

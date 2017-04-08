@@ -141,9 +141,9 @@ public class Item : MonoBehaviour
     }
 
 
-    public void occupeCase()
+    virtual public bool canOccupeCase(Case central)
     {
-        if (centralCase != null)
+        if (central != null)
         {
             List<Case> tryToOccupe = new List<Case>();
             bool canOccupe = true;
@@ -153,7 +153,7 @@ public class Item : MonoBehaviour
                 {
                     if (cases.rows[y].row[x] == true)
                     {
-                        Case temp = centralCase.getCaseWithOffset(x - offsetX, y - offsetY);
+                        Case temp = central.getCaseWithOffset(x - offsetX, y - offsetY);
                         if (temp != null)
                         {
                             tryToOccupe.Add(temp);
@@ -176,9 +176,27 @@ public class Item : MonoBehaviour
                 }
             }
 
-            if (canOccupe == true)
+            foreach (Case c in tryToOccupe)
             {
-                foreach (Case c in tryToOccupe)
+                foreach (Item v in allItem)
+                {
+                    if (v.occupedCase.Contains(c) && v.GetType() == typeof(Personne))
+                    {
+                        canOccupe = true;
+                    }
+                }
+            }
+            return canOccupe;
+        }
+        return false;
+    }
+
+    virtual public void occupeCase()
+    {
+       
+            if (canOccupeCase(centralCase) == true)
+            {
+                foreach (Case c in occupedByCentral(centralCase))
                 {
                     occupedCase.Add(c);
                     c.caseOccupe = true;
@@ -188,7 +206,7 @@ public class Item : MonoBehaviour
             {
                 centralCase = null;
             }
-        }
+        
     }
 
     public void colorCase()
@@ -230,6 +248,17 @@ public class Item : MonoBehaviour
                 if (valideCase(c) == false)
                 {
                     canOccupe = false;
+                }
+            }
+
+            foreach (Case c in tryToOccupe)
+            {
+                foreach(Item it in allItem)
+                {
+                    if(it.occupedCase.Contains(c) && it.GetType() == typeof(Personne))
+                    {
+                        canOccupe = true;
+                    }
                 }
             }
             if (canOccupe == true)

@@ -23,6 +23,8 @@ public class Nourriture : Item {
         Case tempC = calculCentralCase();
         List<Case> hoveredCase = occupedByCentral(tempC);
 
+        bool eated = false;
+
         if(hoveredCase != null)
         {
             foreach (Case c in hoveredCase)
@@ -33,8 +35,9 @@ public class Nourriture : Item {
                     {
                         Personne p = (Personne)it;
                         p.food += ValeurNourriture;
+                        MusicManager.instance.DoEatingSound();
                         clearCase();
-                        Destroy(gameObject);
+                        Kill();
                         return;
                     }
 
@@ -55,5 +58,26 @@ public class Nourriture : Item {
             }
         }
         return base.valideCase(c);
+    }
+
+    override public bool canOccupeCase(Case central)
+    {
+        bool ret = base.canOccupeCase(central);
+        if ( ret == false)
+        {
+            foreach(Case c in occupedByCentral(central))
+            {
+                foreach (Item v in allItem)
+                {
+                    if (v.occupedCase.Contains(c) && v.GetType() == typeof(Personne))
+                    {
+                        return true;
+                    }
+                }
+            }
+        }
+        
+
+        return ret;
     }
 }

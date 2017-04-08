@@ -4,16 +4,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class PewDiePieUI : PublicSingleton<PewDiePieUI> {
     public Button repairButton;
     public Button continueButton;
     public Shop shop;
 
+    public Image blackFG;
+
     void Start()
     {
         repairButton.onClick.AddListener(OnRepairClick);
         continueButton.onClick.AddListener(OnContinueClick);
+        GlobalAnimator.OnRestart.AddListener(OnGlobalAnimatorRestart);
         GameManager.instance.car.onDie.AddListener(OnCarDie);
     }
 
@@ -28,13 +32,17 @@ public class PewDiePieUI : PublicSingleton<PewDiePieUI> {
         GameManager.instance.car.ChangeCash(-price);
         GameManager.instance.car.Repair();
         GlobalAnimator.Restart();
-        repairButton.gameObject.SetActive(false);
     }
 
     void OnContinueClick()
     {
-        continueButton.gameObject.SetActive(false);
         GlobalAnimator.Restart();
+    }
+
+    void OnGlobalAnimatorRestart()
+    {
+        repairButton.gameObject.SetActive(false);
+        continueButton.gameObject.SetActive(false);
     }
 
     void OnCarDie()
@@ -46,8 +54,14 @@ public class PewDiePieUI : PublicSingleton<PewDiePieUI> {
 
     }
 
-    void GameOver()
+    public void GameOver()
     {
-        // TODO
+        blackFG.color = new Color(0, 0, 0, 0);
+        blackFG.gameObject.SetActive(true);
+        blackFG.DOFade(1,2).OnComplete(delegate()
+        {
+            DelayManager.ClearAll();
+            SceneManager.LoadScene("TransitionToGameOver");
+        });
     }
 }
