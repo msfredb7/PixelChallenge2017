@@ -146,6 +146,7 @@ MonoBehaviour:
     - row: 01010000000000
     - row: 00000000000000
   itemShape: []
+  nom: Lit
   offsetX: 1
   offsetY: 3
   centralCase: {fileID: 0}

@@ -80,13 +80,11 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
         switch (type)
         {
             case LieuType.stationEssence:
-                duration = 2.5f;
                 instance.building.Run(instance.stationEssenceSprite);
                 delayBeforeStop = 0.75f;
                 break;
             case LieuType.nullePart:
                 continueButton = false;
-                duration = -1;
                 break;
             case LieuType.depaneur:
                 instance.building.Run(instance.depaneurSprite);

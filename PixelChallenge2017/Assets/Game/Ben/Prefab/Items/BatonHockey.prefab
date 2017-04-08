@@ -134,6 +134,7 @@ MonoBehaviour:
     - row: 00000000000000
     - row: 00000000000000
   itemShape: []
+  nom: Baton de hockey
   offsetX: 2
   offsetY: 0
   centralCase: {fileID: 0}

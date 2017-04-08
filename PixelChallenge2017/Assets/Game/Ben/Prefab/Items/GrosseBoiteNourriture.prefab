@@ -133,10 +133,13 @@ MonoBehaviour:
     - row: 00000000000000
     - row: 00000000000000
   itemShape: []
+  nom: Repas gastronomique
   offsetX: 3
   offsetY: 3
   centralCase: {fileID: 0}
+  occupedCase: []
   scaleFacteur: 2
+  _placementState: 0
 --- !u!212 &212794332081141422
 SpriteRenderer:
   m_ObjectHideFlags: 1
