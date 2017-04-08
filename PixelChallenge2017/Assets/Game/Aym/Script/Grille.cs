@@ -109,7 +109,6 @@ public class Grille : MonoBehaviour {
         }
 
         applyDesactivation();
-        //gameObject.SetActive(false);
 
     }
 
@@ -128,3 +127,5 @@ public class Grille : MonoBehaviour {
         }
     }
 }
+
+        //gameObject.SetActive(false);
