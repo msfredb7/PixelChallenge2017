@@ -187,8 +187,11 @@ public class Quest
                     totalReward += GameManager.instance.car.listSpecialItems[j].reward;
                     totalItems++;
                 }
+                else
+                    GameManager.instance.car.listSpecialItems[j].item.descriptionTxt = "Objet de quete. \nValeur de 0$";
 
                 GameManager.instance.car.listSpecialItems.Remove(GameManager.instance.car.listSpecialItems[j]); //remove
+                j--;
             }
         }
         if (cashIn)
@@ -197,6 +200,7 @@ public class Quest
             {
                 GameManager.instance.car.listItems.Remove(items[i]);
                 items[i].Kill();
+                i--;
             }
             items.Clear();
         }
