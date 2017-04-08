@@ -11,6 +11,8 @@ public class ItemEvent {
 
     public float reward;
 
+    private Quest.ItemQuest questItem = null;
+
     public ItemEvent(float distance, float reward, Item item)
     {
         this.distance = distance;
@@ -22,30 +24,36 @@ public class ItemEvent {
     {
         Debug.Log("Un item apparait sur le bord de la route");
 
-        if (item == null)
+        if (this.item == null)
             return;
 
-        GameObject obj = GameObject.Instantiate(item.gameObject);
+        item = GameObject.Instantiate(item.gameObject).GetComponent<Item>();
 
         //obj.transform.localScale = new Vector3(obj.transform.localScale.x*5, obj.transform.localScale.y, obj.transform.localScale.z*5);
 
-        obj.gameObject.transform.localPosition = new Vector3(110, 0, Random.Range(-65, -20));
+        item.gameObject.transform.localPosition = new Vector3(110, 0, Random.Range(-65, -20));
 
-        GlobalAnimator.AddFloatingItem(obj);
-
-        DelayManager.CallTo(AfterEvent, 3);
+        GlobalAnimator.AddFloatingItem(item.gameObject);
+        
+        item.onDeath.AddListener(RemoveListeners);
+        item.onEnterCar.AddListener(OnEnterCar);
+        item.onExitCar.AddListener(OnExitCar);
     }
 
-    public void AfterEvent()
+    void RemoveListeners()
     {
-        // Apres l'event
-        if (reward > 0) // Si l'objet pick up est sense etre un objet recompense quand on arrive a la ville
-        {
-            for (int i = 0; i < GameManager.instance.car.listItems.Count; i++) // on trouve
-            {
-                if (GameManager.instance.car.listItems[i] == item) // l'objet qui a ete pick up
-                    GameManager.instance.car.listSpecialItems.Add(new Quest.ItemQuest(item, reward)); // et on le met dans la liste d'objet reward
-            }
-        }
+        item.onEnterCar.RemoveListener(OnEnterCar);
+        item.onExitCar.RemoveListener(OnExitCar);
+    }
+
+    void OnEnterCar()
+    {
+        if(questItem == null)
+            questItem = new Quest.ItemQuest(item, reward);
+        GameManager.instance.car.listSpecialItems.Add(questItem);
+    }
+    void OnExitCar()
+    {
+        GameManager.instance.car.listSpecialItems.Remove(questItem);
     }
 }

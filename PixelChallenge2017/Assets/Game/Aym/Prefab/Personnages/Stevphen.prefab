@@ -123,7 +123,7 @@ MonoBehaviour:
     - row: 00000000000000
     - row: 00000000000000
   itemShape: []
-  nom: Stevphen
+  nom: Charles
   offsetX: 2
   offsetY: 2
   centralCase: {fileID: 0}
@@ -171,6 +171,7 @@ MonoBehaviour:
   vomi: {fileID: 1873793353012496, guid: 654e3e7b45bf86d44be918399897691a, type: 2}
   dechet: {fileID: 1416452898090006, guid: 207db48c9a8e6b04db28077ec6bd1503, type: 2}
   previousState: 0
+  vomiRassasiment: 0.34
   onCarExit:
     m_PersistentCalls:
       m_Calls: []
