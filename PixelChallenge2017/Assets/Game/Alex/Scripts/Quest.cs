@@ -43,6 +43,18 @@ public class Quest
         {
             return (stop != null) && (ville == null);
         }
+
+        public override string ToString()
+        {
+            if(DestinationIsCity())
+            {
+                return ville.nom;
+            }
+            else
+            {
+                return "Prochain " + stop.lieu;
+            }
+        }
     }
 
     public float distance;
