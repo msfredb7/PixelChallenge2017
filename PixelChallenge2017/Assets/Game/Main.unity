@@ -1703,6 +1703,11 @@ Prefab:
       propertyPath: spawnPos
       value: 
       objectReference: {fileID: 2104840602}
+    - target: {fileID: 114861867878281566, guid: ab2db0993ff0fae46ab10a531f715038,
+        type: 2}
+      propertyPath: textPanneSeche
+      value: 
+      objectReference: {fileID: 1439204290}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ab2db0993ff0fae46ab10a531f715038, type: 2}
   m_IsPrefabParent: 0
@@ -2120,6 +2125,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1321218321}
   m_Script: {fileID: 11500000, guid: 68eb26ebc6825cd4382651816bca1997, type: 3}
+--- !u!114 &1439204290 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114198732076091146, guid: ab2db0993ff0fae46ab10a531f715038,
+    type: 2}
+  m_PrefabInternal: {fileID: 1113338321}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &1456066322
 Prefab:
   m_ObjectHideFlags: 0

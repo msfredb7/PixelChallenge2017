@@ -8,7 +8,6 @@ public class AccidentManager : PublicSingleton<AccidentManager>
     public Button utilisePneuSecoursButton;
     public Button UtiliseOutilButton;
     public Button DépanneuseButton;
-    public Text textFlat;
     public Text textPanneMoteur;
 
     public void Start()
@@ -19,23 +18,28 @@ public class AccidentManager : PublicSingleton<AccidentManager>
 
     }
 
+
     public void flatEvent()
     {
         GlobalAnimator.StopAt(LieuType.nullePart, null, delegate ()
         {
+            textPanneMoteur.gameObject.SetActive(true);
+
             if (GameManager.instance.car.getItemOfType("Roue de secours") != null)
+            {
                 utilisePneuSecoursButton.gameObject.SetActive(true);
+                if (GameManager.instance.car.cash >= GameManager.instance.TowingCost)
+                {
+                    textPanneMoteur.text = "Crevaison! Utilise un pneu de secours ou paye 35$ a la depanneuse le remplacement.";
+                    DépanneuseButton.gameObject.SetActive(true);
+                }
+                else textPanneMoteur.text = "Crevaison! Utilise un pneu de secours.";
+            }           
             else
             {
-                float price = GameManager.instance.TowingCost;
-                if (GameManager.instance.car.cash < price)
-                {
-                    PewDiePieUI.instance.GameOver();
-                    return;
-                }
+                textPanneMoteur.text = "Crevaison! Paye 35$ a la depanneuse le remplacement.";
+                DépanneuseButton.gameObject.SetActive(true);
             }
-            textFlat.gameObject.SetActive(true);
-            DépanneuseButton.gameObject.SetActive(true);
         });
 
     }
@@ -44,19 +48,23 @@ public class AccidentManager : PublicSingleton<AccidentManager>
     {
         GlobalAnimator.StopAt(LieuType.nullePart, null, delegate ()
         {
+            textPanneMoteur.gameObject.SetActive(true);
+
             if (GameManager.instance.car.getItemOfType("Outils") != null)
+            {
                 UtiliseOutilButton.gameObject.SetActive(true);
+                if (GameManager.instance.car.cash >= GameManager.instance.TowingCost)
+                {
+                    textPanneMoteur.text = "Panne mecanique! Utilise un outil ou Paye 35$ a la depanneuse pour la reperation.";
+                    DépanneuseButton.gameObject.SetActive(true);
+                }
+                else textPanneMoteur.text = "Panne mecanique! Utilise un outil.";
+            }       
             else
             {
-                float price = GameManager.instance.TowingCost;
-                if (GameManager.instance.car.cash < price)
-                {
-                    PewDiePieUI.instance.GameOver();
-                    return;
-                }  
-            }
-            textPanneMoteur.gameObject.SetActive(true);
-            DépanneuseButton.gameObject.SetActive(true);
+                textPanneMoteur.text = "Panne mecanique! Paye 35$ a la depanneuse pour la reperation.";
+                DépanneuseButton.gameObject.SetActive(true);
+            }      
         });
 
     }
@@ -83,8 +91,18 @@ public class AccidentManager : PublicSingleton<AccidentManager>
 
     public void appelDépanneuse()
     {
-        float price = GameManager.instance.TowingCost;
-        GameManager.instance.car.ChangeCash(-price);
+
+        if (GameManager.instance.car.cash < GameManager.instance.TowingCost)
+        {
+            utilisePneuSecoursButton.gameObject.SetActive(false);
+            UtiliseOutilButton.gameObject.SetActive(false);
+            DépanneuseButton.gameObject.SetActive(false);
+            textPanneMoteur.gameObject.SetActive(false);
+            PewDiePieUI.instance.manqueDeFond();
+            return;
+        }
+
+        GameManager.instance.car.ChangeCash(-GameManager.instance.TowingCost);
         GameManager.instance.car.Repair();
 
         ResetContext();
@@ -97,7 +115,6 @@ public class AccidentManager : PublicSingleton<AccidentManager>
         utilisePneuSecoursButton.gameObject.SetActive(false);
         UtiliseOutilButton.gameObject.SetActive(false);
         DépanneuseButton.gameObject.SetActive(false);
-        textFlat.gameObject.SetActive(false);
         textPanneMoteur.gameObject.SetActive(false);
     }
 
