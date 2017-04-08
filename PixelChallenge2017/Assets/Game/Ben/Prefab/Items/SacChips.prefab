@@ -171,7 +171,7 @@ MonoBehaviour:
       PublicKeyToken=null
   _placementState: 0
   wasInCar: 0
-  descriptionTxt: 
+  descriptionTxt: Bien juteuse, comme on les aime
   ValeurNourriture: 10
 --- !u!212 &212791257201546298
 SpriteRenderer:

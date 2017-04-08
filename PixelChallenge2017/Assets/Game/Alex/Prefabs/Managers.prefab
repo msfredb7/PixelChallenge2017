@@ -113,6 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   container: {fileID: 0}
   textObject: {fileID: 1932279048123060, guid: 094996440292b7f45a3c819e7bddab42, type: 2}
+  questNotification: {fileID: 0}
   nbMax: 7
   currentNbQuest: 0
 --- !u!114 &114423644772353052

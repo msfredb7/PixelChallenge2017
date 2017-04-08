@@ -97,7 +97,7 @@ public class EventScripting
         stopRoad1.Add(monique57km);
 
         List<Quest> questRoad1 = new List<Quest>();
-        questRoad1.Add(new Quest("Déposer Marise et ses valises à Montréal", 0, 0, null, new Quest.Destination(destination, null)));
+        questRoad1.Add(new Quest("Déposer Marise et ses valises à Montréal", 0, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
         questRoad1.Add(new Quest("Déposer Charles et son équipement de hockey à Montreal", 10, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
         questRoad1.Add(new Quest("Déposer Marc à la prochaine station service", 17, 999, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, station40km)));
         questRoad1.Add(new Quest("Déposer Monique à Montreal", 57, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
@@ -120,18 +120,102 @@ public class EventScripting
         List<SpecialEvent> specialEventList = new List<SpecialEvent>();
 
         // Evennement de Bulle
-        specialEventList.Add(new SpecialEvent(15, delegate()
+        specialEventList.Add(new SpecialEvent(2, delegate ()
         {
             GameObject obj = GameObject.Instantiate(GameManager.instance.bulle, GameManager.instance.canvasUI.transform);
             obj.transform.position = GameManager.instance.conducteurUI.transform.position;
             foreach (Transform child in obj.transform)
             {
-                child.GetComponent<Text>().text = "Wow, fa bo icitte tabarnak \n C'est crissement epic looooooooooooooool";
+                child.GetComponent<Text>().text = "T'avais-tu vraiment besoin d'ammener 12 valises pour un voyage de 1 semaine Marise?";
             }
-            DelayManager.CallTo(delegate()
+            DelayManager.CallTo(delegate ()
             {
                 GameObject.Destroy(obj);
-            },5);
+            }, 3);
+        }));
+
+        specialEventList.Add(new SpecialEvent(9, delegate ()
+        {
+            GameObject obj = GameObject.Instantiate(GameManager.instance.bulle, GameManager.instance.canvasUI.transform);
+            obj.transform.position = GameManager.instance.conducteurUI.transform.position;
+            foreach (Transform child in obj.transform)
+            {
+                child.GetComponent<Text>().text = "On devrait l'embarquer pour économiser, quitte à se débarasser de quelques objets...";
+            }
+            DelayManager.CallTo(delegate ()
+            {
+                GameObject.Destroy(obj);
+            }, 3);
+        }));
+
+        specialEventList.Add(new SpecialEvent(20, delegate ()
+        {
+            GameObject obj = GameObject.Instantiate(GameManager.instance.bulle, GameManager.instance.canvasUI.transform);
+            obj.transform.position = GameManager.instance.conducteurUI.transform.position;
+            foreach (Transform child in obj.transform)
+            {
+                child.GetComponent<Text>().text = "Nice un dépanneur, on va pouvoir acheter quelques provisions";
+            }
+            DelayManager.CallTo(delegate ()
+            {
+                GameObject.Destroy(obj);
+            }, 3);
+        }));
+
+        specialEventList.Add(new SpecialEvent(30, delegate ()
+        {
+            GameObject obj = GameObject.Instantiate(GameManager.instance.bulle, GameManager.instance.canvasUI.transform);
+            obj.transform.position = GameManager.instance.conducteurUI.transform.position;
+            foreach (Transform child in obj.transform)
+            {
+                child.GetComponent<Text>().text = "Tu peux changer de poste de radio, gênes toi pas !";
+            }
+            DelayManager.CallTo(delegate ()
+            {
+                GameObject.Destroy(obj);
+            }, 3);
+        }));
+
+        specialEventList.Add(new SpecialEvent(40, delegate ()
+        {
+            GameObject obj = GameObject.Instantiate(GameManager.instance.bulle, GameManager.instance.canvasUI.transform);
+            obj.transform.position = GameManager.instance.conducteurUI.transform.position;
+            foreach (Transform child in obj.transform)
+            {
+                child.GetComponent<Text>().text = "On devrait peut-être acheter quelques barils de plus pour éviter d'en manquer";
+            }
+            DelayManager.CallTo(delegate ()
+            {
+                GameObject.Destroy(obj);
+            }, 3);
+        }));
+
+        specialEventList.Add(new SpecialEvent(45, delegate ()
+        {
+            GameObject obj = GameObject.Instantiate(GameManager.instance.bulle, GameManager.instance.canvasUI.transform);
+            obj.transform.position = GameManager.instance.conducteurUI.transform.position;
+            foreach (Transform child in obj.transform)
+            {
+                child.GetComponent<Text>().text = "Une épicerie, c'est le moment d'acheter de plus grandes quantitées de nourriture";
+            }
+            DelayManager.CallTo(delegate ()
+            {
+                GameObject.Destroy(obj);
+            }, 3);
+        }));
+
+        specialEventList.Add(new SpecialEvent(60, delegate ()
+        {
+            GameObject obj = GameObject.Instantiate(GameManager.instance.bulle, GameManager.instance.canvasUI.transform);
+            obj.transform.position = GameManager.instance.conducteurUI.transform.position;
+            foreach (Transform child in obj.transform)
+            {
+                child.GetComponent<Text>().text = "Enfin un garage, on va pouvoir acheter des pièces de rechange";
+            }
+            DelayManager.CallTo(delegate ()
+            {
+                GameObject.Destroy(obj);
+            }, 3);
         }));
 
         float eventCountdown = 0;
@@ -237,6 +321,7 @@ public class EventScripting
 
 
                 // Quetes
+                Stop monsieur5km = new Stop(5, LieuType.arretBus);
                 Stop gary10km = new Stop(10, LieuType.arretBus);
                 Stop mariepier30km = new Stop(30, LieuType.arretBus);
                 Stop bob49km = new Stop(49, LieuType.arretBus);
@@ -250,7 +335,7 @@ public class EventScripting
                 stopRoad2.Add(jeremy100km);
 
                 List<Quest> questRoad2 = new List<Quest>();
-                questRoad2.Add(new Quest("Déposer le mystérieux monsieur et ses nombreux chapeaux à Trois-Rivière", 0, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
+                questRoad2.Add(new Quest("Déposer le mystérieux monsieur et ses nombreux chapeaux à Trois-Rivière", 5, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
                 questRoad2.Add(new Quest("Déposer Gary et son matériel informatique à Trois-Rivière", 10, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null)));
                 questRoad2.Add(new Quest("Déposer Marie-Pier et ses bagages jusqu'à la prochaine épicerie", 30, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, restaurant70km)));
                 questRoad2.Add(new Quest("Déposer Bob au prochain garage", 49, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage91km)));
@@ -288,11 +373,132 @@ public class EventScripting
                 // 129 km
 
 
+                // Objets des magasins
+                List<ItemAVendre> itemDepanneur12km = new List<ItemAVendre>();
+                itemDepanneur12km.Add(new ItemAVendre(ItemBank.GetItemByIndex(4), 1, 9));
+                itemDepanneur12km.Add(new ItemAVendre(ItemBank.GetItemByIndex(4), 1, 9));
+                itemDepanneur12km.Add(new ItemAVendre(ItemBank.GetItemByIndex(4), 1, 9));
 
-                Road newRoad3 = new Road(depart1, destination1, null, null, null, null, 5);
+                List<ItemAVendre> itemDepanneur30km = new List<ItemAVendre>();
+                itemDepanneur30km.Add(new ItemAVendre(ItemBank.GetItemByIndex(4), 1, 9));
+                itemDepanneur30km.Add(new ItemAVendre(ItemBank.GetItemByIndex(4), 1, 9));
+                itemDepanneur30km.Add(new ItemAVendre(ItemBank.GetItemByIndex(4), 1, 9));
+
+                List<ItemAVendre> itemRestaurant50km = new List<ItemAVendre>();
+                itemRestaurant50km.Add(new ItemAVendre(ItemBank.GetItemByIndex(0), 8, 5));
+                itemRestaurant50km.Add(new ItemAVendre(ItemBank.GetItemByIndex(1), 7, 0));
+
+                List<ItemAVendre> itemStation75km = new List<ItemAVendre>();
+                itemStation75km.Add(new ItemAVendre(ItemBank.GetItemByIndex(5), 10, 3));
+                itemStation75km.Add(new ItemAVendre(ItemBank.GetItemByIndex(6), 10, 2));
+                itemStation75km.Add(new ItemAVendre(ItemBank.GetItemByIndex(7), 10, 1));
+
+                List<ItemAVendre> itemGarage80km = new List<ItemAVendre>();
+                itemGarage80km.Add(new ItemAVendre(ItemBank.GetItemByIndex(8), 20, 1));
+                itemGarage80km.Add(new ItemAVendre(ItemBank.GetItemByIndex(9), 20, 1));
+                itemGarage80km.Add(new ItemAVendre(ItemBank.GetItemByIndex(10), 7, 3));
+
+                List<ItemAVendre> itemDepanneur100km = new List<ItemAVendre>();
+                itemDepanneur100km.Add(new ItemAVendre(ItemBank.GetItemByIndex(2), 4, 5));
+                itemDepanneur100km.Add(new ItemAVendre(ItemBank.GetItemByIndex(3), 4, 5));
+                itemDepanneur100km.Add(new ItemAVendre(ItemBank.GetItemByIndex(4), 5, 5));
+
+                List<ItemAVendre> itemCostco119km = new List<ItemAVendre>();
+                itemCostco119km.Add(new ItemAVendre(ItemBank.GetItemByIndex(0), 2, 3));
+                itemCostco119km.Add(new ItemAVendre(ItemBank.GetItemByIndex(5), 2, 3));
+                itemCostco119km.Add(new ItemAVendre(ItemBank.GetItemByIndex(8), 10, 1));
+                itemCostco119km.Add(new ItemAVendre(ItemBank.GetItemByIndex(9), 10, 1));
+
+                List<ItemAVendre> itemStation123km = new List<ItemAVendre>();
+                itemStation123km.Add(new ItemAVendre(ItemBank.GetItemByIndex(5), 15, 0));
+                itemStation123km.Add(new ItemAVendre(ItemBank.GetItemByIndex(6), 15, 0));
+                itemStation123km.Add(new ItemAVendre(ItemBank.GetItemByIndex(7), 15, 3));
+
+
+                // Magasins
+                List<Stop> stopRoad3 = new List<Stop>();
+                Stop depanneur12km = new Stop(12, LieuType.depaneur, itemDepanneur12km);
+                Stop depanneur30km = new Stop(30, LieuType.depaneur, itemDepanneur30km);
+                Stop restaurant50km = new Stop(50, LieuType.restaurant, itemRestaurant50km);
+                Stop station75km = new Stop(75, LieuType.stationEssence, itemStation75km);
+                Stop garage80km = new Stop(80, LieuType.garage, itemGarage80km);
+                Stop depanneur100km = new Stop(100, LieuType.depaneur, itemDepanneur100km);
+                Stop costco119km = new Stop(119, LieuType.costco, itemCostco119km);
+                Stop station123km = new Stop(123, LieuType.stationEssence, itemStation123km);
+
+                stopRoad3.Add(depanneur12km);
+                stopRoad3.Add(depanneur30km);
+                stopRoad3.Add(restaurant50km);
+                stopRoad3.Add(station75km);
+                stopRoad3.Add(garage80km);
+                stopRoad3.Add(depanneur100km);
+                stopRoad3.Add(costco119km);
+                stopRoad3.Add(station123km);
+
+
+                // Quetes
+                Stop marc15km = new Stop(15, LieuType.arretBus);
+                Stop marcos23km = new Stop(23, LieuType.arretBus);
+                Stop marcus40km = new Stop(40, LieuType.arretBus);
+                Stop marco45km = new Stop(45, LieuType.arretBus);
+                Stop marcandre67km = new Stop(67, LieuType.arretBus);
+                Stop mohamed90km = new Stop(90, LieuType.arretBus);
+                Stop natasha110km = new Stop(110, LieuType.arretBus);
+
+                stopRoad3.Add(marc15km);
+                stopRoad3.Add(marcos23km);
+                stopRoad3.Add(marcus40km);
+                stopRoad3.Add(marco45km);
+                stopRoad3.Add(marcandre67km);
+                stopRoad3.Add(mohamed90km);
+                stopRoad3.Add(natasha110km);
+
+                List<Quest> questRoad3 = new List<Quest>();
+                questRoad3.Add(new Quest("Déposer votre viel ami et ses meubles a Québec", 0, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination1, null)));
+                questRoad3.Add(new Quest("Déposer Marc et son équipement de hockey au prochain garage ", 15, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage80km)));
+                questRoad3.Add(new Quest("Déposer Marcos et son équipement de hockey au prochain garage ", 23, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage80km)));
+                questRoad3.Add(new Quest("Déposer Marcus et son équipement de hockey au prochain garage ", 40, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage80km)));
+                questRoad3.Add(new Quest("Déposer Marco et son équipement de hockey au prochain garage ", 45, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage80km)));
+                questRoad3.Add(new Quest("Déposer Marc-André et son équipement de hockey au prochain garage ", 67, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, garage80km)));
+                questRoad3.Add(new Quest("Déposer Mohamed et son équipement électronique à Québec ", 90, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination1,null)));
+                questRoad3.Add(new Quest("Déposer Natasha et ses valises à Québec ", 110, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination1, null)));
+
+
+                // Loteries
+                List<ItemEvent> itemEventRoad3 = new List<ItemEvent>();
+                ItemEvent item6km = new ItemEvent(6, 0, (Item)lotteryFood.Pick());
+                ItemEvent item18km = new ItemEvent(18, 0, (Item)lotteryEssence.Pick());
+                ItemEvent item27km = new ItemEvent(27, 0, (Item)lotteryFood.Pick());
+                ItemEvent item35km = new ItemEvent(35, 0, (Item)lotteryFood.Pick());
+                ItemEvent item56km = new ItemEvent(56, 0, (Item)lotteryCollectable.Pick());
+                ItemEvent item61km = new ItemEvent(61, 0, (Item)lotteryFood.Pick());
+                ItemEvent item71km = new ItemEvent(71, 0, (Item)lotteryUtility.Pick());
+                ItemEvent item75km = new ItemEvent(75, 0, (Item)lotteryEssence.Pick());
+                ItemEvent item85km = new ItemEvent(85, 0, (Item)lotteryCollectable.Pick());
+                ItemEvent item96km = new ItemEvent(96, 0, (Item)lotteryUtility.Pick());
+                ItemEvent item107km = new ItemEvent(107, 0, (Item)lotteryFood.Pick());
+                ItemEvent item115km = new ItemEvent(115, 0, (Item)lotteryEssence.Pick());
+
+                itemEventRoad3.Add(item6km);
+                itemEventRoad3.Add(item18km);
+                itemEventRoad3.Add(item27km);
+                itemEventRoad3.Add(item35km);
+                itemEventRoad3.Add(item56km);
+                itemEventRoad3.Add(item61km);
+                itemEventRoad3.Add(item71km);
+                itemEventRoad3.Add(item75km);
+                itemEventRoad3.Add(item85km);
+                itemEventRoad3.Add(item96km);
+                itemEventRoad3.Add(item107km);
+                itemEventRoad3.Add(item115km);
+
+
+                Road newRoad3 = new Road(depart1, destination1, stopRoad3, null, itemEventRoad3, questRoad3, 129);
                 RoadManager.instance.SetRoad(newRoad3);
                 currentEvent++;
                 break;
+
+
             case 2:
                 Ville depart2 = new Ville("Quebec");
                 Ville destination2 = new Ville("Saguenay");
@@ -303,6 +509,8 @@ public class EventScripting
                 RoadManager.instance.SetRoad(newRoad4);
                 currentEvent++;
                 break;
+
+
             case 3:
                 Ville depart3 = new Ville("Saguenay");
                 Ville destination3 = new Ville("Sept-Iles");

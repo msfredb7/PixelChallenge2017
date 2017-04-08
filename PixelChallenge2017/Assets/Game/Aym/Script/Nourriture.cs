@@ -20,20 +20,40 @@ public class Nourriture : Item {
     {
         
         CalculCollidedCase();
-        Case temp = calculCentralCase();
+        Case tempC = calculCentralCase();
+        List<Case> hoveredCase = occupedByCentral(tempC);
 
-        foreach(Item it in Item.allItem)
+        if(hoveredCase != null)
         {
-            if(it.centralCase == temp && it.GetType() == typeof(Personne))
+            foreach (Case c in hoveredCase)
             {
-                Personne p = (Personne)it;
-                p.food += ValeurNourriture;
-                clearCase();
-                Destroy(gameObject);
-                return;
+                foreach (Item it in Item.allItem)
+                {
+                    if (it.occupedCase.Contains(c) && it.GetType() == typeof(Personne))
+                    {
+                        Personne p = (Personne)it;
+                        p.food += ValeurNourriture;
+                        clearCase();
+                        Destroy(gameObject);
+                        return;
+                    }
+
+                }
             }
-    
         }
+        
         base.EndDrag();
+    }
+
+    protected override bool valideCase(Case c)
+    {
+        foreach (Item v in allItem)
+        {
+            if (v.occupedCase.Contains(c) && v.GetType() == typeof(Personne))
+            {
+                return true;
+            }
+        }
+        return base.valideCase(c);
     }
 }

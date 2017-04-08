@@ -6,16 +6,17 @@ using UnityEngine.UI;
 
 public class QuestManager : PublicSingleton<QuestManager>
 {
-
     public GameObject container;
     public GameObject textObject;
+
+    public GameObject questNotification;
 
     public List<Quest> questList = new List<Quest>();
 
     public int nbMax;
     public int currentNbQuest = 0;
 
-    public void AddQuest(Quest quest)
+    public void AddQuest(Quest quest, bool notify = false)
     {
         // Si on a deja trop de quete
         if (currentNbQuest >= nbMax)
@@ -28,6 +29,8 @@ public class QuestManager : PublicSingleton<QuestManager>
         GameObject newQuest = Instantiate(textObject, container.transform);
         newQuest.transform.localScale = Vector3.one;
         newQuest.GetComponent<Text>().text = quest.questDescription;
+        if(notify)
+            Notify();
 
         currentNbQuest++;
 
@@ -65,6 +68,39 @@ public class QuestManager : PublicSingleton<QuestManager>
     public void ClearQuest()
     {
         questList.Clear();
+    }
+
+    public void Notify()
+    {
+        questNotification.SetActive(true);
+        DelayManager.CallTo(delegate ()
+        {
+            questNotification.SetActive(false);
+        }, 1);
+        DelayManager.CallTo(delegate ()
+        {
+            questNotification.SetActive(true);
+        }, 2);
+        DelayManager.CallTo(delegate ()
+        {
+            questNotification.SetActive(false);
+        }, 3);
+        DelayManager.CallTo(delegate ()
+        {
+            questNotification.SetActive(true);
+        }, 4);
+        DelayManager.CallTo(delegate ()
+        {
+            questNotification.SetActive(false);
+        }, 5);
+        DelayManager.CallTo(delegate ()
+        {
+            questNotification.SetActive(true);
+        }, 6);
+        DelayManager.CallTo(delegate ()
+        {
+            questNotification.SetActive(false);
+        }, 7);
     }
 }
 
