@@ -46,11 +46,13 @@ public class Voiture {
 
     public void ChangeCash(float amount) // peut etre negatif
     {
+        CashToaster.instance.SpawnAmount((int)amount);
         cash += amount;
         if (cash < 0)
             cash = 0;
         if(cash == 0)
             noMoreCash = true;
+        
     }
 
     public void ChangeGas(float amount)
