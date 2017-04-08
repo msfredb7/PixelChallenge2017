@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : PublicSingleton<QuestManager>
+public class AccidentManager : PublicSingleton<QuestManager>
 {
     public void flatEvent()
     {
