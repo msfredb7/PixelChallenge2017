@@ -340,6 +340,10 @@ public class Item : MonoBehaviour {
         {
             c.caseOccupe = false;
         }
+        foreach(Case c in tempoHovered)
+        {
+            c.caseHovered = false;
+        }
     }
 
     protected Case calculCentralCase()
