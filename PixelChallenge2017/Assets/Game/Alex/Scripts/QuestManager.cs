@@ -53,6 +53,7 @@ public class QuestManager : PublicSingleton<QuestManager>
     }
     void OnQuestWin(Quest quest)
     {
+        
         float totalReward = quest.recompense;
         int totalItems = 0;
         if(quest.items.Count >= 1)
