@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using CCC.Manager;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PewDiePieUI : PublicSingleton<PewDiePieUI> {
@@ -17,6 +19,11 @@ public class PewDiePieUI : PublicSingleton<PewDiePieUI> {
 
     void OnRepairClick()
     {
+        if (GameManager.instance.car.cash < GameManager.instance.TowingCost)
+        {
+            GameOver();
+            return;
+        }
         float price = GameManager.instance.TowingCost;
         GameManager.instance.car.ChangeCash(-price);
         GameManager.instance.car.Repair();
@@ -34,12 +41,6 @@ public class PewDiePieUI : PublicSingleton<PewDiePieUI> {
     {
         GlobalAnimator.StopAt(LieuType.nullePart,null, delegate()
         {
-            float price = GameManager.instance.TowingCost;
-            if (GameManager.instance.car.cash < price)
-            {
-                GameOver();
-                return;
-            }
             repairButton.gameObject.SetActive(true);
         });
 
@@ -47,6 +48,6 @@ public class PewDiePieUI : PublicSingleton<PewDiePieUI> {
 
     void GameOver()
     {
-
+        // TODO
     }
 }
