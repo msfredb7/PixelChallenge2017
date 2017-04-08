@@ -85,7 +85,7 @@ public class Item : MonoBehaviour
             {
                 if (GameManager.instance != null)
                 {
-                    if (GameManager.instance.car != null && GameManager.instance.car.listItems.Contains(this))
+                    if (GameManager.instance.car != null && !GameManager.instance.car.listItems.Contains(this))
                     {
                         if (GameManager.instance.car.listItems != null)
                         {
@@ -320,7 +320,7 @@ public class Item : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
-
+    
     }
 
 
