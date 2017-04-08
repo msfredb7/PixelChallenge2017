@@ -5,23 +5,22 @@ using UnityEngine;
 [RequireComponent(typeof(Item))]
 public class CharacterSpriteSwaper : MonoBehaviour {
 
+    public Sprite insideCarSprite;
+    public Sprite outsideCarSprite;
 
 	void Start () {
         Item item = GetComponent<Item>();
-        item.onBeginDrag.AddListener(delegate () { print("begin drag"); });
-        item.onEndDrag.AddListener(delegate () { print("end drag"); });
-        item.onEnterCar.AddListener(delegate () { print("enter car"); });
-        item.onExitCar.AddListener(delegate () { print("exit car"); });
-        item.onFailPlacement.AddListener(delegate () { print("failed placement"); });
+        item.onEnterCar.AddListener(OnEnterCar);
+        item.onExitCar.AddListener(OnExitCar);
     }
 
     void OnEnterCar()
     {
-
+        GetComponentInChildren<SpriteRenderer>().sprite = insideCarSprite;
     }
 
     void OnExitCar()
     {
-
+        GetComponentInChildren<SpriteRenderer>().sprite = outsideCarSprite;
     }
 }
