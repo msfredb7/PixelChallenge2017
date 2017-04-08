@@ -121,10 +121,13 @@ MonoBehaviour:
     - row: 00000000000000
     - row: 00000000000000
   itemShape: []
+  nom: Pomme
   offsetX: 0
   offsetY: 0
   centralCase: {fileID: 0}
+  occupedCase: []
   scaleFacteur: 2
+  _placementState: 0
 --- !u!114 &114327878048902222
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -160,6 +160,7 @@ MonoBehaviour:
     - row: 00000000000000
     - row: 00000000000000
   itemShape: []
+  nom: "M\xE9daille d'or"
   offsetX: 2
   offsetY: 2
   centralCase: {fileID: 0}

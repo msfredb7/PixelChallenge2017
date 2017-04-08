@@ -146,6 +146,7 @@ MonoBehaviour:
     - row: 00000000000000
     - row: 00000000000000
   itemShape: []
+  nom: Gros bidon d'essence
   offsetX: 2
   offsetY: 2
   centralCase: {fileID: 0}

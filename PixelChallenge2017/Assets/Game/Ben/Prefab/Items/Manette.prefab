@@ -147,6 +147,7 @@ MonoBehaviour:
     - row: 00000000000000
     - row: 00000000000000
   itemShape: []
+  nom: Manette de jeu
   offsetX: 1
   offsetY: 2
   centralCase: {fileID: 0}

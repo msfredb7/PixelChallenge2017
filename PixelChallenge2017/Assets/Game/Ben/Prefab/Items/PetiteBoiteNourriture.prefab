@@ -121,6 +121,7 @@ MonoBehaviour:
     - row: 00000000000000
     - row: 00000000000000
   itemShape: []
+  nom: Croustilles
   offsetX: 1
   offsetY: 0
   centralCase: {fileID: 0}
