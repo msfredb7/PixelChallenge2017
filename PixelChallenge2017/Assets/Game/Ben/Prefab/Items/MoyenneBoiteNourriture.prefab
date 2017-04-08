@@ -160,7 +160,7 @@ MonoBehaviour:
   _placementState: 0
   wasInCar: 0
   descriptionTxt: Souvenir de vos repas a la cafeteria de votre ecole secondaire
-  ValeurNourriture: 60
+  ValeurNourriture: 10
 --- !u!114 &114100228530443966
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -172,7 +172,7 @@ MonoBehaviour:
   _placementState: 0
   wasInCar: 0
   descriptionTxt: Bien juteuse, comme on les aime
-  ValeurNourriture: 10
+  ValeurNourriture: 2
 --- !u!212 &212791257201546298
 SpriteRenderer:
   m_ObjectHideFlags: 1

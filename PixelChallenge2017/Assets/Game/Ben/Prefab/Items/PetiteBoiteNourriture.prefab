@@ -160,7 +160,7 @@ MonoBehaviour:
   _placementState: 0
   wasInCar: 0
   descriptionTxt: 70% air, 30% Chips
-  ValeurNourriture: 40
+  ValeurNourriture: 5
 --- !u!114 &114863247137650700
 MonoBehaviour:
   m_ObjectHideFlags: 1
