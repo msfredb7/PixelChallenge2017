@@ -161,12 +161,13 @@ MonoBehaviour:
       PublicKeyToken=null
   _placementState: 0
   wasInCar: 0
+  descriptionTxt: 
   objectifStop: 0
   cashValue: 50
   _food: 100
   consomation: 10
   maxFood: 0
-  vomi: {fileID: 1136334764767230, guid: 142defaa4becda74b829c689000ab1bc, type: 2}
+  vomi: {fileID: 1873793353012496, guid: 654e3e7b45bf86d44be918399897691a, type: 2}
   dechet: {fileID: 1416452898090006, guid: 207db48c9a8e6b04db28077ec6bd1503, type: 2}
   previousState: 0
   onCarExit:
@@ -175,6 +176,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   hummeur: {fileID: 212646120596910894}
+  lastDechet: 0
 --- !u!114 &114885649106131724
 MonoBehaviour:
   m_ObjectHideFlags: 1
