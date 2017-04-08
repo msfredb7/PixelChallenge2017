@@ -7,7 +7,7 @@ public class Voiture {
 
     public float cash;
     public float gas;
-    public float maxGas = 50;
+    public float maxGas = 25;
 
     public bool noMoreCash;
 
