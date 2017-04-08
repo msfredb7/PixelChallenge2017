@@ -16,6 +16,7 @@ public class Item : MonoBehaviour {
     }
     public ArrayLayout cases;
     public shape[] itemShape;
+    public string name;
 
     public int offsetX;
     public int offsetY;
