@@ -26,8 +26,12 @@ public class RoadManager : PublicSingleton<RoadManager>
 
     public float currentDistance;
 
+    public bool start = true;
+
     void Update()
     {
+        if (!start)
+            return;
          
         if (currentRoad == null)
         {
