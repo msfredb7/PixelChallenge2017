@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameManager : PublicSingleton<GameManager> {
+public class GameManager : PublicSingleton<GameManager>
+{
 
     public Voiture car;
-    
+
     public float startCash;
     public float startGas;
     public float startFood;
@@ -14,14 +15,13 @@ public class GameManager : PublicSingleton<GameManager> {
     public float TowingCost;
     public float TowingGas;
 
-    public Text gasText;
     public Text cashText;
 
     public GameObject grille;
 
     public List<GameObject> waypoints = new List<GameObject>();
 
-    void Start ()
+    void Start()
     {
         car = new Voiture(startCash, startGas);
 
@@ -47,7 +47,6 @@ public class GameManager : PublicSingleton<GameManager> {
         //    car.ChangeCash(-TowingCost);
         //    car.ChangeGas(TowingGas);
         //}
-        gasText.text = car.gas + "L";
         cashText.text = car.cash + "$";
     }
 
@@ -66,21 +65,26 @@ public class GameManager : PublicSingleton<GameManager> {
         car.IsRunning = true;
     }
 
-    public void CreateStop(LieuType lieu)
+    public void CreateStop(LieuType lieu, List<ItemAVendre> items)
     {
         print("On arrete a " + lieu);
         // Gere le spaw du prefab stop et set toute le reste
         GlobalAnimator.StopAt(lieu, delegate ()
         {
             print("On repart!");
+        },
+        delegate()
+        {
+            if(items.Count > 0)
+                PewDiePieUI.instance.shop.Init(items);
         });
     }
 
     // Spawn des items important avec le personnage
     public void SpawnItems(List<Quest.ItemQuest> items)
     {
-        int nbItems = 1; 
-        for(int i = 0; i < items.Count; i++)
+        int nbItems = 1;
+        for (int i = 0; i < items.Count; i++)
         {
             if (i > (waypoints.Count - 1))
                 return; // Fuck off

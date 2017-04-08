@@ -340,10 +340,12 @@ public class Item : MonoBehaviour {
         {
             c.caseOccupe = false;
         }
+        occupedCase.Clear();
         foreach(Case c in tempoHovered)
         {
             c.caseHovered = false;
         }
+        tempoHovered.Clear();
     }
 
     protected Case calculCentralCase()

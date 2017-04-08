@@ -43,6 +43,8 @@ public class Voiture {
     {
         bool wasOutOfGas = gas <= 0;
 
+        Debug.Log("Chat " + gas);
+
         gas += amount;
         if (gas < 0)
             gas = 0;
