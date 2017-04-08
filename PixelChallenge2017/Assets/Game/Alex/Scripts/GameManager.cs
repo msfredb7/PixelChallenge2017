@@ -63,13 +63,18 @@ public class GameManager : PublicSingleton<GameManager> {
         EventScripting.NextEvents(car);
     }
 
-    public void CreateStop(LieuType lieu)
+    public void CreateStop(LieuType lieu, List<ItemAVendre> items)
     {
         print("On arrete a " + lieu);
         // Gere le spaw du prefab stop et set toute le reste
         GlobalAnimator.StopAt(lieu, delegate ()
         {
             print("On repart!");
+        },
+        delegate()
+        {
+            if(items.Count > 0)
+                PewDiePieUI.instance.shop.Init(items);
         });
     }
 
