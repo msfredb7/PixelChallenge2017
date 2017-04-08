@@ -18,9 +18,11 @@ public class RoadManager : PublicSingleton<RoadManager> {
     [HideInInspector]
     public float timeLastStop = 0;
 
-    private int lastPrint = 0;
+    public int lastPrint = 0;
 
     public GameObject buyButton;
+
+    public float currentDistance;
 
     void Update()
     {
@@ -32,7 +34,7 @@ public class RoadManager : PublicSingleton<RoadManager> {
 
         if (GameManager.instance.car.IsRunning)
         {
-            float currentDistance = (Time.time - startTime) - timeToIgnore; // 1km = 1 secondes
+            currentDistance = (Time.time - startTime) - timeToIgnore; // 1km = 1 secondes
 
             if(currentDistance > (lastPrint + 1))
             {

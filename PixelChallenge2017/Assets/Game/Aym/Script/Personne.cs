@@ -17,6 +17,8 @@ public class Personne : Item {
     public float maxFood;
     public GameObject vomi;
 
+    public ItemState previousState;
+
     public UnityEvent onCarExit = new UnityEvent();
 
     public SpriteRenderer hummeur;
@@ -145,6 +147,7 @@ public class Personne : Item {
 	// Use this for initialization
 	public override void Start () {
         base.Start();
+        previousState = _placementState;
         rend.Remove(hummeur);
         if(maxFood <=_food)
         {
@@ -155,9 +158,16 @@ public class Personne : Item {
 	// Update is called once per frame
 	protected override void Update () {
         base.Update();
-        food -= Time.deltaTime * consomation;
-        if (_placementState == ItemState.notPlaced)
-            onCarExit.Invoke();
+        if ((RoadManager.instance.currentDistance % 2) < 0.1 && GameManager.instance.car.IsRunning)
+            food --;
+        if (previousState != _placementState)
+        {
+            if(_placementState == ItemState.notPlaced && previousState == ItemState.onDragUnplacable)
+            {
+                onCarExit.Invoke();
+            }
+            previousState = _placementState;
+        }
     }
 
     override protected bool valideCase(Case c)
