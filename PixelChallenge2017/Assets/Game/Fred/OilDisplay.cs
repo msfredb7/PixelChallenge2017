@@ -7,12 +7,12 @@ public class OilDisplay : Singleton<OilDisplay>
 {
     public MouseEnterListener listener;
     public Image fill;
-    private Vector2 fullSizeDelta;
+    public Vector2 fullSizeDelta;
 
-    void Start()
-    {
-        fullSizeDelta = fill.rectTransform.sizeDelta;
-    }
+    //void Start()
+    //{
+    //    fullSizeDelta = fill.rectTransform.sizeDelta;
+    //}
     public static void UpdateOil(float ratio)
     {
         instance.fill.rectTransform.sizeDelta = new Vector2(instance.fullSizeDelta.x, instance.fullSizeDelta.y * ratio);

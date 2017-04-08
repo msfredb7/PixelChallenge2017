@@ -117,7 +117,6 @@ MonoBehaviour:
   startFood: 10
   TowingCost: 1
   TowingGas: 10
-  gasText: {fileID: 0}
   cashText: {fileID: 0}
   grille: {fileID: 0}
   waypoints:
