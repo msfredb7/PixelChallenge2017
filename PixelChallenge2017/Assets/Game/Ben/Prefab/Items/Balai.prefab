@@ -19,11 +19,11 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4255509888263444}
-  - component: {fileID: 114783362725137328}
   - component: {fileID: 54856884362380614}
   - component: {fileID: 65318979102730610}
   - component: {fileID: 65488951520892284}
   - component: {fileID: 114880009657578416}
+  - component: {fileID: 114246085290941328}
   m_Layer: 0
   m_Name: Balai
   m_TagString: Untagged
@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1545537585243776}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1.53, y: 0, z: 21.15}
+  m_LocalPosition: {x: 12.985927, y: 0, z: 15.062476}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4434445556348524}
@@ -113,7 +113,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.2, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: -1.1}
---- !u!114 &114783362725137328
+--- !u!114 &114246085290941328
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1545537585243776}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b158d0ec76fedeb40be04b096e8ae9ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 9c3ab3426dcdb324691fa5a5cf099053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cases:
