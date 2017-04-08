@@ -15,7 +15,6 @@ public class RoadManager : PublicSingleton<RoadManager>
     public UnityEvent onLateDestinationReached = new UnityEvent();
     public UnityEvent onLateStopReached = new UnityEvent();
 
-    
     public float startTime = -1;
     
     public float timeToIgnore = 0;
@@ -46,13 +45,10 @@ public class RoadManager : PublicSingleton<RoadManager>
         if (GameManager.instance.car.IsRunning)
         {
             currentDistance = (Time.time - startTime) - timeToIgnore; // 1km = 1 secondes
-
-            print("current " + currentDistance);
-            print("ignore" + timeToIgnore);
+            GameManager.instance.car.ChangeGas(-Time.deltaTime);
 
             if (currentDistance > (lastPrint + 1))
             {
-                GameManager.instance.car.ChangeGas(-1);
                 //print("They see me rollin' ! They hatin' ( Distance : " + currentDistance + "km )");
                 lastPrint++;
             }

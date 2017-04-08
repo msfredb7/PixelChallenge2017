@@ -13,12 +13,15 @@ public class PewDiePieUI : PublicSingleton<PewDiePieUI> {
 
     public Image blackFG;
 
+    bool gasStopped = false;
+
     void Start()
     {
         repairButton.onClick.AddListener(OnRepairClick);
         continueButton.onClick.AddListener(OnContinueClick);
         GlobalAnimator.OnRestart.AddListener(OnGlobalAnimatorRestart);
         GameManager.instance.car.onDie.AddListener(OnCarDie);
+        GameManager.instance.car.onGasChange.AddListener(OnGasChange);
     }
 
     void OnRepairClick()
@@ -32,6 +35,7 @@ public class PewDiePieUI : PublicSingleton<PewDiePieUI> {
         GameManager.instance.car.ChangeCash(-price);
         GameManager.instance.car.Repair();
         GlobalAnimator.Restart();
+        gasStopped = false;
     }
 
     void OnContinueClick()
@@ -49,9 +53,30 @@ public class PewDiePieUI : PublicSingleton<PewDiePieUI> {
     {
         GlobalAnimator.StopAt(LieuType.nullePart,null, delegate()
         {
-            repairButton.gameObject.SetActive(true);
+            if (GameManager.instance.car.gas > 0)
+            {
+                GlobalAnimator.Restart();
+                gasStopped = false;
+            }
+            else
+            {
+                gasStopped = true;
+                repairButton.gameObject.SetActive(true);
+            }
         });
 
+    }
+
+    void OnGasChange()
+    {
+        if (gasStopped)
+        {
+            if(GameManager.instance.car.gas > 0)
+            {
+                GlobalAnimator.Restart();
+                gasStopped = false;
+            }
+        }
     }
 
     public void GameOver()

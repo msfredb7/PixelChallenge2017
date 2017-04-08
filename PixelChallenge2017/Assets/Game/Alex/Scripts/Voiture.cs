@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+[System.Serializable]
 public class Voiture {
 
     public float cash;
@@ -16,6 +17,7 @@ public class Voiture {
     public List<Item> listItems = new List<Item>();
     public List<Quest.ItemQuest> listSpecialItems = new List<Quest.ItemQuest>();
     public UnityEvent onDie = new UnityEvent();
+    public UnityEvent onGasChange = new UnityEvent();
 
 
     public Item getItemOfType(string objName)
@@ -71,11 +73,8 @@ public class Voiture {
         {
             onDie.Invoke();
         }
-        else if(wasOutOfGas)
-        {
-            GlobalAnimator.Restart();
-            PewDiePieUI.instance.repairButton.gameObject.SetActive(false);
-        }
+
+        onGasChange.Invoke();
 
         OilDisplay.UpdateOil(gas / maxGas);
     }
