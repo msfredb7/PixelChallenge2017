@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1063190546924222}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 49.649887, y: 72.74941, z: 0.028161049}
+  m_LocalPosition: {x: 0.122329, y: 0, z: 19.426006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4503881536734848}
@@ -138,18 +138,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cases:
     rows:
-    - row: 00010100000000
     - row: 01010101000000
+    - row: 01010101010000
+    - row: 01010101010000
     - row: 01010101000000
-    - row: 01010101000000
-    - row: 01010101000000
+    - row: 00000000000000
     - row: 00000000000000
     - row: 00000000000000
   itemShape: []
   offsetX: 2
   offsetY: 2
   centralCase: {fileID: 0}
+  occupedCase: []
   scaleFacteur: 2
+  _placementState: 0
 --- !u!212 &212315855312208162
 SpriteRenderer:
   m_ObjectHideFlags: 1
