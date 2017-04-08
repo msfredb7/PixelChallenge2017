@@ -524,12 +524,13 @@ public class Item : MonoBehaviour
 
     public void OnMouseOver()
     {
-        //Tooltip.instance.PrintToolTip(description());
+        Tooltip.instance.PrintToolTip(description());
     }
 
     public void OnMouseExit()
     {
-        //Tooltip.instance.HideToolTip();
+
+        Tooltip.instance.HideToolTip();
     }
 
 
