@@ -85,6 +85,8 @@ public class GameManager : PublicSingleton<GameManager>
     // Spawn des items important avec le personnage
     public void SpawnItems(List<Quest.ItemQuest> items)
     {
+        Debug.Log("Spawn Item");
+
         int nbItems = 1;
         for (int i = 0; i < items.Count; i++)
         {
