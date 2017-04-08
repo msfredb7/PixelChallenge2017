@@ -23,21 +23,25 @@ public class Nourriture : Item {
         Case tempC = calculCentralCase();
         List<Case> hoveredCase = occupedByCentral(tempC);
 
-        foreach(Case c in hoveredCase)
+        if(hoveredCase != null)
         {
-            foreach (Item it in Item.allItem)
+            foreach (Case c in hoveredCase)
             {
-                if (it.occupedCase.Contains(c)&& it.GetType() == typeof(Personne))
+                foreach (Item it in Item.allItem)
                 {
-                    Personne p = (Personne)it;
-                    p.food += ValeurNourriture;
-                    clearCase();
-                    Destroy(gameObject);
-                    return;
-                }
+                    if (it.occupedCase.Contains(c) && it.GetType() == typeof(Personne))
+                    {
+                        Personne p = (Personne)it;
+                        p.food += ValeurNourriture;
+                        clearCase();
+                        Destroy(gameObject);
+                        return;
+                    }
 
+                }
             }
         }
+        
         base.EndDrag();
     }
 
