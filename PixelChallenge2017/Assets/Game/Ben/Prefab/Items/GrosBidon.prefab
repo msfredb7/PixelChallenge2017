@@ -190,10 +190,14 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
   _placementState: 0
   wasInCar: 0
-  descriptionTxt: Un bon gros bidon de Gas. De quoi faire de beau kilometre avec un
-    tel plein.
+  descriptionTxt: Difficile de trouver un plus gros format que celui-la!
 --- !u!212 &212315855312208162
 SpriteRenderer:
   m_ObjectHideFlags: 1

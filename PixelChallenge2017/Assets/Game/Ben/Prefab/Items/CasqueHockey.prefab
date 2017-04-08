@@ -190,8 +190,14 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
   _placementState: 0
   wasInCar: 0
+  descriptionTxt: 'On ne vise qu''une chose : la coupe !'
 --- !u!212 &212198754989783802
 SpriteRenderer:
   m_ObjectHideFlags: 1
