@@ -358,25 +358,25 @@ public class EventScripting
 
                 stopRoad2.Add(mariepier30km);
                 List<Quest.ItemQuest> questItemMariePier30km = new List<Quest.ItemQuest>();
-                questItemGary10km.Add(new Quest.ItemQuest(ItemBank.GetItemByIndex(15), 8));
-                questItemGary10km.Add(new Quest.ItemQuest(ItemBank.GetItemByIndex(15), 8));
+                questItemMariePier30km.Add(new Quest.ItemQuest(ItemBank.GetItemByIndex(15), 8));
+                questItemMariePier30km.Add(new Quest.ItemQuest(ItemBank.GetItemByIndex(15), 8));
 
                 stopRoad2.Add(bob49km);
 
                 stopRoad2.Add(maxime62km);
                 List<Quest.ItemQuest> questItemMaxime62km = new List<Quest.ItemQuest>();
-                questItemGary10km.Add(new Quest.ItemQuest(ItemBank.GetItemByIndex(18), 10));
-                questItemGary10km.Add(new Quest.ItemQuest(ItemBank.GetItemByIndex(18), 10));
-                questItemGary10km.Add(new Quest.ItemQuest(ItemBank.GetItemByIndex(21), 15));
+                questItemMaxime62km.Add(new Quest.ItemQuest(ItemBank.GetItemByIndex(18), 10));
+                questItemMaxime62km.Add(new Quest.ItemQuest(ItemBank.GetItemByIndex(18), 10));
+                questItemMaxime62km.Add(new Quest.ItemQuest(ItemBank.GetItemByIndex(21), 15));
 
                 stopRoad2.Add(jeremy100km);
 
                 List<Quest> questRoad2 = new List<Quest>();
                 questRoad2.Add(new Quest("Deposer le mysterieux monsieur et ses nombreux chapeaux a Trois-Riviere", 1, 10, PersonneBank.GetItemByIndex(2), new Quest.Destination(destination, null),questItemMonsieur5km));
-                questRoad2.Add(new Quest("Deposer Justine et son materiel informatique a Trois-Riviere", 10, 0, PersonneBank.GetItemByIndex(3), new Quest.Destination(destination, null), questItemGary10km));
-                questRoad2.Add(new Quest("Deposer Annushka et ses bagages jusqu'a la prochaine epicerie", 30, 0, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, restaurant70km)));
-                questRoad2.Add(new Quest("Deposer Bob au prochain garage", 49, 0, PersonneBank.GetItemByIndex(5), new Quest.Destination(null, garage91km)));
-                questRoad2.Add(new Quest("Deposer Maxime et ses meubles a Trois-Riviere", 62, 0, PersonneBank.GetItemByIndex(5), new Quest.Destination(destination,null)));
+                questRoad2.Add(new Quest("Deposer Justine et son materiel informatique a Trois-Riviere", 10, 5, PersonneBank.GetItemByIndex(3), new Quest.Destination(destination, null), questItemGary10km));
+                questRoad2.Add(new Quest("Deposer Annushka et ses bagages jusqu'a la prochaine epicerie", 30, 8, PersonneBank.GetItemByIndex(0), new Quest.Destination(null, restaurant70km), questItemMariePier30km));
+                questRoad2.Add(new Quest("Deposer Bob au prochain garage", 49, 5, PersonneBank.GetItemByIndex(5), new Quest.Destination(null, garage91km)));
+                questRoad2.Add(new Quest("Deposer Maxime et ses meubles a Trois-Riviere", 62, 0, PersonneBank.GetItemByIndex(5), new Quest.Destination(destination,null), questItemMaxime62km));
                 questRoad2.Add(new Quest("Deposer Jeremy a la prochaine epicerie", 100, 0, PersonneBank.GetItemByIndex(5), new Quest.Destination(null, restaurant112km)));
 
 
@@ -384,7 +384,7 @@ public class EventScripting
                 List<ItemEvent> itemEventRoad2 = new List<ItemEvent>();
                 ItemEvent item14km = new ItemEvent(14, 0, (Item)lotteryFood.Pick());
                 ItemEvent item25km = new ItemEvent(25, 0, (Item)lotteryCollectable.Pick());
-                ItemEvent item52km = new ItemEvent(42, 0, (Item)lotteryEssence.Pick());
+                ItemEvent item52km = new ItemEvent(52, 0, (Item)lotteryEssence.Pick());
                 ItemEvent item74km = new ItemEvent(74, 0, (Item)lotteryCollectable.Pick());
                 ItemEvent item86km = new ItemEvent(86, 0, (Item)lotteryFood.Pick());
                 ItemEvent item95km = new ItemEvent(95, 0, (Item)lotteryUtility.Pick());
