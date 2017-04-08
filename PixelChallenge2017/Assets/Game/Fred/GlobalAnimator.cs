@@ -92,7 +92,7 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
             case LieuType.stationEssence:
                 instance.building.Run(instance.stationEssenceSprite);
                 delayBeforeStop = 0.75f;
-                duration = 6f;
+                duration = 10f;
                 break;
             case LieuType.nullePart:
                 continueButton = false;
@@ -100,48 +100,48 @@ public class GlobalAnimator : Singleton<GlobalAnimator>
             case LieuType.depaneur:
                 instance.building.Run(instance.depaneurSprite);
                 delayBeforeStop = 0.75f;
-                duration = 6f;
+                duration = 10f;
                 break;
             case LieuType.costco:
                 instance.building.Run(instance.costcoSprite);
                 delayBeforeStop = 0.75f;
-                duration = 6f;
+                duration = 10f;
                 break;
             case LieuType.restaurant:
                 instance.building.Run(instance.epicerieSprite);
                 delayBeforeStop = 0.75f;
-                duration = 6f;
+                duration = 10f;
                 break;
             case LieuType.garage:
                 instance.building.Run(instance.garageSprite);
                 delayBeforeStop = 0.75f;
-                duration = 6f;
+                duration = 10f;
                 break;
             case LieuType.Montreal:
                 instance.ville.Run(instance.montrealSprite);
                 delayBeforeStop = 1.75f;
-                duration = 6f;
+                duration = 10f;
                 break;
             case LieuType.Quebec:
                 instance.ville.Run(instance.quebecSprite);
                 delayBeforeStop = 1.75f;
-                duration = 6f;
+                duration = 10f;
                 break;
             case LieuType.SeptIles:
                 instance.ville.Run(instance.septIlesSprite);
                 delayBeforeStop = 1.75f;
-                duration = 6f;
+                duration = 10f;
                 break;
             case LieuType.TroisRiviere:
                 instance.ville.Run(instance.troisRiviereSprite);
                 delayBeforeStop = 1.75f;
-                duration = 6f;
+                duration = 10f;
                 break;
             case LieuType.arretBus:
                 instance.arretBus.Run(null);
                 delayBeforeStop = 0;
                 decelerateDuration = 2.5f;
-                duration = 6f;
+                duration = 10f;
                 break;
             default:
                 break;
