@@ -48,7 +48,7 @@ public class Item : MonoBehaviour
 
     protected List<SpriteRenderer> rend;
     public ItemState _placementState;
-    public int wasInCar =-1;
+    public int wasInCar = -1;
 
     public string descriptionTxt;
 
@@ -323,7 +323,7 @@ public class Item : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
-    
+
     }
 
 
@@ -430,7 +430,7 @@ public class Item : MonoBehaviour
         {
             posBeforePlacement = transform.position;
         }
-        Grille.Show(true, GetComponent<Personne>() == null);
+        Grille.Show(true, GetComponent<Personne>() == null || GetComponent<Personne>().nom == "Illegal");
         clearCase();
         collidedCase.Clear();
         onBeginDrag.Invoke();
