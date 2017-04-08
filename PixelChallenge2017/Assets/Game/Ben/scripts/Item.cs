@@ -509,6 +509,11 @@ public class Item : MonoBehaviour
     {
         onDeath.Invoke();
         clearCase();
+        Tooltip ins = Tooltip.instance;
+        if (ins != null)
+        {
+            Tooltip.instance.HideToolTip();
+        }
         allItem.Remove(this);
         gameObject.SetActive(false);
 
