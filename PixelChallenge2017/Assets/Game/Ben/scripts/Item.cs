@@ -151,7 +151,7 @@ public class Item : MonoBehaviour {
 
             foreach(Case c in tryToOccupe)
             {
-                if(c.caseOccupe)
+                if(valideCase(c) != true)
                 {
                     canOccupe = false;
                 }
@@ -340,6 +340,10 @@ public class Item : MonoBehaviour {
         {
             c.caseOccupe = false;
         }
+        foreach(Case c in tempoHovered)
+        {
+            c.caseHovered = false;
+        }
     }
 
     protected Case calculCentralCase()
@@ -477,8 +481,12 @@ public class Item : MonoBehaviour {
 
     public void Kill()
     {
+        clearCase();
         allItem.Remove(this);
         gameObject.SetActive(false);
+        
+        //GlobalAnimator.RemoveFloatingItem(gameObject);
+        //DestroyImmediate(gameObject,true);
     }
 }
 

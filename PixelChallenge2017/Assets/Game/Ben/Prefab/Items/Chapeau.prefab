@@ -134,6 +134,7 @@ MonoBehaviour:
     - row: 00000000000000
     - row: 00000000000000
   itemShape: []
+  nom: Chapeau
   offsetX: 0
   offsetY: 1
   centralCase: {fileID: 0}

@@ -160,6 +160,7 @@ MonoBehaviour:
     - row: 00000000000000
     - row: 00000000000000
   itemShape: []
+  nom: Roue de secours
   offsetX: 0
   offsetY: 2
   centralCase: {fileID: 0}
