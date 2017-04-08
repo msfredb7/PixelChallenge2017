@@ -1,17 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 
 
-public class Item : MonoBehaviour {
+public class Item : MonoBehaviour
+{
 
     public static List<Item> allItem;
 
     // Use this for initialization
     [System.Serializable]
     public class shape
-    { 
+    {
         public bool[] caseItem;
     }
     public ArrayLayout cases;
@@ -36,9 +38,16 @@ public class Item : MonoBehaviour {
     bool doubledSize;
     public float scaleFacteur;
 
+    public UnityEvent onBeginDrag = new UnityEvent();
+    public UnityEvent onEndDrag = new UnityEvent();
+    public UnityEvent onEnterCar = new UnityEvent();
+    public UnityEvent onExitCar = new UnityEvent();
+    public UnityEvent onFailPlacement = new UnityEvent();
+
 
     protected List<SpriteRenderer> rend;
     public ItemState _placementState;
+    public bool wasInCar;
 
     ItemState placementState
     {
@@ -48,18 +57,20 @@ public class Item : MonoBehaviour {
         }
         set
         {
+            ItemState pastState = placementState;
             _placementState = value;
-            if(_placementState == ItemState.placed || _placementState == ItemState.onDragPlacable || _placementState == ItemState.notPlaced )
+            if (_placementState == ItemState.placed || _placementState == ItemState.onDragPlacable || _placementState == ItemState.notPlaced)
             {
-                if(rend.Count > 0)
+                if (rend.Count > 0)
                 {
-                    foreach(SpriteRenderer r in rend)
+                    foreach (SpriteRenderer r in rend)
                     {
                         r.color = Color.white;
                     }
                 }
-                    
-            }else if ( _placementState == ItemState.onDragUnplacable)
+
+            }
+            else if (_placementState == ItemState.onDragUnplacable)
             {
                 if (rend.Count > 0)
                 {
@@ -70,29 +81,31 @@ public class Item : MonoBehaviour {
                 }
             }
 
-                if (_placementState == ItemState.placed)
+            if (_placementState == ItemState.placed)
             {
-                if(GameManager.instance != null)
+                if (GameManager.instance != null)
                 {
                     if (GameManager.instance.car != null && GameManager.instance.car.listItems.Contains(this))
                     {
-                        if(GameManager.instance.car.listItems != null)
+                        if (GameManager.instance.car.listItems != null)
                         {
                             GameManager.instance.car.listItems.Add(this);
                         }
                     }
                 }
-                
+                if (!wasInCar)
+                    onEnterCar.Invoke();
+                wasInCar = true;
             }
-            if(_placementState == ItemState.notPlaced)
+            if (_placementState == ItemState.notPlaced)
             {
-                if(GameManager.instance != null)
+                if (GameManager.instance != null)
                 {
-                    if(GameManager.instance.car != null && GameManager.instance.car.listItems!=null)
+                    if (GameManager.instance.car != null && GameManager.instance.car.listItems != null)
                     {
                         GameManager.instance.car.listItems.Remove(this);
                     }
-                    
+
                 }
                 if (!doubledSize)
                 {
@@ -107,10 +120,13 @@ public class Item : MonoBehaviour {
                     return;
                 }
                 GlobalAnimator.AddFloatingItem(gameObject);
+                if (wasInCar)
+                    onExitCar.Invoke();
+                wasInCar = false;
             }
             if (_placementState != ItemState.notPlaced)
             {
-                if(doubledSize)
+                if (doubledSize)
                 {
                     gameObject.transform.localScale /= scaleFacteur;
                     doubledSize = false;
@@ -124,18 +140,18 @@ public class Item : MonoBehaviour {
 
     public void occupeCase()
     {
-        if(centralCase != null)
+        if (centralCase != null)
         {
             List<Case> tryToOccupe = new List<Case>();
             bool canOccupe = true;
-            for (int y = 0; y < cases.rows.Length;y++)
+            for (int y = 0; y < cases.rows.Length; y++)
             {
-                 for(int x = 0; x<cases.rows[y].row.Length;x++)
+                for (int x = 0; x < cases.rows[y].row.Length; x++)
                 {
-                    if(cases.rows[y].row[x] == true)
+                    if (cases.rows[y].row[x] == true)
                     {
                         Case temp = centralCase.getCaseWithOffset(x - offsetX, y - offsetY);
-                        if(temp != null)
+                        if (temp != null)
                         {
                             tryToOccupe.Add(temp);
                         }
@@ -143,21 +159,21 @@ public class Item : MonoBehaviour {
                         {
                             canOccupe = false;
                         }
-                   
+
                     }
                 }
             }
-   
 
-            foreach(Case c in tryToOccupe)
+
+            foreach (Case c in tryToOccupe)
             {
-                if(valideCase(c) != true)
+                if (valideCase(c) != true)
                 {
                     canOccupe = false;
                 }
             }
 
-            if(canOccupe == true)
+            if (canOccupe == true)
             {
                 foreach (Case c in tryToOccupe)
                 {
@@ -175,7 +191,7 @@ public class Item : MonoBehaviour {
     public void colorCase()
     {
         Case tempCentralCase = calculCentralCase();
-        if(tempCentralCase != null)
+        if (tempCentralCase != null)
         {
 
         }
@@ -183,7 +199,7 @@ public class Item : MonoBehaviour {
 
     public List<Case> occupedByCentral(Case centralCaseIn)
     {
-        if(centralCaseIn != null)
+        if (centralCaseIn != null)
         {
             List<Case> tryToOccupe = new List<Case>();
             bool canOccupe = true;
@@ -208,7 +224,7 @@ public class Item : MonoBehaviour {
             }
             foreach (Case c in tryToOccupe)
             {
-                if (valideCase(c)==false)
+                if (valideCase(c) == false)
                 {
                     canOccupe = false;
                 }
@@ -226,7 +242,7 @@ public class Item : MonoBehaviour {
         {
             return null;
         }
-        
+
     }
 
     void OnTriggerEnter(Collider other)
@@ -242,13 +258,14 @@ public class Item : MonoBehaviour {
     }
 
     //public classCaseItem myCaseItem; 
-    public virtual void Start () {
-        if(allItem == null)
+    public virtual void Start()
+    {
+        if (allItem == null)
         {
             allItem = new List<Item>();
         }
 
-        if(scaleFacteur <= 0)
+        if (scaleFacteur <= 0)
         {
             scaleFacteur = 1;
         }
@@ -261,18 +278,18 @@ public class Item : MonoBehaviour {
         rend = new List<SpriteRenderer>();
         rend.AddRange(GetComponents<SpriteRenderer>());
         rend.AddRange(GetComponentsInChildren<SpriteRenderer>());
-        
 
 
-        
 
-        if(centralCase != null)
+
+
+        if (centralCase != null)
         {
             transform.position = centralCase.transform.position + new Vector3(0, 0.1f, 0);
             CalculCollidedCase();
             collidedCase.Add(centralCase);
             occupeCase();
-            if(centralCase !=null)
+            if (centralCase != null)
             {
                 placementState = ItemState.placed;
             }
@@ -287,9 +304,9 @@ public class Item : MonoBehaviour {
             placementState = ItemState.notPlaced;
         }
 
-        if(placementState == ItemState.notPlaced)
+        if (placementState == ItemState.notPlaced)
         {
-            if(doubledSize != true)
+            if (doubledSize != true)
             {
                 gameObject.transform.localScale *= scaleFacteur;
                 doubledSize = true;
@@ -297,13 +314,14 @@ public class Item : MonoBehaviour {
 
         }
 
-        
-	}
+
+    }
 
     // Update is called once per frame
-    protected virtual void Update () {
-		
-	}
+    protected virtual void Update()
+    {
+
+    }
 
 
     protected void ajustPos()
@@ -311,7 +329,7 @@ public class Item : MonoBehaviour {
         if (collidedCase.Count > 0)
         {
             Case tempCentralCase = calculCentralCase();
-            if(occupedByCentral(tempCentralCase) !=null)
+            if (occupedByCentral(tempCentralCase) != null)
             {
                 transform.position = tempCentralCase.transform.position + new Vector3(0, 0.1f, 0);
                 collidedCase.Clear();
@@ -341,7 +359,7 @@ public class Item : MonoBehaviour {
             c.caseOccupe = false;
         }
         occupedCase.Clear();
-        foreach(Case c in tempoHovered)
+        foreach (Case c in tempoHovered)
         {
             c.caseHovered = false;
         }
@@ -367,7 +385,7 @@ public class Item : MonoBehaviour {
             return minDistCase;
         }
         return null;
-     }
+    }
 
     protected void checkOffset()
     {
@@ -405,19 +423,20 @@ public class Item : MonoBehaviour {
         {
             beforePlacement = centralCase;
         }
-        if(placementState == ItemState.notPlaced)
+        if (placementState == ItemState.notPlaced)
         {
             posBeforePlacement = transform.position;
         }
-        
+
         clearCase();
         collidedCase.Clear();
+        onBeginDrag.Invoke();
     }
 
     virtual public void EndDrag()
     {
         CalculCollidedCase();
-        if(collidedCase.Count != 0)
+        if (collidedCase.Count != 0)
         {
             ajustPos();
             occupeCase();
@@ -428,6 +447,7 @@ public class Item : MonoBehaviour {
                 collidedCase.Add(beforePlacement);
                 ajustPos();
                 occupeCase();
+                onFailPlacement.Invoke();
             }
             if (centralCase != null)
             {
@@ -444,25 +464,25 @@ public class Item : MonoBehaviour {
             placementState = ItemState.notPlaced;
         }
 
-        if(placementState==ItemState.notPlaced)
+        if (placementState == ItemState.notPlaced)
         {
             centralCase = null;
         }
-        
+        onEndDrag.Invoke();
     }
 
     public void OnDrag()
     {
-        foreach(Case c in tempoHovered)
+        foreach (Case c in tempoHovered)
         {
             c.caseHovered = false;
         }
         tempoHovered.Clear();
         CalculCollidedCase();
         List<Case> ret = occupedByCentral(calculCentralCase());
-        if(ret != null && ret.Count>0)
+        if (ret != null && ret.Count > 0)
         {
-            foreach(Case c in ret)
+            foreach (Case c in ret)
             {
                 tempoHovered.Add(c);
                 c.caseHovered = true;
@@ -486,7 +506,7 @@ public class Item : MonoBehaviour {
         clearCase();
         allItem.Remove(this);
         gameObject.SetActive(false);
-        
+
         //GlobalAnimator.RemoveFloatingItem(gameObject);
         //DestroyImmediate(gameObject,true);
     }
