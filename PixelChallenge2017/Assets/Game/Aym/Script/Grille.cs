@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Grille : MonoBehaviour {
+public class Grille : Singleton<Grille> {
 
     public Case[][] grille;
 
@@ -16,6 +16,20 @@ public class Grille : MonoBehaviour {
     public int nbCaseY;
 
     public bool produceGrille;
+
+    public static void Show(bool state, bool availableCoffre = true)
+    {
+        for (int i = 0; i < instance.nbCaseX; i++)
+        {
+            for (int j = 0; j < instance.nbCaseY; j++)
+            {
+                bool available = !instance.grille[i][j].caseOccupe && instance.grille[i][j].caseType != CaseType.desactive;
+                if (!availableCoffre && instance.grille[i][j].caseType == CaseType.Coffre)
+                    available = false;
+                instance.grille[i][j].SetColor(state ? 0.45f : 0.1f, available);
+            }
+        }
+    }
 
     private void initGrille()
     {
@@ -109,6 +123,7 @@ public class Grille : MonoBehaviour {
         }
 
         applyDesactivation();
+        Show(false, true);
 
     }
 
