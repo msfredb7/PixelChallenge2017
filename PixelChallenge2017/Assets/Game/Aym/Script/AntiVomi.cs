@@ -58,30 +58,31 @@ public class AntiVomi : Item {
         {
             newVomi = false;
             List<Case> caseVoisine = new List<Case>();
+            List<Case> toAdd = new List<Case>();
             foreach (Case c in vomiTouched)
             {
-                if (c.Haut != null && c.Haut.caseOccupe == false && hasVomi(c) && vomiTouched.Contains(c) == false)
+                if (c.Haut != null&& hasVomi(c.Haut) && vomiTouched.Contains(c.Haut) == false)
                 {
-                    vomiTouched.Add(c.Haut);
+                    toAdd.Add(c.Haut);
                     newVomi = true;
                 }
-                if (c.Bas != null && c.Bas.caseOccupe == false && hasVomi(c) && vomiTouched.Contains(c) == false)
+                if (c.Bas != null && hasVomi(c.Bas) && vomiTouched.Contains(c.Bas) == false)
                 {
-                    vomiTouched.Add(c.Bas);
+                    toAdd.Add(c.Bas);
                     newVomi = true;
                 }
-                if (c.Gauche != null && c.Gauche.caseOccupe == false && hasVomi(c) && vomiTouched.Contains(c) == false)
+                if (c.Gauche != null && hasVomi(c.Gauche) && vomiTouched.Contains(c.Gauche) == false)
                 {
-                    vomiTouched.Add(c.Gauche);
+                    toAdd.Add(c.Gauche);
                     newVomi = true;
                 }
-                if (c.Droite != null && c.Droite.caseOccupe == false && hasVomi(c) && vomiTouched.Contains(c) == false)
+                if (c.Droite != null  && hasVomi(c.Droite) && vomiTouched.Contains(c.Droite) == false)
                 {
-                    vomiTouched.Add(c.Droite);
+                    toAdd.Add(c.Droite);
                     newVomi = true;
                 }
             }
-
+            vomiTouched.AddRange(toAdd);
         }
         List<Vomi> toKill = new List<Vomi>();
         foreach(Case c in vomiTouched)
@@ -95,18 +96,28 @@ public class AntiVomi : Item {
             }
         }
 
+        bool k = false;
+        if(toKill.Count>0)
+        {
+            k = true;
+        }
         foreach(Vomi v in toKill)
         {
             v.Kill();
+        }
+
+        if(k)
+        {
+            Kill();
         }
 
     }
 
     private bool hasVomi(Case c)
     {
-        foreach(Vomi v in allItem)
+        foreach(Item v in allItem)
         {
-            if(v.centralCase == c)
+            if(v.centralCase == c && v.GetType() == typeof(Vomi))
             {
                 return true;
             }

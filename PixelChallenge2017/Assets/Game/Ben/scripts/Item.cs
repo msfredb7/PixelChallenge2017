@@ -477,8 +477,11 @@ public class Item : MonoBehaviour {
 
     public void Kill()
     {
+        clearCase();
         allItem.Remove(this);
         gameObject.SetActive(false);
+        
+        //GlobalAnimator.RemoveFloatingItem(gameObject);
         //DestroyImmediate(gameObject,true);
     }
 }
