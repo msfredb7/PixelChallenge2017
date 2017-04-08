@@ -5,12 +5,13 @@ using UnityEngine;
 public class TestScript_Fred : MonoBehaviour {
 
     public BuildingAnimation anim;
+    public List<Item> items;
 
 	void Update () {
 
         if (Input.GetKeyDown(KeyCode.T))
         {
-            OilDisplay.UpdateOil(0.5f);
+            PewDiePieUI.instance.shop.Init(items, new List<int>() { 1, 5, 1, 2 }, new List<int> { 2, 24, 2, 2 });
         }
 
     }

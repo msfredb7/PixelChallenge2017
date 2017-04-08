@@ -54,7 +54,7 @@ public class RoadManager : PublicSingleton<RoadManager> {
                 timeLastStop = Time.time;
                 nextStop.StartEvent();
                 currentRoad.currentStop = nextStop;
-                onStopReached.Invoke();
+                onStopReached.Invoke(); // Quete
                 if(nextStop.lieu != LieuType.arretBus)
                     buyButton.SetActive(true);
                 DelayManager.CallTo(StopEnd, 6);
@@ -91,41 +91,41 @@ public class RoadManager : PublicSingleton<RoadManager> {
                 switch (currentRoad.currentDestination.nom)
                 {
                     case "Montreal":
+                        GameManager.instance.car.IsRunning = false;
                         GlobalAnimator.StopAt(LieuType.Montreal, delegate ()
                         {
-                            ContinueRoadTrip();
+                            onDestinationReached.Invoke();
                         });
                         break;
                     case "Trois-Riviere":
+                        GameManager.instance.car.IsRunning = false;
                         GlobalAnimator.StopAt(LieuType.TroisRiviere, delegate ()
                         {
-                            ContinueRoadTrip();
+                            onDestinationReached.Invoke();
                         });
                         break;
                     case "Quebec":
+                        GameManager.instance.car.IsRunning = false;
                         GlobalAnimator.StopAt(LieuType.Quebec, delegate ()
                         {
-                            ContinueRoadTrip();
+                            onDestinationReached.Invoke();
                         });
                         break;
                     case "Saguenay":
+                        GameManager.instance.car.IsRunning = false;
                         GlobalAnimator.StopAt(LieuType.Saguenay, delegate ()
                         {
-                            ContinueRoadTrip();
+                            onDestinationReached.Invoke();
                         });
                         break;
                     case "Sept-Iles":
+                        GameManager.instance.car.IsRunning = false;
                         GlobalAnimator.StopAt(LieuType.SeptIles, delegate ()
                         {
-                            ContinueRoadTrip();
+                            onDestinationReached.Invoke();
                         });
                         break;
                 }
-
-                // clean up
-                GameManager.instance.car.IsRunning = false;
-
-                onDestinationReached.Invoke();
             }
         }
     }
@@ -133,6 +133,8 @@ public class RoadManager : PublicSingleton<RoadManager> {
     public void StopEnd()
     {
         buyButton.SetActive(false);
+        GameManager.instance.car.IsRunning = true;
+        timeToIgnore += Time.time - timeLastStop;
     }
 
     public void SetRoad(Road road)
@@ -142,12 +144,6 @@ public class RoadManager : PublicSingleton<RoadManager> {
         startTime = Time.time;
         timeToIgnore = 0;
         print("On part de " + road.currentDepart.nom);
-    }
-
-    public void ContinueRoadTrip()
-    {
-        GameManager.instance.car.IsRunning = true;
-        timeToIgnore += Time.time - timeLastStop;
     }
 
     public bool IsArrived()

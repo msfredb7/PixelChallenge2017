@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using CCC.Manager;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -90,8 +91,10 @@ public class Quest {
     {
         if (RoadManager.instance.currentRoad.currentStop == destination.stop)
         {
-            personne.onCarExit.AddListener(OnComplete);
-            timeDestination = Time.time;
+            DelayManager.CallTo(delegate() {
+                personne.onCarExit.AddListener(OnComplete);
+                timeDestination = Time.time;
+            },3);
         }
     }
 
@@ -114,6 +117,7 @@ public class Quest {
 
     public void OnComplete()
     {
+        Debug.Log("Quete complete");
         // Si ca fait pas trop longtemp depuis le stop qu'on etait sense debarquer
         if (Time.time <= timeDestination + 5)
         {
