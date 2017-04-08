@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1848888100584558}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -16.9}
+  m_LocalPosition: {x: 12.4, y: -0, z: 2.85}
   m_LocalScale: {x: 16, y: 16, z: 1}
   m_Children:
   - {fileID: 4562874151032394}
@@ -125,6 +125,7 @@ MonoBehaviour:
   offsetX: 1
   offsetY: 1
   centralCase: {fileID: 0}
+  occupedCase: []
   scaleFacteur: 0
   nom: Bob
   objectifStop: 0
@@ -132,6 +133,7 @@ MonoBehaviour:
   _food: 100
   consomation: 10
   maxFood: 0
+  vomi: {fileID: 1248902992234730, guid: fba73298225433c4f93b6207a68361b7, type: 2}
   hummeur: {fileID: 212646120596910894}
 --- !u!114 &114988964671502418
 MonoBehaviour:

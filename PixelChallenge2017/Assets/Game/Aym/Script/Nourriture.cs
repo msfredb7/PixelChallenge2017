@@ -7,7 +7,7 @@ public class Nourriture : Item {
     public int ValeurNourriture;
 
 	// Use this for initialization
-	protected override void Start () {
+	public override void Start () {
         base.Start();
 	}
 

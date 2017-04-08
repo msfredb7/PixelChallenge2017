@@ -68,8 +68,8 @@ public class Item : MonoBehaviour {
                     }
                 }
             }
-            
-            if(_placementState == ItemState.placed)
+
+                if (_placementState == ItemState.placed)
             {
                 if(GameManager.instance != null)
                 {
@@ -241,8 +241,7 @@ public class Item : MonoBehaviour {
     }
 
     //public classCaseItem myCaseItem; 
-
-    protected virtual void Start () {
+    public virtual void Start () {
         if(allItem == null)
         {
             allItem = new List<Item>();
