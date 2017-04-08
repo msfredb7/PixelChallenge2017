@@ -46,6 +46,8 @@ public class RoadManager : PublicSingleton<RoadManager>
         {
             currentDistance = (Time.time - startTime) - timeToIgnore; // 1km = 1 secondes
             GameManager.instance.car.ChangeGas(-Time.deltaTime);
+            if (!GameManager.instance.car.IsRunning) // on vient de faire un arret
+                return;
 
             if (currentDistance > (lastPrint + 1))
             {

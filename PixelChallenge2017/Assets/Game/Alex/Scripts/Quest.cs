@@ -211,7 +211,6 @@ public class Quest
             {
                 GameManager.instance.car.listItems.Remove(items[i]);
                 items[i].Kill();
-                i--;
             }
             items.Clear();
         }
