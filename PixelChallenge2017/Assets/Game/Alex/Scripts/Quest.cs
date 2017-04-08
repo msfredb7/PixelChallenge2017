@@ -63,6 +63,7 @@ public class Quest
 
     public float totalReward;
     public float totalItems;
+    public bool spawnPerson = true;
 
     public Quest(string questDescription, float distance, float recompense, Personne personne, Destination destination, List<ItemQuest> itemNecessaire = null)
     {
@@ -111,7 +112,8 @@ public class Quest
             Fail();
             return;
         }
-        personne = GameManager.instance.SpawnPersonne(personne); // On fait apparaitre la personne a l'arret
+        if (spawnPerson)
+            personne = GameManager.instance.SpawnPersonne(personne); // On fait apparaitre la personne a l'arret
         personne.onDeath.AddListener(Fail);
     }
 

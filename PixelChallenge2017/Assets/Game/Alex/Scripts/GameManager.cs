@@ -5,9 +5,6 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 public class GameManager : PublicSingleton<GameManager>
 {
-
-    public Personne personne;
-
     public Voiture car;
 
     public float startCash;
@@ -27,6 +24,7 @@ public class GameManager : PublicSingleton<GameManager>
     public GameObject conducteurUI;
 
     public List<Item> startItems = new List<Item>();
+    public Personne startPerson;
 
     public List<GameObject> waypoints = new List<GameObject>();
 

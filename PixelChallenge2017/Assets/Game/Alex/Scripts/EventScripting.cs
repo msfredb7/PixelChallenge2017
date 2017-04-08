@@ -107,7 +107,8 @@ public class EventScripting
         {
             questItemFIRSTS.Add(new Quest.ItemQuest(item, 5));
         }
-        Quest firstQuest = new Quest("Deposer Marise et ses valises a Montreal", 0, 0, GameManager.instance.personne, new Quest.Destination(destination, null), questItemFIRSTS);
+        Quest firstQuest = new Quest("Deposer Marise et ses valises a Montreal", 0, 0, GameManager.instance.startPerson, new Quest.Destination(destination, null), questItemFIRSTS);
+        firstQuest.spawnPerson = false;
         firstQuest.items = GameManager.instance.startItems;
         questRoad1.Add(firstQuest);
         questRoad1.Add(new Quest("Deposer Charles et son équipement de hockey a Montreal", 10, 25, PersonneBank.GetItemByIndex(0), new Quest.Destination(destination, null), questItemCharles10km));
