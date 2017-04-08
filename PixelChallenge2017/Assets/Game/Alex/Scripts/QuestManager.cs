@@ -143,7 +143,7 @@ public class QuestManager : PublicSingleton<QuestManager>
         personneNom.text = "Nom du personnage : " + quest.personne.nom;
         description.text = "Description : " + quest.questDescription;
         reward.text = "Recompense : " + quest.totalReward + "$";
-        quantityObject.text = "Transport de bagages : " + quest.totalItems + " objets";
+        quantityObject.text = "Transport de bagages : " + quest.totalItems + " objets sur " + quest.itemNecessaire.Count;
     }
 }
 
