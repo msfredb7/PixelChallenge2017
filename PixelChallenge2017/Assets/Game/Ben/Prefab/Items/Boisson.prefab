@@ -160,7 +160,7 @@ MonoBehaviour:
   _placementState: 0
   wasInCar: 0
   descriptionTxt: A partager avec vos passagers
-  ValeurNourriture: 40
+  ValeurNourriture: 4
 --- !u!114 &114786357829821870
 MonoBehaviour:
   m_ObjectHideFlags: 1
