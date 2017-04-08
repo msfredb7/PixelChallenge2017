@@ -10,6 +10,7 @@ public class PersonneBank : Bank<Personne>
     // Use this for initialization
     void Start()
     {
+        print("Initialisation de la PersonneBank");
         for (int i = 0; i < listePersonne.Length; i++)
         {
             AddItem(listePersonne[i]);
