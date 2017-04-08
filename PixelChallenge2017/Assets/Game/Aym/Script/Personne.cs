@@ -21,6 +21,9 @@ public class Personne : Item {
     public SpriteRenderer hummeur;
     public float lastDechet;
 
+    public int lastFullKm;
+        
+
     public float food
     {
         get
@@ -157,9 +160,10 @@ public class Personne : Item {
 	// Update is called once per frame
 	protected override void Update () {
         base.Update();
-        if ((RoadManager.instance.currentDistance % 2) < 0.1 && GameManager.instance.car.IsRunning)
+        if (RoadManager.instance.currentDistance>lastFullKm && GameManager.instance.car.IsRunning)
         {
-            food-= consomation;
+            lastFullKm = Mathf.RoundToInt(RoadManager.instance.currentDistance) + 1;
+            food -= consomation;
             if (lastDechet != RoadManager.instance.currentDistance && Random.Range(0f, 1f) < 0.05f)
             {
                 lastDechet = RoadManager.instance.currentDistance;
