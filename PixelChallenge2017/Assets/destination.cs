@@ -15,6 +15,9 @@ public class destination : MonoBehaviour
 	// Update is called once per frame
 	void Update () {
         RoadManager rd = RoadManager.instance;
-        zoneDest.text = rd.currentRoad.currentDestination.nom + " dans " + Mathf.Floor(rd.currentRoad.distance - rd.currentDistance) + " km";
+        int montant = (int)Mathf.Floor(rd.currentRoad.distance - rd.currentDistance);
+        if (montant < 0)
+            montant = 0;
+        zoneDest.text = rd.currentRoad.currentDestination.nom + " dans " + montant + " km";
     }
 }

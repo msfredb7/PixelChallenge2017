@@ -24,6 +24,9 @@ public class CashToaster : PublicSingleton<CashToaster> {//MonoBehaviour {
 
     public void SpawnAmount(int amount)
     {
+        if (amount < 1)
+            return;
+
         Text text = Instantiate(prefab.gameObject).GetComponent<Text>();
         text.transform.position = prefab.transform.position + Vector3.down * Screen.height * 0.05f;
         text.transform.SetParent(transform, true);

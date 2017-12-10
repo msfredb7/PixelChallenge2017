@@ -185,7 +185,7 @@ MonoBehaviour:
     - row: 00000000000000
     - row: 00000000000000
   itemShape: []
-  nom: "Troph\xE9e"
+  nom: Trophee
   offsetX: 2
   offsetY: 1
   centralCase: {fileID: 0}
