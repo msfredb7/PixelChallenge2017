@@ -249,7 +249,7 @@ public class Personne : Item {
     {
         Quest ret = null;
 
-        Debug.Log(QuestManager.instance.questList.Count);
+        //Debug.Log(QuestManager.instance.questList.Count);
         foreach(Quest q in QuestManager.instance.questList)
         {
             if(q.personne == this)

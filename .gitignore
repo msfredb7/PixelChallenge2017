@@ -11,3 +11,5 @@ PixelChallenge2017/Temp/
 # SourceTree Patch against .gitignore_global on Windows
 !*.exe
 !*.dll
+PixelChallenge2017/.vs/PixelChallenge2017/v15/Server/sqlite3/db.lock
+PixelChallenge2017/.vs/PixelChallenge2017/v15/Server/sqlite3/storage.ide
